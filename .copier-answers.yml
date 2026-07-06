@@ -1,0 +1,16 @@
+# Changes here will be overwritten by Copier
+_commit: v0.5.0
+_src_path: https://github.com/linkml/linkml-project-copier
+add_example: true
+copyright_year: '2026'
+email: burger.ga@gmail.com
+existing_license_file: ''
+full_name: Gerhard Burger
+gh_action_docs_preview: true
+gh_action_pypi: false
+github_org: burgerga
+license: MIT
+project_description: A machine actionable OORF schema using LinkML
+project_name: maoorf
+project_slug: maoorf
+
