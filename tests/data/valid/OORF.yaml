@@ -1,0 +1,12 @@
+---
+description: Example OORF submission
+term:
+  term_stuff: awesome term
+darm:
+  - type: BMDDARM
+    bmd_stuff: blabla
+daprm:
+  - type: RNASeqDAPRM
+    rna_stuff: test
+  - type: MetabolomicsDAPRM
+    metabolomics_stuff: test2
