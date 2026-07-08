@@ -1,0 +1,553 @@
+name: maoorf
+description: A machine actionable OORF schema using LinkML
+title: maoorf
+see_also:
+- https://eu-parc.github.io/maoorf
+id: https://w3id.org/eu-parc/maoorf
+imports:
+- linkml:types
+license: MIT
+prefixes:
+  maoorf:
+    prefix_prefix: maoorf
+    prefix_reference: https://w3id.org/eu-parc/maoorf/
+  linkml:
+    prefix_prefix: linkml
+    prefix_reference: https://w3id.org/linkml/
+  biolink:
+    prefix_prefix: biolink
+    prefix_reference: https://w3id.org/biolink/vocab/
+  schema:
+    prefix_prefix: schema
+    prefix_reference: http://schema.org/
+  PATO:
+    prefix_prefix: PATO
+    prefix_reference: http://purl.obolibrary.org/obo/PATO_
+  example:
+    prefix_prefix: example
+    prefix_reference: http://www.example.org/rdf#
+default_prefix: maoorf
+default_range: string
+types:
+  string:
+    name: string
+    definition_uri: https://w3id.org/linkml/String
+    description: A character string
+    notes:
+    - In RDF serializations, a slot with range of string is treated as a literal or
+      type xsd:string. If you are authoring schemas in LinkML YAML, the type is referenced
+      with the lower case "string".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    exact_mappings:
+    - schema:Text
+    base: str
+    uri: xsd:string
+  integer:
+    name: integer
+    definition_uri: https://w3id.org/linkml/Integer
+    description: An integer
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "integer".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    exact_mappings:
+    - schema:Integer
+    base: int
+    uri: xsd:integer
+  boolean:
+    name: boolean
+    definition_uri: https://w3id.org/linkml/Boolean
+    description: A binary (true or false) value
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "boolean".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    exact_mappings:
+    - schema:Boolean
+    base: Bool
+    uri: xsd:boolean
+    repr: bool
+  float:
+    name: float
+    definition_uri: https://w3id.org/linkml/Float
+    description: A real number that conforms to the xsd:float specification
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "float".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    exact_mappings:
+    - schema:Float
+    base: float
+    uri: xsd:float
+  double:
+    name: double
+    definition_uri: https://w3id.org/linkml/Double
+    description: A real number that conforms to the xsd:double specification
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "double".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    close_mappings:
+    - schema:Float
+    base: float
+    uri: xsd:double
+  decimal:
+    name: decimal
+    definition_uri: https://w3id.org/linkml/Decimal
+    description: A real number with arbitrary precision that conforms to the xsd:decimal
+      specification
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "decimal".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    broad_mappings:
+    - schema:Number
+    base: Decimal
+    uri: xsd:decimal
+  time:
+    name: time
+    definition_uri: https://w3id.org/linkml/Time
+    description: A time object represents a (local) time of day, independent of any
+      particular day
+    notes:
+    - URI is dateTime because OWL reasoners do not work with straight date or time
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "time".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    exact_mappings:
+    - schema:Time
+    base: XSDTime
+    uri: xsd:time
+    repr: str
+  date:
+    name: date
+    definition_uri: https://w3id.org/linkml/Date
+    description: a date (year, month and day) in an idealized calendar
+    notes:
+    - URI is dateTime because OWL reasoners don't work with straight date or time
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "date".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    exact_mappings:
+    - schema:Date
+    base: XSDDate
+    uri: xsd:date
+    repr: str
+  datetime:
+    name: datetime
+    definition_uri: https://w3id.org/linkml/Datetime
+    description: The combination of a date and time
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "datetime".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    exact_mappings:
+    - schema:DateTime
+    base: XSDDateTime
+    uri: xsd:dateTime
+    repr: str
+  date_or_datetime:
+    name: date_or_datetime
+    definition_uri: https://w3id.org/linkml/DateOrDatetime
+    description: Either a date or a datetime
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "date_or_datetime".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    base: str
+    uri: linkml:DateOrDatetime
+    repr: str
+  uriorcurie:
+    name: uriorcurie
+    definition_uri: https://w3id.org/linkml/Uriorcurie
+    description: a URI or a CURIE
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "uriorcurie".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    base: URIorCURIE
+    uri: xsd:anyURI
+    repr: str
+  curie:
+    name: curie
+    definition_uri: https://w3id.org/linkml/Curie
+    conforms_to: https://www.w3.org/TR/curie/
+    description: a compact URI
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "curie".
+    comments:
+    - in RDF serializations this MUST be expanded to a URI
+    - in non-RDF serializations MAY be serialized as the compact representation
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    base: Curie
+    uri: xsd:string
+    repr: str
+  uri:
+    name: uri
+    definition_uri: https://w3id.org/linkml/Uri
+    conforms_to: https://www.ietf.org/rfc/rfc3987.txt
+    description: a complete URI
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "uri".
+    comments:
+    - in RDF serializations a slot with range of uri is treated as a literal or type
+      xsd:anyURI unless it is an identifier or a reference to an identifier, in which
+      case it is translated directly to a node
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    close_mappings:
+    - schema:URL
+    base: URI
+    uri: xsd:anyURI
+    repr: str
+  ncname:
+    name: ncname
+    definition_uri: https://w3id.org/linkml/Ncname
+    description: Prefix part of CURIE
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "ncname".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    base: NCName
+    uri: xsd:string
+    repr: str
+  objectidentifier:
+    name: objectidentifier
+    definition_uri: https://w3id.org/linkml/Objectidentifier
+    description: A URI or CURIE that represents an object in the model.
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "objectidentifier".
+    comments:
+    - Used for inheritance and type checking
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    base: ElementIdentifier
+    uri: shex:iri
+    repr: str
+  nodeidentifier:
+    name: nodeidentifier
+    definition_uri: https://w3id.org/linkml/Nodeidentifier
+    description: A URI, CURIE or BNODE that represents a node in a model.
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "nodeidentifier".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    base: NodeIdentifier
+    uri: shex:nonLiteral
+    repr: str
+  jsonpointer:
+    name: jsonpointer
+    definition_uri: https://w3id.org/linkml/Jsonpointer
+    conforms_to: https://datatracker.ietf.org/doc/html/rfc6901
+    description: A string encoding a JSON Pointer. The value of the string MUST conform
+      to JSON Point syntax and SHOULD dereference to a valid object within the current
+      instance document when encoded in tree form.
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "jsonpointer".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    base: str
+    uri: xsd:string
+    repr: str
+  jsonpath:
+    name: jsonpath
+    definition_uri: https://w3id.org/linkml/Jsonpath
+    conforms_to: https://www.ietf.org/archive/id/draft-goessner-dispatch-jsonpath-00.html
+    description: A string encoding a JSON Path. The value of the string MUST conform
+      to JSON Point syntax and SHOULD dereference to zero or more valid objects within
+      the current instance document when encoded in tree form.
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "jsonpath".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    base: str
+    uri: xsd:string
+    repr: str
+  sparqlpath:
+    name: sparqlpath
+    definition_uri: https://w3id.org/linkml/Sparqlpath
+    conforms_to: https://www.w3.org/TR/sparql11-query/#propertypaths
+    description: A string encoding a SPARQL Property Path. The value of the string
+      MUST conform to SPARQL syntax and SHOULD dereference to zero or more valid objects
+      within the current instance document when encoded as RDF.
+    notes:
+    - If you are authoring schemas in LinkML YAML, the type is referenced with the
+      lower case "sparqlpath".
+    from_schema: https://w3id.org/linkml/types
+    imported_from: linkml:types
+    base: str
+    uri: xsd:string
+    repr: str
+slots:
+  oORF__description:
+    name: oORF__description
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slot_uri: maoorf:description
+    alias: description
+    owner: OORF
+    domain_of:
+    - OORF
+    range: string
+  oORF__term:
+    name: oORF__term
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slot_uri: maoorf:term
+    alias: term
+    owner: OORF
+    domain_of:
+    - OORF
+    range: TERM
+    required: true
+    inlined: true
+    inlined_as_list: true
+  oORF__daprm:
+    name: oORF__daprm
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slot_uri: maoorf:daprm
+    alias: daprm
+    owner: OORF
+    domain_of:
+    - OORF
+    range: DAPRM
+    required: true
+    multivalued: true
+    inlined: true
+    inlined_as_list: true
+  oORF__darm:
+    name: oORF__darm
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slot_uri: maoorf:darm
+    alias: darm
+    owner: OORF
+    domain_of:
+    - OORF
+    range: DARM
+    required: true
+    multivalued: true
+    inlined: true
+    inlined_as_list: true
+  tERM__term_stuff:
+    name: tERM__term_stuff
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slot_uri: maoorf:term_stuff
+    alias: term_stuff
+    owner: TERM
+    domain_of:
+    - TERM
+    range: string
+  dAPRM__type:
+    name: dAPRM__type
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slot_uri: maoorf:type
+    alias: type
+    owner: DAPRM
+    domain_of:
+    - DAPRM
+    range: string
+  dARM__type:
+    name: dARM__type
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slot_uri: maoorf:type
+    alias: type
+    owner: DARM
+    domain_of:
+    - DARM
+    range: string
+  bMDDARM__bmd_stuff:
+    name: bMDDARM__bmd_stuff
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slot_uri: maoorf:bmd_stuff
+    alias: bmd_stuff
+    owner: BMDDARM
+    domain_of:
+    - BMDDARM
+    range: string
+  rNASeqDAPRM__rna_stuff:
+    name: rNASeqDAPRM__rna_stuff
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slot_uri: maoorf:rna_stuff
+    alias: rna_stuff
+    owner: RNASeqDAPRM
+    domain_of:
+    - RNASeqDAPRM
+    range: string
+  metabolomicsDAPRM__metabolomics_stuff:
+    name: metabolomicsDAPRM__metabolomics_stuff
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slot_uri: maoorf:metabolomics_stuff
+    alias: metabolomics_stuff
+    owner: MetabolomicsDAPRM
+    domain_of:
+    - MetabolomicsDAPRM
+    range: string
+  type:
+    name: type
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slot_uri: maoorf:type
+    designates_type: true
+    range: string
+  DAPRM_type:
+    name: DAPRM_type
+    from_schema: https://w3id.org/eu-parc/maoorf
+    is_a: type
+    domain: DAPRM
+    slot_uri: maoorf:type
+    designates_type: true
+    alias: type
+    owner: DAPRM
+    domain_of:
+    - DAPRM
+    is_usage_slot: true
+    usage_slot_name: type
+    range: string
+  DARM_type:
+    name: DARM_type
+    from_schema: https://w3id.org/eu-parc/maoorf
+    is_a: type
+    domain: DARM
+    slot_uri: maoorf:type
+    designates_type: true
+    alias: type
+    owner: DARM
+    domain_of:
+    - DARM
+    is_usage_slot: true
+    usage_slot_name: type
+    range: string
+classes:
+  OORF:
+    name: OORF
+    definition_uri: https://w3id.org/eu-parc/maoorf/OORF
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slots:
+    - oORF__description
+    - oORF__term
+    - oORF__daprm
+    - oORF__darm
+    attributes:
+      description:
+        name: description
+      term:
+        name: term
+        range: TERM
+        required: true
+      daprm:
+        name: daprm
+        range: DAPRM
+        required: true
+        multivalued: true
+        inlined_as_list: true
+      darm:
+        name: darm
+        range: DARM
+        required: true
+        multivalued: true
+        inlined_as_list: true
+    class_uri: maoorf:OORF
+    tree_root: true
+  TERM:
+    name: TERM
+    definition_uri: https://w3id.org/eu-parc/maoorf/TERM
+    from_schema: https://w3id.org/eu-parc/maoorf
+    slots:
+    - tERM__term_stuff
+    attributes:
+      term_stuff:
+        name: term_stuff
+    class_uri: maoorf:TERM
+  DAPRM:
+    name: DAPRM
+    definition_uri: https://w3id.org/eu-parc/maoorf/DAPRM
+    from_schema: https://w3id.org/eu-parc/maoorf
+    abstract: true
+    slots:
+    - dAPRM__type
+    - DAPRM_type
+    slot_usage:
+      type:
+        name: type
+        from_schema: https://w3id.org/eu-parc/maoorf
+        slot_uri: maoorf:type
+        designates_type: true
+        range: string
+    attributes:
+      type:
+        name: type
+    class_uri: maoorf:DAPRM
+  DARM:
+    name: DARM
+    definition_uri: https://w3id.org/eu-parc/maoorf/DARM
+    from_schema: https://w3id.org/eu-parc/maoorf
+    abstract: true
+    slots:
+    - dARM__type
+    - DARM_type
+    slot_usage:
+      type:
+        name: type
+        designates_type: true
+    attributes:
+      type:
+        name: type
+    class_uri: maoorf:DARM
+  BMDDARM:
+    name: BMDDARM
+    definition_uri: https://w3id.org/eu-parc/maoorf/BMDDARM
+    from_schema: https://w3id.org/eu-parc/maoorf
+    is_a: DARM
+    slots:
+    - DARM_type
+    - bMDDARM__bmd_stuff
+    attributes:
+      bmd_stuff:
+        name: bmd_stuff
+    class_uri: maoorf:BMDDARM
+  RNASeqDAPRM:
+    name: RNASeqDAPRM
+    definition_uri: https://w3id.org/eu-parc/maoorf/RNASeqDAPRM
+    from_schema: https://w3id.org/eu-parc/maoorf
+    is_a: DAPRM
+    slots:
+    - DAPRM_type
+    - rNASeqDAPRM__rna_stuff
+    attributes:
+      rna_stuff:
+        name: rna_stuff
+    class_uri: maoorf:RNASeqDAPRM
+  MetabolomicsDAPRM:
+    name: MetabolomicsDAPRM
+    definition_uri: https://w3id.org/eu-parc/maoorf/MetabolomicsDAPRM
+    from_schema: https://w3id.org/eu-parc/maoorf
+    is_a: DAPRM
+    slots:
+    - DAPRM_type
+    - metabolomicsDAPRM__metabolomics_stuff
+    attributes:
+      metabolomics_stuff:
+        name: metabolomics_stuff
+    class_uri: maoorf:MetabolomicsDAPRM
+metamodel_version: 1.11.0
+source_file: maoorf.yaml
+source_file_date: '2026-07-08T11:45:35'
+source_file_size: 1335
+generation_date: '2026-07-08T11:45:49'
+
