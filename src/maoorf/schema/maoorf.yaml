@@ -24,8 +24,8 @@ imports:
 classes:
   OORF:
     tree_root: true
+    description: OECD OMICS Reporting Framework (OORF)
     attributes:
-      description:
       term:
         required: true
         range: TERM
@@ -39,11 +39,14 @@ classes:
         multivalued: true
         inlined_as_list: true
         range: DARM
+  
   TERM:
+    description: Toxicology Experimental Reporting Module (TERM)
     attributes:
       term_stuff:
 
   DAPRM:
+    description: Data Acquisition and Processing Reporting Module (DAPRM)
     abstract: true
     slot_usage:
       type:
@@ -52,6 +55,7 @@ classes:
       type:
 
   DARM:
+    description: Data Analysis Reporting Module (DARM)
     abstract: true
     slot_usage:
       type:
@@ -60,16 +64,19 @@ classes:
       type:
 
   BMDDARM:
+    description: Benchmark Dose (BMD) DARM
     is_a: DARM
     attributes:
       bmd_stuff
 
   RNASeqDAPRM:
+    description: RNA-Seq DAPRM
     is_a: DAPRM
     attributes:
       rna_stuff:
 
   MetabolomicsDAPRM:
+    description: Metabolomics DAPRM
     is_a: DAPRM
     attributes:
       metabolomics_stuff:
