@@ -298,15 +298,6 @@ types:
     uri: xsd:string
     repr: str
 slots:
-  oORF__description:
-    name: oORF__description
-    from_schema: https://w3id.org/eu-parc/maoorf
-    slot_uri: maoorf:description
-    alias: description
-    owner: OORF
-    domain_of:
-    - OORF
-    range: string
   oORF__term:
     name: oORF__term
     from_schema: https://w3id.org/eu-parc/maoorf
@@ -437,15 +428,13 @@ classes:
   OORF:
     name: OORF
     definition_uri: https://w3id.org/eu-parc/maoorf/OORF
+    description: OECD OMICS Reporting Framework (OORF)
     from_schema: https://w3id.org/eu-parc/maoorf
     slots:
-    - oORF__description
     - oORF__term
     - oORF__daprm
     - oORF__darm
     attributes:
-      description:
-        name: description
       term:
         name: term
         range: TERM
@@ -467,6 +456,7 @@ classes:
   TERM:
     name: TERM
     definition_uri: https://w3id.org/eu-parc/maoorf/TERM
+    description: Toxicology Experimental Reporting Module (TERM)
     from_schema: https://w3id.org/eu-parc/maoorf
     slots:
     - tERM__term_stuff
@@ -477,6 +467,7 @@ classes:
   DAPRM:
     name: DAPRM
     definition_uri: https://w3id.org/eu-parc/maoorf/DAPRM
+    description: Data Acquisition and Processing Reporting Module (DAPRM)
     from_schema: https://w3id.org/eu-parc/maoorf
     abstract: true
     slots:
@@ -496,6 +487,7 @@ classes:
   DARM:
     name: DARM
     definition_uri: https://w3id.org/eu-parc/maoorf/DARM
+    description: Data Analysis Reporting Module (DARM)
     from_schema: https://w3id.org/eu-parc/maoorf
     abstract: true
     slots:
@@ -512,6 +504,7 @@ classes:
   BMDDARM:
     name: BMDDARM
     definition_uri: https://w3id.org/eu-parc/maoorf/BMDDARM
+    description: Benchmark Dose (BMD) DARM
     from_schema: https://w3id.org/eu-parc/maoorf
     is_a: DARM
     slots:
@@ -524,6 +517,7 @@ classes:
   RNASeqDAPRM:
     name: RNASeqDAPRM
     definition_uri: https://w3id.org/eu-parc/maoorf/RNASeqDAPRM
+    description: RNA-Seq DAPRM
     from_schema: https://w3id.org/eu-parc/maoorf
     is_a: DAPRM
     slots:
@@ -536,6 +530,7 @@ classes:
   MetabolomicsDAPRM:
     name: MetabolomicsDAPRM
     definition_uri: https://w3id.org/eu-parc/maoorf/MetabolomicsDAPRM
+    description: Metabolomics DAPRM
     from_schema: https://w3id.org/eu-parc/maoorf
     is_a: DAPRM
     slots:
@@ -547,7 +542,7 @@ classes:
     class_uri: maoorf:MetabolomicsDAPRM
 metamodel_version: 1.11.0
 source_file: maoorf.yaml
-source_file_date: '2026-07-08T12:16:26'
-source_file_size: 1335
-generation_date: '2026-07-08T12:16:36'
+source_file_date: '2026-07-22T12:58:45'
+source_file_size: 1678
+generation_date: '2026-07-22T12:58:56'
 
