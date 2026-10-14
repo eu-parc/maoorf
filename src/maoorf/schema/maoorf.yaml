@@ -26,6 +26,9 @@ classes:
     tree_root: true
     description: OECD OMICS Reporting Framework (OORF)
     attributes:
+      ssrm:
+        required: true
+        range: SSRM
       term:
         required: true
         range: TERM
@@ -39,11 +42,25 @@ classes:
         multivalued: true
         inlined_as_list: true
         range: DARM
-  
+
+  SSRM:
+    description: Study Summary Reporting Module (SSRM)
+    attributes:
+      abstract:
+        required: true
+      contributors:
+        required: true
+        multivalued: true
+        inlined_as_list: true
+        range: Contributor
+
   TERM:
     description: Toxicology Experimental Reporting Module (TERM)
     attributes:
-      term_stuff:
+      background_information:
+        required: true
+        examples:
+          - value: Example background information
 
   DAPRM:
     description: Data Acquisition and Processing Reporting Module (DAPRM)
@@ -80,3 +97,9 @@ classes:
     is_a: DAPRM
     attributes:
       metabolomics_stuff:
+
+  Contributor:
+    description: Contributor to the OORF report
+    attributes:
+      id: 
+      full_name:

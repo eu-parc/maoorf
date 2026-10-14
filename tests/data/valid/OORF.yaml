@@ -1,6 +1,11 @@
 ---
+ssrm:
+  abstract: This is the abstract of the study
+  contributors:
+    - id: c1
+      full_name: John Doe
 term:
-  term_stuff: awesome term
+  background_information: This is the background information for the toxicology experiment
 darm:
   - type: BMDDARM
     bmd_stuff: blabla
