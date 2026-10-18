@@ -1,0 +1,1070 @@
+id: https://w3id.org/eu-parc/maoorf/modules/daprm/qrt_pcr
+name: maoorf_qrt_pcr
+title: qRT-PCR DAPRM
+description: >-
+  Data Acquisition and Processing Reporting Module (DAPRM) for Quantitative Reverse Transcription Polymerase Chain Reaction (qRT-PCR)
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ./base_daprm
+
+classes:
+  QRTPCRDAPRM:
+    is_a: DAPRM
+    description: |-
+      Data Acquisition and Processing Reporting Module (DAPRM) for Quantitative Reverse Transcription Polymerase Chain Reaction (qRT-PCR)
+
+      This module provides a reporting framework for describing a qPCR-based toxicogenomic experiment, including sample preparation, assay design, and data collection and processing. This module is largely based on the existing minimum information for publication of quantitative real-time PCR experiments (MIQE) guidelines but has been adapted for the OORF.
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
+    exact_mappings:
+      - oecd_oorf_2023:3.3
+    attributes:
+      sample_processing:
+        description: |-
+          Sample Processing
+
+          This section describes all of the sample processing that is required after tissues are collected from an exposure experiment up to before the qRT-PCR amplification reaction. This includes the RNA extraction protocol, assessment of RNA quantity and quality, and the reverse transcription of RNA into cDNA.
+        range: QRTPCRSampleProcessing
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1
+      assay_design:
+        description: |-
+          qRT-PCR Assay Design
+
+          This section describes which qRT-PCR assay-specific details should be reported. These include a description of the assay format (single- or multi-gene), technology (double-stranded DNA dye, probe-based, etc.) and protocol employed, information about the target genes and the oligonucleotides used to detect them, and any assay validation data.
+        range: QRTPCRAssayDesign
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2
+      data_analysis:
+        description: |-
+          Data Analysis
+
+          This section describes the details that should be reported for the analysis of qRT-PCR data. This includes information about how the Cq values are determined, quality control results, pre-processing of low/high-signal samples, and the data normalisation method employed.
+        range: QRTPCRDataAnalysis
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3
+
+  QRTPCRSampleProcessing:
+    description: |-
+      Sample Processing
+
+      RNA extraction, quantification/qualification, and reverse transcription for qRT-PCR.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.1
+    attributes:
+      rna_extraction:
+        description: |-
+          RNA Extraction
+
+          The extraction of RNA for qRT-PCR experiments requires many of the same considerations as other transcriptomic technologies.
+        range: QRTPCRRNAExtraction
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.1
+      quantification_and_qualification_of_rna:
+        description: |-
+          Quantification and Qualification of RNA
+
+          Quantification and qualification of RNA for qRT-PCR.
+        range: QRTPCRRNAQuantificationAndQualification
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.2
+      reverse_transcription_of_rna_to_cdna:
+        description: |-
+          Reverse Transcription of RNA to cDNA
+
+          Reverse transcription of RNA to cDNA.
+        range: QRTPCRReverseTranscription
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.3
+
+  QRTPCRRNAExtraction:
+    description: |-
+      RNA Extraction
+
+      RNA extraction parameters for qRT-PCR.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.1.1
+    attributes:
+      description_of_instruments_used:
+        description: |-
+          Description of instrument(s) used
+
+          Description of instrument(s) used
+        comments:
+          - Describe any non-standard instruments used for RNA extraction (e.g. automated liquid handler).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.1.a
+      protocol_or_kit_and_modifications:
+        description: |-
+          Protocol or kit and any modifications
+
+          Protocol or kit and any modifications
+        comments:
+          - Provide a reference for the protocol used, including any reagent kits, and note any modifications.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.1.b
+      source_of_additional_reagents:
+        description: |-
+          Source of additional reagents
+
+          Source of additional reagents
+        comments:
+          - Indicate the source of any reagents not included in the kits described above.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.1.c
+      details_of_dnase_or_rnase_treatment:
+        description: |-
+          Details of DNase or RNase treatment
+
+          Details of DNase or RNase treatment
+        comments:
+          - Indicate whether any Dnase or Rnase treatments were included in the protocol.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.1.d
+      contamination_assessment:
+        description: |-
+          Contamination assessment (DNA or RNA)
+
+          Contamination assessment (DNA or RNA)
+        comments:
+          - Indicate whether any methods were used to assess DNA or RNA contamination, and if so, what method(s).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.1.e
+
+  QRTPCRRNAQuantificationAndQualification:
+    description: |-
+      Quantification and Qualification of RNA
+
+      Quantification and qualification of RNA for qRT-PCR.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.1.2
+    attributes:
+      description_of_instruments_used:
+        description: |-
+          Description of instrument(s) used
+
+          Description of instrument(s) used
+        comments:
+          - Describe the instrument that was used for the quantification and qualification of the RNA input.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.2.a
+      protocol_or_kit_and_modifications:
+        description: |-
+          Protocol or kit and any modifications
+
+          Protocol or kit and any modifications
+        comments:
+          - Provide a reference for the protocol used, including any reagent kits, and note any modifications.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.2.b
+      purity:
+        description: |-
+          Purity (A260/A280, and optionally A260/A230)
+
+          Purity (A260/A280, and optionally A260/A230)
+        comments:
+          - Indicate whether A260/280 and/or A260/A230 values were recorded, and any cut-off criteria for sample exclusion.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.2.c
+      rna_yield:
+        description: |-
+          Yield
+
+          Yield
+        comments:
+          - Describe the minimum RNA yield of the extraction, and/or any cut-off criteria for RNA yield for sample exclusion.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.2.d
+      rna_integrity_method_instrument:
+        description: |-
+          RNA integrity: method/instrument
+
+          RNA integrity: method/instrument
+        comments:
+          - Indicate whether RNA integrity was determined, and if so, which instrument and method.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.2.e
+      rin_rqi_or_ratio_of_3_to_5_transcript_cqs:
+        description: |-
+          RIN/RQI or ratio of 3' to 5' transcript Cqs
+
+          RIN/RQI or ratio of 3' to 5' transcript Cqs
+        comments:
+          - Indicate the minimum RNA integrity metric of the samples, and/or any cut-off criteria that were used for sample exclusion
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.2.f
+      electrophoresis_traces:
+        description: |-
+          Electrophoresis traces
+
+          Electrophoresis traces
+        comments:
+          - Indicate whether electrophoresis traces of RNA samples were generated.
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.2.g
+      inhibition_testing:
+        description: |-
+          Inhibition testing (Cq dilutions, spike, or other)
+
+          Inhibition testing (Cq dilutions, spike, or other)
+        comments:
+          - Indicated whether inhibition testing was performed, and if so which method.
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.2.h
+
+  QRTPCRReverseTranscription:
+    description: |-
+      Reverse Transcription of RNA to cDNA
+
+      Reverse transcription parameters for qRT-PCR.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.1.3
+    attributes:
+      description_of_instruments_used:
+        description: |-
+          Description of instrument(s) used
+
+          Description of instrument(s) used
+        comments:
+          - Describe any instruments used for the reverse transcription reaction
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.3.a
+      protocol_or_kit_and_modifications:
+        description: |-
+          Protocol or kit and any modifications
+
+          Protocol or kit and any modifications
+        comments:
+          - Provide a reference for the protocol used, including any reagent kits, and note any modifications.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.3.b
+      amount_of_rna_and_reaction_volume:
+        description: |-
+          Amount of RNA and reaction volume
+
+          Amount of RNA and reaction volume
+        comments:
+          - Indicate the amount of input RNA and reaction volume
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.3.c
+      priming_oligonucleotide_and_concentration:
+        description: |-
+          Priming oligonucleotide and concentration
+
+          Priming oligonucleotide (specify if custom gene-specific primer, random hexamers, or oligo[dT], and percentage of each if mixture) and concentration:
+        comments:
+          - Indicated the concentration of any priming oligonucleotides
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.3.d
+      reverse_transcriptase_and_concentration:
+        description: |-
+          Reverse transcriptase and concentration
+
+          Reverse transcriptase and concentration
+        comments:
+          - Indicate which reverse transcriptase was used and the final reaction concentration
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.3.e
+      temperature_and_time:
+        description: |-
+          Temperature and time
+
+          Temperature and time
+        comments:
+          - Indicate the temperature(s) and time(s) used for the reverse transcription reaction.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.3.f
+      manufacturer_of_reagents_and_catalogue_numbers:
+        description: |-
+          Manufacturer of reagents and catalogue numbers
+
+          Manufacturer of reagents and catalogue numbers
+        comments:
+          - Indicate the source of any reagents not included in the kits described above.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.3.g
+      cqs_with_and_without_reverse_transcription:
+        description: |-
+          Cqs with and without reverse transcription
+
+          Cqs with and without reverse transcription
+        comments:
+          - Indicate whether Cqs were determined with and without reverse transcription, and any cut-of values for samples exclusion
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.3.h
+      storage_conditions_of_cdna:
+        description: |-
+          Storage conditions of cDNA
+
+          Storage conditions of cDNA
+        comments:
+          - Describe the storage conditions of the cDNA samples
+        exact_mappings:
+          - oecd_oorf_2023:3.3.1.3.i
+
+  QRTPCRAssayDesign:
+    description: |-
+      qRT-PCR Assay Design
+
+      qRT-PCR protocol, gene target information, oligonucleotides and amplicon, and assay validation.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.2
+    attributes:
+      qrt_pcr_protocol:
+        description: |-
+          qRT-PCR Protocol
+
+          qRT-PCR protocol details.
+        range: QRTPCRProtocol
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1
+      gene_target_information:
+        description: |-
+          Gene Target Information
+
+          Gene target information.
+        range: QRTPCRGeneTargetInformation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.2
+      oligonucleotides_and_amplicon:
+        description: |-
+          Oligonucleotides and Amplicon
+
+          Oligonucleotides and amplicon details.
+        range: QRTPCROligonucleotidesAndAmplicon
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3
+      assay_validation:
+        description: |-
+          Assay Validation
+
+          qRT-PCR assay validation parameters.
+        range: QRTPCRAAssayValidation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4
+
+  QRTPCRProtocol:
+    description: |-
+      qRT-PCR Protocol
+
+      qRT-PCR protocol parameters.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.2.1
+    attributes:
+      target_detection_technology:
+        description: |-
+          Target detection technology (dye-based, probe-based, other)
+
+          Target detection technology (dye-based, probe-based, other)
+        comments:
+          - Indicate which technology was used for measuring the target gene(s)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.a
+      protocol_or_kit_and_modifications:
+        description: |-
+          Protocol or kit and any modifications
+
+          Protocol or kit and any modifications
+        comments:
+          - Provide a reference for the protocol used, including any reagent kits, and note any modifications.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.b
+      number_of_reactions_per_sample:
+        description: |-
+          Number of reactions per sample
+
+          Number of reactions per sample
+        comments:
+          - Indicate the number of reactions per sample
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.c
+      number_of_gene_targets_per_reaction:
+        description: |-
+          Number of gene targets per reaction
+
+          Number of gene targets per reaction if multiplexing
+        comments:
+          - Indicate the number of genes targets measured per reaction
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.d
+      description_of_quality_control_reactions:
+        description: |-
+          Description of quality control reactions
+
+          Description of quality control reactions (No template control, PCR positive control, genomic contamination controls, etc.)
+        comments:
+          - Describe any quality control reactions that were run in parallel with the experimental samples, such as any no-template controls, PCR positive controls, or genomic contamination controls.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.e
+      reaction_volume_and_amount_of_cdna_dna:
+        description: |-
+          Reaction volume and amount of cDNA/DNA
+
+          Reaction volume and amount of cDNA/DNA
+        comments:
+          - Indicate the amount of input cDNA and volume for each reaction
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.f
+      primer_probe_mg2_and_dntp_concentrations:
+        description: |-
+          Primer, (probe), Mg2+, and dNTP concentrations
+
+          Primer, (probe), Mg2+, and dNTP concentrations
+        comments:
+          - Indicate the concentration of any primers (and probes, if included), magnesium ion (Mg2+) to nucleotides (dNTP) added to the reactions
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.g
+      polymerase_identity_and_concentration:
+        description: |-
+          Polymerase identity and concentration
+
+          Polymerase identity and concentration
+        comments:
+          - Indicate which polymerase was used and the final reaction concentration
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.h
+      buffer_kit_identity_and_manufacturer:
+        description: |-
+          Buffer/kit identity and manufacturer
+
+          Buffer/kit identity and manufacturer
+        comments:
+          - Identify the buffer or kit used and the manufacturer
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.i
+      additives:
+        description: |-
+          Additives (SYBR Green I, DMSO, and so forth)
+
+          Additives (SYBR Green I, DMSO, and so forth)
+        comments:
+          - Indicated whether any additives were added to the reaction, and if so at what concentration
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.j
+      exact_chemical_composition_of_custom_buffers:
+        description: |-
+          Exact chemical composition of any custom buffers or reagents, if applicable
+
+          Exact chemical composition of any custom buffers or reagents, if applicable
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.k
+      manufacturer_of_plates_tubes_and_catalog_number:
+        description: |-
+          Manufacturer of plates/tubes and catalog number
+
+          Manufacturer of plates/tubes and catalogue number
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.l
+      description_of_instruments_used:
+        description: |-
+          Description of instrument(s) used
+
+          Description of instrument(s) used
+        comments:
+          - Describe the instrument(s) used for qRT-PCR reaction
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.m
+      complete_thermocycling_parameters:
+        description: |-
+          Complete thermocycling parameters
+
+          Complete thermocycling parameters
+        comments:
+          - Describe the temperature(s), time(s) and number of cycles for each step of the reaction
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.n
+      fluorescence_excitation_and_emission_wavelengths:
+        description: |-
+          Fluorescence excitation and emission wavelengths used for data collection
+
+          Fluorescence excitation and emission wavelengths used for data collection
+        comments:
+          - Indicate the wavelength(s) that were used for fluorescence excitation and emission wavelength(s) that were used for data collection
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.o
+      other_relevant_instrument_software_settings:
+        description: |-
+          Other relevant instrument/software settings
+
+          Other relevant instrument/software settings
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.p
+      reaction_setup:
+        description: |-
+          Reaction setup (manual/robotic)
+
+          Reaction setup (manual/robotic)
+        comments:
+          - Indicate if reactions were prepared manually, or using an automated platform. Identify the automated platform if used.
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.1.q
+
+  QRTPCRGeneTargetInformation:
+    description: |-
+      Gene Target Information
+
+      Target gene identifiers, accession numbers, and splice variants.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.2.2
+    attributes:
+      target_identifier:
+        description: |-
+          Target identifier: Entrez ID preferred, or other identifier (Gene symbol or other database ID)
+
+          Target identifier: Entrez ID preferred, or other identifier (Gene symbol or other database ID)
+        comments:
+          - Indicate which identifier(s) are used to uniquely identify the target genes
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.2.a
+      sequence_accession_number:
+        description: |-
+          Sequence accession number
+
+          Sequence accession number
+        comments:
+          - Indicate whether sequence database accession numbers are included for target genes, and which database(s)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.2.b
+      targeted_splice_variants:
+        description: |-
+          What splice variants are targeted?
+
+          What splice variants are targeted?
+        comments:
+          - Indicate whether splice variants are targeted and how they are differentiated
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.2.c
+
+  QRTPCROligonucleotidesAndAmplicon:
+    description: |-
+      Oligonucleotides and Amplicon
+
+      Primer/probe sequences, modifications, specificity, and amplicon properties.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.2.3
+    attributes:
+      primer_sequences:
+        description: |-
+          Primer sequences
+
+          Primer sequences
+        comments:
+          - Indicate whether primer sequences are available, and where they can be found
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3.a
+      probe_sequences:
+        description: |-
+          Probe sequences (if applicable)
+
+          Probe sequences (if applicable)
+        comments:
+          - Indicate whether probe sequences are available, and where they can be found (if applicable)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3.b
+      location_and_identity_of_modifications:
+        description: |-
+          Location and identity of any modifications on oligos
+
+          Location and identity of any modifications on oligos
+        comments:
+          - Indicate whether information on oligonucleotide modifications is available, and where it can be found (if applicable)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3.c
+      primer_probe_database_and_id:
+        description: |-
+          Primer/probe database and identification number
+
+          Primer/probe database and identification number
+        comments:
+          - Indicate whether primer or probe information are available in any database
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3.d
+      in_silico_specificity_screen:
+        description: |-
+          In silico specificity screen (BLAST, or other)
+
+          In silico specificity screen (BLAST, or other)
+        comments:
+          - Describe any in silico screen test that as conducted (e.g. BLAST), and any cut-of criteria that were used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3.e
+      location_of_amplicon_in_target_gene:
+        description: |-
+          Location of amplicon in target gene
+
+          Location of amplicon in target gene
+        comments:
+          - Indicate whether information on the location of the amplicon within the target sequence is available and where it can be found
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3.f
+      location_of_each_primer_by_exon_or_intron:
+        description: |-
+          Location of each primer (and probe, if applicable) by exon or intron, and indicate if intron-spanning
+
+          Location of each primer (and probe, if applicable) by exon or intron, and indicate if intron-spanning
+        comments:
+          - Indicate whether information on the location of each primer (and probe, if applicable) within the target sequence is available and where it can be found
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3.g
+      amplicon_length:
+        description: |-
+          Amplicon length
+
+          Amplicon length
+        comments:
+          - Indicate the amplicon length. Can be described as a range, or as any cut-off criteria used for assay development
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3.h
+      secondary_structure_analysis_of_amplicon:
+        description: |-
+          Secondary structure analysis of amplicon
+
+          Secondary structure analysis of amplicon
+        comments:
+          - Indicate whether any secondary structure analysis was conducted and any cut off values that were applied
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3.i
+      manufacturer_of_oligonucleotides:
+        description: |-
+          Manufacturer of oligonucleotides
+
+          Manufacturer of oligonucleotides
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3.j
+      purification_method:
+        description: |-
+          Purification method
+
+          Purification method
+        comments:
+          - Indicate what method was used to purify the oligonucleotides
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.3.k
+
+  QRTPCRAAssayValidation:
+    description: |-
+      Assay Validation
+
+      qRT-PCR assay validation parameters.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.2.4
+    attributes:
+      evidence_of_optimization:
+        description: |-
+          Evidence of optimization (from gradients)
+
+          Evidence of optimization (from gradients)
+        comments:
+          - Indicate whether optimization was conducted using primer/probe, Mg2+ or temperature gradients
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.a
+      specificity:
+        description: |-
+          Specificity (gel, sequence, melt, or digest)
+
+          Specificity (gel, sequence, melt, or digest)
+        comments:
+          - Indicate whether post amplification assay specificity was tested, and what method(s) was used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.b
+      description_of_target_for_ntc:
+        description: |-
+          Description of target (primer and probes, if applicable) used for no-template controls (NTC)
+
+          Description of target (primer and probes, if applicable) used for no-template controls (NTC)
+        comments:
+          - Describe the target and any primer and probe sequences for no-template controls (NTCs)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.c
+      cq_of_ntc_reactions:
+        description: |-
+          Cq of NTC reactions
+
+          Cq of NTC reactions
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.d
+      calibration_curves_slope_and_intercept:
+        description: |-
+          Calibration curves with slope and y intercept
+
+          Calibration curves with slope and y intercept
+        comments:
+          - Indicate whether amplification efficiency was determined using calibration curves. Describe the slope and intercept values or an cut off values that were used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.e
+      pcr_efficiency_calculated_from_slope:
+        description: |-
+          PCR efficiency calculated from slope
+
+          PCR efficiency calculated from slope
+        comments:
+          - Describe the PCR amplification efficiency, if determined, or any cut off values that were used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.f
+      cis_for_pcr_efficiency_or_se:
+        description: |-
+          CIs for PCR efficiency or SE
+
+          Confidence intervals for PCR efficiency or standard error (SE)
+        comments:
+          - Are confidence intervals provided for the efficiency?
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.g
+      r2_of_calibration_curve:
+        description: |-
+          R2 of calibration curve
+
+          R2 of calibration curve
+        comments:
+          - Describe the R2 values of the calibration curves, or any cut off values
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.h
+      linear_dynamic_range:
+        description: |-
+          Linear dynamic range
+
+          Linear dynamic range
+        comments:
+          - Describe the linear dynamic range of the calibration curves (the range over which the calibration curve is linear)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.i
+      cq_variation_at_lod:
+        description: |-
+          Cq variation at LOD
+
+          Cq variation at limit of detection (LOD)
+        comments:
+          - Indicate whether a limit of detection (LOD) was determined. The LOD is defined as the lowest concentration at which 95% of the positive samples are detected.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.j
+      cis_throughout_range:
+        description: |-
+          CIs throughout range
+
+          CIs throughout range
+        comments:
+          - Confidence intervals of the dynamic range
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.k
+      evidence_for_lod:
+        description: |-
+          Evidence for LOD
+
+          Evidence for LOD
+        exact_mappings:
+          - oecd_oorf_2023:3.3.2.4.l
+
+  QRTPCRDataAnalysis:
+    description: |-
+      Data Analysis
+
+      Data acquisition, quality control, pre-processing, and normalisation for qRT-PCR.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.3
+    attributes:
+      data_acquisition_and_quality_control:
+        description: |-
+          Data Acquisition and Quality Control
+
+          Data acquisition and quality control for qRT-PCR.
+        range: QRTPCRDataAcquisitionAndQC
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.1
+      data_pre_processing:
+        description: |-
+          Data Pre-Processing
+
+          Data pre-processing for qRT-PCR.
+        range: QRTPCRDataPreProcessing
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.2
+      data_normalization:
+        description: |-
+          Data Normalization
+
+          Data normalisation for qRT-PCR.
+        range: QRTPCRDataNormalization
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.3
+
+  QRTPCRDataAcquisitionAndQC:
+    description: |-
+      Data Acquisition and Quality Control
+
+      Data acquisition and quality control parameters for qRT-PCR.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.3.1
+    attributes:
+      analysis_program:
+        description: |-
+          qRT-PCR analysis program (source, version)
+
+          qRT-PCR analysis program (source, version)
+        comments:
+          - Identify the software (source and version) that was used to determine the Cq values from the raw fluorescence data
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.1.a
+      method_of_cq_determination:
+        description: |-
+          Method of Cq determination
+
+          Method of Cq determination
+        comments:
+          - Indicate the method that was used to determine the Cq values from the raw fluorescence values
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.1.b
+      results_for_quality_control_reactions:
+        description: |-
+          Results for quality control reactions
+
+          Results for quality control reactions (No template controls, PCR positive controls, Genomic contamination controls, 3' to 5' Cq ratios, etc)
+        comments:
+          - Indicate the results from any quality control reactions such as the no template controls, PCR positive controls or genomic contamination controls
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.1.c
+      number_of_technical_replicates_and_how_produced:
+        description: |-
+          Number of technical replicates and how they were produced
+
+          Number of technical replicates and how they were produced (e.g. a single RNA sample that was used for qRT-PCR or a single RT product that was split for qPCR)
+        comments:
+          - Indicate the number of technical replicates and at what stage the replication occurred (i.e whether a single RNA sample was used for qRT-PCR or a single RT product was split for qPCR)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.1.d
+      treatment_of_technical_replicates:
+        description: |-
+          Treatment of technical replicates (average, median, etc)
+
+          Treatment of technical replicates (average, median, etc.)
+        comments:
+          - Indicate how data for technical replicates were treated during data analysis. Were replicate data combined, and if so how where the combined (mean, median etc) and at what point during the analysis?
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.1.e
+      number_and_concordance_of_biological_replicates:
+        description: |-
+          Number and concordance of biological replicates
+
+          Number and concordance of biological replicates
+        comments:
+          - How many biological replicates were included per treatment and how was sample concordance reported (e.g. SD)?
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.1.f
+      repeatability_intraassay_variation:
+        description: |-
+          Repeatability (intraassay variation)
+
+          Repeatability (intraassay variation)
+        comments:
+          - Indicate whether intra-assay variation was determined. Intra-assay variation refers to the precision of the assay with the same samples repeatedly analyzed in the same assay (technical replicates). It can be expressed as the SD for the Cq variance. Alternatively, the SD for copy number or concentration variance can also be reported
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.1.g
+      reproducibility_interassay_variation:
+        description: |-
+          Reproducibility (interassay variation, CV)
+
+          Reproducibility (interassay variation, CV)
+        comments:
+          - Indicate whether inter-assay variance was determined. Inter-assay variation refers to the variation in results between runs or between different laboratories. It can be expressed as the SD or CV of copy numbers or concentrations
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.1.h
+      submission_of_cq_or_raw_data_in_public_repository:
+        description: |-
+          Submission of Cq or raw data in public repository
+
+          Submission of Cq or raw data in public repository
+        comments:
+          - Indicate whether the raw fluorescence data or Cq data were submitted to a public data repository, and any associated accession number
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.1.i
+
+  QRTPCRDataPreProcessing:
+    description: |-
+      Data Pre-Processing
+
+      Data pre-processing parameters for qRT-PCR.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.3.2
+    attributes:
+      identification_of_low_high_expression_targets_samples:
+        description: |-
+          Identification of low/high expression targets/samples (Cq thresholds)
+
+          Identification of low/high expression targets/samples (Cq thresholds)
+        comments:
+          - Identify any samples or gene targets that had high or low expression, and any threshold values that were used as cut offs
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.2.a
+      treatment_of_low_high_expression_targets_samples:
+        description: |-
+          Treatment of low/high expression targets/samples (removed, replaced, etc)
+
+          Treatment of low/high expression targets/samples (removed, replaced, etc.)
+        comments:
+          - Indicate how high or low expression samples or gene targets were handled during data analysis (e.g. omitted? Or set a min/max value? Etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.2.b
+      outlier_identification_and_treatment:
+        description: |-
+          Outlier identification and treatment
+
+          Outlier identification and treatment
+        comments:
+          - Indicate if and how any outlier samples were identified. If so, also indicate how outlier samples were handled during data analysis (e.g. omitted?)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.2.c
+      transformations_applied_prior_to_normalization:
+        description: |-
+          Any transformations applied to data prior to normalization (if any)
+
+          Any transformations applied to data prior to normalisation (if any)
+        comments:
+          - Indicate if any transformations (e.g. logarithmic) were applied to the Cq data prior to normalization
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.2.d
+
+  QRTPCRDataNormalization:
+    description: |-
+      Data Normalization
+
+      Data normalisation parameters for qRT-PCR.
+    exact_mappings:
+      - oecd_oorf_2023:3.3.3.3
+    attributes:
+      description_of_normalization_method:
+        description: |-
+          Description of normalization method (reference gene (RG), or other)
+
+          Description of normalisation method (reference gene (RG), or other)
+        comments:
+          - Describe the method that was used data normalization.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.3.a
+      rg_method_identification_of_reference_genes:
+        description: |-
+          RG method: identification of reference genes
+
+          RG method: identification of reference genes
+        comments:
+          - If a reference gene type of normalization was used, please indicated which gene targets were used as references.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.3.b
+      rg_method_justification_for_selection:
+        description: |-
+          RG method: justification for selection of reference genes (evidence of stability)
+
+          RG method: justification for selection of reference genes (evidence of stability)
+        comments:
+          - If a reference gene type of normalisation was used, please provide a justification for the selection of the reference genes
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.3.c
+      rg_method_variable_amplification_efficiency:
+        description: |-
+          RG method: was variable amplification efficiency considered in normalization calculations, or assumed to be equal across targets
+
+          RG method: was variable amplification efficiency considered in normalisation calculations, or assumed to be equal across targets
+        comments:
+          - Please indicate if inter-target amplification efficiency was considered in the normalization method or if it was assumed to be equal across all targets.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.3.d
+      rg_method_formula_used:
+        description: |-
+          RG method: formula used for normalization
+
+          RG method: formula used for normalisation
+        comments:
+          - Please provide the formula used for normalization
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.3.e
+      other_methods_information:
+        description: |-
+          For all other methods: Provide sufficient information to reproduce normalization results
+
+          For all other methods: Provide sufficient information to reproduce normalisation results
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.3.3.3.f

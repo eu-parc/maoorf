@@ -1,0 +1,2428 @@
+id: https://w3id.org/eu-parc/maoorf/modules/term
+name: maoorf_term
+title: Toxicology Experiment Reporting Module (TERM)
+description: >-
+  Toxicology Experiment Reporting Module (TERM) of the OECD Omics Reporting Framework (OORF)
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ../core/types
+  - ../core/entities
+
+classes:
+  TERM:
+    description: |-
+      Toxicology Experiment Reporting Module (TERM)
+
+      The TERM serves to capture and report the key descriptors of the in vivo or in vitro toxicology study from which samples are derived for omics analyses. One TERM should be reported per study, irrespective of whether one or more omics approaches are applied or whether one or more types of data analysis are performed.
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
+    exact_mappings:
+      - oecd_oorf_2023:2
+    attributes:
+      study_rationale:
+        description: |-
+          Study Rationale
+
+          A clear and concise report of the study rationale is necessary to understand the suitability of the experimental design for the regulatory question being addressed, including the selection of experimental model, sex, target tissue, dosing regimen, etc. These fundamental aspects of the experimental design are clearly dependent on the study rationale.
+        range: TERMStudyRationale
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1
+      test_and_control_items:
+        description: |-
+          Test and Control items
+
+          Regulatory scientists must have all test items, vehicle, and control identification and characterisation information to accurately interpret omic study results. The following information should be reported for all test items: A) test substance, B) vehicle, and C) controls, including: test item name, mixture formulation composition, preparation of test item, physicochemical properties, chemical stability, commercial source and substance-specific identifiers.
+        range: TERMTestAndControlItems
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2
+      test_system_characteristics:
+        description: |-
+          Test System Characteristics
+
+          Similar to traditional toxicity testing, it is critical that regulatory scientists applying omics data for risk assessment be provided with comprehensive information regarding the characteristics of the test system from which the data are derived. Test system refers to the biological system that is exposed to the test items to obtain experimental data.
+        range: TERMTestSystemCharacteristics
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3
+      study_design:
+        description: |-
+          Study Design
+
+          Study designs are based on the assessment of all available information for factors that have the potential to influence study results. A detailed description of all elements and parameters included in the study design will increase transparency and confidence in the data, and as a result, will have greater utility in regulatory assessment.
+        range: TERMStudyDesign
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4
+      treatment_conditions:
+        description: |-
+          Treatment Conditions
+
+          The objective of the omic study informs the selection of the treatment conditions, which, in turn, impact the final outcome. Omic analyses may produce different results depending on the route of administration, the dose levels and the time and schedule of the exposure. Thus, a thorough description of treatment conditions is necessary for interpreting omic study results.
+        range: TERMTreatmentConditions
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5
+      study_exit_and_sample_collection:
+        description: |-
+          Study Exit and Sample Collection
+
+          Omics can be conducted using samples from animal or in vitro studies to produce a "snapshot" of transcript, protein or metabolite levels and enable analysis of perturbations in biological pathways and processes. Proper sample preparation is a key step in omics studies and adequate care must be taken to ensure sample fidelity.
+        range: TERMStudyExitAndSampleCollection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6
+      sample_identification_codes:
+        description: |-
+          Sample Identification Codes
+
+          Sample management is a critical component of regulatory and non-regulatory experimentation which should be carefully planned. A standard operating procedure (SOP) should be established to ensure identification, tracking, unbiased testing and data collection records for each sample.
+        range: TERMSampleIdentificationCodes
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.7
+      supporting_data_streams:
+        description: |-
+          Supporting Data Streams
+
+          To benefit optimally from the data generated, additional information should be reported to the extent possible. This information can range from OECD Test Guidelines for a particular animal study to methodological Standard Operating Procedures (SOP) to scientific publications in which analysis of (a subset of) the data has been described. Toxicity or cytotoxicity experiments necessary to establish the appropriate doses/concentrations can also be reported here.
+        range: TERMSupportingDataStreams
+        exact_mappings:
+          - oecd_oorf_2023:2.8
+
+  TERMStudyRationale:
+    description: |-
+      Study Rationale
+
+      Overall, a clear rationale describing why an omics study was undertaken is required to assess the suitability of the experimental design and its intended use for regulatory decision making. This section is intended to be a narrative description of the reasoning for the study and its design. Details of the study parameters are to be provided in later sections.
+    exact_mappings:
+      - oecd_oorf_2023:2.1
+    attributes:
+      background_information:
+        description: |-
+          Background information
+
+          Provide necessary background information for the end-user to understand the rationale for why the study was undertaken, including the regulatory question(s).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.1
+      objectives:
+        description: |-
+          Objectives
+
+          Clearly define the objectives of the study toward informing the regulatory question. Describe whether the study results are intended to be interpreted in isolation or in combination with results from other studies.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.2
+      test_guideline_compliance:
+        description: |-
+          Test guideline compliance
+
+          If appropriate, please refer to which OECD Test Guidelines have been followed in the performance of the method.
+        comments:
+          - If appropriate, please refer to which OECD Test Guidelines have been followed in the performance of the method.
+        exact_mappings:
+          - oecd_oorf_2023:2.1.3
+      mechanistic_understanding:
+        description: |-
+          Mechanistic understanding
+
+          Briefly describe any prior toxicological, mode of action, or mechanistic information that is useful to understanding the study rationale (e.g. established mechanism of action and its relationship to the toxicological effect of interest).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.4
+      model_selection:
+        description: |-
+          Model selection
+
+          Rationale for the selection of animal species, strain, model, tissue, or in vitro test system.
+        range: TERMModelSelection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.5
+      dose_concentration_level_and_interval_selection:
+        description: |-
+          Dose / concentration level and interval selection
+
+          Provide a brief rationale for the selection of the employed dose (in vivo) or test concentration (in vitro) levels and intervals. For example, selection for in vivo experimentation may be based on known toxicological effects or molecular changes documented for the test item identified in prior studies, allowing for "read-across" between omics data generated and other in-life findings, or clinical pathological changes and pathological observations. Note that dose interval information should include the time of exposure during the day. Similarly, in the case of in vitro experiments, if a relationship is sought to in vivo exposures, test item concentrations may be chosen using a quantitative in vitro/in vivo extrapolation (IVIVE) rationale; a rationale for the top concentration selected should be included.
+        comments:
+          - Report dose levels & rationale for dose level selection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.6
+      route_of_administration:
+        description: |-
+          Route of administration
+
+          Where relevant, provide a rationale for the choice of route of administration, referring to objectives of the study, potential route of human exposure, the physical and chemical characteristics of the test item and the relevance for the evaluated endpoint.
+        comments:
+          - Report route of administration and rationale for selecting this route.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.7
+      time_point_selection:
+        description: |-
+          Time point selection
+
+          Provide a brief rationale for the exposure durations and sampling time points. Transcriptome, proteome, and metabolome profiles are dependent on both the duration of exposure and the time of sample collection. Responses reflect cellular adaptation over time, with early time points reflecting molecular initiating and early key events, and later time points reflecting pathological changes or adaptation. For in vivo studies, the interval between the final dosing and sample procurement should be specified. The same is true for sampling-time post-treatment for in vitro studies.
+        comments:
+          - Report time points & rational for time point selection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.8
+      samples_and_replicates:
+        description: |-
+          Samples and Replicates
+
+          Provide a clear rationale for the choice of biological, technical, and analytical replicate numbers.
+        range: TERMSamplesAndReplicatesRationale
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.9
+      limitations:
+        description: |-
+          Limitations
+
+          To facilitate regulatory evaluation, when appropriate, indicate the study limitations that could affect the outcome or interpretation of the results. These can include technical or mechanistic limitations in relation to known modes of action. For example, if the experiment includes poorly described test systems that would be a source of uncontrollable variability (e.g. a limitation of cell systems may be a lack of information about metabolic capacity), such information should be available to the evaluator. Likewise, some of the test items used might have physicochemical properties (lipophilicity, volatility, etc.) that might lead to a cell exposure that is different from the expected exposure (through interaction with plastic or proteins in culture plates and medium) or that produce large and confounding signals in omics outputs (e.g. NMR or MS spectra). In the case of in vivo studies, discussion of limitations should include any potential source of bias of the animal model or imprecision associated with the result.
+        comments:
+          - If known, describe study limitations that could affect the outcome of interpretation of results.
+        exact_mappings:
+          - oecd_oorf_2023:2.1.10
+
+  TERMModelSelection:
+    description: |-
+      Model selection
+
+      Rationale for model, species, strain, and tissue/organ selection.
+    exact_mappings:
+      - oecd_oorf_2023:2.1.5
+    attributes:
+      in_vivo_species_model_and_tissue_rationale:
+        description: |-
+          For in vivo studies, describe why the selected animal species, model and tissue was used?
+
+          For in vivo studies, briefly explain how and why the selected animal species and model being used can address the scientific objectives and, where appropriate, the study's relevance to human biology. Provide a rationale for tissue or organ selection for the study.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.5.a
+      species_and_strain_rationale:
+        description: |-
+          Rationale for the species and strain used
+
+          Provide a rationale for the species and strain used.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.5.b
+      in_vitro_relevance:
+        description: |-
+          For in vitro studies, describe relevance of test system to tissue/organ/species of interest
+
+          For in vitro studies, briefly describe the biological relevance of the test system used in relation to the tissue/organ/species of interest.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.5.c
+
+  TERMSamplesAndReplicatesRationale:
+    description: |-
+      Samples and Replicates
+
+      Provide a clear rationale for the choice of biological, technical, and analytical replicate numbers.
+    exact_mappings:
+      - oecd_oorf_2023:2.1.9
+    attributes:
+      biological_replicate_number:
+        description: |-
+          Biological replicate number
+
+          Biological replicate number, based on the scientific question posed and statistical power calculations predicting adequate coverage of biological variability.
+        comments:
+          - Report the number of biological replicates used in the study and scientific rationale for group sizes
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.9.a
+      number_of_technical_and_analytical_replicates:
+        description: |-
+          Number of technical and analytical replicates
+
+          Number of technical and analytical replicates, based on accepted and/or published standards for the assay and compliance with statistical power calculations.
+        comments:
+          - Report the number of technical and/or analytical replicates used in the study and underlying scientific rationale.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.1.9.b
+
+  TERMTestAndControlItems:
+    description: |-
+      Test and Control items
+
+      Regulatory scientists must have all test items, vehicle, and control identification and characterisation information to accurately interpret omic study results.
+    exact_mappings:
+      - oecd_oorf_2023:2.2
+    attributes:
+      test_item_name:
+        description: |-
+          Test item name
+
+          Test item name
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.1
+      formulation_composition:
+        description: |-
+          Formulation composition (if test item is a mixture)
+
+          If test item is a mixture, report formulation composition
+        range: TERMFormulationComposition
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.2
+      preparation_of_test_item_composition:
+        description: |-
+          Preparation of test item (composition)
+
+          Preparation of test item (composition)
+        range: TERMPreparationOfTestItemComposition
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.3
+      physicochemical_properties:
+        description: |-
+          Physiochemical properties
+
+          Physicochemical properties of the test item.
+        comments:
+          - Enter all physiochemical properties of the test article that are known. If unknown, report "UNKNOWN"
+        range: TERMPhysicochemicalProperties
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4
+      chemical_stability:
+        description: |-
+          Chemical Stability
+
+          Chemical stability parameters of the test item.
+        comments:
+          - Enter all parameters regarding chemical stability of the test article that are known. If unknown, report "UNKNOWN"
+        range: TERMChemicalStability
+        exact_mappings:
+          - oecd_oorf_2023:2.2.5
+      commercial_source:
+        description: |-
+          Commercial Source
+
+          Commercial source and batch details of the test item.
+        comments:
+          - Enter all parameters regarding test article sourcig that are known. If not reported by commercial source, report "INFO NOT AVAILABLE"
+        range: TERMCommercialSource
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.6
+      test_item_specific_identifiers:
+        description: |-
+          Test Item-Specific Identifiers
+
+          Substance-specific chemical identifiers and their sources.
+        comments:
+          - Enter all test item specific identifiers that are known and the source if the identifier for each identifier reported. If the test article does not have one of these identifiers, enter "NA"
+        range: TERMTestItemSpecificIdentifiers
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.7
+
+  TERMFormulationComposition:
+    description: |-
+      Formulation composition (if test item is a mixture)
+
+      If test item is a mixture, report formulation composition
+    exact_mappings:
+      - oecd_oorf_2023:2.2.2
+    attributes:
+      substances_in_mixture:
+        description: |-
+          Identify substances that make up the mixture
+
+          Identify substances that make up the mixture
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.2.a
+      relative_proportions_of_substances:
+        description: |-
+          Relative proportions of substances (if known)
+
+          Relative proportions of substances (if known)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.2.b
+
+  TERMPreparationOfTestItemComposition:
+    description: |-
+      Preparation of test item (composition)
+
+      Preparation of test item (composition)
+    exact_mappings:
+      - oecd_oorf_2023:2.2.3
+    attributes:
+      concentration_of_test_item:
+        description: |-
+          Concentration of test item
+
+          Concentration of test item
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.3.a
+      concentration_of_diluents:
+        description: |-
+          Concentration of diluent(s)
+
+          Concentration of diluent(s)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.3.b
+      identification_of_impurities:
+        description: |-
+          Identification of impurities
+
+          Identification of impurities
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.3.c
+
+  TERMPhysicochemicalProperties:
+    description: |-
+      Physiochemical properties
+
+      Physicochemical properties of the test item.
+    comments:
+      - Enter all physiochemical properties of the test article that are known. If unknown, report "UNKNOWN"
+    exact_mappings:
+      - oecd_oorf_2023:2.2.4
+    attributes:
+      appearance_physical_state_colour:
+        description: |-
+          Appearance/physical state/colour
+
+          Appearance/physical state/colour
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.a
+      molecular_weight:
+        description: |-
+          Molecular weight
+
+          Molecular weight
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.b
+      melting_point_freezing_point:
+        description: |-
+          Melting point/freezing point
+
+          Melting point/freezing point
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.c
+      boiling_point:
+        description: |-
+          Boiling point
+
+          Boiling point
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.d
+      ph:
+        description: |-
+          pH
+
+          pH
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.e
+      viscosity:
+        description: |-
+          Viscosity
+
+          Viscosity
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.f
+      density:
+        description: |-
+          Density
+
+          Density
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.g
+      vapour_pressure:
+        description: |-
+          Vapour pressure
+
+          Vapour pressure
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.h
+      partition_coefficient:
+        description: |-
+          Partition coefficient (octanol/water)
+
+          Partition coefficient (octanol/water)
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.i
+      water_solubility:
+        description: |-
+          Water solubility
+
+          Water solubility
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.j
+      fat_solubility:
+        description: |-
+          Fat solubility of solid and liquid substances
+
+          Fat solubility of solid and liquid substances
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.k
+      particle_size_distribution:
+        description: |-
+          Particle size distribution/fibre length and diameter distribution (if applicable)
+
+          Particle size distribution/fibre length and diameter distribution (if applicable)
+        comments:
+          - If test item is not a fiber or particle, input "NA".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.l
+      additional_physicochemical_information:
+        description: |-
+          Additional physicochemical information (ie agglomeration, porosity, etc) (if applicable)
+
+          Additional physicochemical information (i.e. agglomeration, porosity, etc.) (if applicable)
+        exact_mappings:
+          - oecd_oorf_2023:2.2.4.m
+
+  TERMChemicalStability:
+    description: |-
+      Chemical Stability
+
+      Chemical stability of the test item.
+    comments:
+      - Enter all parameters regarding chemical stability of the test article that are known. If unknown, report "UNKNOWN"
+    exact_mappings:
+      - oecd_oorf_2023:2.2.5
+    attributes:
+      stability_in_organic_solvents:
+        description: |-
+          Stability in organic solvents and identity of relevant degradation products
+
+          Stability in organic solvents and identity of relevant degradation products
+        exact_mappings:
+          - oecd_oorf_2023:2.2.5.a
+      stability_thermal_sunlight_metals:
+        description: |-
+          Stability: thermal, sunlight, metals (if relevant)
+
+          Stability: thermal, sunlight, metals (if relevant)
+        exact_mappings:
+          - oecd_oorf_2023:2.2.5.b
+      stability_dissociation_constant:
+        description: |-
+          Stability: dissociation constant (if relevant)
+
+          Stability: dissociation constant (if relevant)
+        exact_mappings:
+          - oecd_oorf_2023:2.2.5.c
+
+  TERMCommercialSource:
+    description: |-
+      Commercial Source
+
+      Commercial source of the test item.
+    comments:
+      - Enter all parameters regarding test article sourcig that are known. If not reported by commercial source, report "INFO NOT AVAILABLE"
+    exact_mappings:
+      - oecd_oorf_2023:2.2.6
+    attributes:
+      vendor:
+        description: |-
+          Vendor
+
+          Vendor
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.6.a
+      manufacture_id:
+        description: |-
+          Manufacture ID
+
+          Manufacture ID
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.6.b
+      lot_batch_number:
+        description: |-
+          Lot (Batch) number
+
+          Lot (Batch) number
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.6.c
+      purity:
+        description: |-
+          Purity
+
+          Purity
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.6.d
+      salt_form:
+        description: |-
+          Salt form
+
+          Salt form
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.6.e
+      expiration_date:
+        description: |-
+          Expiration date
+
+          Expiration date
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.6.f
+      storage:
+        description: |-
+          Storage
+
+          Storage conditions
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.6.g
+
+  TERMTestItemSpecificIdentifiers:
+    description: |-
+      Test Item-Specific Identifiers
+
+      Substance-specific chemical identifiers and their sources.
+    comments:
+      - Enter all test item specific identifiers that are known and the source if the identifier for each identifier reported. If the test article does not have one of these identifiers, enter "NA"
+    exact_mappings:
+      - oecd_oorf_2023:2.2.7
+    attributes:
+      cas:
+        description: |-
+          CAS
+
+          CAS
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.7.a
+      smiles:
+        description: |-
+          SMILES
+
+          SMILES
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.7.b
+      iupac_name:
+        description: |-
+          IUPAC name
+
+          IUPAC name
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.2.7.c
+      additional_information:
+        description: |-
+          Additional information where available (eg InChi, Distributed Structure-Searchable Toxicity (DSSTox) substance identifier (DTXSID), etc)
+
+          Additional information where available (e.g. InChIKey, InChI string, Distributed Structure-Searchable Toxicity (DSSTox) substance identifier (DTXSID), etc.)
+        exact_mappings:
+          - oecd_oorf_2023:2.2.7.d
+      sources_of_identifiers:
+        description: |-
+          Sources of identifiers
+
+          Sources of identifiers
+        exact_mappings:
+          - oecd_oorf_2023:2.2.7.e
+
+  TERMTestSystemCharacteristics:
+    description: |-
+      Test System Characteristics
+
+      Characteristics of the in vivo or in vitro test system and housing/culture conditions.
+    exact_mappings:
+      - oecd_oorf_2023:2.3
+    attributes:
+      general_characteristics_in_vivo:
+        description: |-
+          General Characteristics of the Test System or Subject (In Vivo) (if applicable)
+
+          General characteristics of the test system or subject (In Vivo).
+        comments:
+          - Enter all characteristics of the in vivo test system that are known. If unknown, report "UNKNOWN". If not an in vivo study, enter "NOT IN VIVO STUDY"
+        range: TERMGeneralCharacteristicsInVivo
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1
+      general_characteristics_in_vitro:
+        description: |-
+          General Characteristics of the Test System or Subject (In Vitro) (if applicable)
+
+          General characteristics of the test system or subject (In Vitro).
+        comments:
+          - Enter all characteristics of the in vitro test system that are known. If unknown, report "UNKNOWN". If not an in vitro study, enter "NOT IN VITRO STUDY"
+        range: TERMGeneralCharacteristicsInVitro
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.2
+      housing_and_husbandry_in_vivo:
+        description: |-
+          Housing and husbandry (In Vivo)
+
+          Housing and husbandry (In Vivo).
+        comments:
+          - Enter all details of the housing and husbandry of test animals used in the toxicology study. If unknown, report "UNKNOWN". If not an in vivo study, enter "NOT IN VIVO STUDY". If a reporting element is not applicable to the in vivo model, enter "NA"
+        range: TERMHousingAndHusbandryInVivo
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3
+      cell_culture_conditions_in_vitro:
+        description: |-
+          Cell Culture Conditions (In Vitro) (if applicable)
+
+          Cell culture conditions (In Vitro).
+        comments:
+          - Enter all details of the cell culture conditions used in the toxicology study. If unknown, report "UNKNOWN". If not an in vitro study, enter "NOT IN VITRO STUDY". If a reporting element is not applicable to the in vitro model, enter "NA"
+        range: TERMCellCultureConditionsInVitro
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4
+
+  TERMGeneralCharacteristicsInVivo:
+    description: |-
+      General Characteristics of the Test System or Subject (In Vivo) (if applicable)
+
+      General characteristics of the test system or subject (In Vivo).
+    comments:
+      - Enter all characteristics of the in vivo test system that are known. If unknown, report "UNKNOWN". If not an in vivo study, enter "NOT IN VIVO STUDY"
+    exact_mappings:
+      - oecd_oorf_2023:2.3.1
+    attributes:
+      animal_species:
+        description: |-
+          Animal species
+
+          Animal species
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.a
+      strain:
+        description: |-
+          Strain
+
+          Strain
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.b
+      sex:
+        description: |-
+          Sex
+
+          Sex
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.c
+      age_during_study:
+        description: |-
+          Age during study
+
+          Age during study
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.d
+      developmental_stage:
+        description: |-
+          Developmental stage
+
+          Developmental stage
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.e
+      individual_weights_lengths_at_start:
+        description: |-
+          Individual weights/lengths at start
+
+          Individual weights/lengths at start
+        comments:
+          - Provide a range of weights or a table of weights as as a data object.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.f
+      supplier:
+        description: |-
+          Supplier
+
+          Supplier
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.g
+      interventions_before_or_during_experiment:
+        description: |-
+          Any interventions that were carried out before or during the experiment
+
+          Any interventions that were conducted before or during the experiment
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.h
+      quality_criteria_before_use:
+        description: |-
+          Quality criteria before use
+
+          Quality criteria before use
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.i
+      health_status_and_acclimation:
+        description: |-
+          Health status and acclimation prior to study start
+
+          Health status and acclimation prior to study start
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.j
+      randomisation_of_animals_to_groups:
+        description: |-
+          Randomisation of animals to groups
+
+          Randomisation of animals to groups
+        comments:
+          - Provide a description of the randomization scheme or a table of group assignments as a data object.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.k
+      other:
+        description: |-
+          Other
+
+          Other
+        comments:
+          - Provide other relevant information regarding the in vivo test system that may be of use for regualtory applications.
+        exact_mappings:
+          - oecd_oorf_2023:2.3.1.l
+
+  TERMGeneralCharacteristicsInVitro:
+    description: |-
+      General Characteristics of the Test System or Subject (In Vitro) (if applicable)
+
+      General characteristics of the test system or subject (In Vitro).
+    comments:
+      - Enter all characteristics of the in vitro test system that are known. If unknown, report "UNKNOWN". If not an in vitro study, enter "NOT IN VITRO STUDY"
+    exact_mappings:
+      - oecd_oorf_2023:2.3.2
+    attributes:
+      cell_type:
+        description: |-
+          Cell type (cell line or primary cells, tumour cells, etc)
+
+          Cell type (cell line or primary cells, tumour cells, etc...)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.2.a
+      origin:
+        description: |-
+          Origin (animal/organ/tissue)
+
+          Origin (animal/organ/tissue)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.2.b
+      cell_passage_number:
+        description: |-
+          Cell passage number
+
+          Cell passage number (of frozen stock and passage number at the start of the treatment).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.2.c
+      differentiation_stage:
+        description: |-
+          Differentiation stage
+
+          Differentiation stage
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.2.d
+      absence_of_mycoplasma:
+        description: |-
+          Absence of mycoplasma
+
+          Absence of mycoplasma
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.2.e
+      metabolic_competence:
+        description: |-
+          Metabolic competence
+
+          Metabolic competence
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.2.f
+      supplier:
+        description: |-
+          Supplier
+
+          Supplier
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.2.g
+      quality_criteria_before_use:
+        description: |-
+          Quality criteria before use
+
+          Quality criteria before use
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.2.h
+      other:
+        description: |-
+          Other
+
+          Other
+        comments:
+          - Provide other relevant information on the in vitro test system that may be of use for regulatory applications.
+        exact_mappings:
+          - oecd_oorf_2023:2.3.2.i
+
+  TERMHousingAndHusbandryInVivo:
+    description: |-
+      Housing and husbandry (In Vivo)
+
+      Housing and husbandry (In Vivo).
+    comments:
+      - Enter all details of the housing and husbandry of test animals used in the toxicology study. If unknown, report "UNKNOWN". If not an in vivo study, enter "NOT IN VIVO STUDY". If a reporting element is not applicable to the in vivo model, enter "NA"
+    exact_mappings:
+      - oecd_oorf_2023:2.3.3
+    attributes:
+      type_of_facility:
+        description: |-
+          Type of facility (eg specific pathogen free [SPF])
+
+          Type of facility (e.g. specific pathogen free [SPF])
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.a
+      type_of_cage_or_housing:
+        description: |-
+          Type of cage or housing
+
+          Type of cage or housing
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.b
+      bedding_material:
+        description: |-
+          Bedding material
+
+          Bedding material
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.c
+      number_of_cage_companions:
+        description: |-
+          Number of cage companions
+
+          Number of cage companions
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.d
+      tank_shape_and_material:
+        description: |-
+          Tank shape (for fish) and its material
+
+          Tank shape (for fish) and its material
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.e
+      breeding_programme:
+        description: |-
+          Breeding programme
+
+          Breeding programme
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.f
+      light_dark_cycle:
+        description: |-
+          Light/dark cycle
+
+          Light/dark cycle
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.g
+      temperature:
+        description: |-
+          Temperature
+
+          Temperature
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.h
+      quality_of_water:
+        description: |-
+          Quality of water (eg for aquatic toxicity tests)
+
+          Quality of water (e.g. for aquatic toxicity tests)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.i
+      type_of_food:
+        description: |-
+          Type of food
+
+          Type of food (ingredients in food as detailed as possible, including vendor and lot number)
+        comments:
+          - List ingredients in food as detailed as possible, including vendor and lot number.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.j
+      access_to_food_and_water:
+        description: |-
+          Access to food and water
+
+          Access to food and water
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.k
+      environmental_enrichment:
+        description: |-
+          Environmental enrichment
+
+          Environmental enrichment
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.l
+      methods_for_fertilisation_collection_of_eggs:
+        description: |-
+          Methods for fertilisation/collection of eggs, if applicable
+
+          Methods for fertilisation/collection of eggs, if applicable
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.m
+      other:
+        description: |-
+          Other
+
+          Other
+        comments:
+          - Provide other relevant information on the housing and husbandry of in vivo test subjects that may be of use for regulatory applications.
+        exact_mappings:
+          - oecd_oorf_2023:2.3.3.n
+
+  TERMCellCultureConditionsInVitro:
+    description: |-
+      Cell Culture Conditions (In Vitro) (if applicable)
+
+      Cell culture conditions (In Vitro).
+    comments:
+      - Enter all details of the cell culture conditions used in the toxicology study. If unknown, report "UNKNOWN". If not an in vitro study, enter "NOT IN VITRO STUDY". If a reporting element is not applicable to the in vitro model, enter "NA"
+    exact_mappings:
+      - oecd_oorf_2023:2.3.4
+    attributes:
+      incubation_characteristics:
+        description: |-
+          Incubation characteristics
+
+          Incubation characteristics
+        range: TERMIncubationCharacteristics
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.a
+      state_of_cells_before_use:
+        description: |-
+          State of the cells before use
+
+          State of the cells before use
+        range: TERMStateOfCellsBeforeUse
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.b
+      culture_media:
+        description: |-
+          Culture media (in case of multiple)
+
+          Culture media (in case of multiple)
+        range: TERMCultureMedia
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.c
+      growth_support_substrates:
+        description: |-
+          Growth support substrates (if applicable)
+
+          Growth support substrates (if applicable)
+        range: TERMGrowthSupportSubstrates
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.d
+
+  TERMIncubationCharacteristics:
+    description: |-
+      Incubation characteristics
+
+      Incubation characteristics for in vitro cell culture.
+    exact_mappings:
+      - oecd_oorf_2023:2.3.4.a
+    attributes:
+      temperature:
+        description: |-
+          Temperature
+
+          Temperature
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.a.i
+      co2_o2_conditions:
+        description: |-
+          CO2/O2 conditions
+
+          CO2/O2 conditions
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.a.ii
+      humidity:
+        description: |-
+          Humidity
+
+          Humidity
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.a.iii
+      other:
+        description: |-
+          Other
+
+          Other
+        comments:
+          - Provide other relevant information on the cell incubation conditions that may of use for regualtory applications. If none, put "NA"
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.a.iv
+
+  TERMStateOfCellsBeforeUse:
+    description: |-
+      State of the cells before use
+
+      State of the cells before use in in vitro culture.
+    exact_mappings:
+      - oecd_oorf_2023:2.3.4.b
+    attributes:
+      viability:
+        description: |-
+          Viability (include test used)
+
+          Viability (including test used)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.b.i
+      quality_control:
+        description: |-
+          Quality control
+
+          Quality control
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.b.ii
+      morphology:
+        description: |-
+          Morphology
+
+          Morphology
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.b.iii
+      recommended_confluency_of_use:
+        description: |-
+          Recommended confluency of use
+
+          Recommended confluency of use
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.b.iv
+      other:
+        description: |-
+          Other
+
+          Other
+        comments:
+          - Provide other relevant information on the cell culture conditions that may be of use for regulatory applications. If none, put "NA"
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.b.v
+
+  TERMCultureMedia:
+    description: |-
+      Culture media (in case of multiple)
+
+      Culture media details for in vitro cell culture.
+    exact_mappings:
+      - oecd_oorf_2023:2.3.4.c
+    attributes:
+      use_of_serum:
+        description: |-
+          Use of serum
+
+          Use of serum (with details such as species of origin, age, sex, etc.)
+        comments:
+          - Provide details such as species of origin, age, sex, etc. if known.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.c.i
+      use_of_antibiotics:
+        description: |-
+          Use of antibiotics
+
+          Use of antibiotics
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.c.ii
+
+  TERMGrowthSupportSubstrates:
+    description: |-
+      Growth support substrates (if applicable)
+
+      Growth support substrates for in vitro cell culture.
+    exact_mappings:
+      - oecd_oorf_2023:2.3.4.d
+    attributes:
+      use_of_feeder_cells:
+        description: |-
+          Use of feeder cells
+
+          Use of feeder cells
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.d.i
+      use_of_matrixes_or_scaffolds:
+        description: |-
+          Use of matrixes or scaffolds
+
+          Use of matrixes or scaffolds
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.3.4.d.ii
+
+  TERMStudyDesign:
+    description: |-
+      Study Design
+
+      Detailed description of all elements and parameters included in the study design.
+    exact_mappings:
+      - oecd_oorf_2023:2.4
+    attributes:
+      three_rs_considerations:
+        description: |-
+          3R considerations
+
+          detail any 3R (reduction, refinement and replacement) arguments underlying the study design.
+        range: TERMThreeRsConsiderations
+        exact_mappings:
+          - oecd_oorf_2023:2.4.1
+      dose_selection:
+        description: |-
+          Dose Selection
+
+          Dose levels and dose intervals used in the study.
+        range: TERMDoseSelection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.2
+      test_method_instruments_equipment_and_reagents:
+        description: |-
+          Description of test method instruments, equipment and reagents
+
+          Provide a full description of the instruments and equipment used for the collection and processing of samples for the analysis.
+        range: TERMTestMethodInstrumentsEquipmentAndReagents
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.3
+      types_of_treatments:
+        description: |-
+          Types of treatments
+
+          The study design report must include a description of the type(s) of treatment including controls, pre-treatments, acclimation, and types of replicates.
+        range: TERMTypesOfTreatments
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.4
+      number_of_animals_samples_per_treatment:
+        description: |-
+          Number of animals/samples per treatment
+
+          Number of biological and technical/analytical replicates per treatment.
+        range: TERMNumberOfAnimalsSamplesPerTreatment
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.5
+      statistical_design:
+        description: |-
+          Statistical Design
+
+          Statistical approaches used in exposure design, sampling schemes, and sample blinding.
+        range: TERMStatisticalDesign
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.6
+      observations_examinations_during_treatment:
+        description: |-
+          Observations/examinations during treatment
+
+          Where appropriate, include details of other experimental observations used in the experiments generating the samples.
+        comments:
+          - Enter details regarding observations that may have occurred during the toxicology study that are critical for data interpretation and/or other data streams that may be informative for data interpretation. If such information exists and is deemed relevant by the data provider, please provide a breif description, a link to where such information could be found or name of a data object included with the completed reporting framework.
+        range: TERMObservationsExaminationsDuringTreatment
+        exact_mappings:
+          - oecd_oorf_2023:2.4.7
+
+  TERMThreeRsConsiderations:
+    description: |-
+      3R considerations
+
+      3Rs (reduction, refinement and replacement) considerations.
+    exact_mappings:
+      - oecd_oorf_2023:2.4.1
+    attributes:
+      three_rs_description:
+        description: |-
+          Briefly describe how the study addresses the 3R principles
+
+          Briefly describe how the study addresses the 3R principles.
+        comments:
+          - Briefly describe how the study addresses 3R principles
+        exact_mappings:
+          - oecd_oorf_2023:2.4.1.a
+
+  TERMDoseSelection:
+    description: |-
+      Dose Selection
+
+      Dose levels and intervals used in the study.
+    exact_mappings:
+      - oecd_oorf_2023:2.4.2
+    attributes:
+      dose_levels:
+        description: |-
+          Dose levels
+
+          Dose levels: Indicate each of the dose levels/concentrations used in the study (including units) and identify the matched vehicle/solvent controls to be used.
+        comments:
+          - Report each of the dose levels / concentrations used in the study and identify the matched vehicle/solvent controls to be used.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.2.a
+      dose_intervals:
+        description: |-
+          Dose intervals
+
+          Dose interval: Indicate the dose interval (e.g. acute single or chronic dosing) and exposure duration (e.g. hours, days, weeks, or months) used in the study, including units.
+        comments:
+          - Indicate the dose interval (e.g. acute single or chronic dosing) and exposure duration (e.g. hours, days, weeks, or months) used in the study, including units..
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.2.b
+
+  TERMTestMethodInstrumentsEquipmentAndReagents:
+    description: |-
+      Description of test method instruments, equipment and reagents
+
+      Provide a full description of the instruments and equipment used for the collection and processing of samples for the analysis.
+    exact_mappings:
+      - oecd_oorf_2023:2.4.3
+    attributes:
+      commercial_source:
+        description: |-
+          Commercial source
+
+          Commercial source: Provide the suppliers/manufacturers of instrumentation, other laboratory equipment and reagents relevant to the study.
+        comments:
+          - Detail the suppliers/manufacturers of instrumentation, other laboratory equipment and reagents relevant to the study.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.3.a
+      manufacturers_instrument_model_identification:
+        description: |-
+          Manufacturer's instrument model identification
+
+          Manufacturer's instrument model identification.
+        exact_mappings:
+          - oecd_oorf_2023:2.4.3.b
+      manufacturers_reagent_and_kit_information:
+        description: |-
+          Manufacturer's reagent and kit information
+
+          Manufacturer's reagent and kit information.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.3.c
+      special_safety_handling_requirements:
+        description: |-
+          Any special safety/handling requirements
+
+          Any special safety/handling requirements.
+        exact_mappings:
+          - oecd_oorf_2023:2.4.3.d
+
+  TERMTypesOfTreatments:
+    description: |-
+      Types of treatments
+
+      The study design report must include a description of the type(s) of treatment.
+    exact_mappings:
+      - oecd_oorf_2023:2.4.4
+    attributes:
+      controls:
+        description: |-
+          Controls
+
+          Controls: Defined as experimental samples derived from animals or cells treated with their respective dose formulation, in the absence of test item. All control types should be reported (i.e. positive control, negative control, vehicle control, blank, etc.) following the criteria described in Section 2 - Test and Control Items.
+        comments:
+          - Provide descriptions of all control sample types used in the toxicology experiment. This includes positive, negative and/or vehicle controls or blanks.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.4.a
+      pre_treatments:
+        description: |-
+          Pre-treatments (eg metabolic activation)
+
+          Pre-treatments: Where necessary, a description of pre-treatments involving metabolic activation, for example of specific cytochromes(s) P450, should be provided.
+        comments:
+          - If applicable, describe if any relevant pre-treatments of test subjects or cells occurred prior application of test item that may impact results. Examples would be a switch from growth media to test media for in vitro studies or induction of metabolic enzymes in in vivo studies. If no such pre-treatments were used, report "NONE"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.4.b
+      acclimation:
+        description: |-
+          Acclimation
+
+          Acclimation: A brief description of acclimation should be reported to include the length of the acclimation period, health status of the test system, and environmental conditions. Relevant quarantine conditions should be described, where applicable.
+        comments:
+          - If applicable, describe acclimiation of test subjects to the testing environment prior to application of test item. If no such acclimiation occurred, reported "NONE".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.4.c
+      types_of_replicates:
+        description: |-
+          Types of replicates
+
+          Types of replicates: The report should clearly define the number of biological replicates (samples derived from individual animals or cell samples), utilised for each dose level. This should be clearly delineable from any technical replicates generated, (the sample processed more than once) and/or analytical replicates (the same sample analysed more than once). If relevant, clearly define what constitutes a biological replicate for the in vitro study being reported.
+        comments:
+          - "Provide a narrative description of the types of replicates used in the experiment. For example: 1) in in vivo studies, biological replicates are individual animals who receive the same treatment. 2) in vitro studies biological replicates may be considered samples that were administered the same treatment but sampled from independent cultures or replicated experiments. Technical repliaces are treatments tested more than once in the same experiment. Analytical repliactes are samples that will be analyzed twice in the same experiment."
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.4.d
+
+  TERMNumberOfAnimalsSamplesPerTreatment:
+    description: |-
+      Number of animals/samples per treatment
+
+      Numbers of animals/samples per treatment.
+    exact_mappings:
+      - oecd_oorf_2023:2.4.5
+    attributes:
+      biological_replicates:
+        description: |-
+          Biological replicates
+
+          Biological replicates: Describe the number of biological replicates in each treatment condition.
+        comments:
+          - Clearly describe the number of biological replicates in each treatment condition. Information may be provided as a data object. If so, report the file name of the data object.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.5.a
+      technical_analytical_replicates:
+        description: |-
+          Technical/analytical replicates
+
+          Technical/analytical replicates: Describe the number of technical and analytical replicates.
+        comments:
+          - Clearly describe the number of technical replicates and/or analytical replicates in the study. Information may be provided as a data object. If so, report the file name of the data object
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.5.b
+
+  TERMStatisticalDesign:
+    description: |-
+      Statistical Design
+
+      Statistical design of the toxicology experiment.
+    exact_mappings:
+      - oecd_oorf_2023:2.4.6
+    attributes:
+      exposure_design:
+        description: |-
+          Exposure design
+
+          Exposure design: Describe the various statistical approaches used in the study design to prevent exposure bias (e.g. randomised block, latin square, incomplete block, etc.)
+        comments:
+          - Provide a breif description of the statistical approaches used in the toxicology experiment study design to guard against bias in the data. Examples include randomized block, latin square, incomplete block, etc.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.6.a
+      sampling_schemes:
+        description: |-
+          Sampling schemes
+
+          Sampling schemes: Describe sampling schemes used to prevent sample collection bias, and to ensure proper sample labelling post-collection, using methods (e.g. sequential, stratified, systematic, randomised, ranked set, etc.)
+        comments:
+          - Provide a brief description of the sampling scheme used in the toxicology experiment to prevent sample collection bias and to ensure proper sample labeling post-collection. Examples include sequential, stratified, systematic, randomized, ranked set, etc.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.6.b
+      sample_blinding:
+        description: |-
+          Sample blinding
+
+          Sample blinding: Describe sample blinding approaches following the sample collection, used to prevent experimental bias in downstream sample processing. This should include a unique identification (as explained in Section 2.7 - Sample Identification Codes) that does not represent the sample or treatment type.
+        comments:
+          - Provide a breif description of sample blinding approaches used after sample collection to prevent bias in downstream sample processing.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.4.6.c
+
+  TERMObservationsExaminationsDuringTreatment:
+    description: |-
+      Observations/examinations during treatment
+
+      Where appropriate, include details of other experimental observations used in the experiments generating the samples.
+    comments:
+      - Enter details regarding observations that may have occurred during the toxicology study that are critical for data interpretation and/or other data streams that may be informative for data interpretation. If such information exists and is deemed relevant by the data provider, please provide a breif description, a link to where such information could be found or name of a data object included with the completed reporting framework.
+    exact_mappings:
+      - oecd_oorf_2023:2.4.7
+    attributes:
+      in_life_clinical_observations:
+        description: |-
+          In-life cage-side or clinical observations, feed consumption, and body weight in for in vivo experiments
+
+          In-life cage-side or clinical observations, feed consumption, water consumption and body weight in for in vivo experiments
+        exact_mappings:
+          - oecd_oorf_2023:2.4.7.a
+      toxicokinetics:
+        description: |-
+          Toxicokinetics
+
+          Toxicokinetics
+        exact_mappings:
+          - oecd_oorf_2023:2.4.7.b
+      histopathology_and_organ_weight:
+        description: |-
+          Histopathology and organ weight
+
+          Histopathology and organ weight
+        exact_mappings:
+          - oecd_oorf_2023:2.4.7.c
+      clinical_chemistry_and_pathology_in_vivo:
+        description: |-
+          Clinical chemistry and pathology in in vivo experiments
+
+          Clinical pathology in in vivo experiments
+        exact_mappings:
+          - oecd_oorf_2023:2.4.7.d
+      reason_animals_removed:
+        description: |-
+          Reason animals were removed from the study
+
+          Reason animals were removed from the study
+        exact_mappings:
+          - oecd_oorf_2023:2.4.7.e
+      cytological_analyses_in_vivo:
+        description: |-
+          Cytological analyses in in vivo experiments
+
+          Cytological analyses in in vivo experiments
+        exact_mappings:
+          - oecd_oorf_2023:2.4.7.f
+      cytobiological_examinations_in_vitro:
+        description: |-
+          Cytobiological examinations in in vitro experiments
+
+          Cytobiological examinations in in vitro experiments (such as cell morphology and cytotoxicity testing)
+        exact_mappings:
+          - oecd_oorf_2023:2.4.7.g
+      other_biochemical_molecular_analyses:
+        description: |-
+          Other biochemical and/or molecular biological analyses
+
+          Other biochemical and/or molecular biological analyses
+        exact_mappings:
+          - oecd_oorf_2023:2.4.7.h
+
+  TERMTreatmentConditions:
+    description: |-
+      Treatment Conditions
+
+      Thorough description of treatment conditions for interpreting omic study results.
+    exact_mappings:
+      - oecd_oorf_2023:2.5
+    attributes:
+      route_of_administration_in_vivo:
+        description: |-
+          Route of administration (in vivo)
+
+          For in vivo studies, indicate the selected route of administration for the test item. Examples are oral (e.g. gavage or diet), dermal, inhalation, parenteral, implantation, etc. If applicable, for implantation experiments, state the exposure regime (e.g. static, semi-static, flow through). Also state other information that may be required to understand the route of exposure for the test item.
+        comments:
+          - Indicate the route of administration used in the in vivo toxicology study (e.g. roal, dermal, inhalation, etc). If not an in vivo study, enter "NOT IN VIVO STUDY"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.1
+      route_of_administration_in_vitro:
+        description: |-
+          Route of administration (in vitro)
+
+          For in vitro studies, describe how the test item was administered to the in vitro system. Examples are direct addition of the test item to cultures, substitution of culture medium, exposure at air-liquid interface, etc. Also state other information that may be required to understand how the test time item was administered to the in vitro system.
+        comments:
+          - Indicate the route of administration used in the in vitro toxocology study (e.g. dissolution in media, air-liquid interface, etc.). If not an in vitro study, enter "NOT IN VITRO STUDY"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.2
+      housing_condition_modifications_in_vivo:
+        description: |-
+          Housing condition modifications relevant to test article treatment (in vivo)
+
+          Describe any modifications of the standard culture/housing conditions occurring before and during the test item exposure (refer to 'Housing, husbandry, and culture conditions' in Section 2.3 - Test System Characteristics). Examples include fasting period, use of anaesthesia and/or analgesia or other modifications to standard housing conditions that may have occurred before or during exposure to test items.
+        comments:
+          - Describe any modifications of the in vivo housing conditions that occur before or during test item exposure that may influence the outcome. Examples include fasting periods prior to dosing, application of anesthesia or analgesics, etcs. If not an in vivo study enter "NO IN VIVO STUDY"
+        exact_mappings:
+          - oecd_oorf_2023:2.5.3
+      culture_condition_modifications_in_vitro:
+        description: |-
+          Culture condition modifications relevant to test article treatment (in vitro)
+
+          Describe any modification of the culture conditions occurring before and during the test item exposure (refer to 'Cell Culture Conditions' in Section 2.3 - Test System Characteristics). Examples include switching to serum-free or serum-depleted medium, use of items for limiting media evaporation or other modifications to standard culture conditions that may have occurred before or during exposure to test items.
+        comments:
+          - Describe any modifications of the in vitro cell culture conditions that occur before or during test item exposure that may influence the outcome. Examples include switching from growth media to test media for chemical exposures or using cultureware that limits evaporation or changes gas diffusion properties. If not an in vitro study, enter "NOT IN VITRO STUDY".
+        exact_mappings:
+          - oecd_oorf_2023:2.5.4
+      test_item_preparation:
+        description: |-
+          Test Item Preparation
+
+          Describe all the steps leading to the test item preparation for administration to the test system and any modifications to the original procedure, e.g. problems with chemical solubility.
+        comments:
+          - Describe all the steps involves in test item preparation prior to administration to the text subjects (in vivo) or test system (in vitro). If not applicate, input "NA". If unkonwn, input "UNKNOWN"
+        range: TERMTestItemPreparation
+        exact_mappings:
+          - oecd_oorf_2023:2.5.5
+      test_item_stability_reactivity:
+        description: |-
+          Test Item Stability/Reactivity
+
+          Describe the procedures used to assess stability and reactivity of the test item.
+        comments:
+          - If applicable, describe the method(s) used to assess stability or reactivity of the test item under test conditions or during test item preparation. If not applicable, input "NA".
+        range: TERMTestItemStabilityReactivity
+        exact_mappings:
+          - oecd_oorf_2023:2.5.6
+      test_item_preparation_in_vivo:
+        description: |-
+          Test Item Preparation for In Vivo Studies
+
+          For in vivo studies, provide details about test item preparation.
+        comments:
+          - If applicable, describe procedures for test item preparation for in vivo toxicology experiments. If an in vivo study was performed and the described reporting fields are not applicable to the study, input "NA". If not an in vivo study, input "NOT IN VIVO STUDY".
+        range: TERMTestItemPreparationInVivo
+        exact_mappings:
+          - oecd_oorf_2023:2.5.7
+      vehicle_description_and_delivery_volume:
+        description: |-
+          Vehicle Description and Delivery Volume
+
+          If the test chemical is dissolved or suspended in a suitable vehicle, provide all the relevant information on identity, delivery volume, and concentration.
+        comments:
+          - If applicable, describe procedures for test item preparation for in vivo toxicology experiments. If an in vivo study was performed and the described reporting fields are not applicable to the study, input "NA". If not an in vivo study, input "NOT IN VIVO STUDY".
+        range: TERMVehicleDescriptionAndDeliveryVolume
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.8
+      exposure_schedule:
+        description: |-
+          Exposure Schedule
+
+          Frequency, timing, and recovery period of test item exposure.
+        comments:
+          - If applicable, describe procedures for test item preparation for in vivo toxicology experiments. If an in vivo study was performed and the described reporting fields are not applicable to the study, input "NA". If not an in vivo study, input "NOT IN VIVO STUDY".
+        range: TERMExposureSchedule
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.9
+      housing_culture_condition_deviations:
+        description: |-
+          Housing/Culture Condition Deviations During Treatment
+
+          Describe any undesired deviations from the housing/culture conditions established in the study plan that occurred during the treatment and/or the observation time and their possible impact on the study results.
+        comments:
+          - If during treatment procedures, conditions are different from those used during normal maintanance (see Section 2.3, Test System Characteristics) please note them here in the reporting fields below. If not applicable, report "NA"
+        range: TERMHousingCultureConditionDeviations
+        exact_mappings:
+          - oecd_oorf_2023:2.5.10
+
+  TERMTestItemPreparation:
+    description: |-
+      Test Item Preparation
+
+      Describe all the steps leading to the test item preparation for administration to the test system and any modifications to the original procedure, e.g. problems with chemical solubility.
+    comments:
+      - Describe all the steps involves in test item preparation prior to administration to the text subjects (in vivo) or test system (in vitro). If not applicate, input "NA". If unkonwn, input "UNKNOWN"
+    exact_mappings:
+      - oecd_oorf_2023:2.5.5
+    attributes:
+      dilution_in_vehicle:
+        description: |-
+          Dilution in a vehicle
+
+          Dilution in a vehicle
+        exact_mappings:
+          - oecd_oorf_2023:2.5.5.a
+      preparation_steps:
+        description: |-
+          Preparation steps (warming, grinding, etc)
+
+          Preparation steps (warming, grinding, etc.)
+        exact_mappings:
+          - oecd_oorf_2023:2.5.5.b
+      separation_steps:
+        description: |-
+          Separation steps (centrifugation, decantation, filtration, etc)
+
+          Separation steps (centrifugation, decantation, filtration, etc.)
+        exact_mappings:
+          - oecd_oorf_2023:2.5.5.c
+      extraction_steps:
+        description: |-
+          Extraction steps (for specific test items, such as medical devices)
+
+          Extraction steps (for specific test items, such as medical devices)
+        exact_mappings:
+          - oecd_oorf_2023:2.5.5.d
+      storage_conditions:
+        description: |-
+          Storage conditions
+
+          Storage conditions
+        exact_mappings:
+          - oecd_oorf_2023:2.5.5.e
+      stability_during_storage:
+        description: |-
+          Stability during storage
+
+          Stability during storage
+        exact_mappings:
+          - oecd_oorf_2023:2.5.5.f
+      expiration_date:
+        description: |-
+          Expiration date
+
+          Expiration date
+        exact_mappings:
+          - oecd_oorf_2023:2.5.5.g
+      nominal_or_measured_concentrations:
+        description: |-
+          Whether nominal or measured concentrations were used, if applicable
+
+          Whether nominal or measured concentrations were used, if applicable
+        exact_mappings:
+          - oecd_oorf_2023:2.5.5.h
+      analytic_controls_on_measured_concentrations:
+        description: |-
+          Analytic controls on measured concentrations, if applicable
+
+          Analytic controls on measured concentrations, if applicable
+        exact_mappings:
+          - oecd_oorf_2023:2.5.5.i
+      dosing_solution_homogeneity:
+        description: |-
+          Dosing solution homogeneity
+
+          Dosing solution homogeneity
+        exact_mappings:
+          - oecd_oorf_2023:2.5.5.j
+
+  TERMTestItemStabilityReactivity:
+    description: |-
+      Test Item Stability/Reactivity
+
+      Describe the procedures used to assess stability and reactivity of the test substance.
+    comments:
+      - If applicable, describe the method(s) used to assess stability or reactivity of the test item under test conditions or during test item preparation. If not applicable, input "NA".
+    exact_mappings:
+      - oecd_oorf_2023:2.5.6
+    attributes:
+      stability_under_test_conditions:
+        description: |-
+          Stability of the test substance under test conditions
+
+          Stability of the test substance under test conditions
+        exact_mappings:
+          - oecd_oorf_2023:2.5.6.a
+      solubility_and_stability_in_solvent_vehicle:
+        description: |-
+          Solubility and stability in the solvent/vehicle
+
+          Solubility and stability in the solvent/vehicle
+        exact_mappings:
+          - oecd_oorf_2023:2.5.6.b
+      reactivity_with_solvent_vehicle_or_medium:
+        description: |-
+          Reactivity of the test substance with the solvent/vehicle or the cell culture medium (if applicable)
+
+          Reactivity of the test substance with the solvent/vehicle or the cell culture medium, if applicable
+        exact_mappings:
+          - oecd_oorf_2023:2.5.6.c
+      impact_of_separation_and_extraction_steps:
+        description: |-
+          Impact of separation and extraction steps on integrity, homogeneity, concentration and stability of the prepared test item
+
+          Impact of separation and extraction steps on integrity, homogeneity, concentration and stability of the prepared test item
+        exact_mappings:
+          - oecd_oorf_2023:2.5.6.d
+
+  TERMTestItemPreparationInVivo:
+    description: |-
+      Test Item Preparation for In Vivo Studies
+
+      For in vivo studies, provide details about test item preparation.
+    comments:
+      - If applicable, describe procedures for test item preparation for in vivo toxicology experiments. If an in vivo study was performed and the described reporting fields are not applicable to the study, input "NA". If not an in vivo study, input "NOT IN VIVO STUDY".
+    exact_mappings:
+      - oecd_oorf_2023:2.5.7
+    attributes:
+      formulation_diet_preparation_procedures:
+        description: |-
+          Procedures for test substance formulation/diet preparation
+
+          Procedures for test substance formulation/diet preparation
+        exact_mappings:
+          - oecd_oorf_2023:2.5.7.a
+      test_atmosphere_generation_and_chamber_description:
+        description: |-
+          Procedures for generation of test atmosphere and chamber description
+
+          Procedures for generation of test atmosphere and chamber description
+        exact_mappings:
+          - oecd_oorf_2023:2.5.7.b
+      achieved_concentration:
+        description: |-
+          Achieved concentration
+
+          Achieved concentration
+        exact_mappings:
+          - oecd_oorf_2023:2.5.7.c
+      stability_and_homogeneity_of_preparation:
+        description: |-
+          Stability and homogeneity of the preparation
+
+          Stability and homogeneity of the preparation
+        exact_mappings:
+          - oecd_oorf_2023:2.5.7.d
+      test_material_intake:
+        description: |-
+          Test material intake for dietary or drinking water studies
+
+          Test item intake for dietary or drinking water studies. Conversion from diet/drinking water or inhalation test substance concentration (ppm) to the actual dose (mg/kg body weight/day), if applicable.
+        comments:
+          - Conversion from diet/drinking water or inhalation test substance concentration (ppm) to the actual dose (mg/kg body weight/day), if applicable.
+        exact_mappings:
+          - oecd_oorf_2023:2.5.7.e
+
+  TERMVehicleDescriptionAndDeliveryVolume:
+    description: |-
+      Vehicle Description and Delivery Volume
+
+      If the test chemical is dissolved or suspended in a suitable vehicle, provide all the relevant information.
+    comments:
+      - If applicable, describe procedures for test item preparation for in vivo toxicology experiments. If an in vivo study was performed and the described reporting fields are not applicable to the study, input "NA". If not an in vivo study, input "NOT IN VIVO STUDY".
+    exact_mappings:
+      - oecd_oorf_2023:2.5.8
+    attributes:
+      identity_of_vehicle:
+        description: |-
+          Identity of the vehicle
+
+          Identity of the vehicle
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.8.a
+      delivery_volume:
+        description: |-
+          Delivery volume
+
+          The delivery volume
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.8.b
+      final_concentration_of_vehicle:
+        description: |-
+          Final concentration of vehicle in test item preparation
+
+          The final concentration of the vehicle in the test item preparation.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.8.c
+      maximum_volume_of_liquid_administered:
+        description: |-
+          Maximum volume of liquid administered
+
+          For in vivo studies, The maximum volume of liquid that has been administered by gavage or injection. The use of volume exceeding the suggested volume should be justified. In terms of reporting, refer to Section 2.2 - Test and Control Items).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.8.d
+
+  TERMExposureSchedule:
+    description: |-
+      Exposure Schedule
+
+      Exposure schedule for test item administration.
+    comments:
+      - If applicable, describe procedures for test item preparation for in vivo toxicology experiments. If an in vivo study was performed and the described reporting fields are not applicable to the study, input "NA". If not an in vivo study, input "NOT IN VIVO STUDY".
+    exact_mappings:
+      - oecd_oorf_2023:2.5.9
+    attributes:
+      frequency_of_test_item_administration:
+        description: |-
+          Frequency of test item administration
+
+          Frequency of test item administration (e.g. once daily).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.9.a
+      time_of_day_of_dosing_in_vivo:
+        description: |-
+          Time of day of dosing (in vivo)
+
+          Time of day of dosing (in vivo)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.9.b
+      time_of_dosing_after_seeding_in_vitro:
+        description: |-
+          Time of dosing after seeding (in vitro)
+
+          Time of dosing after seeding (in vitro)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.9.c
+      recovery_period:
+        description: |-
+          Recovery period
+
+          Indicate the recovery period (in days, weeks, months, if any) after the last exposure to the test substance and sample collection.
+        comments:
+          - Specify the length of the recovery period if any (in days, weeks or months) between the cessation of dosing and sample harvest.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.5.9.d
+
+  TERMHousingCultureConditionDeviations:
+    description: |-
+      Housing/Culture Condition Deviations During Treatment
+
+      Describe any undesired deviations from the housing/culture conditions established in the study plan that occurred during the treatment and/or the observation time and their possible impact on the study results.
+    comments:
+      - If during treatment procedures, conditions are different from those used during normal maintanance (see Section 2.3, Test System Characteristics) please note them here in the reporting fields below. If not applicable, report "NA"
+    exact_mappings:
+      - oecd_oorf_2023:2.5.10
+    attributes:
+      temperature:
+        description: |-
+          Temperature
+
+          Temperature
+        exact_mappings:
+          - oecd_oorf_2023:2.5.10.a
+      humidity:
+        description: |-
+          Humidity
+
+          Humidity
+        exact_mappings:
+          - oecd_oorf_2023:2.5.10.b
+      co2_percentage:
+        description: |-
+          CO2 %
+
+          CO2 %
+        exact_mappings:
+          - oecd_oorf_2023:2.5.10.c
+      ph:
+        description: |-
+          pH
+
+          pH
+        exact_mappings:
+          - oecd_oorf_2023:2.5.10.d
+      availability_and_quality_of_nutrients:
+        description: |-
+          Availability and quality of nutrients
+
+          Availability and quality of nutrients
+        exact_mappings:
+          - oecd_oorf_2023:2.5.10.e
+      other:
+        description: |-
+          Other
+
+          Other
+        comments:
+          - Describe any deviations from normal maintenance or test procedures that may affect study outcome. If not applicable, report "NA"
+        exact_mappings:
+          - oecd_oorf_2023:2.5.10.f
+
+  TERMStudyExitAndSampleCollection:
+    description: |-
+      Study Exit and Sample Collection
+
+      Methodologies used for collecting, washing, quenching, pooling, and storing biological specimens.
+    exact_mappings:
+      - oecd_oorf_2023:2.6
+    attributes:
+      type_of_biological_sample:
+        description: |-
+          Type of biological sample
+
+          Type of biological sample collected (in vitro: single cell, cell culture, 2D or 3D culture, single or multi type cell culture; in vivo: biofluid, cells, tissue, organ, organism in toto)
+        comments:
+          - Describe the type of biological sample that will be used for omics analysis (e.g. in vitro - 2D or 3D cell culture, single cells, etc.; in vivo - cells, tissues, organs, whole organisms, fresh, frozen or paraffin embedded specimens)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.1
+      study_exit_in_vivo:
+        description: |-
+          Study Exit (In Vivo)
+
+          Study Exit (In vivo) (if applicable)
+        comments:
+          - If any of the following reporting fields are not applicable to the toxicology study performed, report "NA". If not an in vivo study, report "NOT IN VIVO STUDY"
+        range: TERMStudyExitInVivo
+        exact_mappings:
+          - oecd_oorf_2023:2.6.2
+      study_exit_in_vitro:
+        description: |-
+          Study Exit (In Vitro)
+
+          Study Exit (In vitro) (if applicable)
+        comments:
+          - If any of the following reporting fields are not applicable to the toxicology study performed, report "NA". If not an in vitro study, report "NOT IN VITRO STUDY"
+        range: TERMStudyExitInVitro
+        exact_mappings:
+          - oecd_oorf_2023:2.6.3
+      sampling_vial:
+        description: |-
+          Sampling Vial
+
+          Sampling vial and preservative details.
+        range: TERMSamplingVial
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.4
+      washing:
+        description: |-
+          Washing
+
+          The primary purpose of washing a sample is to remove contamination. For example, prior to the extraction of adherent cells to study the intracellular metabolome, it is important to remove (via washing) metabolites present in the cell media. Washing is particularly important for an untargeted LC-MS assay as it is a sensitive analytical method.
+        range: TERMWashing
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.5
+      quenching:
+        description: |-
+          Quenching
+
+          The primary purpose of quenching is to preserve metabolite levels in the isolated sample as similarly to their levels in the living system.
+        range: TERMQuenching
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.6
+      pooling_of_samples:
+        description: |-
+          Pooling (or Aliquoting) of Samples
+
+          Pooling (or aliquoting) of samples
+        range: TERMPoolingOfSamples
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.7
+      sample_storage_and_transport:
+        description: |-
+          Sample Storage and Transport
+
+          Transport and storage conditions prior to sample extraction are important factors in the reliability of measurements. Storage temperature, time and the number of freeze-thaw cycles can all affect the stability of transcripts, proteins, and metabolites.
+        range: TERMSampleStorageAndTransport
+        exact_mappings:
+          - oecd_oorf_2023:2.6.8
+      time_table:
+        description: |-
+          Time Table
+
+          Detail the timetables used to perform the study protocol.
+        range: TERMTimeTable
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.9
+
+  TERMStudyExitInVivo:
+    description: |-
+      Study Exit (In Vivo)
+
+      Study Exit (In vivo) (if applicable)
+    comments:
+      - If any of the following reporting fields are not applicable to the toxicology study performed, report "NA". If not an in vivo study, report "NOT IN VIVO STUDY"
+    exact_mappings:
+      - oecd_oorf_2023:2.6.2
+    attributes:
+      anaesthetic_used:
+        description: |-
+          Anaesthetic used: substance (eg isoflurane, ether), dosage, route of administration
+
+          Anaesthetic used: substance (e.g. isoflurane, ether), dosage, route of administration
+        comments:
+          - If anesthetic was used, include the substance name (e.g. isofluorane, ether), dosage, route of administration, etc.
+        exact_mappings:
+          - oecd_oorf_2023:2.6.2.a
+      analgesic_used:
+        description: |-
+          Analgesic used: substance, dosage, route of administration
+
+          Analgesic used: substance, dosage, route of administration
+        comments:
+          - If analgesia was used, include the substance name (e.g. Xylazine, Tramadol), dosage, route of admnistration and area of administration
+        exact_mappings:
+          - oecd_oorf_2023:2.6.2.b
+      method_of_euthanasia:
+        description: |-
+          Method of euthanasia
+
+          Method of euthanasia (e.g. carbon dioxide asphyxiation, exsanguination)
+        comments:
+          - Specify method of euthanasia (e.g. carbon dioxide asphyxiation, exsanguination, etc.)
+        exact_mappings:
+          - oecd_oorf_2023:2.6.2.c
+      phenotypic_characteristics:
+        description: |-
+          Phenotypic characteristics
+
+          Phenotypic characteristics (e.g. body weight, organ weight)
+        comments:
+          - If data on body weight, organ weight or other phenotypic characteristics at time of sample collection were measured, please provide a breif description, link to such data and/or data object.
+        exact_mappings:
+          - oecd_oorf_2023:2.6.2.d
+      methods_used_for_collection_of_biological_samples:
+        description: |-
+          Methods used for collection of biological sample(s)
+
+          Methods used for collection of biological sample(s) (e.g. dissection, isolation of tissues or organs)
+        comments:
+          - Describe the method used for collection of biological samples (e.g. methods for dissection, isolation of tissues or organs, etc.)
+        exact_mappings:
+          - oecd_oorf_2023:2.6.2.e
+
+  TERMStudyExitInVitro:
+    description: |-
+      Study Exit (In Vitro)
+
+      Study Exit (In vitro) (if applicable)
+    comments:
+      - If any of the following reporting fields are not applicable to the toxicology study performed, report "NA". If not an in vitro study, report "NOT IN VITRO STUDY"
+    exact_mappings:
+      - oecd_oorf_2023:2.6.3
+    attributes:
+      collection_of_biological_material:
+        description: |-
+          Collection of biological material: method used (eg detergent), substance, concentration, duration
+
+          Collection of biological material: method used (e.g. detergent), substance, concentration, duration
+        comments:
+          - Describe the method used for collection of biological samples including addition of sampling reagents (e.g. detergents, lysis buffers, etc.). Include concentration and duration of incubation with lysis reagents.
+        exact_mappings:
+          - oecd_oorf_2023:2.6.3.a
+      cell_density_at_time_of_harvesting:
+        description: |-
+          Cell density at time of harvesting
+
+          Cell density at time of harvesting
+        comments:
+          - If applicable, describe the approximate cell density at the time of sample harvest
+        exact_mappings:
+          - oecd_oorf_2023:2.6.3.b
+      growth_phase_stage:
+        description: |-
+          Growth phase/stage
+
+          Growth phase/stage (e.g. cell cycle phase, if available)
+        comments:
+          - If applicable, describe the growth phase and/or stage of the cells at the time of sample collection (e.g. proliferative, confluent, differentiated, etc.)
+        exact_mappings:
+          - oecd_oorf_2023:2.6.3.c
+      number_of_culture_passage:
+        description: |-
+          Number of culture passage
+
+          Number of culture passage
+        comments:
+          - If applicble, specify the passage number of the cells used in the experiment.
+        exact_mappings:
+          - oecd_oorf_2023:2.6.3.d
+      morphology:
+        description: |-
+          Morphology
+
+          Morphology
+        comments:
+          - If applicable for omics data interpretation, describe the morphology of the cells at the time of sample collection
+        exact_mappings:
+          - oecd_oorf_2023:2.6.3.e
+      methods_used_for_collection_of_biological_samples:
+        description: |-
+          Methods used for collection of biological sample(s)
+
+          Methods used for collection of biological sample(s) (e.g. removal of media, wash (see below), quench (see below), scrape into sampling vial, etc.)
+        comments:
+          - Describe the mechanics of the method used for collection of biological samples (e.g. removal of media, washes, scraping of materials into sampling vials, etc.)
+        exact_mappings:
+          - oecd_oorf_2023:2.6.3.f
+
+  TERMSamplingVial:
+    description: |-
+      Sampling Vial
+
+      Sampling vial and preservative details.
+    exact_mappings:
+      - oecd_oorf_2023:2.6.4
+    attributes:
+      type_of_vial_or_tube:
+        description: |-
+          Type of vial or tube
+
+          Type of vial or tube
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.4.a
+      chemicals_within_sample_tube:
+        description: |-
+          Chemicals within the sample tube (EDTA, heparins, etc)
+
+          Chemicals within the sample tube (EDTA, heparin, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.4.b
+      chemicals_added_to_preserve_samples:
+        description: |-
+          Chemicals added to preserve sample(s) (nitrogen, argon, etc)
+
+          Chemicals added to preserve sample(s) (nitrogen, argon, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.4.c
+
+  TERMWashing:
+    description: |-
+      Washing
+
+      The primary purpose of washing a sample is to remove contamination.
+    exact_mappings:
+      - oecd_oorf_2023:2.6.5
+    attributes:
+      washing_solvents:
+        description: |-
+          Washing solvent(s)
+
+          Wash solvent(s)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.5.a
+      washing_procedure:
+        description: |-
+          Washing procedure (including temperature)
+
+          Washing procedure (including temperature)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.5.b
+
+  TERMQuenching:
+    description: |-
+      Quenching
+
+      The primary purpose of quenching is to preserve metabolite levels in the isolated sample as similarly to their levels in the living system.
+    exact_mappings:
+      - oecd_oorf_2023:2.6.6
+    attributes:
+      quench_solvent:
+        description: |-
+          Quench solvent
+
+          Quench solvent
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.6.a
+      quenching_procedure:
+        description: |-
+          Quenching procedure (including temperature)
+
+          Quenching procedure (including temperature)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.6.b
+
+  TERMPoolingOfSamples:
+    description: |-
+      Pooling (or Aliquoting) of Samples
+
+      Pooling (or aliquoting) of samples.
+    exact_mappings:
+      - oecd_oorf_2023:2.6.7
+    attributes:
+      sample_pooling_procedures:
+        description: |-
+          Describe any sample pooling procedures
+
+          Describe any sample pooling procedures.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.7.a
+
+  TERMSampleStorageAndTransport:
+    description: |-
+      Sample Storage and Transport
+
+      Transport and storage conditions prior to sample extraction are important factors in the reliability of measurements.
+    exact_mappings:
+      - oecd_oorf_2023:2.6.8
+    attributes:
+      post_sample_collection_handling:
+        description: |-
+          Post sample collection handling, prior to sample extraction
+
+          Post sample collection handling, prior to sample extraction
+        exact_mappings:
+          - oecd_oorf_2023:2.6.8.a
+      storage_temperature_and_duration:
+        description: |-
+          Storage temperature and duration
+
+          Storage temperature and duration
+        exact_mappings:
+          - oecd_oorf_2023:2.6.8.b
+      transportation_method:
+        description: |-
+          Transportation method (eg, between experimental facilities)
+
+          Transportation method (e.g. between experimental facilities)
+        exact_mappings:
+          - oecd_oorf_2023:2.6.8.c
+      number_of_freeze_thaw_cycles:
+        description: |-
+          Number of freeze-thaw cycles
+
+          Number of freeze-thaw cycles
+        exact_mappings:
+          - oecd_oorf_2023:2.6.8.d
+
+  TERMTimeTable:
+    description: |-
+      Time Table
+
+      Detail the timetables used to perform the study protocol.
+    exact_mappings:
+      - oecd_oorf_2023:2.6.9
+    attributes:
+      treatments:
+        description: |-
+          Treatments
+
+          Treatments
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.9.a
+      sample_collections:
+        description: |-
+          Sample collections
+
+          Sample collections
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.9.b
+      time_since_last_dose_administered:
+        description: |-
+          Time since last dose administered
+
+          Time since last dose administered
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.6.9.c
+      time_to_sample_extractions:
+        description: |-
+          Time to sample extractions
+
+          Time to sample extractions
+        exact_mappings:
+          - oecd_oorf_2023:2.6.9.d
+
+  TERMSampleIdentificationCodes:
+    description: |-
+      Sample Identification Codes
+
+      Sample management and unique sample identification codes.
+    exact_mappings:
+      - oecd_oorf_2023:2.7
+    attributes:
+      lims:
+        description: |-
+          Laboratory information management system (LIMS), if applicable
+
+          If a LIMS software was used for information management, report the name of the software and the software version.
+        comments:
+          - Describe the LIMS system used for sample management (including software) at the laboratory where samples were generated. If a LIMS system was not used, input "NA"
+        exact_mappings:
+          - oecd_oorf_2023:2.7.1
+      method_schema_for_assigning_unique_sample_codes:
+        description: |-
+          Method/Schema for Assigning Unique Sample Codes
+
+          Describe the method or schema used to assign unique identifiers to samples in the study. Examples include consecutive numbering, alphanumeric or (in the case of in vitro studies) a combination of plate identifier and well coordinate.
+        comments:
+          - Describe the methhod / schema used to assign sample codes to test samples.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.7.2
+      metadata:
+        description: |-
+          Metadata
+
+          Provide a 'data object' (e.g. file) containing the unique sample identifiers and any metadata fields required to analyse or interpret the study. Examples of metadata crucial for data analysis and interpretation include, but are not limited to, sample type (e.g. control or treatment group), species, sex, strain, cell type, dose level, exposure duration, etc. Other types of metadata that are not crucial for downstream data analysis interpretation may also be included in this table at the researcher's discretion.
+        comments:
+          - Provide the metadata necessary to track sample provenance and inform downstream processing and or analysis. This information should be provided as a data object. Please specify the file name of the data object here.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:2.7.3
+
+  TERMSupportingDataStreams:
+    description: |-
+      Supporting Data Streams
+
+      Additional supporting data streams or information for the study.
+    exact_mappings:
+      - oecd_oorf_2023:2.8
+    attributes:
+      supporting_sources_of_data_or_information:
+        description: |-
+          Describe any supporting sources of data or information for the study (eg cytotoxicity assessment, pilot studies, matched apical data, etc)
+
+          To benefit optimally from the data generated, additional information should be reported to the extent possible. This information can range from OECD Test Guidelines for a particular animal study to methodological Standard Operating Procedures (SOP) to scientific publications in which analysis of (a subset of) the data has been described. Toxicity or cytotoxicity experiments necessary to establish the appropriate doses/concentrations can also be reported here.
+        exact_mappings:
+          - oecd_oorf_2023:2.8.1
+

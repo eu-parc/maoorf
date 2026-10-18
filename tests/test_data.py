@@ -6,12 +6,15 @@ import pytest
 from pathlib import Path
 
 import maoorf.datamodel.maoorf
-from linkml_runtime.loaders import yaml_loader
+from linkml_runtime.loaders import json_loader, yaml_loader
 
 DATA_DIR_VALID = Path(__file__).parent / "data" / "valid"
 DATA_DIR_INVALID = Path(__file__).parent / "data" / "invalid"
 
-VALID_EXAMPLE_FILES = glob.glob(os.path.join(DATA_DIR_VALID, "*.yaml"))
+VALID_EXAMPLE_FILES = sorted(
+    glob.glob(os.path.join(DATA_DIR_VALID, "*.yaml"))
+    + glob.glob(os.path.join(DATA_DIR_VALID, "*.json"))
+)
 INVALID_EXAMPLE_FILES = glob.glob(os.path.join(DATA_DIR_INVALID, "*.yaml"))
 
 
@@ -23,5 +26,6 @@ def test_valid_data_files(filepath):
         maoorf.datamodel.maoorf,
         target_class_name,
     )
-    obj = yaml_loader.load(filepath, target_class=tgt_class)
+    loader = json_loader if str(filepath).endswith(".json") else yaml_loader
+    obj = loader.load(filepath, target_class=tgt_class)
     assert obj

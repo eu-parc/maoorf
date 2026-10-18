@@ -1,0 +1,444 @@
+id: https://w3id.org/eu-parc/maoorf/core/base
+name: maoorf_base
+title: OORF Base Classes
+description: Abstract base classes for Data Acquisition and Processing Reporting Modules
+  (DAPRM) and Data Analysis Reporting Modules (DARM)
+license: MIT
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+default_prefix: maoorf
+default_range: string
+imports:
+- linkml:types
+- ./types
+classes:
+  DAPRM:
+    abstract: true
+    description: 'Data Acquisition and Processing Reporting Modules (DAPRMs)
+
+
+      Data Acquisition and Processing Reporting Modules (DAPRMs) capture and report
+      descriptions of the omics assays, data acquisition and associated data processing
+      prior to statistical analysis. These modules are unique to each omics data type.
+      Furthermore, the reporting described is generalisable and adaptable, because
+      (1) it is not the intention of this Guidance Document to prescribe the types
+      of assays that the regulatory toxicology community should use; (2) technologies
+      will continue to evolve and we want the OORF to remain relevant; and (3) omics
+      assays often do not fit well into predefined boxes.'
+    exact_mappings:
+    - oecd_oorf_2023:3
+    attributes:
+      type:
+        description: Module type discriminator for the Data Acquisition and Processing
+          Reporting Module
+        designates_type: true
+  DARM:
+    abstract: true
+    description: 'Data Analysis Reporting Modules (DARMs)
+
+
+      These modules serve to capture and report descriptions of the statistical analysis
+      that is undertaken in the omics study, for example for the purposes of discovering
+      differentially abundant molecules (eg differentially expressed genes in a transcriptomic
+      study). The modules were designed to accommodate various types of omics data
+      and can thus be applied to multi-omic data sets. There is one or more DARM per
+      study (a minimum of one is mandatory) dependent upon the type(s) of data analysis
+      applied to the datasets.'
+    exact_mappings:
+    - oecd_oorf_2023:4
+    slots:
+    - inputs
+    - outputs
+    attributes:
+      type:
+        description: Module type discriminator for the Data Analysis Reporting Module
+        designates_type: true
+  DARMInputs:
+    description: 'Inputs for a Data Analysis Reporting Module (DARM)
+
+
+      Input for data analysis, in the form of processed omics data (eg normalised
+      gene expression data, normalised metabolome data) is generated using processes
+      described in a DAPRM. Metadata files containing information associating omics
+      samples with experimental parameters are often also necessary for conducting
+      an analysis.'
+    slots:
+    - data_input
+    - metadata_input
+  DARMOutputs:
+    description: 'Outputs and Supporting Files for a Data Analysis Reporting Module
+      (DARM)
+
+
+      Complete the file manifest included as part of the reporting template. The manifest
+      must include the listing of all files included in the regulatory application
+      package specific to the analysis. Each file in the manifest must be accompanied
+      by a description of the file.'
+    slots:
+    - output_and_supporting_files
+slots:
+  inputs:
+    description: 'Inputs
+
+
+      Input for data analysis, in the form of processed omics data (eg normalised
+      gene expression data, normalised metabolome data) is generated using processes
+      described in a DAPRM. The user should indicate what file(s) / data are used
+      as the input for the analysis. Metadata files containing information associating
+      omics samples with experimental parameters (eg treatments, dose levels, time
+      points, sex, etc) may also be necessary for the analysis. The user should specify
+      these files as well.'
+    range: DARMInputs
+    recommended: true
+  outputs:
+    description: 'Outputs and Supporting Files
+
+
+      Complete the file manifest included as part of the reporting template. The manifest
+      must include the listing of all files included in the regulatory application
+      package specific to the analysis. Each file in the manifest must be accompanied
+      by a description of the file. If the file being described is a tabular file,
+      then the rows and columns must be described so that anyone can understand the
+      contents of the file. Supporting files may include analysis scripts, software
+      configurations or tables of metadata. The phrase `data object` refers to any
+      machine readable input, output or metadata file.'
+    range: DARMOutputs
+    recommended: true
+  data_input:
+    description: 'Data Input(s)
+
+
+      Provide the name of the input data object(s)'
+    comments:
+    - Provide the data object(s) that will be used as input for the analysis. List
+      data object name(s) in the file manifest tab.
+    recommended: true
+  metadata_input:
+    description: 'Metadata Input(s)
+
+
+      Provide the name of the input metadata object(s)'
+    comments:
+    - Provide the metadata object(s) that will be used as input for the analysis.
+      List data object name(s) in the file manifest tab.
+    recommended: true
+  output_and_supporting_files:
+    description: 'Output and Supporting Files
+
+
+      Complete the file manifest included as part of the reporting template. The manifest
+      must include the listing of all files included in the regulatory application
+      package specific to the analysis. Each file in the manifest must be accompanied
+      by a description of the file. If the file being described is a tabular file,
+      then the rows and columns must be described so that anyone can understand the
+      contents of the file. Supporting files may include analysis scripts, software
+      configurations or tables of metadata. The phrase `data object` refers to any
+      machine readable input, output or metadata file.'
+    comments:
+    - The operator should use the File Manifest tab to describe any outputs or supplementary
+      files associated with the analysis described in this reporting module.
+    recommended: true
+  type:
+    description: Module type discriminator for the Data Acquisition and Processing
+      Reporting Module
+  study_rationale:
+    description: Study Rationale
+  data_analysis:
+    description: Data Analysis
+  background_information:
+    description: Background Information
+  objectives:
+    description: Objectives
+  study_design:
+    description: Study Design
+  treatment_conditions:
+    description: Treatment Conditions
+  test_item_name:
+    description: Test item name
+  strain:
+    description: Strain
+  sex:
+    description: Sex
+  cell_type:
+    description: Cell type
+  dose_levels:
+    description: Dose levels (including units)
+  dose_intervals:
+    description: Dose intervals (including units)
+  route_of_administration:
+    description: Route of administration
+  identity_of_vehicle:
+    description: Identity of vehicle
+  model_selection:
+    description: Model selection
+  commercial_source:
+    description: Commercial Source
+  ph:
+    description: pH
+  purity:
+    description: Purity
+  expiration_date:
+    description: Expiration date
+  supplier:
+    description: Supplier
+  quality_criteria_before_use:
+    description: Quality criteria before use
+  other:
+    description: Other
+  temperature:
+    description: Temperature
+  humidity:
+    description: Humidity
+  morphology:
+    description: Morphology
+  storage_conditions:
+    description: Storage conditions
+  methods_used_for_collection_of_biological_samples:
+    description: Methods used for collection of biological sample(s)
+  technology:
+    description: Technology
+  transcriptomics_experimental_design:
+    description: Transcriptomics Experimental Design
+  data_normalisation:
+    description: Data Normalisation
+  other_relevant_information:
+    description: Other relevant information
+  rna_processing:
+    description: RNA Processing
+  sample_pooling_protocol:
+    description: Sample Pooling Protocol (if applicable)
+  batch_processing_of_samples:
+    description: Batch Processing of Samples (if applicable)
+  type_of_extracted_rna:
+    description: Type of extracted RNA (eg, total RNA, mRNA, miRNA)
+  extraction_and_purification_techniques:
+    description: Extraction and purification techniques
+  procedures_for_mrna_enrichment:
+    description: Procedures for mRNA enrichment (if applicable), or other enrichment
+      procedures
+  quantification_and_qualification_of_rna:
+    description: Quantification and Qualification of RNA
+  tool_for_rna_assessment:
+    description: Tool for RNA assessment
+  rna_quality:
+    description: RNA quality
+  sample_pooling_occurred:
+    description: Whether any sample pooling has occurred (samples being combined into
+      one hybridisation)
+  number_of_batches:
+    description: Number of batches
+  number_of_samples_in_each_batch:
+    description: Number of samples used in each batch of the microarray experiment
+  other_pertinent_settings:
+    description: Other pertinent settings
+  availability_of_raw_data:
+    description: Availability of Raw Data
+  output_files:
+    description: Output Files
+  name_and_version:
+    description: Name and version of feature extraction software
+  naming_convention:
+    description: Naming convention
+  experimental_metadata_file:
+    description: Experimental metadata file
+  name_of_public_repository:
+    description: Name of public repository
+  accession_number:
+    description: Accession number or equivalent identification number of the submitted
+      data to facilitate data retrieval
+  format_of_submitted_data:
+    description: Format of submitted data (eg txt, xls, etc)
+  other_filtering_methods:
+    description: Other filtering methods
+  one_or_two_channels:
+    description: If the data are one channel (one fluorescent label) or two channels
+  background_data_subtraction:
+    description: If a background data subtraction was applied and at what point in
+      the process relative to the normalisation step
+  method_of_background_calculation:
+    description: The method of background calculation
+  weighting_procedures:
+    description: Describe any weighting procedures that were applied
+  two_channel_normalisation_timing:
+    description: If the data are two channel, report if data were normalized before
+      (on single channels) or after the calculation of the ratio
+  data_transformation:
+    description: If the data were transformed (eg by log2), and if so before or after
+      the normalisation
+  data_trimming:
+    description: If the data were trimmed before the mean or median (a trimmed mean)
+      was calculated, and if yes, how
+  control_negative_sample_removal:
+    description: If control and/or negative sample data were removed from the data
+      set prior to the normalisation
+  ranked_on_single_channel_or_ratio_data:
+    description: If the data were ranked on single channel data or calculated ratio
+      data
+  all_relevant_information:
+    description: All relevant information
+  outlier_and_low_quality_data_removal:
+    description: Outlier and Low Quality Data Removal
+  outlier_identification_and_reason_for_removal:
+    description: Describe how outlier samples were identified and reason for removal
+  list_of_samples_excluded_and_justification:
+    description: List of samples excluded and per sample justification for exclusion
+  rna_extraction:
+    description: RNA Extraction
+  specific_gene_filtering:
+    description: Specific gene filtering
+  description_of_instruments_used:
+    description: Description of instrument(s) used
+  protocol_or_kit_and_modifications:
+    description: Protocol or kit and any modifications
+  overall_description_and_rationale:
+    description: Overall description and rationale for mass spectrometry metabolomics
+      approach
+  sample_processing_and_metabolite_extraction:
+    description: Sample processing and metabolite extraction and addition of chemical
+      reference standards
+  analytical_quality_assurance_and_qc_samples:
+    description: Analytical quality assurance and preparation of quality control samples
+  outputs_data_matrices:
+    description: 'Outputs: Data matrices from metabolomics assays'
+  technology_types_used:
+    description: Technology type(s) used, eg LC-MS, LC-MS/MS, GC-MS, GC-MS/MS, DI-MS,
+      DIMS/MS, or other
+  links_to_sops_or_publications:
+    description: Link(s) to relevant SOP(s) or publication(s) of approach used (optional)
+  extraction_method_general_description:
+    description: Extraction method general description, including per-sample amounts,
+      solvent(s) used and their ratios, means of agitation/maceration, temperatures
+      and times, and post extraction handling
+  extract_concentration_and_reconstitution:
+    description: Drying and reconstitution method general description, including final
+      reconstitution, solvent(s) and final volume (if used), storage temperature (if
+      relevant) and duration of reconstituted extracts (if relevant)
+  chemical_reference_standard_preparation:
+    description: 'For each new standard (or each named panel of standards) prepared
+      for this study: Purpose of standard, Quantification type, Calibration methodology,
+      Identity, Purity, Supplier, Preparation method, and Concentration(s)'
+  qc_samples:
+    description: Sample details for system suitability QC sample (if used), intrastudy
+      QC sample, intralaboratory QC sample (if used) and interlaboratory QC sample
+      (if used) Should include details of source, preparation details, batch number
+      (if relevant), certificate of analysis (COA) (if relevant), storage conditions
+      and days since preparation
+  process_blank_sample:
+    description: Type of process blank, start and end points of the 'process' used
+      to prepare this sample, and storage conditions
+  instrument_configurations_and_methods:
+    description: File(s) summarising instrument configuration and method details of
+      analysis performed See Section 34 - Table 3 of OORF Guidance Document for suggested
+      reporting elements depending on the instrumentation and method applied
+  acquisition_order:
+    description: Acquisition order for QC samples, biological samples and reference
+      standard samples
+  assay_types_used:
+    description: Mass spectrometry assay type(s) used (see Section 34 - Table 2 of
+      OORF Guidance Document)
+  how_sample_acquisition_order_defined:
+    description: Describe how sample acquisition order was defined, eg frequency of
+      intrastudy QCs, method to randomise biological sample order
+  acquisition_order_table:
+    description: Acquisition order of all types of QC samples, biological samples
+      and reference standard samples (if relevant), thereby indicating the number
+      of pre-conditioning QC samples, the number of process blank samples, and the
+      frequency of analysis of intrastudy QC samples
+  data_processing_workflows:
+    description: Data processing workflow(s)
+  data_reduction:
+    description: Data reduction method(s) and parameters used - including (where relevant)
+      details of feature detection/picking, retention time alignment, feature grouping/matching,
+      and feature integration
+  identification_and_removal_of_outlying_samples:
+    description: Methods and parameters used to identify and remove samples (if used;
+      see section 71 for actual samples removed)
+  normalisation:
+    description: Normalisation method(s) and parameters (if used)
+  normality_testing_scaling_and_transformations:
+    description: Normality testing, scaling and/or transformation methods and parameters
+      (if used)
+  processing_methods_for_metabolite_quantification:
+    description: Description of method(s) and parameters for metabolite quantification
+      - including (where relevant) for relative- and/or semi- and/or absolute quantification
+  processing_methods_for_metabolite_annotation_and_identification:
+    description: Description of method(s) and parameters for metabolite annotation/identification
+      - including (if relevant) whether reference standards are from in-house or external
+      spectral library(ies) and the spectral library(ies) used
+  workflow_description:
+    description: Data processing workflow description
+  software_names_and_versions:
+    description: Name(s) and version(s) of the software used
+  scripts_or_workflow_files:
+    description: Script(s)/workflow file(s) or a reference to a URL or DOI of the
+      script(s)/workflow file(s) (optional)
+  data_processing_histories_or_logs:
+    description: Data processing history(ies) or log(s) (optional)
+  references_to_protocols_or_publications:
+    description: Reference to relevant protocol(s) or publication(s)
+  intrastudy_qc_precision_report:
+    description: Measure of a study's analytical precision achieved using intrastudy
+      QC samples, relative to a laboratory's acceptance criteria, to confirm analyses
+      are of sufficient quality for regulatory purposes To include quantitative reporting
+      of the RSDs of feature intensity (mandatory), m/z (optional) and retention time
+      (if relevant; optional), for example reported as the distribution and median
+      of RSD values of all feature intensities across all intrastudy QC samples; and
+      a qualitative assessment of the similarity of intrastudy QCs using PCA, reported
+      as a PCA scores plot from a global analysis of all the biological and intrastudy
+      QC samples
+  intralaboratory_qc_reproducibility_report:
+    description: Measure of intralaboratory (and interstudy) reproducibility, using
+      intralaboratory QC samples, to assess any long term differences between separate
+      studies within the laboratory
+  interlaboratory_qc_reproducibility_report:
+    description: Interlaboratory QC reproducibility report (optional)
+  measure_of_interlaboratory_reproducibility:
+    description: Measure of interlaboratory reproducibility, using interlaboratory
+      QC samples, to assess any differences between separate laboratories; ie performance
+      standard achieved relative to specified amounts of metabolites
+  sample_list:
+    description: 'For each biological sample: Unique biological sample identifier;
+      Order of extraction of biological samples; Order of mass spectrometric data
+      acquisition; Whether any biological samples were removed from the study and
+      justification for doing so (eg outlier detected using PCA due to limited sample
+      volume)'
+  metabolite_annotation_identification:
+    description: 'For each feature and/or metabolite: Analytical identifiers, Ion
+      form, Molecular formula(e), Monoisotopic molecular mass, Common metabolite name,
+      Structural code, Metabolite identifier(s), Common metabolite class name, MSI
+      level of identification (levels 1-4), known unknown status, m/z error, Retention
+      time error, and fragmentation score'
+  metabolite_quantification:
+    description: Metabolite quantification
+  data_matrices_of_intensities:
+    description: Data matrices of all feature/metabolite intensities, across all remaining
+      (ie not removed as outliers) biological and intrastudy QCs samples
+  software_documentation:
+    description: Software Documentation
+  contrasts:
+    description: Contrasts for Which Differentially Abundant Molecules were Identified
+  assay_experimental_design:
+    description: Assay Experimental Design
+  name_and_description_of_method:
+    description: Name and description of the multivariate method
+  variable_selection_method:
+    description: The name and description of the variable selection method (If variable
+      selection used)
+  selected_variables:
+    description: Selected variables (If variable selection used)
+  parameter_settings:
+    description: Parameter settings (eg scaling method)
+  citations_to_literature:
+    description: Methods should include clear citations to literature describing them
+  statistical_test_performed:
+    description: Statistical Test Performed to Identify Dose-Responsive MSD
+  statistical_threshold_applied:
+    description: Statistical Threshold Applied
+  additional_filtering:
+    description: Additional Filtering
+  biological_entity_or_set_annotation_used:
+    description: Biological Entity or Biological Set Annotation Used for the Analysis
+  rna_yield:
+    description: Yield

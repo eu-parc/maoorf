@@ -1,0 +1,538 @@
+ssrm:
+  study_identifiers:
+    abstract: Investigate the transcriptomic response of RPTEC/TERT1 cells on cisplatin treatment.
+    study_identifier: EUT046
+    standardised_toxicology_dataset: NA
+    complete_omics_dataset: NA
+  study_rationale:
+    background_information: Investigate the transcriptomic response of RPTEC/TERT1 cells on cisplatin treatment.
+    objectives: Investigate the transcriptomic response of RPTEC/TERT1 cells on cisplatin treatment.
+    test_item:
+      test_item_name: Cisplatin
+      test_item_cas: 15663-27-1
+      test_item_smiles: N.N.Cl[Pt]Cl
+      test_item_iupac_name: azane;dichloroplatinum
+      test_item_additional_information: InChI=1S/2ClH.2H3N.Pt/h2*1H;2*1H3;/q;;;;+2/p-2, DTXSID4024983,
+      test_item_sources_of_identifiers: https://pubchem.ncbi.nlm.nih.gov/compound/cisplatin
+    test_system_characteristics_in_vivo:
+      species: NOT IN VIVO STUDY
+      strain: NOT IN VIVO STUDY
+      sex: NOT IN VIVO STUDY
+      age: NOT IN VIVO STUDY
+    test_system_characteristics_in_vitro:
+      cell_type: RPTEC/TERT1
+      species_of_origin: HUMAN
+    study_design:
+      dose_levels: 0, 0.1, 0.5, 1, 2.5, 5, 10, 20, 30, 50 uM
+      dose_intervals: acute single exposure (hours)
+      number_of_biological_replicates_per_treatment_condition: 3 per treatment, 6 for control conditions
+      timetable_sample_collection: 0, 4, 8, 16, 24, 48, 72 hours
+    treatment_conditions:
+      route_of_administration: in vitro exposure
+      identity_of_vehicle: DMEM
+    sample_collection:
+      type_of_biological_sample_for_omics: in vitro generated cell lysate
+      sample_preservation_method: freezing at -80 degrees Celcius
+  data_acquisition_and_processing:
+    daprm_modules: RNA-Seq
+    omics_technology_manufacturer_and_model: TempO-Seq, Bioclavis, whole transcriptome probe panel version 1.2 with standard
+      attenuators
+    description_and_rationale_for_data_acquisition_approach: FOLLOW UP WITH LUKAS
+    sample_preparation_method: Cell lysates
+    demonstration_of_quality_of_analysis: Bioclavis QC report?
+  data_analysis:
+    darm_modules: DARM - DAM, DARM - BMD, DARM - MVA?
+    description_and_rationale_for_data_analysis_approach: Determine cisplatin dose responses from RPTEC/TERT1 cells. The dose
+      responses are both determined based on gene expression (log2 Fold Change) values and module eigengene scores (obtained
+      from the TXG-MAPr).
+term:
+  study_rationale:
+    background_information: Investigate the transcriptomic response of RPTEC/TERT1 cells on cisplatin treatment.
+    objectives: Investigate the transcriptomic response of RPTEC/TERT1 cells on cisplatin treatment.
+    mechanistic_understanding: Investigate the transcriptomic response of RPTEC/TERT1 cells on cisplatin treatment.
+    model_selection:
+      in_vivo_species_model_and_tissue_rationale: NOT IN VIVO STUDY
+      species_and_strain_rationale: NOT IN VIVO STUDY
+      in_vitro_relevance: "The RPTEC/TERT1 cell line has been immortalized using the human telomerase reverse transcriptase\
+        \ (hTERT) subunit only and does not exhibit chromosomal abnormalities. \nAs a nephron segment, the proximal tubule\
+        \ is most susceptible to adverse events, as it plays a crucial role in absorption and secretion which require high\
+        \ energy consumption.\n\nThe RPTEC/TERT1 cel line, representing immortalized human renal proximal tubule epithelial\
+        \ cells, serves as a valuable in vitro model for studying renal function. With characteristics closely mirroring primary\
+        \ cells, it proviedes a reproducible system for investigating drug toxicity in a human context."
+    dose_concentration_level_and_interval_selection: 0, 0.1, 0.5, 1, 2.5, 5, 10, 20, 30, 50 uM (single exposure) - rationale
+      (FOLLOW UP WITH LUKAS)? - add cytotox data (first toxic concentration)?
+    route_of_administration: in vitro exposure
+    time_point_selection: 4, 8, 16, 24, 48, 72 hours
+    samples_and_replicates:
+      biological_replicate_number: 3 per treatment, 6 for control conditions - the minimal number of replicates is 3.
+      number_of_technical_and_analytical_replicates: NA
+    limitations: Relying solely on technical replicates (repeated measurements of the same sample) without incorporating biological
+      replicates (independent samples from the same population) can lead to limitations. This approach neglects inherent biological
+      variability, making it challenging to distinguish between technical and true biological differences. The absence of
+      biological replicates may result in increased risk of confounding factors, reduced statistical power, and lack of confidence
+      in the generalizability and reliability of experimental findings. Including biological replicates is essential for a
+      more comprehensive and accurate assessment of biolocial variation and overall experimental robustness.
+  test_and_control_items:
+    test_item_name: Cisplatin
+    formulation_composition:
+      substances_in_mixture: NA
+      relative_proportions_of_substances: NA
+    preparation_of_test_item_composition:
+      concentration_of_test_item: 0, 0.1, 0.5, 1, 2.5, 5, 10, 20, 30, 50 uM
+      concentration_of_diluents: 100% DMSO
+      identification_of_impurities: unknown?
+    physicochemical_properties:
+      appearance_physical_state_colour: White to light yellow lyophilized powder
+      molecular_weight: 301,1 g/mol
+      melting_point_freezing_point: 270 C
+      boiling_point: UNKNOWN
+      ph: UNKNOWN
+      viscosity: UNKNOWN
+      density: UNKNOWN
+      vapour_pressure: UNKNOWN
+      partition_coefficient: UNKNOWN
+      water_solubility: 1 mg/ml (with warming)
+      fat_solubility: UNKNOWN
+      particle_size_distribution: NA
+      additional_physicochemical_information: UNKNOWN
+    chemical_stability:
+      stability_in_organic_solvents: UNKNOWN
+      stability_thermal_sunlight_metals: UNKNOWN
+      stability_dissociation_constant: UNKNOWN
+    commercial_source:
+      vendor: FOLLOW UP WITH LUKAS
+      manufacture_id: FOLLOW UP WITH LUKAS
+      lot_batch_number: FOLLOW UP WITH LUKAS
+      purity: FOLLOW UP WITH LUKAS
+      salt_form: FOLLOW UP WITH LUKAS
+      expiration_date: FOLLOW UP WITH LUKAS
+      storage: FOLLOW UP WITH LUKAS
+    test_item_specific_identifiers:
+      cas: 15663-27-1
+      smiles: N.N.Cl[Pt]Cl
+      iupac_name: azane;dichloroplatinum
+      additional_information: InChI=1S/2ClH.2H3N.Pt/h2*1H;2*1H3;/q;;;;+2/p-2, DTXSID4024983,
+      sources_of_identifiers: https://pubchem.ncbi.nlm.nih.gov/compound/cisplatin
+  test_system_characteristics:
+    general_characteristics_in_vivo:
+      animal_species: NOT IN VIVO STUDY
+      strain: NOT IN VIVO STUDY
+      sex: NOT IN VIVO STUDY
+      age_during_study: NOT IN VIVO STUDY
+      developmental_stage: NOT IN VIVO STUDY
+      individual_weights_lengths_at_start: NOT IN VIVO STUDY
+      supplier: NOT IN VIVO STUDY
+      interventions_before_or_during_experiment: NOT IN VIVO STUDY
+      quality_criteria_before_use: NOT IN VIVO STUDY
+      health_status_and_acclimation: NOT IN VIVO STUDY
+      randomisation_of_animals_to_groups: NOT IN VIVO STUDY
+      other: NOT IN VIVO STUDY
+    general_characteristics_in_vitro:
+      cell_type: RPTEC/TERT1
+      origin: HUMAN
+      cell_passage_number: between 40 and 45
+      differentiation_stage: Differentiated epithelial monolayer
+      absence_of_mycoplasma: Mycoplasma absent
+      metabolic_competence: FOLLOW UP WITH LUKAS add reference on metabolic competence
+      supplier: FOLLOW UP WITH LUKAS
+      quality_criteria_before_use: Visual confirmation of confluent differentiated epithelial monolayer with cobblestone morphology
+    housing_and_husbandry_in_vivo:
+      type_of_facility: NOT IN VIVO STUDY
+      type_of_cage_or_housing: NOT IN VIVO STUDY
+      bedding_material: NOT IN VIVO STUDY
+      number_of_cage_companions: NOT IN VIVO STUDY
+      tank_shape_and_material: NOT IN VIVO STUDY
+      breeding_programme: NOT IN VIVO STUDY
+      light_dark_cycle: NOT IN VIVO STUDY
+      temperature: NOT IN VIVO STUDY
+      quality_of_water: NOT IN VIVO STUDY
+      type_of_food: NOT IN VIVO STUDY
+      access_to_food_and_water: NOT IN VIVO STUDY
+      environmental_enrichment: NOT IN VIVO STUDY
+      methods_for_fertilisation_collection_of_eggs: NOT IN VIVO STUDY
+      other: NOT IN VIVO STUDY
+    cell_culture_conditions_in_vitro:
+      incubation_characteristics:
+        temperature: 37 degrees Celcius
+        co2_o2_conditions: 5 % CO2 / 20 % O2
+        humidity: Relative humidity of 95%
+      state_of_cells_before_use:
+        viability: Visual confirmation
+        quality_control: NA
+        morphology: cobblestone morphology
+        recommended_confluency_of_use: 100 % confluent
+      culture_media:
+        use_of_serum: FBS
+        use_of_antibiotics: streptomycin and penicillin
+      growth_support_substrates:
+        use_of_feeder_cells: NA
+        use_of_matrixes_or_scaffolds: NA
+  study_design:
+    dose_selection:
+      dose_levels: 0, 0.1, 0.5, 1, 2.5, 5, 10, 20, 30, 50 uM
+      dose_intervals: single exposure
+    test_method_instruments_equipment_and_reagents:
+      commercial_source: FOLLOW UP WITH LUKAS
+      manufacturers_reagent_and_kit_information: FOLLOW UP WITH LUKAS
+    types_of_treatments:
+      controls: DMEM - all treatments were matched with a negative control for each timepoint (i.e. we have negative (DMEM)
+        controls without cisplatin treatment for each timepoint (4, 8, 16, 24, 48, and 72 hours).
+      pre_treatments: None
+      acclimation: None
+      types_of_replicates: Techinical replicates (all measured in different wells on the same plate) in vitro studies, treatment
+        of test item conditions (combination of chemical concentration and time) on cells was executed 3 times, all measured
+        ind ifferent wells on the same plate, which we call technical replicates. For our negative controls, we had six techinical
+        replicates.
+    number_of_animals_samples_per_treatment:
+      biological_replicates: NA
+      technical_analytical_replicates: 3 per treatment condition, 6 per control
+    statistical_design:
+      exposure_design: No extra measures were needed
+      sampling_schemes: NA
+      sample_blinding: None
+    observations_examinations_during_treatment:
+      in_life_clinical_observations: NOT IN VIVO STUDY
+      toxicokinetics: NOT IN VIVO STUDY
+      histopathology_and_organ_weight: NOT IN VIVO STUDY
+      clinical_chemistry_and_pathology_in_vivo: NOT IN VIVO STUDY
+      reason_animals_removed: NOT IN VIVO STUDY
+      cytological_analyses_in_vivo: NOT IN VIVO STUDY
+      cytobiological_examinations_in_vitro: None
+      other_biochemical_molecular_analyses: None
+  treatment_conditions:
+    route_of_administration_in_vivo: NOT IN VIVO STUDY
+    route_of_administration_in_vitro: addition of diluted compound to cell culture medium
+    housing_condition_modifications_in_vivo: NOT IN VIVO STUDY
+    culture_condition_modifications_in_vitro: None
+    test_item_preparation:
+      dilution_in_vehicle: FOLLOW UP WITH LUKAS
+      preparation_steps: FOLLOW UP WITH LUKAS
+      separation_steps: FOLLOW UP WITH LUKAS
+      extraction_steps: NA
+      storage_conditions: FOLLOW UP WITH LUKAS
+      stability_during_storage: FOLLOW UP WITH LUKAS
+      expiration_date: FOLLOW UP WITH LUKAS
+      nominal_or_measured_concentrations: FOLLOW UP WITH LUKAS
+      analytic_controls_on_measured_concentrations: FOLLOW UP WITH LUKAS
+      dosing_solution_homogeneity: FOLLOW UP WITH LUKAS
+    test_item_stability_reactivity:
+      stability_under_test_conditions: FOLLOW UP WITH LUKAS
+      solubility_and_stability_in_solvent_vehicle: FOLLOW UP WITH LUKAS
+      reactivity_with_solvent_vehicle_or_medium: FOLLOW UP WITH LUKAS
+      impact_of_separation_and_extraction_steps: FOLLOW UP WITH LUKAS
+    test_item_preparation_in_vivo:
+      formulation_diet_preparation_procedures: NOT IN VIVO STUDY
+      test_atmosphere_generation_and_chamber_description: NOT IN VIVO STUDY
+      achieved_concentration: NOT IN VIVO STUDY
+      stability_and_homogeneity_of_preparation: NOT IN VIVO STUDY
+      test_material_intake: NOT IN VIVO STUDY
+    vehicle_description_and_delivery_volume:
+      identity_of_vehicle: NOT IN VIVO STUDY
+      delivery_volume: NOT IN VIVO STUDY
+      final_concentration_of_vehicle: NOT IN VIVO STUDY
+      maximum_volume_of_liquid_administered: NOT IN VIVO STUDY
+    exposure_schedule:
+      frequency_of_test_item_administration: NOT IN VIVO STUDY
+      time_of_day_of_dosing_in_vivo: NOT IN VIVO STUDY
+      time_of_dosing_after_seeding_in_vitro: 12 days
+      recovery_period: NOT IN VIVO STUDY
+    housing_culture_condition_deviations:
+      temperature: 37 degrees Celcius
+      humidity: Relative humidity of 95%
+      co2_percentage: 5% CO2 / 20% O2
+      ph: '7.5'
+      availability_and_quality_of_nutrients: FOLLOW UP WITH LUKAS
+      other: FOLLOW UP WITH LUKAS
+  study_exit_and_sample_collection:
+    type_of_biological_sample: 2D cell culture
+    study_exit_in_vivo:
+      anaesthetic_used: NOT IN VIVO STUDY
+      analgesic_used: NOT IN VIVO STUDY
+      method_of_euthanasia: NOT IN VIVO STUDY
+      phenotypic_characteristics: NOT IN VIVO STUDY
+      methods_used_for_collection_of_biological_samples: NOT IN VIVO STUDY
+    study_exit_in_vitro:
+      collection_of_biological_material: FOLLOW UP WITH LUKAS
+      cell_density_at_time_of_harvesting: FOLLOW UP WITH LUKAS
+      growth_phase_stage: FOLLOW UP WITH LUKAS
+      number_of_culture_passage: FOLLOW UP WITH LUKAS
+      morphology: FOLLOW UP WITH LUKAS
+      methods_used_for_collection_of_biological_samples: FOLLOW UP WITH LUKAS
+    sampling_vial:
+      type_of_vial_or_tube: FOLLOW UP WITH LUKAS
+      chemicals_within_sample_tube: None
+      chemicals_added_to_preserve_samples: None
+    washing:
+      washing_solvents: PBS
+      washing_procedure: rinse one with 100 uL PBS at room temperature
+    quenching:
+      quench_solvent: None
+      quenching_procedure: None
+    pooling_of_samples:
+      sample_pooling_procedures: None
+    sample_storage_and_transport:
+      post_sample_collection_handling: FOLLOW UP WITH LUKAS
+      storage_temperature_and_duration: freezed at -80 degrees Celcius
+      transportation_method: Transported on dry-ice
+      number_of_freeze_thaw_cycles: '2'
+    time_table:
+      treatments: Cisplatin
+      sample_collections: 0, 4, 8, 16, 24, 48, 72 hours
+      time_since_last_dose_administered: 0, 4, 8, 16, 24, 48, 72 hours
+      time_to_sample_extractions: NA
+  sample_identification_codes:
+    lims: FOLLOW UP WITH LUKAS
+    method_schema_for_assigning_unique_sample_codes: Combination of experiment, biological replicate, plate, treatment, concentration,
+      technical replicate identifiers
+    metadata: EUT046_metadata_final.csv
+  supporting_data_streams:
+    supporting_sources_of_data_or_information: cytotox, or anything else
+daprm:
+- type: RNASeqDAPRM
+  technology:
+    type_and_version_of_sequencing_platform: Bioclavis
+    size_and_type_of_sequencing: 50? Bioclavis
+    flow_cell_used: Bioclavis
+    targeting_probe_annotation: Temposeq_manifest_Human_WT_1.2_realignment_96percent_2023-05-15.txt
+    library_type: Bioclavis
+    purpose: Targeted gene expression
+    other: NA
+  transcriptomics_experimental_design:
+    rna_processing:
+      rna_extraction:
+        type_of_extracted_rna: Bioclavis
+        extraction_and_purification_techniques: Bioclavis
+        procedures_for_mrna_enrichment: Bioclavis
+        storage_conditions: stored at -80 degrees Celcius
+      quantification_and_qualification_of_rna:
+        tool_for_rna_assessment: Bioclavis
+        rna_quality: Bioclavis, to be provided as part of the metadata?
+        rna_quantity: Bioclavis, to be provided as part of the metadata?
+    library_preparation:
+      library_preparation_applied:
+        manual_or_automated_system: Bioclavis
+        fragmentation_strategy: Bioclavis
+        probe_manifest: Temposeq_manifest_Human_WT_1.2_realignment_96percent_2023-05-15.txt
+        number_of_pcr_amplification_cycles: Bioclavis
+        targeting_probe_annealing_ligation_and_pcr_steps: Bioclavis
+    sample_pooling_protocol:
+      sample_pooling_occurred: 'No'
+      indexing_strategy: NA
+      number_of_samples_pooled_per_sequencing_unit: NA
+      table_of_barcodes_assigned_to_each_sample: NA
+      other: NA
+    batch_processing_of_samples:
+      number_of_batches: '1'
+      number_of_samples_in_each_batch: '1'
+      method_of_sample_assignment_to_batches: NA
+    wet_lab_quality_control:
+      use_of_chip_based_electrophoresis: Bioclavis
+      use_of_spike_in_controls:
+        type_of_spike_in_used: Bioclavis
+        amount_of_sequence_used: Bioclavis
+        source_of_spike_in: Bioclavis
+        step_of_introduction: Bioclavis
+      use_of_unique_molecular_identifiers:
+        type_of_umis: Bioclavis
+        source_of_umis: Bioclavis
+    sequencing_quality_control_criteria:
+      quality_control_standard:
+        type_of_standard: Bioclavis
+        source_of_standard: Bioclavis
+        quantity_used: Bioclavis
+      sequencing_quality_metrics:
+        number_of_clusters_passing_filtering: Bioclavis
+        average_quality_score: Bioclavis
+  analysis_of_raw_data:
+    base_calling:
+      base_calling_software:
+        name_and_version: Tempo-SeqR software package Bioclavis
+        quality_score_version: Bioclavis
+      output_files:
+        naming_convention: Bioclavis
+        experimental_metadata_file: Bioclavis
+    availability_of_raw_data:
+      output_files:
+        name_of_public_repository: ENA? Check with Lukas
+        accession_number: ENA? Check with Lukas
+        format_of_submitted_data: .fastq
+    raw_data_filtering:
+      data_filtering_and_trimming:
+        minimum_read_count: 500 000 (to discuss)
+        list_of_samples_excluded_and_rationale: Samples with < 500 000 read counts have been removed (0 samples). EUT046_excluded_samples.csv
+        trimming_algorithm_software: Bioclavis
+        trimming_parameters: Bioclavis
+    sequence_alignment:
+      alignment:
+        source_and_version_of_genome_reference: Tempo-SeqR software package pseudo-transcriptome corresponding to the gene
+          panel used in the assay
+        mapping_software: STAR algorithm
+        mapping_parameters: Bioclavis
+    gene_quantification:
+      quantification:
+        source_and_version_of_software: Bioclavis
+        accession_number: Add raw data file name
+        format_of_submitted_data: .csv
+        method_for_summarizing_transcript_or_probe_counts: Probes mapped to the same gene symbol were summed
+  data_normalisation:
+    normalisation_of_raw_count:
+      normalisation_method_applied: Count per million normalization per sample
+      package_and_version_used: NA
+      factor_used_as_design: NA
+  post_normalisation_data_filtering:
+    outlier_and_low_quality_data_removal:
+      outlier_identification_and_reason_for_removal: PCA, total read count
+      thresholds: 'Total read count: < 500 000'
+      processing_steps_where_exclusion_occurred: Quality Control
+      list_of_samples_excluded_and_justification: EUT046_excluded_samples.csv
+    specific_gene_filtering:
+      specific_gene_filtering:
+        low_read_count_filtering_step: 'A relevance filter was applied to identify probes that did not have at least one CPM
+          read count in each replicate per condition across all conditions.
+
+          For more information https://www.sciencedirect.com/science/article/pii/S0273230022000307'
+        high_variation_among_replicates_filtering_step: NA
+        other_post_normalisation_gene_filtering_steps: NA
+        other: Add filtered data table
+darm:
+- type: DAMDARM
+  inputs:
+    data_input: EUT046_countdata_raw_minLowSampleSize_minLowCpmProbe_NewGenesymbols.csv
+    metadata_input: EUT046_metadata_minLowSampleSize.csv
+  software_documentation:
+    software: "R https://cran.r-project.org/bin/windows/base/ \nR studio https://posit.co/download/rstudio-desktop"
+    operating_system: Windows
+    additional_libraries_used: Save sessionInfo() output and provide here? ADD FILE
+  contrasts:
+    contrasts: EUT046_contrast_table.csv
+  assay_experimental_design:
+    group_sizes: '198'
+    covariance: TREATMENT_ID
+    technical_replicates: None
+  statistical_analysis:
+    statistical_approach: DESeq2 - Estimate variance-mean dependence in count data from high-troughput sequencing assays and
+      test for differential expression based on a model using the negative binomial distribution.
+    data_transformation: Count per million (CPM) - Counts per million mapped reads are the number of raw reads mapped to a
+      transcript, scaled by the number of sequencing reads in a sample, multiplied by a million. It normalized RNA-seq data
+      for sequencing depth, but not gene length.
+    effects_models: TREATMENT_ID
+    modeling_inputs: Wald's test - The Wald test is commonly used for hypothesis testing when comparing two groups, it identifies
+      genes that are differentially expressed between two sample classes. A wald statistic is computed along with probability
+      that a test statistic at least as extreme as the observed value were selected at random. This probability is called
+      the p-value of the test. To select differentially expressed genes, we use an adjusted p-value (FDR) threshold of 0.05.
+    bayesian_approaches: NA
+    decision_criteria: No filtering applied, all log2fc values used for BMD.
+    other: NA
+  outputs:
+    output_and_supporting_files: EUT046_expression_long.csv and BMD_data_expression_wide_dose_timepoint4.txt/BMD_data_expression_wide_dose_timepoint8.txt/BMD_data_expression_wide_dose_timepoint16.txt/BMD_data_expression_wide_dose_timepoint24.txt/BMD_data_expression_wide_dose_timepoint48.txt/BMD_data_expression_wide_dose_timepoint72.txt
+- type: MVADARM
+  inputs:
+    data_input: '...'
+    metadata_input: NA
+  statistical_software:
+    software: TXG-MAPr
+    operating_system: Windows
+    software_availability: https://txg-mapr.eu/
+  experimental_conditions:
+    factors_and_levels_table: DESeq2 output (EUT046_expression_long_replicates_separate.csv)
+  unsupervised_analysis:
+    name_and_description_of_method: ADD WGCNA?
+    variable_selection_method: NA
+    selected_variables: NA
+    parameter_settings: NA
+  supervised_analysis:
+    name_and_description_of_method: TXG-MAPr; the TXG-MAPr webtool is an R-Shiny-based implemetnation of weighted gene co-expression
+      network analysis (WGCNA) obtained from an RPTEC/TERT1 cell line exposed to numerous different compounds. The ... gene
+      co-expression networks (modules) were annotated with functional information (pathway enrichment, transcription factor
+      activity, etc.) to reveal their mechanistic interpretation. Log2 Fold Changes values can be uploaded into the TXG-MAPr
+      to calculate new eigengene scores for each module.
+    groups_conditions_or_factors_contrasted: 'Dose levels: 0, 0.1, 0.5, 1, 2.5, 5, 10, 20, 30, 50 uM, timepoints: 0, 4, 8,
+      16, 24, 48, 72 hours'
+    variable_selection_method: NA
+    selected_variables: NA
+    parameter_settings: NA
+    citations_to_literature: 'WGCNA: https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-9-559, TXG-MAPr:
+      https://link.springer.com/article/10.1007/s00204-021-03141-w'
+  validation:
+    name_and_description_of_validation_method: NA
+    parameter_settings: NA
+    citations_to_literature: NA
+  outputs:
+    output_and_supporting_files: 'TXG-MAPr output: TXG_MAPr_hRPTECTERT1_module_overview_20231215_110148, Adjusted for BMD
+      analysis:  BMD_data_TXGmodulescores_wide_dose_timepoint4.txt/BMD_data_TXGmodulescores_wide_dose_timepoint8.txt/BMD_data_TXGmodulescores_wide_dose_timepoint16.txt/BMD_data_TXGmodulescores_wide_dose_timepoint24.txt/BMD_data_TXGmodulescores_wide_dose_timepoint48.txt/BMD_data_TXGmodulescores_wide_dose_timepoint72.txt'
+- type: BMDDARM
+  inputs:
+    data_input: 'Gene expression data: EUT046_expression_wide_dose_timepoint4.txt/EUT046_expression_wide_dose_timepoint8.txt/EUT046_expression_wide_dose_timepoint16.txt/EUT046_expression_wide_dose_timepoint24.txt/EUT046_expression_wide_dose_timepoint48.txt/EUT046_expression_wide_dose_timepoint72.txt,
+      TXG module eigengene score data:'
+    metadata_input: EUT046_metadata_minLowSampleSize.csv
+  software_documentation:
+    software: BMDExpress2
+    operating_system: Windows
+    additional_libraries_used: NA
+    software_availability: https://www.sciome.com/bmdexpress/
+  description_of_data_to_be_modelled:
+    dose_levels: 0, 0.1, 0.5, 1, 2.5, 5, 10, 20, 30, 50 uM
+    annotation_of_model_substrate_data: '?'
+    version_of_platform_annotation: 'WT_Human - BioSpyder WT_Human - BioSpyder - Homo Sapiens - Last Updated date: January
+      7, 2022'
+  pre_filtering_of_data:
+    statistical_test_performed: Williams Trend Test
+    statistical_threshold_applied: pvalue < 0.05
+    statistical_multiple_testing_correction_method: Benjamini & Hochberg (FDR)
+    additional_statistical_test_parameters: 'Number of permutations: 10000'
+    additional_filtering: Fold Change Value > 2
+  benchmark_dose_modeling:
+    bmd_modeling_approach: EPA BMDS models
+    method_for_final_estimation_of_msd_bmd: '?'
+    list_of_models_fit_to_data: Exp2, Exp3, Exp4, Exp5, Linear, Poly2, Hill, Power
+    model_averaging_approach: NA
+    method_for_determining_bmr: Standard Deviation
+    benchmark_response_bmr_factor: 1 SD
+    number_of_fitting_iterations: '250'
+    confidence_interval_of_bmd: '0.95'
+    power_parameter_restriction: '>=1'
+    variance_assumption: NA
+    model_selection: 'BMDL and BMDU: Compute and utilize in best model selection, Best Poly Model Test: Lowest AIC, pvalue
+      cutoff: 0.05'
+    criteria_to_identify_extrapolated_models: 'Flag Hill Model with ''k'' Parameter: < 1/3 of Lowest Positive Dose, Best Model
+      Selection with Flagged Hill Model: Select Next best Model with P-value > 0.05'
+  determination_of_biological_entity_or_set_level_bmd_values:
+    biological_entity_or_set_annotation_used: 'WT_Human - BioSpyder WT_Human - BioSpyder - Homo Sapiens - Last Updated date:
+      January 7, 2022'
+    msd_acceptance_criteria: BMD/BMDL < 20, BMD/BMDU < 20, BMD > 0.01*lowest concentration & BMD <= highest concentration,
+      R-squared >= 0.8
+    criteria_for_identification_of_active_biological_sets: At least 3 genes passing all filters
+    method_of_estimating_set_bmd_bmdl_bmdu: Median
+  outputs:
+    output_and_supporting_files: 'William Trend Test output: EUT046_williamstrendtest_output.txt, BMD output genes: EUT046_BMDExpress_output.bm2,
+      BMD output modules: EUT046_BMDExpress_TXGmodules_output.bm2'
+file_manifest:
+- file_description: Experiment metadata
+  file_name: EUT046_metadata_final.csv
+- file_description: Raw counts as provided by Bioclavis (before 3.2.3.3.     Raw Data Filtering and 3.2.4.1. Normalisation
+    of the Raw Count and following modules)
+  file_name: EUT046_counts_per_gene_per_sample_raw_final.csv
+- file_description: TempO-seq manifest 1.2
+  file_name: Temposeq_manifest_Human_WT_1.2_realignment_96percent_2023-05-15.txt
+- file_description: Raw counts filtered for samples with low read count
+  file_name: EUT046_countdata_raw_minLowSampleSize_minLowCpmProbe_NewGenesymbols.csv
+- file_description: CPM normalized counts filtered for samples with low read count
+  file_name: EUT046_countdata_cpm_minLowSampleSize_minLowCpmProbe_NewGenesymbols.csv
+- file_description: Metadata filtered for samples with low read count
+  file_name: EUT046_metadata_minLowSampleSize.csv
+- file_description: Log2 Fold Change expression levels separated replicates
+  file_name: EUT046_expression_long_replicates_separate.csv
+- file_description: TXG-MAPr module eigengene scores, raw output
+  file_name: TXG_MAPr_hRPTECTERT1_module_overview_20231215_110148.csv
+- file_description: Log2 Fold Change expression levels separated per time point
+  file_name: BMD_data_expression_wide_dose_timepoint4.txt/BMD_data_expression_wide_dose_timepoint8.txt/BMD_data_expression_wide_dose_timepoint16.txt/BMD_data_expression_wide_dose_timepoint24.txt/BMD_data_expression_wide_dose_timepoint48.txt/BMD_data_expression_wide_dose_timepoint72.txt
+- file_description: TXG-MAPr module eigengene scores separated per time point
+  file_name: BMD_data_TXGmodulescores_wide_dose_timepoint4.txt/BMD_data_TXGmodulescores_wide_dose_timepoint8.txt/BMD_data_TXGmodulescores_wide_dose_timepoint16.txt/BMD_data_TXGmodulescores_wide_dose_timepoint24.txt/BMD_data_TXGmodulescores_wide_dose_timepoint48.txt/BMD_data_TXGmodulescores_wide_dose_timepoint72.txt
+- file_description: Williams trend test gene expression output
+  file_name: EUT046_geneexpression_willimanstrendtest_output.txt
+- file_description: Williams trend test TXG module eigengenes output
+  file_name: EUT046_TXGmodules_williamstrendtest_output.txt
+- file_description: BMDExpress gene expression output
+  file_name: EUT046_BMDExpress_geneexpression_output.bm2
+- file_description: BMDExpress TXG module eigengenes output
+  file_name: EUT046_BMDExpress_TXGmodules_output.bm2

@@ -1,0 +1,258 @@
+id: https://w3id.org/eu-parc/maoorf/modules/darm/dam
+name: maoorf_dam
+title: Differentially Abundant Molecules (DAM) DARM
+description: >-
+  Data Analysis Reporting Module (DARM) for Discovery of Differentially Abundant Molecules - Univariate Methods
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ./base_darm
+
+classes:
+  DAMDARM:
+    is_a: DARM
+    description: |-
+      Data Analysis Reporting Module (DARM) for Discovery of Differentially Abundant Molecules - Univariate Methods
+
+      This multi-omics compliant module specifies the information needed by a regulatory scientist in order to assess univariate statistical analysis as used to discover differentially abundant molecules (DAMs); i.e. for transcriptomics, to identify differentially expressed genes (DEG). Henceforth DEG are referred to as DAM.
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
+    exact_mappings:
+      - oecd_oorf_2023:4.1
+    slot_usage:
+      inputs:
+        range: DAMInputs
+        exact_mappings:
+          - oecd_oorf_2023:4.1.1
+      outputs:
+        range: DAMOutputs
+        exact_mappings:
+          - oecd_oorf_2023:4.1.6
+    attributes:
+      software_documentation:
+        description: |-
+          Software Documentation
+
+          The requirements in this section are intended to facilitate reproducibility of analyses and make quality assessment possible. Freely available open source, commercially available, or proprietary software may be used.
+        range: DAMSoftwareDocumentation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.2
+      contrasts:
+        description: |-
+          Contrasts for Which Differentially Abundant Molecules were Identified
+
+          To ensure clarity, the contrasts (or group comparisons) that were performed to identify the DAMs must be detailed.
+        range: DAMContrastsSection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.3
+      assay_experimental_design:
+        description: |-
+          Assay Experimental Design
+
+          In order to ensure that the omics data were analysed properly, the end-user must have a clear description of which samples were used in the DAM analysis, how many samples there are per experimental group, and how they may be assayed together/measured simultaneously or not.
+        range: DAMAssayExperimentalDesign
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.4
+      statistical_analysis:
+        description: |-
+          Statistical Analysis to Identify Differentially Abundant Molecules
+
+          Today there are a myriad of ways for identifying DAMs, all with their own strengths and weaknesses. Thus, it is critical to clearly communicate how the statistical analysis was performed so that the end-user can understand what was done and establish if the approach taken was sound.
+        range: DAMStatisticalAnalysis
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.5
+
+  DAMInputs:
+    is_a: DARMInputs
+    description: |-
+      Inputs
+
+      Input for identifying DAMs, in the form of processed omics data (e.g. normalised gene expression data, normalised metabolome data) is generated using processes described in a DAPRM.
+    exact_mappings:
+      - oecd_oorf_2023:4.1.1
+    slot_usage:
+      data_input:
+        description: |-
+          Data Input(s)
+
+          Provide the name of the input data object(s)
+        comments:
+          - Provide the data object(s) that will be used as input for the DAM analysis. List data object name(s) in the file manifest tab.
+        exact_mappings:
+          - oecd_oorf_2023:4.1.1.1
+      metadata_input:
+        description: |-
+          Metadata Inputs(s)
+
+          Provide the name of the input metadata object(s)
+        comments:
+          - Provide the metadata object(s) that will be used as input for the DAM analysis. List data object name(s) in the file manifest tab.
+        exact_mappings:
+          - oecd_oorf_2023:4.1.1.2
+
+  DAMSoftwareDocumentation:
+    is_a: SoftwareDocumentation
+    description: |-
+      Software Documentation
+
+      Software documentation for DAM analysis.
+    exact_mappings:
+      - oecd_oorf_2023:4.1.2
+    slot_usage:
+      software:
+        exact_mappings:
+          - oecd_oorf_2023:4.1.2.1
+      operating_system:
+        exact_mappings:
+          - oecd_oorf_2023:4.1.2.2
+      additional_libraries_used:
+        exact_mappings:
+          - oecd_oorf_2023:4.1.2.3
+      software_availability:
+        exact_mappings:
+          - oecd_oorf_2023:4.1.2.4
+
+  DAMContrastsSection:
+    description: |-
+      Contrasts for Which Differentially Abundant Molecules were Identified
+
+      Contrasts for which differentially abundant molecules were identified.
+    exact_mappings:
+      - oecd_oorf_2023:4.1.3
+    attributes:
+      contrasts:
+        description: |-
+          Contrasts
+
+          A table or listing that must include each factor and level within each factor that is being considered in the DAM analysis.
+        comments:
+          - Provide a data object describing the factors and levels within each factor being compared (e.g. treatment groups versus control).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.3.1
+
+  DAMAssayExperimentalDesign:
+    is_a: AssayExperimentalDesign
+    description: |-
+      Assay Experimental Design
+
+      Assay experimental design for DAM analysis.
+    exact_mappings:
+      - oecd_oorf_2023:4.1.4
+    slot_usage:
+      group_sizes:
+        comments:
+          - Provide a table or listing of the number of samples used for identifying DEGs / DAMs in each group or factor. Should include the sample IDs that be used to match across the report. Information may be provided in a data object. If such information is included in a data object with this submission, please list the file name here.
+        exact_mappings:
+          - oecd_oorf_2023:4.1.4.1
+      covariance:
+        exact_mappings:
+          - oecd_oorf_2023:4.1.4.2
+      technical_replicates:
+        exact_mappings:
+          - oecd_oorf_2023:4.1.4.3
+
+  DAMStatisticalAnalysis:
+    description: |-
+      Statistical Analysis to Identify Differentially Abundant Molecules
+
+      Minimum requirements for a sound statistical analysis plan to identify DAMs.
+    exact_mappings:
+      - oecd_oorf_2023:4.1.5
+    attributes:
+      statistical_approach:
+        description: |-
+          Statistical Approach
+
+          The name and description of statistical approach
+        comments:
+          - Provide the name and brief description of the analysis approach.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.5.1
+      data_transformation:
+        description: |-
+          Data Transformation
+
+          Clearly state all data transformations (e.g. log2 transformation) that are performed in the course of analysis. Alternatively, indicate if no data transformations were performed to ensure clarity.
+        comments:
+          - Specify if the data have been transformed for statistical analysis and how.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.5.2
+      effects_models:
+        description: |-
+          Effects Models
+
+          If using a general linear model, general linear mixed model, ANOVA, or something similar, specify the effects being modelled including all fixed and random effects, as well as their interactions, if any, and any nesting.
+        comments:
+          - If using a general linear model, general linear mixed model, ANOVA, or something similar, specify the effects being modeled including all fixed and random effects, as well as their interactions, if any, and any nesting
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.5.3
+      modeling_inputs:
+        description: |-
+          Modeling Inputs
+
+          If using a pairwise comparison approach, such as a Wald's test, Student's or Welch's t-test, or non-parametric analogues, specify what values are being used (model-based values or the transformed/non-transformed values without adjustment from a model).
+        comments:
+          - If using a pairwise comparison approach, such as a Wald’s test, t-test, or non-parametric analogues, specify what values are being used.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.5.4
+      bayesian_approaches:
+        description: |-
+          Bayesian Approaches
+
+          If using a Bayesian approach, then standard reporting requirements are required, including specification of any priors, explicit specification of the posterior, specification of what is being modelled to identify the DAMs.
+        comments:
+          - If using a Bayesian approach, then standard reporting requirements are required, including specification of any priors, explicit specification of the posterior, specification of what is being modeled to identify the DEG. If Bayesian approaches are not being used, input "NA".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.5.5
+      decision_criteria:
+        description: |-
+          Decision Criteria
+
+          If using a p-value criteria to identify DAMs then specify the nominal alpha value and the p-value threshold. If a multiple-testing correction is being performed, specify the nominal alpha value, the multiple-testing correction method (exact type, e.g. Bonferroni for family wise error rate correction or Benjamini & Hochberg for false discovery rate control), and any adjusted threshold value. If a fold-change or log fold-change criterion is used alone or in combination with nominal or adjusted p-values, then specify the level (e.g. 2x change). Also specify the exact order of operations and how the decision criterion is applied – this should be written clearly such that anyone could replicate this work should it be necessary.
+        comments:
+          - Describe the nomimal p-value, adjusted p-value, fold-change criteria or any combination thereof used to identify DEGs / discover DAMS
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.5.6
+      other:
+        description: |-
+          Other
+
+          If using another approach for ranking and prioritisation of DAMs, specify the procedure clearly such that anyone could replicate the work should it be necessary.
+        comments:
+          - If using another approach for ranking and prioritization of DEGs / DAMs, specify the procedure clearly such that anyone could replicate the work should it be neccesary. If not applicate, report "NA"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.1.5.7
+
+  DAMOutputs:
+    is_a: DARMOutputs
+    description: |-
+      Outputs
+
+      Outputs and supporting files for DAM analysis.
+    exact_mappings:
+      - oecd_oorf_2023:4.1.6
+    slot_usage:
+      output_and_supporting_files:
+        exact_mappings:
+          - oecd_oorf_2023:4.1.6.1

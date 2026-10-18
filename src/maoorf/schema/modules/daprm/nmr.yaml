@@ -1,0 +1,575 @@
+id: https://w3id.org/eu-parc/maoorf/modules/daprm/nmr
+name: maoorf_nmr
+title: NMR Metabolomics DAPRM
+description: >-
+  Data Acquisition and Processing Reporting Module (DAPRM) for NMR Metabolomics
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ./base_daprm
+
+classes:
+  NMRDAPRM:
+    is_a: DAPRM
+    description: |-
+      Data Acquisition and Processing Reporting Module (DAPRM) for NMR Metabolomics
+
+      In this Data Acquisition and Processing Reporting Module we describe the reporting required for an NMR-based metabolomics study, including sample processing, metabolite extraction and addition of standards; analytical QA/QC; acquisition and processing of NMR data; demonstrating the quality of the data; and the data matrices produced by this technology, including metabolite annotation/identification and intensities.
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column E for data entry. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template"
+    exact_mappings:
+      - oecd_oorf_2023:3.5
+    attributes:
+      overall_description_and_rationale:
+        description: |-
+          Overall description and rationale for NMR metabolomics approach
+
+          Overall description and rationale for NMR spectroscopy metabolomics approach, technology types used, and links to relevant SOPs or publications.
+        range: NMROverallDescriptionAndRationale
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.1
+      sample_processing_and_metabolite_extraction:
+        description: |-
+          Sample processing and metabolite extraction and addition of chemical reference standards
+
+          While the specific protocols for metabolite extraction will depend on the sample type (i.e. biofluid, cells, tissue, etc.) being measured, a reporting framework that can capture the most important information about a diverse range of methods is presented here.
+        range: NMRSampleProcessingAndExtraction
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.2
+      analytical_quality_assurance_and_qc_samples:
+        description: |-
+          Analytical quality assurance and preparation of quality control samples
+
+          When conducting an untargeted metabolomics study using NMR, it is essential to have a quality assurance (QA) framework and use quality control (QC) samples, as described in the MERIT best practice guidelines.
+        range: NMRAnalyticalQualityAssuranceAndQC
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.3
+      acquisition_of_nmr_data:
+        description: |-
+          Acquisition of NMR metabolomics and metabolite data
+
+          NMR spectroscopy assay types, instrument configurations and methods, and sample acquisition order.
+        range: NMRAcquisitionOfData
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.4
+      processing_of_nmr_data:
+        description: |-
+          Processing of NMR metabolomics and metabolite data
+
+          This section covers the reporting of established processes for converting raw NMR data acquired on an instrument to processed NMR data that is in a form amenable for statistical analysis.
+        range: NMRProcessingOfData
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5
+      demonstration_of_quality_of_nmr_analysis:
+        description: |-
+          Demonstration of quality of NMR spectroscopy metabolomics analysis
+
+          This section covers the reporting of data that will allow the quality of the NMR metabolomics dataset to be assessed by the regulator. Measures of quality are derived from the appropriate uses of different types of QC samples.
+        range: NMRDemonstrationOfQuality
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.6
+      outputs_data_matrices:
+        description: |-
+          Outputs: Data matrices from metabolomics assays
+
+          The outputs include a data matrix that conveniently summarises the biological samples that were analysed, and whether any of these samples were removed from the study, with a justification, as well as metabolite annotation/identification and metabolite quantification.
+        range: NMROutputsDataMatrices
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.7
+
+  NMROverallDescriptionAndRationale:
+    description: |-
+      Overall description and rationale for NMR metabolomics approach
+
+      Overall description and rationale for NMR spectroscopy metabolomics approach.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.1
+    attributes:
+      overall_description_and_rationale:
+        description: |-
+          Overall description and rationale for NMR spectroscopy metabolomics approach, for example including sample type, extraction method, technology type, processing methods and QA/QC
+
+          Overall description and rationale for NMR spectroscopy metabolomics approach, for example including sample type, extraction method, technology type, processing methods and QA/QC.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.1.1
+      technology_types_used:
+        description: |-
+          Technology type(s) used (eg "1D 1H-NMR", "2D 13C–1H HSQC NMR", "2D HSQC–TOCSY NMR", "2D 1H–1H TOCSY" or any other NMR approach used)
+
+          Technology type(s) used (e.g. "1D 1H NMR", "2D 1H JRES", "2D 1H–1H TOCSY", "2D 1H–13C HSQC NMR", or any other NMR approach used).
+        comments:
+          - If the technology type used is not listed in the examples please provide the full name of the technique used as well as the abberviated form
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.1.2
+      links_to_sops_or_publications:
+        description: |-
+          Link(s) to relevant SOP(s) or publication(s) of approach used (optional)
+
+          Link(s) to relevant SOP(s) or publication(s) of approach used (optional).
+        exact_mappings:
+          - oecd_oorf_2023:3.5.1.3
+
+  NMRSampleProcessingAndExtraction:
+    description: |-
+      Sample processing and metabolite extraction and addition of chemical reference standards
+
+      Metabolite extraction, concentration/reconstitution, and chemical reference standards for NMR.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.2
+    attributes:
+      extraction_method_general_description:
+        description: |-
+          Extraction method general description, including per-sample amounts, solvent(s) used and their ratios, means of agitation/maceration, temperatures and times, and post extraction handling
+
+          Extraction method general description, including per-sample amounts, solvent(s) used and their ratios, means of agitation/maceration, temperatures and times, and post extraction handling.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.2.1.1
+      extract_concentration_and_reconstitution:
+        description: |-
+          Drying and reconstitution method general description, including final reconstitution, solvent(s) and final volume (if used), storage temperature (if relevant) and duration of reconstituted extracts (if relevant)
+
+          Drying and reconstitution method general description, including final reconstitution solvent(s) and final volume (if used), pH buffer type and concentration (if used), storage temperature (if relevant) and duration of reconstituted extracts (if relevant).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.2.2.1
+      chemical_reference_standard_preparation:
+        description: |-
+          For each new standard (or each named panel of standards) prepared for this study: Purpose of standard, Quantification type, Calibration methodology, Identity, Purity, Supplier, Preparation method, and Concentration(s)
+
+          For each new standard (or each named panel of standards) prepared for this study:
+          a. Purpose of standard (e.g. extraction standard; annotation/identification only; annotation/identification and quantification; chemical shift reference standard)
+          b. Quantification type (if relevant; e.g. absolute quantification or relative quantification)
+          c. Calibration methodology (if relevant; e.g. external calibration (without matrix), external matrix-matched calibration, calibration by internal normalisation, standard addition calibration, internal calibration)
+          d. Identity (including common name and, for example, PubChem CID, HMDB id, KEGG id, CAS, InChI, InChIKey, SMILES)
+          e. Purity (if known)
+          f. Supplier
+          g. Preparation method (including whether standard spiked internally into the biological sample or alternative external solution)
+          h. Concentration(s)
+        comments:
+          - Details should be included for any chemical reference standards that were prepared for this study. If many chemical reference standards are to be recorded here, it is recommended that a supplemental file with these details should be reported, and referenced here and in the file manifest
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.2.3.1
+
+  NMRAnalyticalQualityAssuranceAndQC:
+    description: |-
+      Analytical quality assurance and preparation of quality control samples
+
+      QC samples and process blank samples for NMR.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.3
+    attributes:
+      qc_samples:
+        description: |-
+          Sample details for system suitability QC sample, intrastudy QC sample, intralaboratory QC sample (if used) and interlaboratory QC sample (if used) Should include details of source, preparation details, batch number (if relevant), certificate of analysis (COA) (if relevant), storage conditions and days since preparation
+
+          Sample details for system suitability QC sample, intrastudy QC sample, intralaboratory QC sample (if used) and interlaboratory QC sample (if used). Should include details of source, preparation details, batch number (if relevant), certificate of analysis (COA) (if relevant), storage conditions and days since preparation.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.3.1.1
+      process_blank_sample:
+        description: |-
+          Type of process blank(s), start and end points of the 'process' used to prepare this sample, and storage conditions For NMR, this can include a solvent blank (also known as a buffer blank) and an extraction blank
+
+          Type of process blank(s), start and end points of the 'process' used to prepare this sample, and storage conditions.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.3.2.1
+
+  NMRAcquisitionOfData:
+    description: |-
+      Acquisition of NMR metabolomics and metabolite data
+
+      NMR spectroscopy assay types, instrument configuration and method details, and sample acquisition order.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.4
+    attributes:
+      nmr_assay_types:
+        description: |-
+          NMR spectroscopy assay type(s)
+
+          NMR spectroscopy metabolomics assays can be untargeted or targeted.
+        range: NMRAssayTypes
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.4.1
+      instrument_configurations_and_methods:
+        description: |-
+          File(s) summarising instrument configuration and method details of analysis performed See Section 35 - Table 1 of Guidance Document for suggested reporting elements depending on the instrumentation and method applied
+
+          File(s) summarising instrument configuration and method details of analysis performed. See Section 3.5 - Table 1 for suggested reporting elements depending on the instrumentation and method applied.
+        comments:
+          - One or more files supplemental to the main reporting template and referenced here and in the File manifest tab. See Section 3.5 - Table 1 of OORF Guidance Document for suggested reporting elements depending on the instrumentation and method applied
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.4.2.1
+      acquisition_order:
+        description: |-
+          Acquisition order for QC samples, biological samples and reference standard samples
+
+          Acquisition order for QC samples, biological samples and reference standard samples.
+        range: NMRAcquisitionOrder
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.4.3
+
+  NMRAssayTypes:
+    description: |-
+      NMR spectroscopy assay type(s)
+
+      NMR spectroscopy assay types used and description.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.4.1
+    attributes:
+      assay_types_used:
+        description: |-
+          NMR spectroscopy assay type(s) used
+
+          NMR spectroscopy assay type(s) used
+        comments:
+          - "NMR spectroscopy metabolomics assays can be untargeted (i.e. the traditional approach in which no particular metabolites are pre-selected for study) or targeted (e.g. Bruker B.I.MethodsTM such as B.I.QUANT-UR that targets and quantifies up to 150 metabolites). Each assay can have one or more levels of metabolite annotation/identification and quantification. A single toxicology study can comprise a combination of several assays. Provide details as to whether the assay type is targeted or not and to what level of quantification was used e.g.\" Untargeted NMR with relative quantification\""
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.4.1.1
+      assay_description:
+        description: |-
+          NMR spectroscopy assay description
+
+          NMR spectroscopy assay description
+        comments:
+          - Provide a more detailed description of the assay type
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.4.1.2
+
+  NMRAcquisitionOrder:
+    description: |-
+      Acquisition order for QC samples, biological samples and reference standard samples
+
+      Sample acquisition order definition and table for NMR.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.4.3
+    attributes:
+      how_sample_acquisition_order_defined:
+        description: |-
+          Describe how sample acquisition order was defined, eg frequency of intrastudy QCs, method to randomise biological sample order
+
+          Describe how sample acquisition order was defined, e.g. frequency of intrastudy QCs, method to randomise biological sample order.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.4.3.1
+      acquisition_order_table:
+        description: |-
+          Acquisition order of all types of QC samples, biological samples and reference standard samples (if relevant), thereby indicating the number of process blank samples, and the frequency of analysis of intrastudy QC samples, etc
+
+          Acquisition order of all types of QC samples, biological samples and reference standard samples (if relevant), thereby indicating the number of process blank samples, and the frequency of analysis of intrastudy QC samples, etc. Columns of reported table should include: a. Run order b. File name c. Sample type (must be able to distinguish between QC samples, biological samples and process blanks)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.4.3.2
+
+  NMRProcessingOfData:
+    description: |-
+      Processing of NMR metabolomics and metabolite data
+
+      Data processing steps required to convert raw NMR data to processed NMR data.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.5
+    attributes:
+      data_processing_workflows:
+        description: |-
+          Data processing workflow(s)
+
+          Data processing can be performed across various software and platforms.
+        range: NMRDataProcessingWorkflow
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.1
+      spectral_pre_processing:
+        description: |-
+          Spectral pre-processing method(s) and parameters used - including (where relevant) forward and/or backward linear prediction and the number of points for each, window function type and magnitude used for apodisation, zero-filling original and final points count, phasing method (manual or automatic) and parameters, baseline correction method and parameters, and chemical shift calibration method (manual or automatic)
+
+          Spectral pre-processing method(s) and parameters used - including (where relevant) forward and/or backward linear prediction and the number of points for each, window function type and magnitude used for apodisation, zero-filling original and final points count, phasing method (manual or automatic) and parameters, baseline correction method and parameters, and chemical shift calibration method (manual or automatic).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.2.1
+      data_reduction:
+        description: |-
+          Data reduction method(s) and parameters used - including (where relevant) peak alignment and matching; whether data reduction was applied (ie applying binning, and reporting the bin start, bin end and bin width) or full resolution NMR spectra were used; and peak fitting
+
+          Data reduction method(s) and parameters used - including (where relevant) peak alignment and matching; whether data reduction was applied (i.e. applying binning, and reporting the bin start, bin end and bin width) or full resolution NMR spectra were used; and peak fitting.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.3.1
+      resonance_intensity_drift_and_batch_correction:
+        description: |-
+          Resonance intensity drift and/or batch correction methods and parameters used - including (where relevant) details of signal intensity drift assessment, batch correction, and drift correction within a batch
+
+          Resonance intensity drift and/or batch correction methods and parameters used - including (where relevant) details of signal intensity drift assessment, batch correction, and drift correction within a batch.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.4.1
+      identification_and_removal_of_nmr_resonances:
+        description: |-
+          Methods and parameters used to identify and remove unwanted resonances - including (where relevant) details of removal of resonances present in process blanks (ie solvent blank, buffer blank and/or extraction blank), and removal of resonances from dosed substance(s)
+
+          Methods and parameters used to identify and remove unwanted resonances - including (where relevant) details of removal of resonances present in process blanks, and removal of resonances from dosed substance(s).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.5.1
+      identification_and_removal_of_outlying_samples:
+        description: |-
+          Methods and parameters used to identify and remove samples (if used; see section 71 for actual samples removed)
+
+          Methods and parameters used to identify and remove samples (if used; see section 3.5.7.1 for actual samples removed).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.6.1
+      normalisation:
+        description: |-
+          Normalisation method(s) and parameters (if used)
+
+          Normalisation method and parameters (if used).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.7.1
+      normality_testing_scaling_and_transformations:
+        description: |-
+          Normality testing, scaling and/or transformation methods and parameters (if used)
+
+          Normality testing, scaling and/or transformation methods and parameters (if used).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.8.1
+      processing_methods_for_metabolite_quantification:
+        description: |-
+          Description of method(s) and parameters for metabolite quantification - including (where relevant) for relative and/or absolute quantification
+
+          Description of method(s) and parameters for metabolite quantification - including (where relevant) for relative and/or absolute quantification.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.9.1
+      processing_methods_for_metabolite_annotation_and_identification:
+        description: |-
+          General description of method(s) and parameters for metabolite annotation/identification - including the type of NMR data (eg 1D, 2D, etc) collected and the processing parameters used (if relevant), whether reference standards are from external or in-house spectral library(ies), and the spectral library(ies) used
+
+          General description of method(s) and parameters for metabolite annotation/identification - including the type of NMR data (e.g. 1D, 2D, etc.) collected and the processing parameters, the use of commercial and/or in-house software, and whether reference standards are from external or in-house spectral library(ies), and the spectral library(ies) used.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.10.1
+
+  NMRDataProcessingWorkflow:
+    description: |-
+      Data processing workflow(s)
+
+      Data processing workflow description, software, scripts, logs, and references for NMR.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.5.1
+    attributes:
+      workflow_description:
+        description: |-
+          Data processing workflow description
+
+          Data processing workflow description
+        comments:
+          - Sharing sufficient details to be able to re-run the full data processing workflow is encouraged and ultimately improves the reproducibility of the data processing
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.1.1
+      software_names_and_versions:
+        description: |-
+          Name(s) and version(s) of the software used
+
+          Name(s) and version(s) of the software used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.1.2
+      scripts_or_workflow_files:
+        description: |-
+          Script(s)/workflow file(s) or a reference to a URL or DOI of the script(s)/workflow file(s) (optional)
+
+          Script(s)/workflow file(s) or a reference to a URL or DOI of the script(s)/workflow file(s) (optional)
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.1.3
+      data_processing_histories_or_logs:
+        description: |-
+          Data processing history(ies) or log(s) (optional)
+
+          Data processing history(ies) or log(s) (optional)
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.1.4
+      references_to_protocols_or_publications:
+        description: |-
+          Reference to relevant protocol(s) or publication(s)
+
+          Reference(s) to relevant protocol(s) or publication(s).
+        exact_mappings:
+          - oecd_oorf_2023:3.5.5.1.5
+
+  NMRDemonstrationOfQuality:
+    description: |-
+      Demonstration of quality of NMR spectroscopy metabolomics analysis
+
+      Performance and QC precision/reproducibility reports for NMR metabolomics.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.6
+    attributes:
+      nmr_spectrometer_performance_report:
+        description: |-
+          Performance achieved using system suitability QC, relative to a laboratory's acceptance criteria, to confirm instrumentation is fit-for-purpose To include quantitative reporting of chemical shift reference peak full width at half maximum height (FWHM) without window function applied, 90 degree pulse width, and probe temperature variation Reporting an image(s) of aligned and stacked spectra for visual inspection is recommended to facilitate an assessment of the general quality of all spectra
+
+          Performance achieved using system suitability QC, relative to a laboratory's acceptance criteria, to confirm instrumentation is fit-for-purpose. To include quantitative reporting of chemical shift reference peak full width at half maximum height (FWHM) without window function applied, 90 degree pulse width, and probe temperature variation (plus or minus value in oC). Reporting an image(s) of aligned and stacked spectra for visual inspection is recommended to facilitate an assessment of the general quality of all spectra.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.6.1.1
+      intrastudy_qc_precision_report:
+        description: |-
+          Measure of a study's analytical precision achieved using intrastudy QC samples, relative to a laboratory's acceptance criteria, to confirm analyses are of sufficient quality for regulatory purposes To include quantitative reporting of the RSDs of feature intensity (mandatory), m/z (optional) and retention time (if relevant; optional), for example reported as the distribution and median of RSD values of all feature intensities across all intrastudy QC samples; and a qualitative assessment of the similarity of intrastudy QCs using PCA, reported as a PCA scores plot from a global analysis of all the biological and intrastudy QC samples
+
+          Measure of a study's analytical precision achieved using intrastudy QC samples, relative to a laboratory's acceptance criteria, to confirm analyses are of sufficient quality for regulatory purposes. To include quantitative reporting of the RSDs of feature intensity (mandatory), for example reported as the distribution and median of RSD values of all feature intensities across all intrastudy QC samples; and a qualitative assessment of the similarity of intrastudy QCs using PCA, reported as a PCA scores plot from a global analysis of all the biological and intrastudy QC samples.
+        comments:
+          - Should be reported as a supplemental file to the main reporting template and referenced here and in the File manifest tab
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.6.2.1
+      intralaboratory_qc_reproducibility_report:
+        description: |-
+          Measure of intralaboratory (and interstudy) reproducibility, using intralaboratory QC samples, to assess any long-term differences between separate studies within the laboratory
+
+          Measure of intralaboratory (and interstudy) reproducibility, using intralaboratory QC samples, to assess any long-term differences between separate studies within the laboratory.
+        comments:
+          - Should be reported as a supplemental file to the main reporting template and referenced here and in the File manifest tab
+        exact_mappings:
+          - oecd_oorf_2023:3.5.6.3.1
+      interlaboratory_qc_reproducibility_report:
+        description: |-
+          Interlaboratory QC reproducibility report (optional)
+
+          Interlaboratory QC reproducibility report (optional).
+        range: NMRInterlaboratoryQCReport
+        exact_mappings:
+          - oecd_oorf_2023:3.5.6.4
+
+  NMRInterlaboratoryQCReport:
+    description: |-
+      Interlaboratory QC reproducibility report (optional)
+
+      Interlaboratory QC resonances and reproducibility measure for NMR.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.6.4
+    attributes:
+      resonances_detected_in_interlaboratory_qc:
+        description: |-
+          Resonances detected in interlaboratory QC (eg defined resonance in a (standard) reference material) This reporting is likely to evolve as the community improves its use of interlaboratory QC samples
+
+          Resonances detected in interlaboratory QC (e.g. defined resonance in a (standard) reference material). This reporting is likely to evolve as the community improves its use of interlaboratory QC samples.
+        comments:
+          - Should be reported as a supplemental file to the main reporting template and referenced here and in the File manifest tab
+        exact_mappings:
+          - oecd_oorf_2023:3.5.6.4.1
+      measure_of_interlaboratory_reproducibility:
+        description: |-
+          Measure of interlaboratory reproducibility (using interlaboratory QC samples) to assess any differences between separate laboratories; ie performance standard achieved relative to specified amounts of metabolites
+
+          Measure of interlaboratory reproducibility (using interlaboratory QC samples) to assess any differences between separate laboratories; i.e. performance standard achieved relative to specified amounts of metabolites.
+        exact_mappings:
+          - oecd_oorf_2023:3.5.6.4.2
+
+  NMROutputsDataMatrices:
+    description: |-
+      Outputs: Data matrices from metabolomics assays
+
+      Sample list, metabolite annotation/identification, and metabolite quantification data matrices for NMR.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.7
+    attributes:
+      sample_list:
+        description: |-
+          For each biological sample: Unique biological sample identifier; Order of extraction of biological samples; Order of NMR data acquisition; Whether any biological samples were removed from the study and justification for doing so (eg outlier detected using PCA due to limited sample volume)
+
+          For each biological sample:
+          a. Unique biological sample identifier (as an example, a concatenation of selected parameters such as: m(001)p(7d)DG0MOAXY where m = male, (001) = animal number, p = matrix (p=plasma), (7d) = day of sampling after study start, DG0 = dose group (0 = control group), MoAXY = study identifier of study XY);
+          b. Order of extraction of biological samples;
+          c. Order of NMR data acquisition;
+          d. Whether any biological samples were removed from the study and justification for doing so (e.g. outlier detected using PCA due to limited sample volume).
+        comments:
+          - Should be reported as supplemental file(s) to the main reporting template and referenced here and in the File manifest tab. Note that reporting elements from section 3.5.7.1 (Sample list), 3.5.7.2 (Metabolite annotation/identification) and 3.5.7.3 (metabolite quantification) can be reported together in an Excel file separated by tabs for each relevant section
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.7.1.1
+      metabolite_annotation_identification:
+        description: |-
+          For each resonance and/or metabolite: Chemical shift value(s) (ppm), Multiplicity/splitting pattern, Molecular formula, Common metabolite name, Structural code, Metabolite identifier(s), Common metabolite class name, MSI level of identification (levels 1-4), and known unknown status
+
+          For each resonance and/or metabolite:
+          a. Chemical shift value(s) (ppm) for all relevant nuclei;
+          b. Multiplicity/splitting pattern (e.g. doublet) for each relevant 1H peak;
+          c. Molecular formula (if known);
+          d. Common metabolite name (if known);
+          e. Structural code (e.g. standard InChI string or SMILES) (if known);
+          f. Metabolite identifier(s) from relevant database(s) (e.g. PubChem, HMDB);
+          g. Common metabolite class name (if relevant).
+          h. MSI level of identification (levels 1-4)
+          i. For level 4 only, indicate whether the resonance is a 'known unknown' or not.
+        comments:
+          - Should be reported as supplemental file(s) to the main reporting template and referenced here and in the File manifest tab. Note that reporting elements from section 3.5.7.1 (Sample list), 3.5.7.2 (Metabolite annotation/identification) and 3.5.7.3 (metabolite quantification) can be reported together in an Excel file separated by tabs for each relevant section
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.7.2.1
+      metabolite_quantification:
+        description: |-
+          Metabolite quantification
+
+          Data matrices of all resonance/metabolite intensities and quantification details.
+        range: NMRMetaboliteQuantification
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.7.3
+
+  NMRMetaboliteQuantification:
+    description: |-
+      Metabolite quantification
+
+      Data matrices of all resonance/metabolite intensities and quantification details for NMR.
+    exact_mappings:
+      - oecd_oorf_2023:3.5.7.3
+    attributes:
+      data_matrices_of_intensities:
+        description: |-
+          Data matrices of all resonance/metabolite intensities, across all remaining (ie not removed as outliers) biological and intrastudy QCs samples
+
+          Data matrices of all resonance/metabolite intensities, across all remaining (i.e. not removed as outliers) biological and intrastudy QCs samples.
+        comments:
+          - Should be reported as supplemental file(s) to the main reporting template and referenced here and in the File manifest tab. Note that reporting elements from section 3.5.7.1 (Sample list), 3.5.7.2 (Metabolite annotation/identification) and 3.5.7.3 (metabolite quantification) can be reported together in an Excel file separated by tabs for each relevant section
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.7.3.1
+      resonance_metabolite_quantification_details:
+        description: |-
+          For each resonance/metabolite: Quantification unit (if relevant), Type of quantification (relative quantification, absolute quantification), and RSD of the technical variability of the resonance/metabolite intensity derived from repeated measurements of a representative sample, eg intrastudy QC sample (optional)
+
+          For each resonance/metabolite:
+          - Quantification unit (if relevant)
+          - Type of quantification (relative quantification, absolute quantification)
+          - RSD of the technical variability of the resonance/metabolite intensity derived from repeated measurements of a representative sample, e.g. intrastudy QC sample (optional).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.5.7.3.2

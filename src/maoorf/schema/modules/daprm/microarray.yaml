@@ -1,0 +1,2010 @@
+id: https://w3id.org/eu-parc/maoorf/modules/daprm/microarray
+name: maoorf_microarray
+title: Microarray DAPRM
+description: >-
+  Data Acquisition and Processing Reporting Module (DAPRM) for Microarray Data
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ./base_daprm
+
+classes:
+  MicroarrayDAPRM:
+    is_a: DAPRM
+    description: |-
+      Data Acquisition and Processing Reporting Module (DAPRM) for Microarray
+
+      This module provides a reporting framework for describing a microarray technology, documenting transcriptomic study experimental design including platform-specific sample processing (such as addition of controls, labelling and hybridisation), details of raw data acquisition and format and how normalisation, data filtering and outlier identification and removal was conducted.
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
+    exact_mappings:
+      - oecd_oorf_2023:3.1
+    attributes:
+      technology:
+        description: |-
+          Technology
+
+          This section describes the information a scientist requires for determining analytical sensitivity, limits of detection, interference, and precision (reproducibility and repeatability) of the microarray technology used in a transcriptomic experiment.
+        range: MicroarrayTechnology
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.1
+      transcriptomics_experimental_design:
+        description: |-
+          Transcriptomics Experimental Design
+
+          The microarray experimental design includes defining sample pooling (if applicable), batch processing (if applicable), the types and use of microarray controls, sample processing (how samples were labelled and hybridised to microarrays), and analytical processes applied to assess sample and hybridisation data quality.
+        range: MicroarrayExperimentalDesign
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2
+      specification_of_raw_data:
+        description: |-
+          Specification of Raw Data
+
+          Images from a scanned microarray slide contain features (spots) of various signal intensities, comprising the raw data for a microarray experiment. A detailed description of how and in what form the raw data is generated is crucial for downstream analysis such as identification of differentially expressed genes.
+        range: MicroarraySpecificationOfRawData
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3
+      data_filtering_pre_normalisation:
+        description: |-
+          Data Filtering (Pre-normalisation)
+
+          Filtering can be applied pre or post normalisation. This module specifies the information a regulatory scientist needs to understand the types of filtering that were applied to gene expression data.
+        comments:
+          - Filtering of microarray data to remove lowly expressed or unreliably detected genes in a common practice and also impacts downstream analyses. There are a variety of approaches for microarray data filtering. Please identify the approach used for data filter and complete the associated reporting fields. Please enter "NA" in reporting firles associated with filtering methods that were not used.
+        range: MicroarrayDataFilteringPreNormalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4
+      data_normalisation:
+        description: |-
+          Data Normalisation
+
+          Normalisation is the process by which data are adjusted to take account of technical variation in the study. Reporting elements are provided below for a variety of approaches; the relevant methodology should be selected to report on the pertinent parameters applied in the analysis.
+        comments:
+          - There are many approaches for microarray data normalization. Please identify the approach used for data normalization and complete the associated reporting fields. Please enter "NA" in reporting firles associated with normalization methods that were not used in the experiment.
+        range: MicroarrayDataNormalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5
+      data_filtering_post_normalisation:
+        description: |-
+          Data Filtering (Post-normalisation)
+
+          This module specifies reporting requirements for the most used post-normalisation filtering, as well as an option to report on other approaches.
+        comments:
+          - Filtering of microarray data to remove lowly expressed or unreliably detected genes in a common practice and also impacts downstream analyses. There are a variety of approaches for microarray data filtering. Please identify the approach used for data filter and complete the associated reporting fields. Please enter "NA" in reporting firles associated with filtering methods that were not used.
+        range: MicroarrayDataFilteringPostNormalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.6
+      identification_and_removal_of_low_quality_or_outlying_data_sets:
+        description: |-
+          Identification and Removal of Low Quality or Outlying Data Sets
+
+          The primary purpose of removing an outlier sample is to decrease the leverage of the sample on any downstream analyses and the within group variance so that the statistical differences between comparison groups and identification of effects due to test article treatment can be maximised.
+        range: MicroarrayOutlierRemovalSection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.7
+
+  MicroarrayTechnology:
+    description: |-
+      Technology
+
+      Microarray technology specifications.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.1
+    attributes:
+      type_and_version_of_platform:
+        description: |-
+          Type and version of the platform, manufacturer's name and associated genome build
+
+          Type and version of the platform, manufacturer's name (e.g. Affymetrix U133 Plus 2.0 Array) and associated genome build (e.g., GenBank version – GRCh38)
+        comments:
+          - Descrobe the type an version of the microarray platform. An example of a platform is "Affymetrix U133 Plus 2.0 Array". An example of a genome build is "GenBank version - GRCh38)"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.1.1
+      unique_identifier:
+        description: |-
+          The unique identifier
+
+          The unique identifier (e.g. serial number) and manufacturer
+        comments:
+          - Include the serial numbers of all microarrays used in the study and their mapping to samples. Information may be provided as a data object. If so, please report the data object file name here.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.1.2
+      feature_type:
+        description: |-
+          Feature type
+
+          Feature type (e.g. spotted oligonucleotide)
+        comments:
+          - Describe the feature type used in the microarray technology to measure gene expression (e.g. spotted oligonucleotide, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.1.3
+      feature_annotation:
+        description: |-
+          Feature annotation
+
+          Feature annotation (e.g. probe IDs)
+        comments:
+          - Provide either a publically-accessible link or a data object containing the microarray feature annotation. Please provide the link or the file name of the data object in this reporting field.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.1.4
+      purpose_of_features:
+        description: |-
+          Purpose of feature(s)
+
+          Purpose of feature(s) (e.g. target gene expression, quality control, etc.)
+        comments:
+          - Please indicate the purpose of each type of feature included on the microarry technology. Purposes may include measurement of target gene expression, quality control or other purposes. A generalized narrative description of each feature type may be reported or information may be contained in a data object. If the latter, please report the link or name of the data object in this reporting field.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.1.5
+      composition_of_features:
+        description: |-
+          Composition of feature(s)
+
+          Composition of feature(s) (i.e. oligo sequence, ligated product sequence)
+        comments:
+          - Please indicate the composition of each type of feature included on the microarray technology. Examples of compositions include 'oligo sequence' or 'ligated product sequence', etc. A generalized narrative description of each feature type may be reported or information may be contained in a data object. If the latter, please report the link or name the data object in this reporting field.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.1.6
+      control_console_operating_system:
+        description: |-
+          Control console operating system
+
+          Control console operating system
+        comments:
+          - Please report the control console operating system that was used to collect the microarray data.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.1.7
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        comments:
+          - Please report any other relevant information regarding the microarray technology that would be needed to assess study quality or for others to reproduce the experiment.
+        exact_mappings:
+          - oecd_oorf_2023:3.1.1.8
+
+  MicroarrayExperimentalDesign:
+    description: |-
+      Transcriptomics Experimental Design
+
+      Microarray transcriptomics experimental design.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.2
+    attributes:
+      rna_processing:
+        description: |-
+          RNA Processing
+
+          The methodologies used for RNA sample collection, processing, quality assessment, and storage will have effects on the final research results and should be reported in detail.
+        comments:
+          - Describe methods used for preparation of RNA samples.
+        range: MicroarrayRNAProcessing
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.1
+      sample_pooling_protocol:
+        description: |-
+          Sample Pooling Protocol (if applicable)
+
+          The design of the transcriptomics study also includes determining if RNA samples need to be pooled/processed together due to insufficient quantity required for performing the microarray experiment.
+        range: MicroarraySamplePoolingProtocol
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.2
+      batch_processing_of_samples:
+        description: |-
+          Batch Processing of Samples (if applicable)
+
+          When there are many samples within a study, the microarray experiment may have to be conducted in 2 or more batches.
+        range: MicroarrayBatchProcessing
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.3
+      linear_amplification_labelling_cdna_crna_preparation:
+        description: |-
+          Linear Amplification, Labelling, cDNA/cRNA Preparation
+
+          Prior to hybridisation to microarrays, RNA samples are converted to cDNA and processed through a variety of platform-specific labelling protocols.
+        range: MicroarrayLabellingPreparation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.4
+      hybridization:
+        description: |-
+          Hybridization
+
+          Hybridisation is the process of complementary binding between a labelled target cRNA and an oligonucleotide probe on a microarray.
+        range: MicroarrayHybridization
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.5
+      scanning_of_microarray:
+        description: |-
+          Scanning of Microarray
+
+          The microarray slides are scanned using a scanner to obtain images of hybridised arrays.
+        range: MicroarrayScanning
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.6
+      array_quality_control_metrics_criteria:
+        description: |-
+          Array Quality Control Metrics/Criteria
+
+          Quality control is among the most important of quality assurance measures. Controls are used to check assay performance, with special focus on the least robust components.
+        comments:
+          - If quality control procedures were used during microarray data acquisition, describe them below. If controls were not used to assess assay performance, please report "NA" in each reporting field.
+        range: MicroarrayQualityControlMetrics
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.7
+
+  MicroarrayRNAProcessing:
+    description: |-
+      RNA Processing
+
+      RNA extraction, purification, storage, and quantification/qualification for Microarray.
+    comments:
+      - Describe methods used for preparation of RNA samples.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.2.1
+    attributes:
+      type_of_extracted_rna:
+        description: |-
+          Type of extracted RNA (eg, total RNA, mRNA, miRNA)
+
+          Type of extracted RNA (e.g. total RNA, mRNA, miRNA)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.1.a
+      extraction_and_purification_techniques:
+        description: |-
+          Extraction and purification techniques
+
+          Extraction and purification techniques
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.1.b
+      procedures_for_mrna_enrichment:
+        description: |-
+          Procedures for mRNA enrichment (if applicable), or other enrichment procedures
+
+          Procedures for mRNA enrichment (if applicable), or other enrichment procedures
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.1.c
+      storage_conditions:
+        description: |-
+          Storage conditions
+
+          Storage conditions
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.1.d
+      quantification_and_qualification_of_rna:
+        description: |-
+          Quantification and Qualification of RNA
+
+          Quantification and qualification of RNA.
+        range: MicroarrayRNAQuantification
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.1.e
+
+  MicroarrayRNAQuantification:
+    description: |-
+      Quantification and Qualification of RNA
+
+      Quantification and qualification of RNA for Microarray.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.2.1.e
+    attributes:
+      tool_for_rna_assessment:
+        description: |-
+          Tool for RNA assessment
+
+          Tool for RNA Assessment
+        comments:
+          - Describe the instrument used for RNA assessment (e.g., Nanodrop, QuBit, Bioanalyzer, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.1.e.i
+      rna_quality:
+        description: |-
+          RNA quality
+
+          RNA quality (e.g. A260/A280 ratio, RIN for eukaryotic RNA, PERM number for eukaryotic RNA extracted from formalin-fixed paraffin embedded tissues).
+        comments:
+          - Describe the RNA quality metric used in the study and the threshold for acceptance / exclusion of samples. Example include A260/A280 ratios, RIN, PERM, etc.). If this type of metric was not used to exlude samples prior to omics data collection, report "NA"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.1.e.ii
+      rna_yield:
+        description: |-
+          RNA yield
+
+          RNA yield (e.g. RNA/gr of tissue, RNA/10^6 cells)
+        comments:
+          - Describe the RNA quantity metric used in the study and threshold for accpetance / exclusion of samples. Examples include RNA/gr of tissue or RNA/number of cells, etc. If this type of metric was not used as a sample exclusion criteria, report "NA"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.1.e.iii
+      performance_metrics:
+        description: |-
+          Performance metrics
+
+          Performance metrics
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.1.e.iv
+
+  MicroarraySamplePoolingProtocol:
+    description: |-
+      Sample Pooling Protocol (if applicable)
+
+      Sample pooling protocol for Microarray.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.2.2
+    attributes:
+      sample_pooling_occurred:
+        description: |-
+          Whether any sample pooling has occurred (samples being combined into one hybridisation)
+
+          Whether any sample pooling has occurred (samples being combined into one hybridisation) – yes/no
+        comments:
+          - Report "YES" or "NO".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.2.a
+      reason_for_pooling:
+        description: |-
+          Reason for pooling of samples
+
+          Reason for pooling of samples
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.2.b
+      how_samples_were_pooled:
+        description: |-
+          How samples were pooled
+
+          How samples were pooled – quantity and which samples were pooled?
+        comments:
+          - If sample pooling was performed, please describe which samples were pooled with each other and in what ratio.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.2.c
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        comments:
+          - Please report any other relevent information regarding sample pooling that would be needed to assess study quality or for others to repeat the experiment. Report "NONE" if no other information will be provided.
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.2.d
+
+  MicroarrayBatchProcessing:
+    description: |-
+      Batch Processing of Samples (if applicable)
+
+      Batch processing of samples for Microarray.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.2.3
+    attributes:
+      number_of_batches:
+        description: |-
+          Number of batches
+
+          Number of batches
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.3.a
+      number_of_samples_in_each_batch:
+        description: |-
+          Number of samples used in each batch of the microarray experiment
+
+          Number of samples used in each batch of the microarray experiment
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.3.b
+      how_samples_assigned_to_batches:
+        description: |-
+          How the samples were assigned to each batch (ie the criteria)
+
+          How the samples were assigned to each batch (i.e. the criteria)
+        comments:
+          - If sample batching occurred, describe the criteria used to guide the separation of samples into different batches. If not batching occurred, report "NA".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.3.c
+      method_of_sample_assignment:
+        description: |-
+          Method of sample assignment to different batches
+
+          Method of sample assignment to different batches (for example, simple randomisation, randomised block design etc.)
+        comments:
+          - If applicable, describe the method for sample assignment to different batches (e.g. simple randomization, randomized block design, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.3.d
+
+  MicroarrayLabellingPreparation:
+    description: |-
+      Linear Amplification, Labelling, cDNA/cRNA Preparation
+
+      Linear amplification, labelling, and cDNA/cRNA preparation.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.2.4
+    attributes:
+      labeling_protocol:
+        description: |-
+          Labeling protocol
+
+          Specify whether the labelling protocol is manufacturer specific, modified or custom – describe the protocol in detail)
+        comments:
+          - Describe the labeling protocol in detail. If the labeling protocol is available on a public-facing repository or other accessible location, please provide a link. The protocol may also be provided as a data object. If so, please input the file name of the data object here.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.4.a
+      labeling_description:
+        description: |-
+          Labeling description
+
+          Specify whether the label has been added during the reverse transcription step or following amplification, whether the label is fluorescent (and the wavelength of the fluoroprobe) or radioactive, whether the labelling is direct or there is a pre-label and with a detection process after hybridisation. Specify if the hybridisation is two colour (two samples) or single (one sample).
+        comments:
+          - Describe the properties of the label in detail including at what step the label is added (during reverse transcription or following amplification), the detection chemistry (e.g. fluorescent, radiolabel, etc.), whether the labeling was direct or indirect and when the labeling occures in relationship to hybridization (before or after).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.4.b
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        comments:
+          - Please report any other information reqarding linear amplification and sampling labeling that would be needed to assess study quality or for others to repeat the experiment. Report "NONE" if no other information will be provided.
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.4.c
+
+  MicroarrayHybridization:
+    description: |-
+      Hybridization
+
+      Microarray hybridization protocol and information.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.2.5
+    attributes:
+      hybridization_protocol:
+        description: |-
+          Hybridization protocol
+
+          Provide the name of the protocol and state whether the protocol is manufacturer specific, modified or custom. Describe the protocol in detail.
+        comments:
+          - Describe the hybridization protocol in detail. If the hybridization protocol is available on a public-facing repository or other accessible location, please provide a link. The protocol may also be provided as a data object. If so, please input the file name of the data object here.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.5.a
+      hybridization_information:
+        description: |-
+          Hybridization information
+
+          In addition to the specific protocol used in the experiment, a full description of the design must be provided including the dates of hybridisation for slides/microarrays, association of physical unit identifiers with sample IDs, hybridisation oven temperature and hybridisation time (e.g. 12 hours).
+        comments:
+          - Describe the details of the microarray hybridization including the dates of hybridzation for slides/microarrays, association of physical unit identifiers with sample IDs, hybridization oven temparature and hybridization time. This information may be provided as a data object. If so, please input the file name of the data object here.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.5.b
+
+  MicroarrayScanning:
+    description: |-
+      Scanning of Microarray
+
+      Parameters associated with the microarray scanner.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.2.6
+    attributes:
+      scanning_protocol:
+        description: |-
+          Scanning protocol
+
+          Scanning protocol
+        comments:
+          - Report the name of the microarray scanning protocol
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.6.a
+      name_of_scanning_instrument_manufacturer:
+        description: |-
+          Name of scanning instrument manufacturer
+
+          Name of instrument manufacturer
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.6.b
+      type_of_instrument:
+        description: |-
+          Type of instrument (scanner type)
+
+          Type of instrument (Scanner type)
+        comments:
+          - Report the specific make and model number of the microarray scanner.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.6.c
+      scan_rate:
+        description: |-
+          Scan rate
+
+          Scan rate
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.6.d
+      scanning_time:
+        description: |-
+          Scanning time
+
+          Scanning time
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.6.e
+      lasers_used_and_power:
+        description: |-
+          Lasers used (wavelength or type) and power
+
+          Lasers used (wavelength or type) and power
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.6.f
+      other_pertinent_settings:
+        description: |-
+          Other pertinent settings
+
+          Other pertinent settings
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.6.g
+      description_of_output_type:
+        description: |-
+          Description of output type (eg tiff image)
+
+          Description of output type (e.g. .tiff image)
+        comments:
+          - Provide a description of the output type from microarray scanning (e.g. TIFF image)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.6.h
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.6.i
+
+  MicroarrayQualityControlMetrics:
+    description: |-
+      Array Quality Control Metrics/Criteria
+
+      Quality control metrics and criteria for Microarray.
+    comments:
+      - If quality control procedures were used during microarray data acquisition, describe them below. If controls were not used to assess assay performance, please report "NA" in each reporting field.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.2.7
+    attributes:
+      quality_control_approach_sample_types:
+        description: |-
+          Quality control approach/sample type(s)
+
+          Examples are housekeeping genes, spiked controls, exogenous controls, no template controls, etc. State the type and source of each.
+        comments:
+          - Please provide a text description of the types of controls used in the microarray experiment to evaluate assay performance.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.7.a
+      quality_control_applicability:
+        description: |-
+          Quality control applicability
+
+          Describe what aspects of sample processing they are designed to evaluate (e.g. efficiency of amplification or labelling, hybridisation, etc.). Describe what level of the experimental design they are intended to address (e.g. individual sample quality, sample batch quality).
+        comments:
+          - Indicate the aspects of sample processing and/or level in the transcriptomics experimental design each type of control sample is intended to address.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.7.b
+      quality_control_performance_metrics:
+        description: |-
+          Quality control performance metric(s)
+
+          Quality control performance metric(s)
+        comments:
+          - Describe the quality control performance metric(s) used for each quality control approach / sample type.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.7.c
+      quality_control_accept_reject_criteria:
+        description: |-
+          Quality control accept/reject criteria
+
+          Quality control accept/reject criteria
+        comments:
+          - Describe the accept / reject criteria used for each quality controls approach / sample type.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.7.d
+      technical_and_experimental_replicates:
+        description: |-
+          Technical and experimental replicates
+
+          Describe the intended use of technical and experimental replicates for quality control. Describe summary/aggregation strategies across replicates.
+        comments:
+          - Provide a description of technical and experimental replicates included in the study, their intended use and summary / aggregation strategy across replicates
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.7.e
+      evaluation_metrics_for_spike_in_controls:
+        description: |-
+          Evaluation metrics for spike-in controls
+
+          Evaluation metrics for spike-in controls
+        comments:
+          - If applicable, describe evaluation metrics for spike-in controls. If not applicable, report "NA".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.7.f
+      reproducibility_of_replicate_probes:
+        description: |-
+          Reproducibility of replicate probes
+
+          Reproducibility for replicated probes (e.g. the median CV of replicate probes)
+        comments:
+          - If applicable, provide summary statistics for the reproducibility of replicated probes on each microarrays. Examples of summary statistics include median coefficient of variation (CV) of replicated probes. Information may be provided as a data object. If so, please input the file name of the data object or provide a link. If not applicable, input "NA".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.7.g
+      summary_measures_of_negative_control_spots:
+        description: |-
+          Summary measures of the negative control spots
+
+          Summary measures of the negative control spots (e.g. mean and standard deviation)
+        comments:
+          - If applicable, provide summary statistics for the negative control spots on each microarray. Examples include the mean and standard deviation of signal from negative controls spots. Information may be provided as a data object. If so, please input the file name of the data object or provide a link. If not applicable, input "NA".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.7.h
+      quality_control_results:
+        description: |-
+          Quality control results
+
+          Provide a summary of quality control results as a data object. Example is a Pass/Fail score for each sample for each quality control metric. Indicate which samples were included or excluded based on quality control results.
+        comments:
+          - Proviide a summary of quality control results. Include a PASS / FAIL score for each sample for each quality control metric assessed and and indicate which samples were included or excluded based on quality control results. Information may be provided as a data object. If so, please report the file name of the data object here.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.7.i
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        comments:
+          - Please report any other information regarding quality control practices for acquisition of microarray data that would be needed to assess study quality or for others to repeat the experiemnt. Report "NONE" if no other information will be provided.
+        exact_mappings:
+          - oecd_oorf_2023:3.1.2.7.j
+
+  MicroarraySpecificationOfRawData:
+    description: |-
+      Specification of Raw Data
+
+      Feature extraction software, raw data description, and availability of raw data.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.3
+    attributes:
+      feature_extraction_software_and_outputs:
+        description: |-
+          Feature Extraction Software and Outputs
+
+          Parameters associated with the feature extraction software and data files generated as outputs.
+        range: MicroarrayFeatureExtractionSoftwareAndOutputs
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1
+      description_of_raw_data:
+        description: |-
+          Description of Raw Data
+
+          Details associated with the generation of raw data and QC metrics.
+        range: MicroarrayDescriptionOfRawData
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.2
+      availability_of_raw_data:
+        description: |-
+          Availability of Raw Data
+
+          Raw unprocessed gene expression data should be accessible to the public/researchers to facilitate reproduction of data processing steps and final results.
+        comments:
+          - Raw, unprocessed gene expression data should be accessible to public / researchers to facilitate reproduction of data processing steps and final results. Please report the following items.
+        range: MicroarrayAvailabilityOfRawData
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.3
+
+  MicroarrayFeatureExtractionSoftwareAndOutputs:
+    description: |-
+      Feature Extraction Software and Outputs
+
+      Feature extraction software and output files.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.3.1
+    attributes:
+      feature_extraction_software:
+        description: |-
+          Feature extraction software
+
+          Feature extraction software parameters.
+        range: MicroarrayFeatureExtractionSoftware
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.a
+      output_files:
+        description: |-
+          Output Files
+
+          Feature extraction output files.
+        range: MicroarrayFeatureExtractionOutputFiles
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.b
+
+  MicroarrayFeatureExtractionSoftware:
+    description: |-
+      Feature extraction software
+
+      Feature extraction software parameters.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.3.1.a
+    attributes:
+      name_and_version:
+        description: |-
+          Name and version of feature extraction software
+
+          Name and version of feature extraction software
+        comments:
+          - Report the name and version of the feature extraction software.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.a.i
+      name_of_grid_template_array_design_file:
+        description: |-
+          Name of grid template/array design file
+
+          Name of grid template/array design file
+        comments:
+          - Report the name of the grid template/array design file. This file may be provided as a data object. If so, please report the file name or a link to the file on a public-facing repository in this reporting field.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.a.ii
+      name_of_protocol_used:
+        description: |-
+          Name of protocol used
+
+          Name of protocol used
+        comments:
+          - Report the name of the protocol used for feature extraction. The protocol may be provided as a data object. If so, please report the file name or a link to the file on a public-facing repository in this reporting field.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.a.iii
+      other_pertinent_settings:
+        description: |-
+          Other pertinent settings
+
+          Other pertinent settings (e.g. if a manual fitting or adjustment has been performed)
+        comments:
+          - Please report any other information on the feature extraction software that would be needed to assess study quality or for others to repeat the experiment, including if a manual fitting or adjustment has been performed. Report "NONE" if no other information will be provided.
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.a.iv
+
+  MicroarrayFeatureExtractionOutputFiles:
+    description: |-
+      Output Files
+
+      Feature extraction output files.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.3.1.b
+    attributes:
+      type_of_files_generated:
+        description: |-
+          Type of files generated (eg raw intensity files, QC metrics, etc)
+
+          Type of files generated (e.g. raw intensity files, QC metrics, QC report)
+        comments:
+          - Describe the types of file generated by the feature extraction software (e.g. raw intensity files, QC metrics, QC reports, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.b.i
+      file_extensions:
+        description: |-
+          File extensions (txt, pdf)
+
+          File extensions (.txt, .pdf)
+        comments:
+          - Specify the file extensions associated with each output file type generated by the feature extraction software.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.b.ii
+      naming_convention:
+        description: |-
+          Naming convention
+
+          Naming convention
+        comments:
+          - Describe the naming convention used name raw intensity output files.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.b.iii
+      association_of_quantification_matrices_with_raw_data:
+        description: |-
+          Description of association of quantification matrices with raw data
+
+          Description of association of quantification matrices with raw data
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.b.iv
+      experimental_metadata_file:
+        description: |-
+          Experimental metadata file
+
+          Experimental metadata file
+        comments:
+          - Provide a data object associating the raw data outputs with pertinent experimental metadata. Input the file name of the data object in this reporting field.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.b.v
+      retention_as_part_of_experimental_record:
+        description: |-
+          Retention as part of experimental record? (yes/no)
+
+          Retention as part of experimental record? (YES/NO)
+        comments:
+          - Report "YES" or "NO" regarding whether raw output files were retained as part of the experimental record.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.b.vi
+      archiving_location:
+        description: |-
+          Archiving location
+
+          Archiving location
+        comments:
+          - If raw output files were retained as part of the experimental record and are available on a public-facing repository, please provide a link. If not, please report "NA".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.b.vii
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        comments:
+          - Please report any other information regarding feature extraction output files that would be needed to assess study quality or for others to repeat the experiment. Report "NONE" if no other information will be provided.
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.1.b.viii
+
+  MicroarrayDescriptionOfRawData:
+    description: |-
+      Description of Raw Data
+
+      Details associated with the generation of raw data and QC metrics.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.3.2
+    attributes:
+      description_of_raw_data_tables:
+        description: |-
+          Description of raw data table(s)
+
+          Description of raw data table(s)
+        comments:
+          - Provide a description of the raw data table.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.2.a
+      type_of_raw_data_used:
+        description: |-
+          Type of raw data used (eg mean, median, processed signal intensities)
+
+          Type of raw data used (mean, median or processed signal intensities)
+        comments:
+          - Describe the type of raw data used in the analysis (e.g. mean, median or processed signal intensities)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.2.b
+      background_subtraction_correction:
+        description: |-
+          Background subtraction/correction (yes/no)
+
+          Background subtraction/correction (yes/no)
+        comments:
+          - Report "YES" if background subtraction/correction was used. Otherwise, report "NO".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.2.c
+      multiplicative_detrending:
+        description: |-
+          Multiplicative detrending or similar correction for probe variability (yes/no)
+
+          Multiplicative detrending or similar correction for probe variability (yes/no)
+        comments:
+          - Report "YES" if multiplicative detrending or a similar correction method for probe variability was applied. Otherwise, report "NO".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.2.d
+      removal_of_flagged_features:
+        description: |-
+          Removal of flagged features (yes/no)
+
+          Removal of flagged features (yes/no) (reporting on how this was done is below)
+        comments:
+          - Report "YES" if flagged features were removed from downstream analysis. Otherwise, report "NO".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.2.e
+      method_of_handling_replicate_probes:
+        description: |-
+          Method of handling replicate probes for calculation of gene level summaries
+
+          Method (e.g. mean, median) of handling of replicate probes for calculation of gene level summaries
+        comments:
+          - Describe the method used for handling of replicate probes for calculation of gene level summaries. Examples include mean and median as the summary statistic.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.2.f
+      feature_or_probe_level_qc_metrics:
+        description: |-
+          Applicability, performance metric and acceptance criteria of feature or probe level QC metrics
+
+          Applicability, performance metric and acceptability criteria of feature or probe level QC metrics
+        comments:
+          - Describe any feature or probe level QC metrics were calculated and applied to the data prior to normalization, including the name of the performance metric and the acceptability criteria. If not applicable, report "NA".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.2.g
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        comments:
+          - Please report any other information regarding the description of the raw data that would be needed to assess study quality or for others to repeat the experiment. Report "NONE" if no other information will be provided.
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.2.h
+
+  MicroarrayAvailabilityOfRawData:
+    description: |-
+      Availability of Raw Data
+
+      Repository and accession details for raw microarray data.
+    comments:
+      - Raw, unprocessed gene expression data should be accessible to public / researchers to facilitate reproduction of data processing steps and final results. Please report the following items.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.3.3
+    attributes:
+      name_of_public_repository:
+        description: |-
+          Name of public repository
+
+          Name of public repository or provision of link to private repository
+        comments:
+          - Report the name of the repository containing the raw expression data.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.3.a
+      accession_number:
+        description: |-
+          Accession number or equivalent identification number of the submitted data to facilitate data retrieval
+
+          Accession number or equivalent identification number of the submitted data to facilitate data retrieval
+        comments:
+          - Report an accession number for the raw expression data files.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.3.b
+      format_of_submitted_data:
+        description: |-
+          Format of submitted data (eg txt, xls, etc)
+
+          Format of submitted data (e.g. .txt, .xls, etc.)
+        comments:
+          - Provide the file extension(s) of the raw expression data that was submitted to the data repository.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.3.3.c
+
+  MicroarrayDataFilteringPreNormalisation:
+    description: |-
+      Data Filtering (Pre-normalisation)
+
+      Pre-normalisation filtering methods for Microarray.
+    comments:
+      - Filtering of microarray data to remove lowly expressed or unreliably detected genes in a common practice and also impacts downstream analyses. There are a variety of approaches for microarray data filtering. Please identify the approach used for data filter and complete the associated reporting fields. Please enter "NA" in reporting firles associated with filtering methods that were not used.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.4
+    attributes:
+      filtering_by_signal_intensity:
+        description: |-
+          Filtering by Signal Intensity
+
+          The objective of filtering by signal intensity is to remove genes that have signal intensities that are within the background noise.
+        range: MicroarrayFilteringBySignalIntensity
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1
+      other_filtering_methods:
+        description: |-
+          Other filtering methods
+
+          If none of the above filtering methods was used, please report the method that was used following the aforementioned report elements.
+        range: MicroarrayOtherPreFilteringMethods
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.2
+      special_scenario:
+        description: |-
+          Special Scenario
+
+          Procedures for values where no ratio (between test and control group) can be calculated because the expression valued is 0 in the control.
+        range: MicroarraySpecialScenario
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.3
+
+  MicroarrayFilteringBySignalIntensity:
+    description: |-
+      Filtering by Signal Intensity
+
+      Background distribution and threshold for filtering by signal intensity.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.4.1
+    attributes:
+      background_distribution:
+        description: |-
+          Background Distribution
+
+          Describe how the background distribution was calculated.
+        comments:
+          - In the reporting fields below, describe how the background distribution was calculated. Report if and how the following (or other) elements were used in the calculation.
+        range: MicroarrayBackgroundDistribution
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1.a
+      background_threshold:
+        description: |-
+          Background Threshold
+
+          Report how the background threshold was determined and indicate the specific threshold used.
+        comments:
+          - From the following reporting fiedls, select how the background threshold was determined and indicate the specific threshold used. For approaches that were not used, input "NA".
+        range: MicroarrayBackgroundThreshold
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1.b
+
+  MicroarrayBackgroundDistribution:
+    description: |-
+      Background Distribution
+
+      Elements used in calculating background distribution.
+    comments:
+      - In the reporting fields below, describe how the background distribution was calculated. Report if and how the following (or other) elements were used in the calculation.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.4.1.a
+    attributes:
+      background_distribution_calculation:
+        description: |-
+          Background distribution calculation
+
+          Background distribution calculation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1.a.i
+      local_background_from_quantification_software:
+        description: |-
+          Local background from the quantification software
+
+          Local background from the quantification software
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1.a.ii
+      negative_control_spots:
+        description: |-
+          Negative control spots
+
+          Negative control spots
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1.a.iii
+      signal_intensity_distribution:
+        description: |-
+          Signal intensity distribution
+
+          Signal intensity distribution
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1.a.iv
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        comments:
+          - If no other relevant information will be provided, input "NONE"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1.a.v
+
+  MicroarrayBackgroundThreshold:
+    description: |-
+      Background Threshold
+
+      Determination of background threshold.
+    comments:
+      - From the following reporting fiedls, select how the background threshold was determined and indicate the specific threshold used. For approaches that were not used, input "NA".
+    exact_mappings:
+      - oecd_oorf_2023:3.1.4.1.b
+    attributes:
+      statistical_test_between_foreground_and_background:
+        description: |-
+          Statistical test between the probe foreground and background intensity
+
+          Statistical test between the probe foreground and background intensity
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1.b.i
+      statistic_estimated_from_negative_control_spots:
+        description: |-
+          A statistic estimated from the negative control spots
+
+          A statistic estimated from the negative control spots
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1.b.ii
+      quantile_from_signal_intensity_distribution:
+        description: |-
+          Quantile from the signal intensity distribution
+
+          Quantile from the signal intensity distribution
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1.b.iii
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        comments:
+          - If no other relevant information will be provided, input "NONE"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.1.b.iv
+
+  MicroarrayOtherPreFilteringMethods:
+    description: |-
+      Other filtering methods
+
+      Other pre-normalisation filtering methods.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.4.2
+    attributes:
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        comments:
+          - If none of the above filtering methods was used, please report the method that was used following the aforementioned reporting elements
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.2.a
+
+  MicroarraySpecialScenario:
+    description: |-
+      Special Scenario
+
+      Special scenario for handling 0 in denominator of expression ratios.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.4.3
+    attributes:
+      approach_for_handling_zero_in_denominator:
+        description: |-
+          Approach for handling expression ratios with 0 in the denominator
+
+          Approach for handling expression ratios with 0 in the denominator.
+        comments:
+          - Please state procedures for values where no ratio (between test and control group) can be calculated because the expression valued is 0 in the control.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.4.3.a
+
+  MicroarrayDataNormalisation:
+    description: |-
+      Data Normalisation
+
+      Microarray data normalisation approaches and availability of normalised data.
+    comments:
+      - There are many approaches for microarray data normalization. Please identify the approach used for data normalization and complete the associated reporting fields. Please enter "NA" in reporting firles associated with normalization methods that were not used in the experiment.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.5
+    attributes:
+      normalisation_by_manufacturer_process:
+        description: |-
+          Data Normalisation by Manufacturer Process
+
+          Many manufacturers have proprietary methods for the normalisation of the data for their products.
+        range: MicroarrayNormalisationByManufacturer
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.1
+      normalisation_within_sample_non_scaling:
+        description: |-
+          Data Normalisation by Mean or Median Centering Within Sample Data Sets (non-scaling)
+
+          In this global normalisation strategy, the mean or median of the data set for each sample is found and the rest of the data are centred by dividing by this value.
+        range: MicroarrayNormalisationWithinSample
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.2
+      normalisation_across_samples_scaling:
+        description: |-
+          Data Normalisation by Mean or Median Centering Across Sample Data Sets (scaling)
+
+          One sample data set is chosen as the comparator, and the mean or median of this sample data set is calculated.
+        range: MicroarrayNormalisationAcrossSamples
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.3
+      lowess_normalisation:
+        description: |-
+          LOWESS normalisation
+
+          This process of normalisation takes into account signal intensity in the normalisation.
+        range: MicroarrayLOWESSNormalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.4
+      quantile_normalisation:
+        description: |-
+          Quantile Normalisation
+
+          This normalisation method standardises not only the mean or median of the data but also the distribution.
+        range: MicroarrayQuantileNormalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.5
+      rma_normalisation:
+        description: |-
+          Robust Multiarray Averaging (RMA)
+
+          The RMA method is a normalisation strategy designed for the Affymetrix GeneChip system.
+        range: MicroarrayRMANormalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.6
+      other_normalisation_methods:
+        description: |-
+          Other normalisation methods
+
+          If none of the above normalisation methods was used, please report the method you used following the aforementioned report elements.
+        range: MicroarrayOtherNormalisationMethods
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.7
+      availability_of_normalized_data:
+        description: |-
+          Availability of normalized data
+
+          Normalised gene expression data should be accessible to the public/researchers to facilitate reproduction of data analysis steps and final results.
+        range: MicroarrayAvailabilityOfNormalizedData
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.8
+
+  MicroarrayNormalisationByManufacturer:
+    description: |-
+      Data Normalisation by Manufacturer Process
+
+      Data normalisation by manufacturer process.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.5.1
+    attributes:
+      manufacturer_of_product:
+        description: |-
+          Manufacturer of the product used for normalization
+
+          Manufacturer of the product used for normalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.1.a
+      manufacturer_normalisation_method:
+        description: |-
+          Manufacturer normalisation method used
+
+          Manufacturer's normalisation method used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.1.b
+      deviance_from_manufacturer_method:
+        description: |-
+          Any deviance from the manufacturer method
+
+          Any deviance from the manufacturer method
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.1.c
+      software_package_and_version:
+        description: |-
+          Software package used and date/version
+
+          Software package used and date/version
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.1.d
+
+  MicroarrayNormalisationWithinSample:
+    description: |-
+      Data Normalisation by Mean or Median Centering Within Sample Data Sets (non-scaling)
+
+      Mean or median centering within sample data sets (non-scaling).
+    exact_mappings:
+      - oecd_oorf_2023:3.1.5.2
+    attributes:
+      one_or_two_channels:
+        description: |-
+          If the data are one channel (one fluorescent label) or two channels
+
+          If the data are one channel (one fluorescent label) or two channels
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.2.a
+      background_data_subtraction:
+        description: |-
+          If a background data subtraction was applied and at what point in the process relative to the normalisation step
+
+          If a background data subtraction was applied and at what point in the process relative to the normalisation step
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.2.b
+      method_of_background_calculation:
+        description: |-
+          The method of background calculation
+
+          The method of background calculation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.2.c
+      weighting_procedures:
+        description: |-
+          Describe any weighting procedures that were applied
+
+          Describe any weighting procedures that were applied
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.2.d
+      two_channel_normalisation_timing:
+        description: |-
+          If the data are two channel, report if data were normalized before (on single channels) or after the calculation of the ratio
+
+          If the data are two channel, report if data were normalised before (on single channels) or after the calculation of the ratio
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.2.e
+      data_transformation:
+        description: |-
+          If the data were transformed (eg by log2), and if so before or after the normalisation
+
+          If the data were transformed (e.g. log2), and if so before or after the normalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.2.f
+      data_trimming:
+        description: |-
+          If the data were trimmed before the mean or median (a trimmed mean) was calculated, and if yes, how
+
+          If the data were trimmed before the mean or median (a trimmed mean) was calculated, and if yes, how
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.2.g
+      control_negative_sample_removal:
+        description: |-
+          If control and/or negative sample data were removed from the data set prior to the normalisation
+
+          If control and/or negative sample data were removed from the data set prior to the normalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.2.h
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.2.i
+
+  MicroarrayNormalisationAcrossSamples:
+    description: |-
+      Data Normalisation by Mean or Median Centering Across Sample Data Sets (scaling)
+
+      Mean or median centering across sample data sets (scaling).
+    exact_mappings:
+      - oecd_oorf_2023:3.1.5.3
+    attributes:
+      one_or_two_channels:
+        description: |-
+          If the data are one channel (one fluorescent label) or two channels
+
+          If the data are one channel (one fluorescent label) or two channels
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.3.a
+      background_data_subtraction:
+        description: |-
+          If a background data subtraction was applied and at what point in the process relative to the normalisation step
+
+          If a background data subtraction was applied and at what point in the process relative to the normalisation step
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.3.b
+      method_of_background_calculation:
+        description: |-
+          The method of background calculation
+
+          The method of background calculation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.3.c
+      weighting_procedures:
+        description: |-
+          Describe any weighting procedures that were applied
+
+          Describe any weighting procedures that were applied
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.3.d
+      two_channel_normalisation_timing:
+        description: |-
+          If the data are two channel, indicate if data were normalised before (on single channels) or after the calculation of the ratio
+
+          If the data are two channel, indicate if data were normalised before (on single channels) or after the calculation of the ratio
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.3.e
+      data_transformation:
+        description: |-
+          If the data were transformed (eg log2), and if so before or after the normalisation
+
+          If the data were transformed (e.g. log2), and if so before or after the normalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.3.f
+      data_trimming:
+        description: |-
+          If the data were trimmed before the mean (a trimmed mean) was calculated, and if yes how
+
+          If the data were trimmed before the mean (a trimmed mean) was calculated, and if yes, how
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.3.g
+      control_negative_sample_removal:
+        description: |-
+          If control and/or negative sample data were removed from the data set prior to the normalisation
+
+          If control and/or negative sample data were removed from the data set prior to the normalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.3.h
+      reference_sample_data_set:
+        description: |-
+          Which sample data set was used for the calculation of the mean or median to be used as reference mean or median
+
+          Which sample data set was used for the calculation of the mean or median to be used as reference mean or median (a sample data set is that data derived from one sample and consist of a number of data elements, each element corresponding to one gene or feature)
+        comments:
+          - A sample data set is that data derived from one sample and consist of a number of data elements, each element corresponding to one gene or feature
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.3.i
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.3.j
+
+  MicroarrayLOWESSNormalisation:
+    description: |-
+      LOWESS normalisation
+
+      LOWESS normalisation parameters.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.5.4
+    attributes:
+      one_or_two_channels:
+        description: |-
+          If the data are one channel (one fluorescent labelling) or two channels
+
+          If the data are one channel (one fluorescent labelling) or two channels
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.4.a
+      background_data_subtraction:
+        description: |-
+          If a background data subtraction was applied and at what point in the process relative to the normalisation step
+
+          If a background data subtraction was applied and at what point in the process relative to the normalisation step
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.4.b
+      method_of_background_calculation:
+        description: |-
+          The method of background calculation
+
+          The method of background calculation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.4.c
+      control_negative_sample_removal:
+        description: |-
+          If control and/or negative sample data were removed from the data set prior to the normalisation
+
+          If control and/or negative sample data were removed from the data set prior to the normalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.4.d
+      weighting_procedure:
+        description: |-
+          Describe any weighting procedure that was applied
+
+          Describe any weighting procedure that was applied
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.4.e
+      process_for_derivation_of_ma_plot:
+        description: |-
+          The process used for derivation of the M/A plot
+
+          The process used for derivation of the M/A plot
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.4.f
+      formula_for_polynomial_fit:
+        description: |-
+          The formula used for the calculation of the polynomial fit to the data
+
+          The formula used for the calculation of the polynomial fit to the data
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.4.g
+      whole_sample_or_print_tip_basis:
+        description: |-
+          If the polynomial fit was calculated on the whole sample data set or on a print tip basis
+
+          If the polynomial fit was calculated on the whole sample data set or on a print tip basis
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.4.h
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.4.i
+
+  MicroarrayQuantileNormalisation:
+    description: |-
+      Quantile Normalisation
+
+      Quantile normalisation parameters.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.5.5
+    attributes:
+      ranked_on_single_channel_or_ratio_data:
+        description: |-
+          If the data were ranked on single channel data or calculated ratio data
+
+          If the data were ranked on single channel data or calculated ratio data
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.5.a
+      background_data_subtraction:
+        description: |-
+          If a background data subtraction was applied and at what point in the process relative to the normalisation step
+
+          If a background data subtraction was applied and at what point in the process relative to the normalisation step
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.5.b
+      method_of_background_calculation:
+        description: |-
+          The method of background calculation
+
+          The method of background calculation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.5.c
+      weighting_procedures:
+        description: |-
+          Any weighting procedures that were applied
+
+          Any weighting procedures that were applied
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.5.d
+      data_transformation:
+        description: |-
+          If the data were transformed (eg log2), and if so before or after the normalisation
+
+          If the data were transformed (e.g. log2), and if so before or after the normalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.5.e
+      data_trimming:
+        description: |-
+          If the data were trimmed before the mean (a trimmed mean) was calculated, and if yes how
+
+          If the data were trimmed before the mean (a trimmed mean) was calculated, and if yes how
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.5.f
+      control_negative_sample_removal:
+        description: |-
+          If control and/or negative sample data were removed from the data set prior to the normalisation
+
+          If control and/or negative sample data were removed from the data set prior to the normalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.5.g
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.5.h
+
+  MicroarrayRMANormalisation:
+    description: |-
+      Robust Multiarray Averaging (RMA)
+
+      Robust Multiarray Averaging (RMA) normalisation parameters.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.5.6
+    attributes:
+      link_to_protocol_used:
+        description: |-
+          Link to the protocol used
+
+          Link to the protocol used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.6.a
+      how_background_calculated:
+        description: |-
+          How the background was calculated and to which targets if this is applicable
+
+          How the background was calculated and to which targets if this is applicable
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.6.b
+      weighting_procedures:
+        description: |-
+          Any weighting procedures that were applied
+
+          Any weighting procedures that were applied.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.6.c
+      positive_controls_used:
+        description: |-
+          If positive controls (spiked in probes) were used and how these were incorporated in the calculation
+
+          If positive controls (spiked in probes) were used and how these were incorporated in the calculation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.6.d
+      ranked_on_single_channel_or_ratio_data:
+        description: |-
+          If the data were ranked on the single channel data or calculated ratio data
+
+          If the data were ranked on the single channel data or calculated ratio data
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.6.e
+      data_transformation:
+        description: |-
+          If the data were transformed (eg log2), and if so before or after the normalisation
+
+          If the data were transformed (e.g. log2), and if so before or after the normalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.6.f
+      data_trimming:
+        description: |-
+          If the data were trimmed before the mean (a trimmed mean) was calculated, and if yes how
+
+          If the data were trimmed before the mean (a trimmed mean) was calculated, and if yes how
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.6.g
+      how_ranking_normalisation_achieved:
+        description: |-
+          How the ranking normalisation was achieved
+
+          How the ranking normalisation was achieved
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.6.h
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.6.i
+
+  MicroarrayOtherNormalisationMethods:
+    description: |-
+      Other normalisation methods
+
+      Other normalisation methods.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.5.7
+    attributes:
+      all_relevant_information:
+        description: |-
+          All relevant information
+
+          All relevant information
+        comments:
+          - If none of the above normalisation methods was used, please report the method you used following the aforementioned reporting elements.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.7.a
+
+  MicroarrayAvailabilityOfNormalizedData:
+    description: |-
+      Availability of normalized data
+
+      Repository and accession details for normalised microarray data.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.5.8
+    attributes:
+      name_of_public_repository:
+        description: |-
+          Name of public repository
+
+          Name of public repository or provision of link to private repository
+        comments:
+          - Report the name of the repository containing the normalized expression data.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.8.a
+      accession_number:
+        description: |-
+          Accession number or equivalent identification number associated with normalized data
+
+          Accession number or equivalent identification number associated with the normalised data to facilitate data retrieval.
+        comments:
+          - Report an accession number for the normalized expression data files.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.8.b
+      format_of_submitted_data:
+        description: |-
+          Format of submitted data
+
+          Format of submitted data (e.g. .txt, .xls, etc.)
+        comments:
+          - Provide the file extension(s) of the normalized expression data that was submitted to the data repository.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.8.c
+      description_of_normalized_data_tables:
+        description: |-
+          Description of normalized data tables(s)
+
+          Description of raw data table(s).
+        comments:
+          - Provide a description of the raw data table.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.5.8.d
+
+  MicroarrayDataFilteringPostNormalisation:
+    description: |-
+      Data Filtering (Post-normalisation)
+
+      Post-normalisation filtering methods for Microarray.
+    comments:
+      - Filtering of microarray data to remove lowly expressed or unreliably detected genes in a common practice and also impacts downstream analyses. There are a variety of approaches for microarray data filtering. Please identify the approach used for data filter and complete the associated reporting fields. Please enter "NA" in reporting firles associated with filtering methods that were not used.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.6
+    attributes:
+      filtering_by_probe_level_variability:
+        description: |-
+          Filtering by Probe Level Variability
+
+          The objective of filtering by probe level variability is to remove genes that lack a degree of consistency between replicate probes.
+        range: MicroarrayFilteringByProbeLevelVariability
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.6.1
+      other_filtering_methods:
+        description: |-
+          Other Filtering Methods
+
+          If none of the above filtering methods was used, please report the method you used following the aforementioned report elements.
+        range: MicroarrayOtherPostFilteringMethods
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.6.2
+
+  MicroarrayFilteringByProbeLevelVariability:
+    description: |-
+      Filtering by Probe Level Variability
+
+      Filtering by probe level variability.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.6.1
+    attributes:
+      how_probe_level_variability_measured:
+        description: |-
+          How the probe level variability was measured
+
+          How the probe level variability was measured. Examples include variance or coefficient of variation of the technical replicates.
+        comments:
+          - Examples include variance or coefficient of variation of the technical replicates.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.6.1.a
+      how_probe_level_variability_cutoff_determined:
+        description: |-
+          How the probe level variability cut-off was determined and applied
+
+          How the probe level variability cut-off was determined and applied. An example is use of a quantile estimate from the distribution of all probe level estimates
+        comments:
+          - An example is the use of a quantile estimate from the distribution of all probe level estimates.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.6.1.b
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.6.1.c
+
+  MicroarrayOtherPostFilteringMethods:
+    description: |-
+      Other Filtering Methods
+
+      Other post-normalisation filtering methods.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.6.2
+    attributes:
+      all_relevant_information:
+        description: |-
+          All relevant information
+
+          All relevant information
+        comments:
+          - Examples include variance or coefficient of variation of the technical replicates.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.6.2.a
+
+  MicroarrayOutlierRemovalSection:
+    description: |-
+      Identification and Removal of Low Quality or Outlying Data Sets
+
+      Identification and removal of low quality or outlying data sets.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.7
+    attributes:
+      outlier_and_low_quality_data_removal:
+        description: |-
+          Outlier and Low Quality Data Removal
+
+          Parameters used to identify and remove outlying dataset.
+        range: MicroarrayOutlierRemovalDetails
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.7.1
+
+  MicroarrayOutlierRemovalDetails:
+    description: |-
+      Outlier and Low Quality Data Removal
+
+      Parameters used to identify and remove outlying dataset.
+    exact_mappings:
+      - oecd_oorf_2023:3.1.7.1
+    attributes:
+      outlier_identification_and_reason_for_removal:
+        description: |-
+          Describe how outlier samples were identified and reason for removal
+
+          Describe how outlier samples were identified and reason for removal
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.7.1.a
+      threshold:
+        description: |-
+          Threshold, if any
+
+          Threshold, if any
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.7.1.b
+      processing_step_where_exclusion_occurs:
+        description: |-
+          Processing step where exclusion occurs
+
+          Processing step where exclusion occurs
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.7.1.c
+      list_of_samples_excluded_and_justification:
+        description: |-
+          List of samples excluded and per sample justification for exclusion
+
+          List of samples excluded and per sample justification for exclusion
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.7.1.d
+      removal_of_outliers_before_normalisation:
+        description: |-
+          Removal of outliers before normalisation? (if so: provide justification and describe applied algorithm)
+
+          Removal of outliers before normalisation? (if so: provide justification and describe applied algorithm)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.1.7.1.e
+      removal_of_additional_outliers_after_normalisation:
+        description: |-
+          Removal of additional outliers after normalisation? (if so: provide justification and describe applied algorithm)
+
+          Removal of additional outliers after normalisation? (if so: provide justification and describe applied algorithm)
+        exact_mappings:
+          - oecd_oorf_2023:3.1.7.1.f
+      other_relevant_information:
+        description: |-
+          Other relevant information
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.1.7.1.g

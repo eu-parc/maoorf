@@ -1,0 +1,20 @@
+id: https://w3id.org/eu-parc/maoorf/modules/daprm/base_daprm
+name: maoorf_base_daprm
+title: OORF Base DAPRM Module
+description: >-
+  Base definitions for Data Acquisition and Processing Reporting Modules (DAPRM)
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ../../core/base
+  - ../../core/entities
+

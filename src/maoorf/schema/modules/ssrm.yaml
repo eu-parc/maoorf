@@ -1,0 +1,501 @@
+id: https://w3id.org/eu-parc/maoorf/modules/ssrm
+name: maoorf_ssrm
+title: Study Summary Reporting Module (SSRM)
+description: >-
+  Study Summary Reporting Module (SSRM) of the OECD Omics Reporting Framework (OORF)
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ../core/types
+  - ../core/entities
+
+classes:
+  SSRM:
+    description: |-
+      Study Summary Reporting Module (SSRM)
+
+      This module describes a subset of mandatory reporting elements in order to provide a high-level summary of the application of omics to a regulatory toxicology study. With the exception of the reporting element in Section 1 - Study identifiers, see below, each section is derived from reporting elements described elsewhere within this Guidance Document. Specifically, this includes summarising the TERM, any Data Acquisition & Processing Reporting Module(s) (DAPRMs) used and any Data Analysis Reporting Module(s) (DARMs) used.
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column E for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
+    exact_mappings:
+      - oecd_oorf_2023:1
+    attributes:
+      study_identifiers:
+        description: |-
+          Study Identifiers
+
+          Unique study identifiers and links to related study records.
+        range: SSRMStudyIdentifiers
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.1
+      study_rationale:
+        description: |-
+          Study Rationale
+
+          Summary of the Toxicology Experiment Reporting Module (TERM) key descriptors.
+        range: SSRMStudyRationale
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2
+      data_acquisition_and_processing:
+        description: |-
+          Data Acquisition and Processing
+
+          In this section, specify the Data Acquisition and Processing Reporting Module(s) used to document the omics experiment. Also provide brief narrative descriptions of the omics technology used in the experiment, the rationale for using that technology, the sample preparation method and the use of quality assurance and quality control (QA/QC) methods used during data acquisition or processing.
+        range: SSRMDataAcquisitionAndProcessing
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.3
+      data_analysis:
+        description: |-
+          Data Analysis
+
+          In this section, specify the Data Analysis Reporting Module(s) used to document the analysis of omics data that were performed. Also provide a brief narrative description and accompanying rationale for the data analysis approach(es) that were used.
+        range: SSRMDataAnalysis
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.4
+
+  SSRMStudyIdentifiers:
+    description: |-
+      Study Identifiers
+
+      Unique study identifiers and links to related study records for the Study Summary Reporting Module.
+    exact_mappings:
+      - oecd_oorf_2023:1.1
+    attributes:
+      abstract:
+        description: |-
+          Abstract
+
+          Provide a narrative abstract describing the toxicology study. Identify the test item(s) and include details of the experimental models, general design (e.g. dose-response, time series, etc.), omic technology used and omics data analysis that were performed. Also provide a brief description of the results of regulatory interest.
+        comments:
+          - Provide a narrative abstract describing the toxicology study. Identify the test item(s) and Include details of the experimental models, general design (e.g. dose-response, time series, etc.), omics technology used and data omics analyses that were performed. Please also provide a brief description of the results of regulatory interest.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.1.1
+      study_identifier:
+        description: |-
+          Study identifier
+
+          Provide a unique identifier for the study.
+        comments:
+          - Provide a unique identifier for this study.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.1.2
+      standardised_toxicology_dataset:
+        description: |-
+          Standardised toxicology dataset
+
+          If applicable, provide a link to a standardised toxicology dataset associated with this study. An example is linkage to an OECD test dataset (e.g. IUCLID ESR).
+        comments:
+          - If applicable, provide a link to a standardized toxicology dataset associated with this study. An example is linkage to an OECD test dataset (e.g. IUCLID ESR)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.1.3
+      complete_omics_dataset:
+        description: |-
+          Complete omics dataset
+
+          If applicable, provide a link to the complete omics dataset associated with this study. An example is linkage to a MetaboLights, ArrayExpress or NCBI GEO dataset accession number.
+        comments:
+          - If applicable, provide a link to the complete omics dataset associated with this study. An example is linkage to a MetaboLights, ArrayExpress or NCBI GEO dataset accession number.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.1.4
+
+  SSRMStudyRationale:
+    description: |-
+      Study Rationale
+
+      Summary of the Toxicology Experiment Reporting Module (TERM) key descriptors.
+    exact_mappings:
+      - oecd_oorf_2023:1.2
+    attributes:
+      background_information:
+        description: |-
+          Background Information
+
+          Provide necessary background information for the end user to understand the rationale for why the study was undertaken, including the regulatory question(s).
+        comments:
+          - Provide necessary background information for the end user to understand the rationale for why the study was undertaken, including the regulatory question(s).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.1
+      objectives:
+        description: |-
+          Objectives
+
+          Clearly define the objectives of the omics study toward informing the regulatory question. Describe whether the omic study results are intended to be interpreted in isolation or in combination with results from other (non-omics) studies.
+        comments:
+          - Clearly define the objectives of the omic study toward informing the regulatory question. Describe whether the omic study results are intended to be interpreted in isolation or in combination with results from other (non-omics) studies
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.2
+      test_item:
+        description: |-
+          Test item
+
+          Summary of test item identifiers and information.
+        range: SSRMTestItem
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.3
+      test_system_characteristics_in_vivo:
+        description: |-
+          Test System Characteristics (In Vivo)
+
+          Summary of in vivo test system characteristics.
+        comments:
+          - Enter all characteristics of the in vivo test system that are known. If unknown, report "UNKNOWN". If not an in vivo study, enter "NOT IN VIVO STUDY"
+        range: SSRMTestSystemInVivo
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.4
+      test_system_characteristics_in_vitro:
+        description: |-
+          Test System Characteristics (In Vitro)
+
+          Summary of in vitro test system characteristics.
+        comments:
+          - Enter all characteristics of the in vitro test system that are known. If unknown, report "UNKNOWN". If not an in vitro study, enter "NOT IN VITRO STUDY"
+        range: SSRMTestSystemInVitro
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.5
+      study_design:
+        description: |-
+          Study Design
+
+          Summary of dose levels, dose intervals, biological replicates, and sample collection timetable.
+        range: SSRMStudyDesign
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.6
+      treatment_conditions:
+        description: |-
+          Treatment Conditions
+
+          Summary of route of administration and identity of vehicle.
+        range: SSRMTreatmentConditions
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.7
+      sample_collection:
+        description: |-
+          Sample Collection
+
+          Summary of biological sample type and sample preservation method.
+        range: SSRMSampleCollection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.8
+
+  SSRMTestItem:
+    description: |-
+      Test item
+
+      Summary of the test item in the Study Summary Reporting Module.
+    exact_mappings:
+      - oecd_oorf_2023:1.2.3
+    attributes:
+      test_item_name:
+        description: |-
+          Test item name
+
+          Test item name
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.3.a
+      test_item_cas:
+        description: |-
+          Test Item CAS (if number exists)
+
+          Test item CAS (if number exists)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.3.b
+      test_item_smiles:
+        description: |-
+          Test item SMILES
+
+          Test item SMILES
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.3.c
+      test_item_iupac_name:
+        description: |-
+          Test item IUPAC name
+
+          Test item IUPAC name
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.3.d
+      test_item_additional_information:
+        description: |-
+          Test item - Additional information where available, eg InChi, Distributed Structure-Searchable Toxicity (DSSTox) substance identifier (DTXSID), etc
+
+          Test item additional information
+        exact_mappings:
+          - oecd_oorf_2023:1.2.3.e
+      test_item_sources_of_identifiers:
+        description: |-
+          Test item - sources of identifiers
+
+          Test item sources of identifiers
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.3.f
+
+  SSRMTestSystemInVivo:
+    description: |-
+      Test System Characteristics (In Vivo)
+
+      Summary of in vivo test system characteristics in the Study Summary Reporting Module.
+    comments:
+      - Enter all characteristics of the in vivo test system that are known. If unknown, report "UNKNOWN". If not an in vivo study, enter "NOT IN VIVO STUDY"
+    exact_mappings:
+      - oecd_oorf_2023:1.2.4
+    attributes:
+      species:
+        description: |-
+          Species
+
+          Species
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.4.a
+      strain:
+        description: |-
+          Strain
+
+          Strain
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.4.b
+      sex:
+        description: |-
+          Sex
+
+          Sex
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.4.c
+      age:
+        description: |-
+          Age
+
+          Age
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.4.d
+
+  SSRMTestSystemInVitro:
+    description: |-
+      Test System Characteristics (In Vitro)
+
+      Summary of in vitro test system characteristics in the Study Summary Reporting Module.
+    comments:
+      - Enter all characteristics of the in vitro test system that are known. If unknown, report "UNKNOWN". If not an in vitro study, enter "NOT IN VITRO STUDY"
+    exact_mappings:
+      - oecd_oorf_2023:1.2.5
+    attributes:
+      cell_type:
+        description: |-
+          Cell type
+
+          Cell type
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.5.a
+      species_of_origin:
+        description: |-
+          Species of origin
+
+          Species of origin
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.5.b
+
+  SSRMStudyDesign:
+    description: |-
+      Study Design
+
+      Summary of study design in the Study Summary Reporting Module.
+    exact_mappings:
+      - oecd_oorf_2023:1.2.6
+    attributes:
+      dose_levels:
+        description: |-
+          Dose levels (including units)
+
+          Dose levels (including units)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.6.a
+      dose_intervals:
+        description: |-
+          Dose intervals (including units)
+
+          Dose intervals (including units)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.6.b
+      number_of_biological_replicates_per_treatment_condition:
+        description: |-
+          Number of biological replicates per treatment condition
+
+          Number of biological replicates per treatment condition
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.6.c
+      timetable_sample_collection:
+        description: |-
+          Timetable - sample collection
+
+          Timetable - sample collection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.6.d
+
+  SSRMTreatmentConditions:
+    description: |-
+      Treatment Conditions
+
+      Summary of treatment conditions in the Study Summary Reporting Module.
+    exact_mappings:
+      - oecd_oorf_2023:1.2.7
+    attributes:
+      route_of_administration:
+        description: |-
+          Route of administration
+
+          Route of administration
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.7.a
+      identity_of_vehicle:
+        description: |-
+          Identity of vehicle
+
+          Identity of vehicle
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.7.b
+
+  SSRMSampleCollection:
+    description: |-
+      Sample Collection
+
+      Summary of sample collection in the Study Summary Reporting Module.
+    exact_mappings:
+      - oecd_oorf_2023:1.2.8
+    attributes:
+      type_of_biological_sample_for_omics:
+        description: |-
+          Type of biological sample for omics (in vitro: cells, cell media, etc; in vivo: biofluid, cells, tissue, organ, organism, etc)
+
+          Type of biological sample for omics. Examples include cells, cell media, etc. for in vitro and biofluid, cells, tissues, organ, organism, etc. for in vivo.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.8.a
+      sample_preservation_method:
+        description: |-
+          Sample preservation method
+
+          Sample preservation method
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.2.8.b
+
+  SSRMDataAcquisitionAndProcessing:
+    description: |-
+      Data Acquisition and Processing
+
+      In this section, specify the Data Acquisition and Processing Reporting Module(s) used to document the omics experiment. Also provide brief narrative descriptions of the omics technology used in the experiment, the rationale for using that technology, the sample preparation method and the use of quality assurance and quality control (QA/QC) methods used during data acquisition or processing.
+    exact_mappings:
+      - oecd_oorf_2023:1.3
+    attributes:
+      daprm_modules:
+        description: |-
+          DAPRM Module(s)
+
+          Specify the Data Acquisition and Processing Reporting Module(s) used to document the omics experiment.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.3.1
+      omics_technology_manufacturer_and_model:
+        description: |-
+          Omics technology, manufacturer and model
+
+          Omics technology, manufacturer, and model
+        comments:
+          - Please specify the manufacturer and model of the omics technology used in the experiment (e.g. LC-MS(/MS) - Thermo Scientific Vanquish UHPLC Q Exactive mass spectrometer, Microarray - Affymetrix Mouse Gene 2.0 ST Array, etc)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.3.2
+      description_and_rationale_for_data_acquisition_approach:
+        description: |-
+          Description and rationale for data acquisition approach
+
+          Description and rationale for data acquisition approach
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.3.3
+      sample_preparation_method:
+        description: |-
+          Sample preparation method
+
+          Sample preparation method
+        comments:
+          - Please provide a breif description of the sample preparation method (e.g. RNA/metabolite extraction method, cell lysis, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.3.4
+      demonstration_of_quality_of_analysis:
+        description: |-
+          Demonstration of quality of analysis (ie QA/QC used)
+
+          Demonstration of quality of analysis (i.e. QA/QC used)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.3.5
+
+  SSRMDataAnalysis:
+    description: |-
+      Data Analysis
+
+      In this section, specify the Data Analysis Reporting Module(s) used to document the analysis of omics data that were performed. Also provide a brief narrative description and accompanying rationale for the data analysis approach(es) that were used.
+    exact_mappings:
+      - oecd_oorf_2023:1.4
+    attributes:
+      darm_modules:
+        description: |-
+          DARM Module(s)
+
+          Specify the Data Analysis Reporting Module(s) used to document the analysis of omics data that were performed.
+        comments:
+          - Please identify the Data Analysis Reporting Module(s) used in this experiment
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.4.1
+      description_and_rationale_for_data_analysis_approach:
+        description: |-
+          Description and rationale for data analysis approach
+
+          Also provide a brief narrative description and accompanying rationale for the data analysis approach(es) that were used.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:1.4.2
+

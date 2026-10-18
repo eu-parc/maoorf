@@ -1,0 +1,606 @@
+id: https://w3id.org/eu-parc/maoorf/modules/daprm/ms
+name: maoorf_ms
+title: Mass Spectrometry Metabolomics DAPRM
+description: >-
+  Data Acquisition and Processing Reporting Module (DAPRM) for Mass Spectrometry Metabolomics
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ./base_daprm
+
+classes:
+  MassSpectrometryDAPRM:
+    is_a: DAPRM
+    description: |-
+      Data Acquisition and Processing Reporting Module (DAPRM) for Mass Spectrometry Metabolomics
+
+      In this Data Acquisition and Processing Reporting Module we describe the reporting required for a mass spectrometry-based metabolomics study, including sample processing, metabolite extraction and preparation of standards; analytical QA/QC samples; acquisition and processing of mass spectrometry data; demonstrating the quality of the data; and the data matrices produced by this technology, including metabolite annotation/identification and intensities.
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column E for data entry. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template"
+    exact_mappings:
+      - oecd_oorf_2023:3.4
+    attributes:
+      overall_description_and_rationale:
+        description: |-
+          Overall description and rationale for mass spectrometry metabolomics approach
+
+          Overall description and rationale for mass spectrometry metabolomics approach, technology types used, and links to relevant SOPs or publications.
+        range: MSOverallDescriptionAndRationale
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.1
+      sample_processing_and_metabolite_extraction:
+        description: |-
+          Sample processing and metabolite extraction and addition of chemical reference standards
+
+          While the specific protocols for metabolite extraction will depend on the sample type (i.e. biofluid, cells, tissue, etc.) being measured, a reporting framework that can capture the most important information about a diverse range of methods is presented here.
+        range: MSSampleProcessingAndExtraction
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.2
+      analytical_quality_assurance_and_qc_samples:
+        description: |-
+          Analytical quality assurance and preparation of quality control samples
+
+          When conducting a metabolomics study using LC-MS, GC-MS or DIMS it is essential to have a quality assurance (QA) framework and use quality control (QC) samples, as described in the MERIT best practice guidelines.
+        range: MSAnalyticalQualityAssuranceAndQC
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.3
+      acquisition_of_ms_data:
+        description: |-
+          Acquisition of mass spectrometry metabolomics and metabolite data
+
+          Mass spectrometry assay types, instrument configurations and methods, and sample acquisition order.
+        range: MSAcquisitionOfData
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.4
+      processing_of_ms_data:
+        description: |-
+          Processing of mass spectrometry metabolomics and metabolite data
+
+          This section covers the reporting of the data processing steps that are required to transform raw data into a form amenable to statistical analysis.
+        range: MSProcessingOfData
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5
+      demonstration_of_quality_of_ms_analysis:
+        description: |-
+          Demonstration of quality of mass spectrometry metabolomics analysis
+
+          This section covers the reporting of data that will allow the quality of the mass spectrometry metabolomics dataset to be assessed, by the regulator, after the processing described in the section above. Measures of quality are derived from the appropriate uses of different types of QC samples.
+        range: MSDemonstrationOfQuality
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.6
+      outputs_data_matrices:
+        description: |-
+          Outputs: Data matrices from metabolomics assays
+
+          The outputs include a data matrix that conveniently summarises the biological samples that were analysed, and whether any of these samples were removed from the study, with a justification, as well as metabolite annotation/identification and metabolite quantification.
+        range: MSOutputsDataMatrices
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.7
+
+  MSOverallDescriptionAndRationale:
+    description: |-
+      Overall description and rationale for mass spectrometry metabolomics approach
+
+      Overall description and rationale for mass spectrometry metabolomics approach.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.1
+    attributes:
+      overall_description_and_rationale:
+        description: |-
+          Overall description and rationale for mass spectrometry metabolomics approach, for example including sample type, extraction method, technology type, processing methods and QA/QC
+
+          Overall description and rationale for mass spectrometry metabolomics approach, for example including sample type, extraction method, technology type, processing methods and QA/QC.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.1.1
+      technology_types_used:
+        description: |-
+          Technology type(s) used, eg LC-MS, LC-MS/MS, GC-MS, GC-MS/MS, DI-MS, DIMS/MS, or other
+
+          Technology type(s) used, e.g. LC-MS, LC-MS/MS, GC-MS, GC-MS/MS, DI-MS, DI-MS/MS, or any other mass spectrometry approach used.
+        comments:
+          - If the technology type used is not listed in the examples please provide the full name of the technique used as well as the abbreviated form
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.1.2
+      links_to_sops_or_publications:
+        description: |-
+          Link(s) to relevant SOP(s) or publication(s) of approach used (optional)
+
+          Link(s) to relevant SOP(s) or publication(s) of approach used.
+        exact_mappings:
+          - oecd_oorf_2023:3.4.1.3
+
+  MSSampleProcessingAndExtraction:
+    description: |-
+      Sample processing and metabolite extraction and addition of chemical reference standards
+
+      Metabolite extraction, derivatisation, concentration/reconstitution, and chemical reference standards.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.2
+    attributes:
+      extraction_method_general_description:
+        description: |-
+          Extraction method general description, including per-sample amounts, solvent(s) used and their ratios, means of agitation/maceration, temperatures and times, and post extraction handling
+
+          Extraction method general description, including per-sample amounts, solvent(s) used and their ratios, means of agitation/maceration, temperatures and times, and post extraction handling.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.2.1.1
+      derivatization_of_samples:
+        description: |-
+          Derivatization method general description, including reagents and reaction (including temperature and time) and clean-up/partitioning (if used)
+
+          Derivatisation method general description, including reagents and reaction (including temperature and time) and clean-up/partitioning (if used).
+        comments:
+          - Derivatization only required for GC-MS approaches. Report as "NA" if derivatization not used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.2.2.1
+      extract_concentration_and_reconstitution:
+        description: |-
+          Drying and reconstitution method general description, including final reconstitution, solvent(s) and final volume (if used), storage temperature (if relevant) and duration of reconstituted extracts (if relevant)
+
+          Drying and reconstitution method general description, including final reconstitution solvent(s) and final volume (if used), storage temperature (if relevant) and duration of reconstituted extracts (if relevant).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.2.3.1
+      chemical_reference_standard_preparation:
+        description: |-
+          For each new standard (or each named panel of standards) prepared for this study: Purpose of standard, Quantification type, Calibration methodology, Identity, Purity, Supplier, Preparation method, and Concentration(s)
+
+          For each new standard (or each named panel of standards) prepared for this study:
+          a. Purpose of standard (e.g. extraction (and injection) standard; injection standard only; annotation/identification only; annotation/identification and quantification)
+          b. Quantification type (if relevant; e.g. absolute quantification, semi-quantification or relative quantification - see Table 1)
+          c. Calibration methodology (if relevant; e.g. external calibration (without matrix), external matrix-matched calibration, calibration by internal normalisation, standard addition calibration, internal calibration)
+          d. Identity (including common name and, for example, PubChem CID, HMDB id, KEGG id, CAS, InChI, InChIKey, SMILES)
+          e. Purity (if known)
+          f. Supplier
+          g. Preparation method, including whether standard spiked internally into the biological sample or alternative external solution
+          h. Concentration(s)
+        comments:
+          - Details should be included for any chemical reference standards that were prepared for this study. If many chemical reference standards are to be recorded here, it is recommended that a supplemental file with these details should be reported, and referenced here and in the file manifest. It should be noted that existing pre-prepared in-house as well as external (both public and commercial) mass spectral libraries of standards can also be used for annotation purposes. In these cases the full details regarding the reference standard preparation might not be known or available and therefore cannot be reported here. Instead the source of the mass spectral library and version should be reported in Section 3.4.5.11
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.2.4.1
+
+  MSAnalyticalQualityAssuranceAndQC:
+    description: |-
+      Analytical quality assurance and preparation of quality control samples
+
+      QC samples, process blank sample, and assessment of sample matrix effects.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.3
+    attributes:
+      qc_samples:
+        description: |-
+          Sample details for system suitability QC sample (if used), intrastudy QC sample, intralaboratory QC sample (if used) and interlaboratory QC sample (if used) Should include details of source, preparation details, batch number (if relevant), certificate of analysis (COA) (if relevant), storage conditions and days since preparation
+
+          Sample details for system suitability QC sample, intrastudy QC sample, intralaboratory QC sample (if used) and interlaboratory QC sample (if used). Should include details of source, preparation details, batch number (if relevant), certificate of analysis (COA) (if relevant), storage conditions and days since preparation.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.3.1.1
+      process_blank_sample:
+        description: |-
+          Type of process blank, start and end points of the 'process' used to prepare this sample, and storage conditions
+
+          Type of process blank, start and end points of the 'process' used to prepare this sample, and storage conditions.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.3.2.1
+      assessment_of_sample_matrix_effects:
+        description: |-
+          Method to assess matrix effects
+
+          Method to assess matrix effects.
+        comments:
+          - Assessing sample matrix effects is particularly important for quantitative targeted metabolomics, and are mostly related to ESI sources
+        exact_mappings:
+          - oecd_oorf_2023:3.4.3.3.1
+
+  MSAcquisitionOfData:
+    description: |-
+      Acquisition of mass spectrometry metabolomics and metabolite data
+
+      Mass spectrometry assay types, instrument configuration and method details, and sample acquisition order.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.4
+    attributes:
+      ms_assay_types:
+        description: |-
+          Mass spectrometry assay type(s)
+
+          Mass spectrometry metabolomics assays can be untargeted, targeted, or a hybrid.
+        range: MSAssayTypes
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.4.1
+      instrument_configurations_and_methods:
+        description: |-
+          File(s) summarising instrument configuration and method details of analysis performed See Section 34 - Table 3 of OORF Guidance Document for suggested reporting elements depending on the instrumentation and method applied
+
+          File(s) summarising instrument configuration and method details of analysis performed. See Section 3.4 - Table 3 for suggested reporting elements depending on the instrumentation and method applied.
+        comments:
+          - One or more files supplemental to the main reporting template and referenced here and in the File manifest tab. See Section 3.4 - Table 3 of OORF Guidance Document or suggested reporting elements depending on the instrumentation and method applied. This may require reporting details for each "assay" performed. For example if performing HILIC LC-MS and C18 LC-MS then the HILIC and C18 assays will a have different configuration and method details
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.4.2.1
+      acquisition_order:
+        description: |-
+          Acquisition order for QC samples, biological samples and reference standard samples
+
+          Acquisition order for QC samples, biological samples and reference standard samples.
+        range: MSAcquisitionOrder
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.4.3
+
+  MSAssayTypes:
+    description: |-
+      Mass spectrometry assay type(s)
+
+      Mass spectrometry assay types used and description.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.4.1
+    attributes:
+      assay_types_used:
+        description: |-
+          Mass spectrometry assay type(s) used (see Section 34 - Table 2 of OORF Guidance Document)
+
+          Mass spectrometry assay type(s) used (see Section 3.4 - Table 2)
+        comments:
+          - "Assay types are listed in Section 3.4 - Table 2 of OORF Guidance Document. One of the following is required to be reported: \"Untargeted with relative quantification\", \"Targeted with relative quantification only\", \"Targeted with semi-quantification only\", \"Targeted with absolute quantification only\", \"Targeted with combination of quantification methods\", \"Hybrid with relative quantification\" or \"Hybrid with combination of quantification methods\""
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.4.1.1
+      assay_type_description:
+        description: |-
+          Mass spectrometry assay type description
+
+          Mass spectrometry assay type description
+        comments:
+          - "Provide a more detailed description of the assay type (e.g. \"Hybrid with relative quantification LC-MS(/MS) assays that target a series of toxicologically relevant metabolic biomarkers as well as an untargeted component. Each sample is analysed using four assays: HILIC LC-MS (positive and negative ion modes) for analysis of polar metabolites, C18 LC-MS (positive and negative ion modes) for analysis of lipids. DDA MS/MS analysis of QC samples for compound identification\")"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.4.1.2
+
+  MSAcquisitionOrder:
+    description: |-
+      Acquisition order for QC samples, biological samples and reference standard samples
+
+      Sample acquisition order definition and table.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.4.3
+    attributes:
+      how_sample_acquisition_order_defined:
+        description: |-
+          Describe how sample acquisition order was defined, eg frequency of intrastudy QCs, method to randomise biological sample order
+
+          Describe how sample acquisition order was defined, e.g. frequency of intrastudy QCs, method to randomise biological sample order.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.4.3.1
+      acquisition_order_table:
+        description: |-
+          Acquisition order of all types of QC samples, biological samples and reference standard samples (if relevant), thereby indicating the number of pre-conditioning QC samples, the number of process blank samples, and the frequency of analysis of intrastudy QC samples
+
+          Acquisition order of all types of QC samples, biological samples and reference standard samples (if relevant), thereby indicating the number of pre-conditioning QC samples, the number of process blank samples, and the frequency of analysis of intrastudy QC samples. Columns of reported table should include: a. Run order b. File name c. Sample type (must be able to distinguish between QC samples, biological samples and process blanks)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.4.3.2
+
+  MSProcessingOfData:
+    description: |-
+      Processing of mass spectrometry metabolomics and metabolite data
+
+      Data processing steps required to transform raw MS data into a form amenable to statistical analysis.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.5
+    attributes:
+      data_processing_workflows:
+        description: |-
+          Data processing workflow(s)
+
+          Data processing can be performed across various software and platforms.
+        range: MSDataProcessingWorkflow
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.1
+      centroiding_baseline_correction_and_noise_reduction:
+        description: |-
+          Centroiding, baseline correction and/or noise reduction method(s) and parameters if used
+
+          Centroiding, baseline correction and/or noise reduction method(s) and parameters if used.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.2.1
+      data_reduction:
+        description: |-
+          Data reduction method(s) and parameters used - including (where relevant) details of feature detection/picking, retention time alignment, feature grouping/matching, and feature integration
+
+          Data reduction method(s) and parameters used - including (where relevant) details of feature detection/picking, retention time alignment, feature grouping/matching, and feature integration.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.3.1
+      feature_intensity_drift_and_batch_correction:
+        description: |-
+          Feature intensity drift and/or batch correction methods and parameters used - including (where relevant) details of signal intensity drift assessment, batch correction, and drift correction within a batch
+
+          Feature intensity drift and/or batch correction methods and parameters used - including (where relevant) details of signal intensity drift assessment, batch correction, and drift correction within a batch.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.4.1
+      identification_and_removal_of_features:
+        description: |-
+          Methods and parameters used to identify and remove features - including (where relevant) details of removal of features that are sparsely detected across biological and/or intrastudy QC samples, filtering features for repeatability, filtering features for a proportional response function (ie linearity), removal of features present in process blanks, and removal of features from dosed substance(s)
+
+          Methods and parameters used to identify and remove features - including (where relevant) details of removal of features that are sparsely detected across biological and/or intrastudy QC samples, filtering features for repeatability, filtering features for a proportional response function (i.e. linearity), removal of features present in process blanks, and removal of features from dosed substance(s).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.5.1
+      identification_and_removal_of_outlying_samples:
+        description: |-
+          Methods and parameters used to identify and remove samples (if used; see section 71 for actual samples removed)
+
+          Methods and parameters used to identify and remove samples (if used; see section 3.4.7.1 for actual samples removed).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.6.1
+      normalisation:
+        description: |-
+          Normalisation method(s) and parameters (if used)
+
+          Normalisation method(s) and parameters (if used).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.7.1
+      missing_value_imputation:
+        description: |-
+          Missing value imputation method(s) and parameters (if used)
+
+          Missing value imputation method(s) and parameters (if used).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.8.1
+      normality_testing_scaling_and_transformations:
+        description: |-
+          Normality testing, scaling and/or transformation methods and parameters (if used)
+
+          Normality testing, scaling and/or transformation methods and parameters (if used).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.9.1
+      processing_methods_for_metabolite_quantification:
+        description: |-
+          Description of method(s) and parameters for metabolite quantification - including (where relevant) for relative- and/or semi- and/or absolute quantification
+
+          Description of method(s) and parameters for metabolite quantification - including (where relevant) for relative- and/or semi- and/or absolute quantification.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.10.1
+      processing_methods_for_metabolite_annotation_and_identification:
+        description: |-
+          Description of method(s) and parameters for metabolite annotation/identification - including (if relevant) whether reference standards are from in-house or external spectral library(ies) and the spectral library(ies) used
+
+          Description of method(s) and parameters for metabolite annotation/identification - including (if relevant) whether reference standards are from in-house or external spectral library(ies) and the spectral library(ies) used.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.11.1
+
+  MSDataProcessingWorkflow:
+    description: |-
+      Data processing workflow(s)
+
+      Data processing workflow description, software, scripts, logs, and references.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.5.1
+    attributes:
+      workflow_description:
+        description: |-
+          Data processing workflow description
+
+          Data processing workflow description
+        comments:
+          - Sharing sufficient details to be able to re-run the full data processing workflow is encouraged and ultimately improves the reproducibility of the data processing
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.1.1
+      software_names_and_versions:
+        description: |-
+          Name(s) and version(s) of the software used
+
+          Name(s) and version(s) of the software used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.1.2
+      scripts_or_workflow_files:
+        description: |-
+          Script(s)/workflow file(s) or a reference to a URL or DOI of the script(s)/workflow file(s) (optional)
+
+          Script(s)/workflow file(s) or a reference to a URL or DOI of the script(s)/workflow file(s) (optional)
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.1.3
+      data_processing_histories_or_logs:
+        description: |-
+          Data processing history(ies) or log(s) (optional)
+
+          Data processing history(ies) or log(s) (optional)
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.1.4
+      references_to_protocols_or_publications:
+        description: |-
+          Reference to relevant protocol(s) or publication(s)
+
+          Reference(s) to relevant protocol(s) or publication(s).
+        exact_mappings:
+          - oecd_oorf_2023:3.4.5.1.5
+
+  MSDemonstrationOfQuality:
+    description: |-
+      Demonstration of quality of mass spectrometry metabolomics analysis
+
+      Performance and QC precision/reproducibility reports for mass spectrometry metabolomics.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.6
+    attributes:
+      mass_spectrometer_performance_report:
+        description: |-
+          Performance achieved using system suitability QC, relative to a laboratory's acceptance criteria, to confirm instrumentation is fit for purpose Depending on the assay selected, relevant criteria can include: quantitative reporting of m/z shift; retention time shift; shape and/or intensity of selected peaks
+
+          Performance achieved using system suitability QC, relative to a laboratory's acceptance criteria, to confirm instrumentation is fit for purpose. Depending on the assay selected, relevant criteria can include: quantitative reporting of m/z shift; retention time shift; shape and/or intensity of selected peaks.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.6.1.1
+      intrastudy_qc_precision_report:
+        description: |-
+          Measure of a study's analytical precision achieved using intrastudy QC samples, relative to a laboratory's acceptance criteria, to confirm analyses are of sufficient quality for regulatory purposes To include quantitative reporting of the RSDs of feature intensity (mandatory), m/z (optional) and retention time (if relevant; optional), for example reported as the distribution and median of RSD values of all feature intensities across all intrastudy QC samples; and a qualitative assessment of the similarity of intrastudy QCs using PCA, reported as a PCA scores plot from a global analysis of all the biological and intrastudy QC samples
+
+          Measure of a study's analytical precision achieved using intrastudy QC samples, relative to a laboratory's acceptance criteria, to confirm analyses are of sufficient quality for regulatory purposes. To include quantitative reporting of the RSDs of feature intensity (mandatory), m/z (optional) and retention time (if relevant; optional), for example reported as the distribution and median of RSD values of all feature intensities across all intrastudy QC samples; and a qualitative assessment of the similarity of intrastudy QCs using PCA, reported as a PCA scores plot from a global analysis of all the biological and intrastudy QC samples.
+        comments:
+          - Should be reported as a supplemental file to the main reporting template and referenced here and in the File manifest tab
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.6.2.1
+      intralaboratory_qc_reproducibility_report:
+        description: |-
+          Measure of intralaboratory (and interstudy) reproducibility, using intralaboratory QC samples, to assess any long term differences between separate studies within the laboratory
+
+          Measure of intralaboratory (and interstudy) reproducibility, using intralaboratory QC samples, to assess any long term differences between separate studies within the laboratory.
+        comments:
+          - Should be reported as a supplemental file to the main reporting template and referenced here and in the File manifest tab
+        exact_mappings:
+          - oecd_oorf_2023:3.4.6.3.1
+      interlaboratory_qc_reproducibility_report:
+        description: |-
+          Interlaboratory QC reproducibility report (optional)
+
+          Interlaboratory QC reproducibility report (optional).
+        range: MSInterlaboratoryQCReport
+        exact_mappings:
+          - oecd_oorf_2023:3.4.6.4
+
+  MSInterlaboratoryQCReport:
+    description: |-
+      Interlaboratory QC reproducibility report (optional)
+
+      Interlaboratory QC features and reproducibility measure.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.6.4
+    attributes:
+      features_detected_in_interlaboratory_qc:
+        description: |-
+          Features (m/z, intensities) detected in interlaboratory QC (eg defined features in a (standard) reference material) This reporting is likely to evolve as the community improves its use of interlaboratory QC samples
+
+          Features (m/z, intensities) detected in interlaboratory QC (e.g. defined features in a (standard) reference material). This reporting is likely to evolve as the community improves its use of interlaboratory QC samples.
+        comments:
+          - Should be reported as a supplemental file to the main reporting template and referenced here and in the File manifest tab
+        exact_mappings:
+          - oecd_oorf_2023:3.4.6.4.1
+      measure_of_interlaboratory_reproducibility:
+        description: |-
+          Measure of interlaboratory reproducibility, using interlaboratory QC samples, to assess any differences between separate laboratories; ie performance standard achieved relative to specified amounts of metabolites
+
+          Measure of interlaboratory reproducibility, using interlaboratory QC samples, to assess any differences between separate laboratories; i.e. performance standard achieved relative to specified amounts of metabolites.
+        exact_mappings:
+          - oecd_oorf_2023:3.4.6.4.2
+
+  MSOutputsDataMatrices:
+    description: |-
+      Outputs: Data matrices from metabolomics assays
+
+      Sample list, metabolite annotation/identification, and metabolite quantification data matrices.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.7
+    attributes:
+      sample_list:
+        description: |-
+          For each biological sample: Unique biological sample identifier; Order of extraction of biological samples; Order of mass spectrometric data acquisition; Whether any biological samples were removed from the study and justification for doing so (eg outlier detected using PCA due to limited sample volume)
+
+          For each biological sample:
+          a. Unique biological sample identifier (as an example, a concatenation of selected parameters such as: m(001)p(7d)DG0MOAXY where m = male, (001) = animal number, p = matrix (p=plasma), (7d) = day of sampling after study start, DG0 = dose group (0 = control group), MoAXY = study identifier of study XY);
+          b. Order of extraction of biological samples;
+          c. Order of mass spectrometric data acquisition;
+          d. Whether any biological samples were removed from the study and justification for doing so (e.g. outlier detected using PCA due to limited sample volume).
+        comments:
+          - Should be reported as supplemental file(s) to the main reporting template and referenced here and in the File manifest tab. Note that reporting elements from section 3.4.7.1 (Sample list), 3.4.7.2 (Metabolite annotation/identification) and 3.4.7.3 (metabolite quantification) can be reported together in an Excel file separated by tabs for each relevant section
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.7.1.1
+      metabolite_annotation_identification:
+        description: |-
+          For each feature and/or metabolite: Analytical identifiers, Ion form, Molecular formula(e), Monoisotopic molecular mass, Common metabolite name, Structural code, Metabolite identifier(s), Common metabolite class name, MSI level of identification (levels 1-4), known unknown status, m/z error, Retention time error, and fragmentation score
+
+          For each feature and/or metabolite:
+          a. Analytical identifiers (m/z, retention time (if relevant), fragmentation data (optional));
+          b. Ion form (i.e. adduct, isotope) (if known);
+          c. Molecular formula(e) of metabolite (if known);
+          d. Monoisotopic molecular mass (if known);
+          e. Common metabolite name (if known);
+          f. Structural code (e.g. standard InChI string or SMILES) (if known);
+          g. Metabolite identifier(s) from relevant database(s) (e.g. PubChem, HMDB);
+          h. Common metabolite class name (if relevant).
+          i. MSI level of identification (levels 1-4)
+          j. For level 4 only, indicate whether the feature is a 'known unknown' or not.
+          k. m/z experimental error from MS1 data (or threshold).
+          l. Retention time error (or threshold).
+          m. Score for metabolite identification derived from fragmentation data (or threshold).
+        comments:
+          - Should be reported as supplemental file(s) to the main reporting template and referenced here and in the File manifest tab. Note that reporting elements from section 3.4.7.1 (Sample list), 3.4.7.2 (Metabolite annotation/identification) and 3.4.7.3 (metabolite quantification) can be reported together in an Excel file separated by tabs for each relevant section
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.7.2.1
+      metabolite_quantification:
+        description: |-
+          Metabolite quantification
+
+          Data matrices of all feature/metabolite intensities and quantification details.
+        range: MSMetaboliteQuantification
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.7.3
+
+  MSMetaboliteQuantification:
+    description: |-
+      Metabolite quantification
+
+      Data matrices of all feature/metabolite intensities and quantification details.
+    exact_mappings:
+      - oecd_oorf_2023:3.4.7.3
+    attributes:
+      data_matrices_of_intensities:
+        description: |-
+          Data matrices of all feature/metabolite intensities, across all remaining (ie not removed as outliers) biological and intrastudy QCs samples
+
+          Data matrices of all feature/metabolite intensities, across all remaining samples (biological and intrastudy QCs)
+        comments:
+          - Should be reported as supplemental file(s) to the main reporting template and referenced here and in the File manifest tab. Note that reporting elements from section 3.4.7.1 (Sample list), 3.4.7.2 (Metabolite annotation/identification) and 3.4.7.3 (metabolite quantification) can be reported together in an Excel file separated by tabs for each relevant section
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.7.3.1
+      feature_metabolite_quantification_details:
+        description: |-
+          For each feature/metabolite: Quantification unit (if relevant), Type of quantification (relative quantification, semi-quantification, absolute quantification), and RSD of the technical variability of the feature/metabolite intensity derived from repeated measurements of a representative sample, eg intrastudy QC sample (optional)
+
+          For each feature/metabolite:
+          - Quantification unit (if relevant)
+          - Type of quantification (relative quantification, semi-quantification, absolute quantification)
+          - RSD of the technical variability of the feature/metabolite intensity derived from repeated measurements of a representative sample, e.g. intrastudy QC sample (optional).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.4.7.3.2

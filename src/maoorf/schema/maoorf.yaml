@@ -11,96 +11,89 @@ see_also:
 prefixes:
   maoorf: https://w3id.org/eu-parc/maoorf/
   linkml: https://w3id.org/linkml/
-  biolink: https://w3id.org/biolink/vocab/
   schema: http://schema.org/
-  PATO: http://purl.obolibrary.org/obo/PATO_
-  example: http://www.example.org/rdf#
   oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
 default_prefix: maoorf
 default_range: string
 
 imports:
   - linkml:types
+  - core/types
+  - core/base
+  - core/entities
+  - modules/ssrm
+  - modules/term
+  - modules/daprm/base_daprm
+  - modules/daprm/microarray
+  - modules/daprm/rna_seq
+  - modules/daprm/qrt_pcr
+  - modules/daprm/ms
+  - modules/daprm/nmr
+  - modules/darm/base_darm
+  - modules/darm/dam
+  - modules/darm/mva
+  - modules/darm/bmd
+  - modules/darm/ebp
 
 classes:
   OORF:
     tree_root: true
-    description: OECD OMICS Reporting Framework (OORF)
+    description: |-
+      OECD Omics Reporting Framework (OORF)
+
+      To report an omics study, scientists select the relevant reporting modules (and hence reporting elements), minimally consisting of an SSRM, TERM, one DAPRM and one DARM. A file manifest tab is included in the tabular reporting spreadsheets, the purpose of which is to list all data objects relevant to a study.
+    exact_mappings:
+      - oecd_oorf_2023:OORF
     attributes:
       ssrm:
+        description: |-
+          Study Summary Reporting Module (SSRM)
+
+          This module describes a subset of mandatory reporting elements in order to provide a high-level overview of a regulatory toxicology experiment involving an omics technology. There is one SSRM per study.
         required: true
         range: SSRM
+        exact_mappings:
+          - oecd_oorf_2023:1
       term:
+        description: |-
+          Toxicology Experiment Reporting Module (TERM)
+
+          This module serves to capture and report the key descriptors of the in vivo or in vitro toxicology study from which samples are derived for the omics analysis. There is one TERM per study.
         required: true
         range: TERM
+        exact_mappings:
+          - oecd_oorf_2023:2
       daprm:
+        description: |-
+          Data Acquisition and Processing Reporting Modules (DAPRMs)
+
+          These modules serve to capture and report descriptions of the omics assays, data acquisition and associated data processing prior to statistical analysis. There is one or more DAPRM per study (a minimum of one is mandatory) dependent upon the number of omics assays applied to the samples from the study.
         required: true
         multivalued: true
         inlined_as_list: true
         range: DAPRM
+        exact_mappings:
+          - oecd_oorf_2023:3
       darm:
+        description: |-
+          Data Analysis Reporting Modules (DARMs)
+
+          These modules serve to capture and report descriptions of the statistical analysis that is undertaken in the omics study. There is one or more DARM per study (a minimum of one is mandatory) dependent upon the type(s) of data analysis applied to the datasets.
         required: true
         multivalued: true
         inlined_as_list: true
         range: DARM
+        exact_mappings:
+          - oecd_oorf_2023:4
+      file_manifest:
+        description: |-
+          File Manifest
 
-  SSRM:
-    description: Study Summary Reporting Module (SSRM)
-    attributes:
-      abstract:
-        required: true
-      contributors:
-        required: true
+          In addition to information and narrative descriptions captured in these reporting templates, the data submitters should include the data analysis outputs and files that aid the end user in understanding or reproducing the analyses.
         multivalued: true
         inlined_as_list: true
-        range: Contributor
+        range: FileManifestEntry
+        exact_mappings:
+          - oecd_oorf_2023:FileManifest
 
-  TERM:
-    description: Toxicology Experimental Reporting Module (TERM)
-    attributes:
-      background_information:
-        required: true
-        examples:
-          - value: Example background information
-
-  DAPRM:
-    description: Data Acquisition and Processing Reporting Module (DAPRM)
-    abstract: true
-    slot_usage:
-      type:
-        designates_type: true
-    attributes:
-      type:
-
-  DARM:
-    description: Data Analysis Reporting Module (DARM)
-    abstract: true
-    slot_usage:
-      type:
-        designates_type: true
-    attributes:
-      type:
-
-  BMDDARM:
-    description: Benchmark Dose (BMD) DARM
-    is_a: DARM
-    attributes:
-      bmd_stuff
-
-  RNASeqDAPRM:
-    description: RNA-Seq DAPRM
-    is_a: DAPRM
-    attributes:
-      rna_stuff:
-
-  MetabolomicsDAPRM:
-    description: Metabolomics DAPRM
-    is_a: DAPRM
-    attributes:
-      metabolomics_stuff:
-
-  Contributor:
-    description: Contributor to the OORF report
-    attributes:
-      id: 
-      full_name:

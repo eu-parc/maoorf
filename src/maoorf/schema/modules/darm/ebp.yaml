@@ -1,0 +1,252 @@
+id: https://w3id.org/eu-parc/maoorf/modules/darm/ebp
+name: maoorf_ebp
+title: Detection of Enriched Biological Pathways (EBP) DARM
+description: >-
+  Data Analysis Reporting Module (DARM) for Detection of Enriched Biological Pathways (Draft OORF Module 8)
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ./base_darm
+
+classes:
+  EBPDARM:
+    is_a: DARM
+    description: |-
+      Data Analysis Reporting Module (DARM) for Detection of Enriched Biological Pathways
+
+      Reporting module for pathway or gene set enrichment analysis (included in draft OORF templates as Module 8: DARM - EBP).
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
+    exact_mappings:
+      - oecd_oorf_2023:8
+    slot_usage:
+      inputs:
+        range: EBPInputs
+        exact_mappings:
+          - oecd_oorf_2023:8.2
+      outputs:
+        range: EBPOutputs
+        exact_mappings:
+          - oecd_oorf_2023:8.6
+    attributes:
+      software_documentation:
+        description: |-
+          Software Documentation
+
+          Software and documentation for enrichment analysis.
+        range: EBPSoftwareDocumentation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.1
+      contrasts:
+        description: |-
+          Contrasts for Which Enrichment Analysis was Performed
+
+          Contrasts for which enrichment analysis was performed.
+        range: EBPContrastsSection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.3
+      database_of_pathways_or_gene_sets:
+        description: |-
+          Database of Pathways or Gene Sets Used to Detect Enrichment
+
+          Biological entity or biological set annotation database, species name, and version/date.
+        range: EBPPathwayDatabase
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.4
+      enriched_pathways:
+        description: |-
+          Enriched pathways
+
+          Statistical test, threshold, multiple testing correction, and additional filtering for identifying enriched pathways.
+        range: EBPEnrichedPathways
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.5
+
+  EBPSoftwareDocumentation:
+    is_a: SoftwareDocumentation
+    description: |-
+      Software Documentation
+
+      Software and documentation for enrichment analysis.
+    exact_mappings:
+      - oecd_oorf_2023:8.1
+    slot_usage:
+      software:
+        exact_mappings:
+          - oecd_oorf_2023:8.1.1
+      operating_system:
+        exact_mappings:
+          - oecd_oorf_2023:8.1.2
+      additional_libraries_used:
+        exact_mappings:
+          - oecd_oorf_2023:8.1.3
+      software_availability:
+        exact_mappings:
+          - oecd_oorf_2023:8.1.4
+
+  EBPInputs:
+    is_a: DARMInputs
+    description: |-
+      Description of Data Used as Input for Enrichment Analysis
+
+      Data used as input, methods used to produce input, pre-filtering, pre-processing/normalization, and background sets used.
+    exact_mappings:
+      - oecd_oorf_2023:8.2
+    slot_usage:
+      data_input:
+        description: |-
+          Data used as input
+
+          Data used as input for enrichment analysis.
+        exact_mappings:
+          - oecd_oorf_2023:8.2.1
+    attributes:
+      methods_used_to_produce_input:
+        description: |-
+          Methods used to produce input
+
+          Methods used to produce input data for enrichment analysis.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.2.2
+      pre_filtering_of_input_data:
+        description: |-
+          Pre-filtering of input data
+
+          Pre-filtering of input data prior to enrichment analysis.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.2.3
+      pre_processing_and_normalization_of_input_data:
+        description: |-
+          Pre-processing and/or normalization of input data
+
+          Pre-processing and/or normalization of input data for enrichment analysis.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.2.4
+      background_sets_used:
+        description: |-
+          Background set(s) used
+
+          Background set(s) used for enrichment analysis.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.2.5
+
+  EBPContrastsSection:
+    description: |-
+      Contrasts for Which Enrichment Analysis was Performed
+
+      Contrasts for which enrichment analysis was performed.
+    exact_mappings:
+      - oecd_oorf_2023:8.3
+    attributes:
+      contrasts:
+        description: |-
+          Contrasts
+
+          Contrasts for which enrichment analysis was performed.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.3.1
+
+  EBPPathwayDatabase:
+    description: |-
+      Database of Pathways or Gene Sets Used to Detect Enrichment
+
+      Biological entity or biological set annotation database, species, and version/date.
+    exact_mappings:
+      - oecd_oorf_2023:8.4
+    attributes:
+      biological_entity_or_set_annotation_used:
+        description: |-
+          Biological Entity or Biological Set Annotation Used for the Analysis
+
+          Biological entity or biological set annotation used for the enrichment analysis.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.4.1
+      species_name:
+        description: |-
+          Species Name
+
+          Species name for the biological set annotations.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.4.2
+      version_or_date_of_biological_set_annotations:
+        description: |-
+          Version or Date of Biological Set Annotations
+
+          Version or date of biological set annotations.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.4.3
+
+  EBPEnrichedPathways:
+    description: |-
+      Enriched pathways
+
+      Statistical test, threshold, multiple testing correction, and additional filtering for enriched pathways.
+    exact_mappings:
+      - oecd_oorf_2023:8.5
+    attributes:
+      statistical_test_performed:
+        description: |-
+          Statistical Test Performed to Identify Enriched Pathways
+
+          Statistical test performed to identify enriched pathways.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.5.1
+      statistical_threshold_applied:
+        description: |-
+          Statistical Threshold Applied
+
+          Statistical threshold applied to identify enriched pathways.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.5.2
+      multiple_testing_correction_method:
+        description: |-
+          Multiple Testing Correction Method
+
+          Multiple testing correction method applied.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.5.3
+      additional_filtering:
+        description: |-
+          Additional Filtering
+
+          Additional filtering criteria applied to enriched pathways.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:8.5.4
+
+  EBPOutputs:
+    is_a: DARMOutputs
+    description: |-
+      Outputs
+
+      Outputs and supporting files for enrichment analysis.
+    exact_mappings:
+      - oecd_oorf_2023:8.6
+    slot_usage:
+      output_and_supporting_files:
+        exact_mappings:
+          - oecd_oorf_2023:8.6.1

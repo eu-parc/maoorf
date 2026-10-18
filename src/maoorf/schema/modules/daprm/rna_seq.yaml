@@ -1,0 +1,1281 @@
+id: https://w3id.org/eu-parc/maoorf/modules/daprm/rna_seq
+name: maoorf_rna_seq
+title: RNA-Seq and Targeted RNA-Seq DAPRM
+description: >-
+  Data Acquisition and Processing Reporting Module (DAPRM) for RNA-Seq and Targeted RNA-Seq Data
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ./base_daprm
+
+classes:
+  RNASeqDAPRM:
+    is_a: DAPRM
+    description: |-
+      Data Acquisition and Processing Reporting Module (DAPRM) for RNA Seq and Targeted RNA-Seq Data
+
+      This module provides a reporting framework for describing the RNA-Seq or targeted RNA-Seq technology and methodology used in a toxicology experiment. It aims to guide the users on how to document all of the study design parameters required to understand and analyse the experiment, including the platform-specific sample processing steps, library preparation protocol details, raw data acquisition and how quality control, alignment, gene quantification, normalisation, data filtering and outlier identification were conducted.
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
+    exact_mappings:
+      - oecd_oorf_2023:3.2
+    attributes:
+      technology:
+        description: |-
+          Technology
+
+          This section describes the information a regulatory scientist requires to determine analytical sensitivity, limits of detection, interference, and precision (reproducibility and repeatability) of the RNA-Seq or targeted RNA-Seq technology used in a transcriptomic experiment.
+        range: RNASeqTechnology
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.1
+      transcriptomics_experimental_design:
+        description: |-
+          Transcriptomics Experimental Design
+
+          The experimental design starts with defining the RNA extraction method (if used), the sample pooling strategy, batch processing (if applicable), the possible use of spike-in (or other internal control), the library preparation method and the analytical processes applied to assess sample and library preparation quality.
+        range: RNASeqExperimentalDesign
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2
+      analysis_of_raw_data:
+        description: |-
+          Analysis of Raw Data
+
+          The ultimate goal of a transcriptomic analysis is the identification and quantification of all genes expressed in a biological sample. The data processing pipeline used to obtain a final read count per gene will directly depend on the software and tools included in the workflow. Therefore, the complete framework needs to be documented (including software versions, genome version, etc.) and reported to facilitate assessment of data provenance and quality.
+        range: RNASeqAnalysisOfRawData
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3
+      data_normalisation:
+        description: |-
+          Data Normalisation
+
+          Normalisation is critical for RNA-Seq and targeted RNA-Seq data analysis, since the generated number of reads per sample (and thus the number of detected biological entities) can be highly variable between samples.
+        range: RNASeqDataNormalisation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.4
+      post_normalisation_data_filtering:
+        description: |-
+          Post-Normalisation Data Filtering
+
+          Identification and removal of low quality or outlying data sets and specific gene filtering after normalisation.
+        range: RNASeqPostNormalisationDataFiltering
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5
+
+  RNASeqTechnology:
+    description: |-
+      Technology
+
+      This section describes the information a regulatory scientist requires to determine analytical sensitivity, limits of detection, interference, and precision (reproducibility and repeatability) of the RNA-Seq or targeted RNA-Seq technology used in a transcriptomic experiment.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.1
+    attributes:
+      type_and_version_of_sequencing_platform:
+        description: |-
+          Type and version of the sequencing platform (eg Illumina HiSeq2500)
+
+          Type and version of the sequencing platform (e.g. Illumina HiSeq2500)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.1.1
+      size_and_type_of_sequencing:
+        description: |-
+          Size and type of sequencing (eg 100 bp paired-end)
+
+          Size and type of sequencing (e.g. 100 bp paired-end)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.1.2
+      flow_cell_used:
+        description: |-
+          Flow cell used (type and catalogue number)
+
+          Flow cell used (type and catalogue number)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.1.3
+      targeting_probe_annotation:
+        description: |-
+          Targeting probe annotation, including list of attenuated genes (if any) (for targeted RNA-Seq only)
+
+          Targeting probe annotation, including the list of attenuated genes (if any) (for targeted RNA-Seq only)
+        comments:
+          - If targeted RNA-Seq is not used in this experiment, report "NA"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.1.4
+      library_type:
+        description: |-
+          Library type (eg mRNA libraries)
+
+          Library type (e.g. mRNA libraries)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.1.5
+      purpose:
+        description: |-
+          Purpose (eg target gene expression, quality control, etc)
+
+          Purpose (e.g. target gene expression, quality control, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.1.6
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.1.7
+
+  RNASeqExperimentalDesign:
+    description: |-
+      Transcriptomics Experimental Design
+
+      The experimental design starts with defining the RNA extraction method (if used), the sample pooling strategy, batch processing (if applicable), the possible use of spike-in (or other internal control), the library preparation method and the analytical processes applied to assess sample and library preparation quality.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2
+    attributes:
+      rna_processing:
+        description: |-
+          RNA Processing
+
+          The methodologies used for RNA sample collection, processing and storage will impact the final research results and should be reported in detail.
+        comments:
+          - Describe methods used for preparation of RNA samples.
+        range: RNASeqRNAProcessing
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.1
+      library_preparation:
+        description: |-
+          Library Preparation
+
+          Library preparation methods for RNA-Seq and targeted RNA-Seq must be reported fully, since not all library preparation methods will be comparable.
+        comments:
+          - Provide descriptions for each of the processing steps below that are applicable to the toxicology experiments and links to proecdures or protocols if posted in a public-facing location.
+        range: RNASeqLibraryPreparation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.2
+      sample_pooling_protocol:
+        description: |-
+          Sample Pooling Protocol (if applicable)
+
+          With the exception of low throughput Illumina sequencing platforms (i.e. MiSeq, iSeq or MiniSeq), the sequencing output of the majority of sequencing platforms is too high to cost-effectively sequence a single transcriptome sample at a time. Instead, samples are pooled and sequenced together.
+        range: RNASeqSamplePoolingProtocol
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.3
+      batch_processing_of_samples:
+        description: |-
+          Batch Processing of Samples (if applicable)
+
+          It is important to assign samples from different treatment groups (and/or different treatment duration, cell types, doses etc.) to different batches and to try to include equal number of samples from each group in order to minimise batch effects and maximise biological differences.
+        range: RNASeqBatchProcessing
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.4
+      wet_lab_quality_control:
+        description: |-
+          Wet Lab Quality Control
+
+          Several quality control steps should be used to assess the quality and concentration of the generated libraries and ensure the robustness of the produced sequence data.
+        range: RNASeqWetLabQualityControl
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.5
+      sequencing_quality_control_criteria:
+        description: |-
+          Sequencing Quality Control/Criteria
+
+          Quality control standard and sequencing quality metrics.
+        range: RNASeqSequencingQualityControl
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.6
+
+  RNASeqRNAProcessing:
+    description: |-
+      RNA Processing
+
+      Describe method used for preparation of RNA samples if relevant.
+    comments:
+      - Describe methods used for preparation of RNA samples.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.1
+    attributes:
+      rna_extraction:
+        description: |-
+          RNA Extraction
+
+          RNA extraction and purification methods.
+        range: RNASeqRNAExtraction
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.1.a
+      quantification_and_qualification_of_rna:
+        description: |-
+          Quantification and Qualification of RNA
+
+          The procedures used to quantify and qualify RNA should be reported to enable an appropriate evaluation of the RNA extraction steps and suitability for use in downstream transcriptomic analyses.
+        range: RNASeqRNAQuantificationAndQualification
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.1.b
+
+  RNASeqRNAExtraction:
+    description: |-
+      RNA Extraction
+
+      RNA extraction details for RNA-Seq.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.1.a
+    attributes:
+      type_of_extracted_rna:
+        description: |-
+          Type of extracted RNA (eg total RNA, mRNA, miRNA, etc)
+
+          Type of extracted RNA (e.g. total RNA, mRNA, miRNA, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.1.a.i
+      extraction_and_purification_techniques:
+        description: |-
+          Extraction and purification techniques
+
+          Extraction and purification techniques
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.1.a.ii
+      procedures_for_mrna_enrichment:
+        description: |-
+          Procedures for mRNA enrichment (if applicable), or other enrichment procedures
+
+          Procedures for specific RNA enrichment or depletion procedures (e.g. poly[A] enrichment for mRNA, Ribosomal RNA depletion...)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.1.a.iii
+      storage_conditions:
+        description: |-
+          Storage conditions
+
+          Storage conditions
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.1.a.iv
+
+  RNASeqRNAQuantificationAndQualification:
+    description: |-
+      Quantification and Qualification of RNA
+
+      Quantification and qualification of RNA for RNA-Seq.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.1.b
+    attributes:
+      tool_for_rna_assessment:
+        description: |-
+          Tool for RNA assessment
+
+          Tool for RNA assessment (e.g, Nanodrop, QuBit, Bioanalyzer...)
+        comments:
+          - Describe the instrument used for RNA assessment (e.g. Nanodrop, QuBit, Bioanalyzer, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.1.b.i
+      rna_quality:
+        description: |-
+          RNA quality
+
+          RNA quality (e.g. A260, A260/A280 ratio, RIN for eukaryotic RNA, PERM number for eukaryotic RNA extracted from formalin-fixed paraffin embedded tissues
+        comments:
+          - Describe the RNA quality metric used in the study and the threshold for acceptance / exclusion of samples. Example include A260/A280 ratios, RIN, PERM, etc.). If this type of metric was not used to exlude samples prior to omics data collection, report "NA"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.1.b.ii
+      rna_quantity:
+        description: |-
+          RNA quantity
+
+          RNA quantity (e.g. RNA/g of tissue, RNA/10^6 cells, Other).
+        comments:
+          - Describe the RNA quantity metric used in the study and threshold for accpetance / exclusion of samples. Examples include RNA/gr of tissue or RNA/number of cells, etc. If this type of metric was not used as a sample exclusion criteria, report "NA"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.1.b.iii
+
+  RNASeqLibraryPreparation:
+    description: |-
+      Library Preparation
+
+      Library preparation details for RNA-Seq and targeted RNA-Seq.
+    comments:
+      - Provide descriptions for each of the processing steps below that are applicable to the toxicology experiments and links to proecdures or protocols if posted in a public-facing location.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.2
+    attributes:
+      library_preparation_applied:
+        description: |-
+          Library preparation applied
+
+          Library preparation applied (full name, manufacturer and catalogue number of the kit used)
+        range: RNASeqLibraryPreparationApplied
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.2.a
+
+  RNASeqLibraryPreparationApplied:
+    description: |-
+      Library preparation applied
+
+      Library preparation applied (full name, manufacturer and catalogue number of the kit used).
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.2.a
+    attributes:
+      manual_or_automated_system:
+        description: |-
+          Manual library preparation or automated systems (if yes, which automation system)
+
+          Manual library preparation or automated system (if yes, which automation system)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.2.a.i
+      fragmentation_strategy:
+        description: |-
+          Fragmentation strategy (if applicable)
+
+          Fragmentation strategy (if applicable)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.2.a.ii
+      probe_manifest:
+        description: |-
+          Probe manifest (if applicable)
+
+          Probe manifest (if applicable)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.2.a.iii
+      number_of_pcr_amplification_cycles:
+        description: |-
+          Number of PCR amplification cycles
+
+          Number of PCR amplification cycles
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.2.a.iv
+      targeting_probe_annealing_ligation_and_pcr_steps:
+        description: |-
+          Targeting probe annealing, ligation and PCR amplification steps (if applicable)
+
+          Targeting probe annealing, ligation and PCR amplification steps (if applicable)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.2.a.v
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        comments:
+          - If any other steps were used for library preparation, describe them here.
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.2.a.vi
+
+  RNASeqSamplePoolingProtocol:
+    description: |-
+      Sample Pooling Protocol (if applicable)
+
+      Sample pooling and indexing strategy for RNA-Seq.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.3
+    attributes:
+      sample_pooling_occurred:
+        description: |-
+          Whether any sample pooling has occurred (samples being combined into one sequencing run) – yes/no
+
+          Whether any sample pooling has occurred (samples being combined into one sequencing run) – yes/no
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.3.a
+      indexing_strategy:
+        description: |-
+          Indexing strategy (eg single/dual barcodes, sizes)
+
+          Indexing strategy (e.g. single/dual barcodes, sizes)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.3.b
+      number_of_samples_pooled_per_sequencing_unit:
+        description: |-
+          Number of samples pooled per sequencing unit (lane or flow cell)
+
+          Number of samples pooled per sequencing unit (lane or flow cell)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.3.c
+      table_of_barcodes_assigned_to_each_sample:
+        description: |-
+          Table of barcodes assigned to each sample
+
+          Table of barcodes assigned to each sample
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.3.d
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.3.e
+
+  RNASeqBatchProcessing:
+    description: |-
+      Batch Processing of Samples (if applicable)
+
+      Batch processing parameters for RNA-Seq.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.4
+    attributes:
+      number_of_batches:
+        description: |-
+          Number of batches
+
+          Number of batches
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.4.a
+      number_of_samples_in_each_batch:
+        description: |-
+          Number of samples used in each batch of the RNA-Seq experiment
+
+          Number of samples used in each batch of the sequencing experiment
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.4.b
+      method_of_sample_assignment_to_batches:
+        description: |-
+          Method of sample assignment to different batches
+
+          Method of sample assignment to different batches (for example, simple randomisation, randomised block design etc.)
+        comments:
+          - If applicable, describe the method for sample assignment to different batches (e.g. simple randomization, randomized block design, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.4.c
+
+  RNASeqWetLabQualityControl:
+    description: |-
+      Wet Lab Quality Control
+
+      Wet lab quality control steps for RNA-Seq libraries.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.5
+    attributes:
+      use_of_chip_based_electrophoresis:
+        description: |-
+          Use of chip-based automated electrophoresis system on the libraries (join profile if available)
+
+          Use of chip-based automated electrophoresis system on the libraries (join profile if available)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.5.a
+      use_of_spike_in_controls:
+        description: |-
+          Use of spike-in controls
+
+          Use of spiked-in control
+        comments:
+          - If applicable, describe the type of spike-in samples used, the amount of sequences used, the source of the spike-in material (manufacturer, catalog #, etc.) and step where the spike in controls were used in the sample processing protocol. If spike-in samples were not used, report "NA".
+        range: RNASeqSpikeInControls
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.5.b
+      use_of_unique_molecular_identifiers:
+        description: |-
+          Use of Unique Molecular Identifiers (UMIs)
+
+          Use of Unique Molecular Identifiers (UMIs)
+        comments:
+          - If applicable, describe the type of UMIs used including the source of the UMIs (manufacturer, catalog #, etc.). If UMIs were not used, report "NA"
+        range: RNASeqUMIs
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.5.c
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        comments:
+          - If any other wet lab quality control steps were taken that would aid in interpretation of the toxicology experiment, please describe them here. If not, report "NONE".
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.5.d
+
+  RNASeqSpikeInControls:
+    description: |-
+      Use of spike-in controls
+
+      Spike-in controls used in RNA-Seq library preparation.
+    comments:
+      - If applicable, describe the type of spike-in samples used, the amount of sequences used, the source of the spike-in material (manufacturer, catalog #, etc.) and step where the spike in controls were used in the sample processing protocol. If spike-in samples were not used, report "NA".
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.5.b
+    attributes:
+      type_of_spike_in_used:
+        description: |-
+          Type of spike-in used (sequences)
+
+          Type of spike-in used (sequences)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.5.b.i
+      amount_of_sequence_used:
+        description: |-
+          Amount of sequence used
+
+          Amount of sequence used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.5.b.ii
+      source_of_spike_in:
+        description: |-
+          Source of spike-in (manufacturer, catalog number, etc)
+
+          Source of spike-in (manufacturer, catalogue number, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.5.b.iii
+      step_of_introduction:
+        description: |-
+          Step of introduction of the spiked control in the protocol
+
+          Step of introduction of the spiked control in the protocol
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.5.b.iv
+
+  RNASeqUMIs:
+    description: |-
+      Use of Unique Molecular Identifiers (UMIs)
+
+      Unique Molecular Identifiers (UMIs) used in RNA-Seq library preparation.
+    comments:
+      - If applicable, describe the type of UMIs used including the source of the UMIs (manufacturer, catalog #, etc.). If UMIs were not used, report "NA"
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.5.c
+    attributes:
+      type_of_umis:
+        description: |-
+          Type of UMIs
+
+          Type of UMIs
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.5.c.i
+      source_of_umis:
+        description: |-
+          Source of UMIs (manufacturer, catalog number, etc)
+
+          Source of UMIs (manufacturer, catalogue number, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.5.c.ii
+
+  RNASeqSequencingQualityControl:
+    description: |-
+      Sequencing Quality Control/Criteria
+
+      Sequencing quality control standards and metrics.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.6
+    attributes:
+      quality_control_standard:
+        description: |-
+          Quality control standard
+
+          Quality control standard (e.g. PhiX genome)
+        comments:
+          - If applicable, describe the internal control standard used to assess sequencing quality including the type of standard, source (manufacturer, catalog #, etc.) and quantity used. An example is the PhiX genome. If unknown or not applicable, input "UNKNOWN" or "NA", respectively
+        range: RNASeqQualityControlStandard
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.6.a
+      sequencing_quality_metrics:
+        description: |-
+          Sequencing quality metrics
+
+          Sequencing quality metrics
+        range: RNASeqSequencingQualityMetrics
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.6.b
+
+  RNASeqQualityControlStandard:
+    description: |-
+      Quality control standard
+
+      Quality control standard (e.g. PhiX genome).
+    comments:
+      - If applicable, describe the internal control standard used to assess sequencing quality including the type of standard, source (manufacturer, catalog #, etc.) and quantity used. An example is the PhiX genome. If unknown or not applicable, input "UNKNOWN" or "NA", respectively
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.6.a
+    attributes:
+      type_of_standard:
+        description: |-
+          Type of standard
+
+          Type of standard
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.6.a.i
+      source_of_standard:
+        description: |-
+          Source of standard (manufacturer, catalog number, etc)
+
+          Source of standard (manufacturer, catalogue number, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.6.a.ii
+      quantity_used:
+        description: |-
+          Quantity used
+
+          Quantity used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.6.a.iii
+
+  RNASeqSequencingQualityMetrics:
+    description: |-
+      Sequencing quality metrics
+
+      Sequencing quality metrics for the sequencing run.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.2.6.b
+    attributes:
+      number_of_clusters_passing_filtering:
+        description: |-
+          Number of clusters passing filtering
+
+          Number of clusters passing filtering
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.6.b.i
+      average_quality_score:
+        description: |-
+          Average quality score
+
+          Average quality score
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.6.b.ii
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        comments:
+          - If applicable, describe the sequencing quality metrics associated with the sequencing run such as the number of clusters passing filtering, average quality score and any other relevant information. If unkonwn or not applicable, input "UNKNOWN" or "NA", respectively.
+        exact_mappings:
+          - oecd_oorf_2023:3.2.2.6.b.iii
+
+  RNASeqAnalysisOfRawData:
+    description: |-
+      Analysis of Raw Data
+
+      Base calling, availability of raw data, raw data filtering, sequence alignment, and gene quantification.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3
+    attributes:
+      base_calling:
+        description: |-
+          Base Calling
+
+          The base calling step, consisting of converting BCL files to FASTQ, is usually made directly on the sequencing instrument.
+        range: RNASeqBaseCalling
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.1
+      availability_of_raw_data:
+        description: |-
+          Availability of Raw Data
+
+          Raw unprocessed gene expression data should be accessible via public databases or through communication with researchers themselves to facilitate reproduction of data processing steps and final results.
+        range: RNASeqAvailabilityOfRawData
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.2
+      raw_data_filtering:
+        description: |-
+          Raw Data Filtering
+
+          RNA-Seq and targeted RNA-Seq data analysis usually starts by removing the samples with insufficient sequencing depth. Following this exclusion based on read depth, FASTQ reads can be trimmed to either shorten the effective read length, or to remove the reads that would have too low a quality score.
+        range: RNASeqRawDataFiltering
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.3
+      sequence_alignment:
+        description: |-
+          Sequence Alignment
+
+          Once trimmed, the reads need to be aligned (or mapped) to a reference genome, transcriptome, or probe manifest (in the case of targeted RNA-Seq).
+        range: RNASeqSequenceAlignment
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.4
+      gene_quantification:
+        description: |-
+          Gene Quantification
+
+          Once an alignment has been generated, a quantification tool is usually used to attribute reads to each annotated transcript.
+        range: RNASeqGeneQuantification
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.5
+
+  RNASeqBaseCalling:
+    description: |-
+      Base Calling
+
+      Base calling software and output files.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3.1
+    attributes:
+      base_calling_software:
+        description: |-
+          Base calling software
+
+          Base calling software parameters.
+        range: RNASeqBaseCallingSoftware
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.1.a
+      output_files:
+        description: |-
+          Output files
+
+          Base calling output files.
+        range: RNASeqBaseCallingOutputFiles
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.1.b
+
+  RNASeqBaseCallingSoftware:
+    description: |-
+      Base calling software
+
+      Base calling software parameters.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3.1.a
+    attributes:
+      name_and_version:
+        description: |-
+          Name and version of base calling software
+
+          Name and version of base calling software
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.1.a.i
+      quality_score_version:
+        description: |-
+          Quality score version (eg Phred33)
+
+          Quality score version (e.g. Phred33)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.1.a.ii
+      other:
+        description: |-
+          Other
+
+          Other relevant information.
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.1.a.iii
+
+  RNASeqBaseCallingOutputFiles:
+    description: |-
+      Output files
+
+      Base calling output files.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3.1.b
+    attributes:
+      naming_convention:
+        description: |-
+          Naming convention (or samples ID metadata)
+
+          Naming convention (or sample ID metadata)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.1.b.i
+      experimental_metadata_file:
+        description: |-
+          Experimental metadata file
+
+          Experimental metadata file
+        comments:
+          - Provide a data object associating the raw data outputs with pertinent experimental metadata. Input the file name of the data object in this reporting field.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.1.b.ii
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.1.b.iii
+
+  RNASeqAvailabilityOfRawData:
+    description: |-
+      Availability of Raw Data
+
+      Repository and accession details for raw sequencing data.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3.2
+    attributes:
+      output_files:
+        description: |-
+          Output files
+
+          Repository and accession details for raw sequencing output files.
+        range: RNASeqRawDataRepositoryFiles
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.2.a
+
+  RNASeqRawDataRepositoryFiles:
+    description: |-
+      Output files
+
+      Repository and accession details for raw sequencing output files.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3.2.a
+    attributes:
+      name_of_public_repository:
+        description: |-
+          Name of public repository
+
+          Name of public repository or provision of link to private repository.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.2.a.i
+      accession_number:
+        description: |-
+          Accession number or equivalent identification number of the submitted data to facilitate data retrieval
+
+          Accession number or equivalent identification number of the submitted data to facilitate data retrieval.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.2.a.ii
+      format_of_submitted_data:
+        description: |-
+          Format of submitted data (eg fastq, fastqgz, bam, etc)
+
+          Format of submitted data (e.g. .fastq, .fastq.gz, .bam, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.2.a.iii
+
+  RNASeqRawDataFiltering:
+    description: |-
+      Raw Data Filtering
+
+      Filtering and trimming of raw sequencing reads.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3.3
+    attributes:
+      data_filtering_and_trimming:
+        description: |-
+          Data filtering and trimming
+
+          Data filtering and trimming parameters.
+        range: RNASeqDataFilteringAndTrimming
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.3.a
+
+  RNASeqDataFilteringAndTrimming:
+    description: |-
+      Data filtering and trimming
+
+      Data filtering and trimming parameters.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3.3.a
+    attributes:
+      minimum_read_count:
+        description: |-
+          Minimum read count
+
+          Minimum read count
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.3.a.i
+      list_of_samples_excluded_and_rationale:
+        description: |-
+          List of samples excluded and rationale (thresholds) for exclusion
+
+          List of samples excluded and rationale (thresholds) for exclusion
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.3.a.ii
+      trimming_algorithm_software:
+        description: |-
+          Trimming algorithm/software (eg FastQC v0118, Trimmomatic v039, etc)
+
+          Trimming algorithm/software (e.g. FastQC v0.11.8, Trimmomatic v0.39)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.3.a.iii
+      trimming_parameters:
+        description: |-
+          Trimming parameters (eg leading 3, trailing 3, sliding window 4:15, etc)
+
+          Trimming parameters (e.g. leading 3, trailing 3, sliding window 4:15)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.3.a.iv
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.3.a.v
+
+  RNASeqSequenceAlignment:
+    description: |-
+      Sequence Alignment
+
+      Alignment of reads to reference genome, transcriptome, or probe manifest.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3.4
+    attributes:
+      alignment:
+        description: |-
+          Alignment
+
+          Alignment parameters.
+        range: RNASeqAlignmentDetails
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.4.a
+
+  RNASeqAlignmentDetails:
+    description: |-
+      Alignment
+
+      Alignment parameters.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3.4.a
+    attributes:
+      source_and_version_of_genome_reference:
+        description: |-
+          Source and version of the genome reference and/or the transcriptome
+
+          Source and version of the genome reference and/or the transcriptome (e.g. Ensembl Homo sapiens GRCh38 release 99, Top level, primary assembly, masked or not, etc.).
+        comments:
+          - Examples include Ensembl Homo sapiens GRCh38 release 99, Top level, primary assembly, masked or not…
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.4.a.i
+      mapping_software:
+        description: |-
+          Mapping software
+
+          Mapping software (e.g. STAR v2.7.0a)
+        comments:
+          - An example is STAR v2.7.0a
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.4.a.ii
+      mapping_parameters:
+        description: |-
+          Mapping parameters (gene or transcript level, number of mismatch, gap penalty, etc)
+
+          Mapping parameters (gene or transcript level, number of mismatch, gap penalty, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.4.a.iii
+      other_relevant_information:
+        description: |-
+          Any other relevant information
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.4.a.iv
+
+  RNASeqGeneQuantification:
+    description: |-
+      Gene Quantification
+
+      Quantification of reads mapped to transcripts, probes, or genes.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3.5
+    attributes:
+      quantification:
+        description: |-
+          Quantification
+
+          Quantification parameters.
+        range: RNASeqQuantificationDetails
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.5.a
+
+  RNASeqQuantificationDetails:
+    description: |-
+      Quantification
+
+      Quantification parameters.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.3.5.a
+    attributes:
+      source_and_version_of_software:
+        description: |-
+          Source and version of software
+
+          Source and version of the software (e.g. RSEM v1.1.17)
+        comments:
+          - An example is Rsem v1.1.17
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.5.a.i
+      accession_number:
+        description: |-
+          Accession number or equivalent identification number of the submitted data to facilitate data retrieval
+
+          Accession number or equivalent identification number of the submitted data to facilitate data retrieval
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.5.a.ii
+      format_of_submitted_data:
+        description: |-
+          Format of submitted data (eg txt, csv, xls, etc)
+
+          Format of submitted data (e.g. .fastq, .bam, etc.)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.5.a.iii
+      method_for_summarizing_transcript_or_probe_counts:
+        description: |-
+          Description of method for summarizing transcript or probe counts to gene counts (if applicable)
+
+          Description of method for summarising transcript or probe counts to gene counts (if applicable)
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.5.a.iv
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.2.3.5.a.v
+
+  RNASeqDataNormalisation:
+    description: |-
+      Data Normalisation
+
+      Normalisation is critical for RNA-Seq and targeted RNA-Seq data analysis, since the generated number of reads per sample (and thus the number of detected biological entities) can be highly variable between samples.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.4
+    attributes:
+      normalisation_of_raw_count:
+        description: |-
+          Normalisation of the Raw Count
+
+          Normalisation is usually applied using an R package and some statistical methodologies which incorporate the normalisation and experimental design as part of the method (e.g. DESeq2).
+        range: RNASeqNormalisationOfRawCount
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.4.1
+
+  RNASeqNormalisationOfRawCount:
+    description: |-
+      Normalisation of the Raw Count
+
+      Normalisation parameters for raw read counts.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.4.1
+    attributes:
+      normalisation_method_applied:
+        description: |-
+          Normalisation method applied
+
+          Normalisation method applied
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.4.1.a
+      package_and_version_used:
+        description: |-
+          Package and version used
+
+          Package and version used (provide link if possible)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.4.1.b
+      factor_used_as_design:
+        description: |-
+          Factor used as design
+
+          Factor used as design (if applicable)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.4.1.c
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.2.4.1.d
+
+  RNASeqPostNormalisationDataFiltering:
+    description: |-
+      Post-Normalisation Data Filtering
+
+      Identification and removal of low quality or outlying data sets and specific gene filtering after normalisation.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.5
+    attributes:
+      outlier_and_low_quality_data_removal:
+        description: |-
+          Identification and Removal of Low Quality or Outlying Data Sets
+
+          The primary purpose of removing an outlier sample is to decrease the influence of the sample on any downstream analyses and the within-group variance so that identification of effects due to the test treatment can be maximised.
+        range: RNASeqOutlierDataRemoval
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.1
+      specific_gene_filtering:
+        description: |-
+          Specific gene filtering
+
+          Once the data are normalised (and thus the normalised counts are available), post-normalisation filtering is often required to exclude genes with certain behaviour (removing any gene before normalisation should not be done, to avoid creating bias due to different coverage between samples).
+        range: RNASeqSpecificGeneFilteringSection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.2
+
+  RNASeqOutlierDataRemoval:
+    description: |-
+      Identification and Removal of Low Quality or Outlying Data Sets
+
+      Parameters used to identify and remove outlier samples.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.5.1
+    attributes:
+      outlier_identification_and_reason_for_removal:
+        description: |-
+          Describe how outlier samples were identified and the reason for removal
+
+          Describe how outlier samples were identified and the reason for removal
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.1.a
+      thresholds:
+        description: |-
+          Thresholds, if any
+
+          Threshold, if any
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.1.b
+      processing_steps_where_exclusion_occurred:
+        description: |-
+          Processing steps where exclusion occurred
+
+          Processing step where exclusion occurs
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.1.c
+      list_of_samples_excluded_and_justification:
+        description: |-
+          List of samples excluded and per-sample justification for exclusion
+
+          List of samples excluded and per-sample justification for exclusion
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.1.d
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.1.e
+
+  RNASeqSpecificGeneFilteringSection:
+    description: |-
+      Specific gene filtering
+
+      Post-normalisation specific gene filtering section.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.5.2
+    attributes:
+      specific_gene_filtering:
+        description: |-
+          Specific gene filtering
+
+          Post-normalisation specific gene filtering steps.
+        range: RNASeqSpecificGeneFilteringDetails
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.2.a
+
+  RNASeqSpecificGeneFilteringDetails:
+    description: |-
+      Specific gene filtering
+
+      Post-normalisation specific gene filtering steps.
+    exact_mappings:
+      - oecd_oorf_2023:3.2.5.2.a
+    attributes:
+      low_read_count_filtering_step:
+        description: |-
+          Low read count filtering step (if any)
+
+          Low read count filtering step (if any)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.2.a.i
+      high_variation_among_replicates_filtering_step:
+        description: |-
+          High variation among replicated filtering step
+
+          High variation among replicate filtering step
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.2.a.ii
+      other_post_normalisation_gene_filtering_steps:
+        description: |-
+          Other post-normalisation gene filtering steps (eg gene flagging)
+
+          Other post-normalisation gene filtering steps (e.g. gene flagging)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.2.a.iii
+      other:
+        description: |-
+          Other
+
+          Other relevant information
+        exact_mappings:
+          - oecd_oorf_2023:3.2.5.2.a.iv

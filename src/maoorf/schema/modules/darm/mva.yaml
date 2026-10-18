@@ -1,0 +1,397 @@
+id: https://w3id.org/eu-parc/maoorf/modules/darm/mva
+name: maoorf_mva
+title: Multivariate Statistical Analysis (MVA) DARM
+description: >-
+  Data Analysis Reporting Module (DARM) for Multivariate Statistical Analysis Module
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ./base_darm
+
+classes:
+  MVADARM:
+    is_a: DARM
+    description: |-
+      Data Analysis Reporting Module (DARM) for Multivariate Statistical Analysis Module
+
+      This multi-omics compliant module specifies the information needed by a regulatory scientist in order to assess multivariate statistical analysis. The goals of this module are to specify what needs to be reported while not being prescriptive about the analysis performed. We leave judgement about the appropriateness of the analysis plan to the users.
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column E for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
+    exact_mappings:
+      - oecd_oorf_2023:4.2
+    slot_usage:
+      inputs:
+        range: MVAInputs
+        exact_mappings:
+          - oecd_oorf_2023:4.2.1
+      outputs:
+        range: MVAOutputs
+        exact_mappings:
+          - oecd_oorf_2023:4.2.9
+    attributes:
+      statistical_software:
+        description: |-
+          Statistical Software
+
+          The requirements in this section are intended to facilitate reproducibility of analyses and make quality assessment possible. Operators must specify the name and version of all software that is used.
+        range: MVASoftwareDocumentation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.2
+      experimental_conditions:
+        description: |-
+          Experimental conditions for multivariate analysis
+
+          To ensure clarity, operators must specify the conditions which were included or compared in the multivariate analysis.
+        range: MVAExperimentalConditions
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.3
+      assay_experimental_design:
+        description: |-
+          Assay Experimental Design
+
+          In order to ensure that the omics data were analysed properly, the regulatory scientist must have a clear description of which samples were used in the multivariate analysis, how many samples there are per experimental group, and how they may be assayed together/measured simultaneously or not.
+        range: MVAAssayExperimentalDesign
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.4
+      unsupervised_analysis:
+        description: |-
+          Multivariate statistical analysis – unsupervised
+
+          Many different types of unsupervised multivariate analysis can be applied. The goal of the unsupervised analysis is to provide an overview of the data to explore structures such as the major sources of variance, clustering or trends.
+        comments:
+          - Reporting elements only required if unsupervised multivariate analysis performed - otherwise report elements as NA
+        range: MVAUnsupervisedAnalysis
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.5
+      supervised_analysis:
+        description: |-
+          Multivariate statistical analysis – supervised
+
+          Supervised methods (usually classification or regression methods) are commonly used to focus the analysis on specific questions, e.g. whether the metabolic data can classify a sample into a chemical MoA, and to find which metabolic variables are most responsible for this classification.
+        comments:
+          - Reporting elements are only relevant if supervised multivariate analysis performed - otherwise report elements as NA
+        range: MVASupervisedAnalysis
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.6
+      validation:
+        description: |-
+          Multivariate statistical analysis - validation
+
+          All models, both supervised and unsupervised, must be statistically validated to show that they are robust and predictive.
+        comments:
+          - Reporting elements are only relevant if validation of model performed - otherwise report elements as NA
+        range: MVAValidation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.7
+      variable_importance_for_feature_selection:
+        description: |-
+          Multivariate statistical analysis - variable importance for feature selection
+
+          One of the main objectives of multivariate analysis in metabolomics studies is usually to determine which variables (e.g. metabolites) are driving the observed effect, e.g. those which show differential regulation between a chemical treatment and control.
+        comments:
+          - Reporting elements are only relevant if variable importance and feature selection performed - otherwise report elements as NA
+        range: MVAVariableImportance
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.8
+
+  MVAInputs:
+    is_a: DARMInputs
+    description: |-
+      Inputs
+
+      Input for multivariate statistical analysis, in the form of processed omics data.
+    exact_mappings:
+      - oecd_oorf_2023:4.2.1
+    slot_usage:
+      data_input:
+        exact_mappings:
+          - oecd_oorf_2023:4.2.1.1
+      metadata_input:
+        exact_mappings:
+          - oecd_oorf_2023:4.2.1.2
+
+  MVASoftwareDocumentation:
+    is_a: SoftwareDocumentation
+    description: |-
+      Statistical Software
+
+      Software, method and parameters for multivariate statistical analysis.
+    exact_mappings:
+      - oecd_oorf_2023:4.2.2
+    slot_usage:
+      software:
+        exact_mappings:
+          - oecd_oorf_2023:4.2.2.1
+      operating_system:
+        exact_mappings:
+          - oecd_oorf_2023:4.2.2.2
+      additional_libraries_used:
+        exact_mappings:
+          - oecd_oorf_2023:4.2.2.3
+      software_availability:
+        exact_mappings:
+          - oecd_oorf_2023:4.2.2.4
+
+  MVAExperimentalConditions:
+    description: |-
+      Experimental conditions for multivariate analysis
+
+      Experimental conditions for which differentially abundant molecules were identified or compared.
+    exact_mappings:
+      - oecd_oorf_2023:4.2.3
+    attributes:
+      factors_and_levels_table:
+        description: |-
+          A table or listing that must include each factor and level within each factor that are being considered in the analysis
+
+          A table or listing that must include each factor, and level within each factor, that is being considered in the analysis.
+        comments:
+          - Provide a data object describing the factors and levels within each factor being compared (e.g. treatment groups versus control).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.3.1
+
+  MVAAssayExperimentalDesign:
+    is_a: AssayExperimentalDesign
+    description: |-
+      Assay Experimental Design
+
+      Group sizes, covariates, and technical replicates for multivariate statistical analysis.
+    exact_mappings:
+      - oecd_oorf_2023:4.2.4
+    slot_usage:
+      group_sizes:
+        exact_mappings:
+          - oecd_oorf_2023:4.2.4.1.a
+      covariance:
+        exact_mappings:
+          - oecd_oorf_2023:4.2.4.1.b
+      technical_replicates:
+        exact_mappings:
+          - oecd_oorf_2023:4.2.4.1.c
+
+  MVAUnsupervisedAnalysis:
+    description: |-
+      Multivariate statistical analysis – unsupervised
+
+      Parameters and methods for unsupervised multivariate statistical analysis.
+    comments:
+      - Reporting elements only required if unsupervised multivariate analysis performed - otherwise report elements as NA
+    exact_mappings:
+      - oecd_oorf_2023:4.2.5
+    attributes:
+      name_and_description_of_method:
+        description: |-
+          Name and description of the multivariate method
+
+          Name and description of the multivariate method
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.5.1
+      groups_or_conditions_included:
+        description: |-
+          The groups or conditions included in the analysis
+
+          The groups or conditions included in the analysis
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.5.2
+      variable_selection_method:
+        description: |-
+          The name and description of the variable selection method (If variable selection used)
+
+          The name and description of the variable selection method
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.5.3.a
+      selected_variables:
+        description: |-
+          Selected variables (If variable selection used)
+
+          Selected variables
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.5.3.b
+      parameter_settings:
+        description: |-
+          Parameter settings (eg scaling method)
+
+          Parameter settings (e.g. scaling method such as Pareto or unit variance)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.5.4
+      other_or_citations:
+        description: |-
+          Other
+
+          Citation(s) to relevant literature describing methods (if available)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.5.5
+
+  MVASupervisedAnalysis:
+    description: |-
+      Multivariate statistical analysis – supervised
+
+      Parameters and methods for supervised multivariate statistical analysis.
+    comments:
+      - Reporting elements are only relevant if supervised multivariate analysis performed - otherwise report elements as NA
+    exact_mappings:
+      - oecd_oorf_2023:4.2.6
+    attributes:
+      name_and_description_of_method:
+        description: |-
+          Name and description of the multivariate method used
+
+          Name and description of the multivariate method used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.6.1
+      groups_conditions_or_factors_contrasted:
+        description: |-
+          The groups, conditions or factors contrasted or examined in the analysis
+
+          The groups, conditions or factors contrasted or examined in the analysis
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.6.2
+      variable_selection_method:
+        description: |-
+          The name and description of the variable selection method used (If variable selection used)
+
+          The name and description of the variable selection method used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.6.3.a
+      selected_variables:
+        description: |-
+          Selected variables (If variable selection used)
+
+          Selected variables
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.6.3.b
+      parameter_settings:
+        description: |-
+          Parameter settings (eg scaling method)
+
+          Parameter settings (e.g. scaling method)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.6.4
+      citations_to_literature:
+        description: |-
+          Methods should include clear citations to literature describing them
+
+          Citation(s) to relevant literature describing methods (if available)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.6.5
+
+  MVAValidation:
+    description: |-
+      Multivariate statistical analysis - validation
+
+      Model validation methods, parameter settings, and literature citations.
+    comments:
+      - Reporting elements are only relevant if validation of model performed - otherwise report elements as NA
+    exact_mappings:
+      - oecd_oorf_2023:4.2.7
+    attributes:
+      name_and_description_of_validation_method:
+        description: |-
+          Name and description of the model validation method used
+
+          Name and description of the model validation method used
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.7.1
+      parameter_settings:
+        description: |-
+          Parameter settings
+
+          Parameter settings
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.7.2
+      citations_to_literature:
+        description: |-
+          Methods should include clear citations to literature describing them
+
+          Citation(s) to relevant literature describing methods (if available)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.7.3
+
+  MVAVariableImportance:
+    description: |-
+      Multivariate statistical analysis - variable importance for feature selection
+
+      Variable importance and feature selection methods, significance threshold, and literature citations.
+    comments:
+      - Reporting elements are only relevant if variable importance and feature selection performed - otherwise report elements as NA
+    exact_mappings:
+      - oecd_oorf_2023:4.2.8
+    attributes:
+      name_and_description_of_method:
+        description: |-
+          Name and description of method used for variable importance/selection
+
+          Name and description of method used for variable importance/selection
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.8.1
+      details_of_how_significance_threshold_determined:
+        description: |-
+          Details of how significance threshold determined
+
+          Details of how significance threshold determined
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.8.2
+      citations_to_literature:
+        description: |-
+          Methods should include clear citations to literature describing them
+
+          Citation(s) to relevant literature describing methods (if available)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.2.8.3
+
+  MVAOutputs:
+    is_a: DARMOutputs
+    description: |-
+      Outputs
+
+      Outputs and supporting files for multivariate statistical analysis.
+    exact_mappings:
+      - oecd_oorf_2023:4.2.9
+    slot_usage:
+      output_and_supporting_files:
+        description: |-
+          Complete the file manifest included as part of the reporting template
+
+          Complete the file manifest included as part of the reporting template. The manifest must include the listing of all files included in the regulatory application package specific to the analysis. Each file in the manifest must be accompanied by a description of the file. If the file being described is a tabular file, then the rows and columns must be described so that anyone can understand the contents of the file. Supporting files may include analysis scripts, software configurations or tables of metadata. The phrase `data object` refers to any machine readable input, output or metadata file.
+          Method specific requirements:
+          1. If unsupervised methods used, output of the unsupervised methods including plots (e.g. PCA scores, loadings, proportion of variance explained)
+          2. If supervised methods used, output of the supervised method including plots (e.g. PLS scores, loadings/weights, regression coefficients, proportion of variance in outcome explained by the model)
+          3. If validation performed, validation statistics (Q2, error rate, etc.)
+          4. If feature selection was performed, list of features selected by the method including a. Feature importance (e.g. VIP value) b. Feature significance (e.g. p-value, if available)
+        exact_mappings:
+          - oecd_oorf_2023:4.2.9.1

@@ -1,16 +1,24 @@
 ---
 ssrm:
-  abstract: This is the abstract of the study
-  contributors:
-    - id: c1
-      full_name: John Doe
+  study_identifiers:
+    abstract: Investigate the transcriptomic response of RPTEC/TERT1 cells on cisplatin treatment.
+    study_identifier: EUT046
 term:
-  background_information: This is the background information for the toxicology experiment
-darm:
-  - type: BMDDARM
-    bmd_stuff: blabla
+  study_rationale:
+    background_information: Investigate the transcriptomic response of RPTEC/TERT1 cells on cisplatin treatment.
+    objectives: Investigate the transcriptomic response of RPTEC/TERT1 cells on cisplatin treatment.
 daprm:
   - type: RNASeqDAPRM
-    rna_stuff: test
-  - type: MetabolomicsDAPRM
-    metabolomics_stuff: test2
+    technology:
+      type_and_version_of_sequencing_platform: Bioclavis
+      purpose: Targeted gene expression
+darm:
+  - type: BMDDARM
+    inputs:
+      data_input: EUT046_expression_wide_dose_timepoint4.txt
+      metadata_input: EUT046_metadata_minLowSampleSize.csv
+    outputs:
+      output_and_supporting_files: EUT046_BMDExpress_output.bm2
+file_manifest:
+  - file_description: Experiment metadata
+    file_name: EUT046_metadata_final.csv

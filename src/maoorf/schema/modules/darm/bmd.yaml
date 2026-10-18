@@ -1,0 +1,392 @@
+id: https://w3id.org/eu-parc/maoorf/modules/darm/bmd
+name: maoorf_bmd
+title: Benchmark Dose (BMD) Analysis DARM
+description: >-
+  Data Analysis Reporting Module (DARM) for Benchmark Dose Analysis and Quantification of Biological Potency
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ./base_darm
+
+classes:
+  BMDDARM:
+    is_a: DARM
+    description: |-
+      Data Analysis Reporting Module (DARM) for Benchmark Dose Analysis and Quantification of Biological Potency
+
+      This multi-omics compliant module specifies the information needed in order to assess benchmark dose (BMD) analysis of omics data and the subsequent derivation of an estimated BMD for a molecule (e.g. a transcript, protein or metabolite) or a set of molecules (e.g. a gene set, a metabolite panel, etc.).
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
+    exact_mappings:
+      - oecd_oorf_2023:4.3
+    slot_usage:
+      inputs:
+        range: BMDInputs
+        exact_mappings:
+          - oecd_oorf_2023:4.3.1
+      outputs:
+        range: BMDOutputs
+        exact_mappings:
+          - oecd_oorf_2023:4.3.7
+    attributes:
+      software_documentation:
+        description: |-
+          Software Documentation
+
+          The requirements in this section are intended to facilitate reproducibility of analyses and make quality assessment possible.
+        range: BMDSoftwareDocumentation
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.2
+      description_of_data_to_be_modelled:
+        description: |-
+          Description of the Data to be Modelled
+
+          In order to perform dose-response modelling a test article will need to be assessed for its effects on omics level changes at multiple dose levels. Henceforth in this document the actual data that are fit to dose response models will be called model substrate data (MSD).
+        range: BMDDataToBeModelled
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.3
+      pre_filtering_of_data:
+        description: |-
+          Pre-filtering of Data Prior to Dose-Response Modeling
+
+          To reduce the burden of model fitting, which can be resource intensive, a prefiltering step is sometimes used to remove MSD that do not demonstrate a significant dose-related change.
+        range: BMDPreFilteringOfData
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.4
+      benchmark_dose_modeling:
+        description: |-
+          Benchmark Dose Modeling
+
+          BMD modelling is the process of fitting mathematical models to dose-response data to identify a modelled dose level where a predefined level (i.e. the benchmark response or BMR) of activity is predicted to occur.
+        range: BMDBenchmarkDoseModeling
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5
+      determination_of_biological_entity_or_set_level_bmd_values:
+        description: |-
+          Determination of Biological Entity or Biological Set Level BMD values
+
+          Often MSD are fractional representations of a biological entity (e.g. a gene or metabolite) or a biological set (e.g. a collection of genes or metabolites that make up a pathway). Organising the MSD into recognized biological entities helps in contextualising a biological response and allows for more robust BMD estimates at a molecular or biological process level.
+        range: BMDBiologicalSetLevelValues
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.6
+
+  BMDInputs:
+    is_a: DARMInputs
+    description: |-
+      Inputs
+
+      Input for BMD analysis, in the form of processed omics data.
+    exact_mappings:
+      - oecd_oorf_2023:4.3.1
+    slot_usage:
+      data_input:
+        description: |-
+          Data Input
+
+          Provide the name of the input data object(s)
+        comments:
+          - Provide the data object(s) that will be used as input for the BMD analysis. List data object name(s) in the file manifest tab.
+        exact_mappings:
+          - oecd_oorf_2023:4.3.1.1
+      metadata_input:
+        description: |-
+          Metadata Input
+
+          Provide the name of the input metadata object(s)
+        comments:
+          - Provide the metadata object(s) that will be used as input for the DAM analysis. List data object name(s) in the file manifest tab.
+        exact_mappings:
+          - oecd_oorf_2023:4.3.1.2
+
+  BMDSoftwareDocumentation:
+    is_a: SoftwareDocumentation
+    description: |-
+      Software Documentation
+
+      Software documentation for BMD analysis.
+    exact_mappings:
+      - oecd_oorf_2023:4.3.2
+    slot_usage:
+      software:
+        exact_mappings:
+          - oecd_oorf_2023:4.3.2.1
+      operating_system:
+        exact_mappings:
+          - oecd_oorf_2023:4.3.2.2
+      additional_libraries_used:
+        exact_mappings:
+          - oecd_oorf_2023:4.3.2.3
+      software_availability:
+        exact_mappings:
+          - oecd_oorf_2023:4.3.2.4
+
+  BMDDataToBeModelled:
+    description: |-
+      Description of the Data to be Modelled
+
+      Dose levels, MSD annotation, and platform annotation version.
+    exact_mappings:
+      - oecd_oorf_2023:4.3.3
+    attributes:
+      dose_levels:
+        description: |-
+          Dose Levels
+
+          Identification of dose levels included in the BMD analysis and rationale for exclusion of any dose levels. Please specify the N for each dose.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.3.1
+      annotation_of_model_substrate_data:
+        description: |-
+          Annotation of Model Substrate Data (MSD)
+
+          With certain platforms (e.g. most transcriptomic platforms) there are existing annotations that will be associated with the data as a part of the data acquisition and processing procedures (as reported in the technology-specific DAPRMs). If MSD for BMD modelling corresponds to the measured features and annotations, without additional data abstraction (e.g. aggregation, summarization or merging of features), then this annotation and citation to the associated DAPRM is sufficient and must be provided. If features are merged or computed into meta-features (e.g. genes, gene sets, metabolite collections), then precise annotation of the meta-features must be reported here.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.3.2
+      version_of_platform_annotation:
+        description: |-
+          Version of Platform Annotation that Corresponds to Technology
+
+          Annotations for the measured MSD in a data set are in certain cases updated frequently. The annotations are often associated with a date and/or a version. This information must be captured to ensure reproducibility of the findings.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.3.3
+
+  BMDPreFilteringOfData:
+    description: |-
+      Pre-filtering of Data Prior to Dose-Response Modeling
+
+      Statistical and non-statistical pre-filtering parameters prior to BMD modelling.
+    exact_mappings:
+      - oecd_oorf_2023:4.3.4
+    attributes:
+      statistical_test_performed:
+        description: |-
+          Statistical Test Performed to Identify Dose-Responsive MSD
+
+          There are a variety of methods for performing statistical filtering of dose response data. These range from pairwise methods such as ANOVA, to trend-based tests such as the Williams trend test. Record the statistical method that was applied to the data. If additional filtering was not applied indicate NA (not applicable)
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.4.1
+      statistical_threshold_applied:
+        description: |-
+          Statistical Threshold Applied
+
+          Indicate the statistical threshold that was applied when performing any statistical test to pre-filter the data.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.4.2
+      statistical_multiple_testing_correction_method:
+        description: |-
+          Statistical Multiple Testing Correction Method
+
+          Because of the large number of replicate statistical tests that are performed when analysing an omics data set, an adjusted statistical threshold is often applied that corrects for a large number of tests, therefore reducing the false discovery rate. Report the method that was used to perform the multiple testing correction. If no correction was applied, indicate NA (not applicable).
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.4.3
+      additional_statistical_test_parameters:
+        description: |-
+          Additional Statistical Test Parameters
+
+          This section is to describe any additional parameters that were applied and can impact statistical testing results. An example would be the number of iterations that were performed when employing a bootstrap method for p-value determination.
+        comments:
+          - Describe any additional statistical parameters that were applied for data filtering that may impact results. An example is the number of iterations that were performed when employing a bootstrap method for p-value calculation.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.4.4
+      additional_filtering:
+        description: |-
+          Additional Filtering
+
+          In addition to a statistical filter, additional filters are sometimes applied to ensure that only responses representing biologically meaningful changes are retained. One of the most common is a fold change filter. If more complicated filter methods are applied a detailed description of the method and all critical parameters should be provided. If no additional filtering was applied, indicate NA (not applicable).
+        comments:
+          - Describe any non-statistical parameters that were applied for data filtering that may impact results. An example is a fold-change criteria.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.4.5
+
+  BMDBenchmarkDoseModeling:
+    description: |-
+      Benchmark Dose Modeling
+
+      Parameters and model selection criteria for Benchmark Dose (BMD) modelling.
+    exact_mappings:
+      - oecd_oorf_2023:4.3.5
+    attributes:
+      bmd_modeling_approach:
+        description: |-
+          BMD Modeling Approach
+
+          As noted above there are different approaches (e.g. parametric and non-parametric approaches) to dose response modelling. The specific method used should be specified.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.1
+      method_for_final_estimation_of_msd_bmd:
+        description: |-
+          Method for Final Estimation of MSD BMD
+
+          There are two general approaches for identifying a final potency estimate for a given feature - best model selection and model averaging. With the best model approach a single best model is used to derive the BMD; whereas, model averaging uses a weighted average to derive a final BMD estimate. In the case of non-parametric modelling, typically only a single model fitting process is performed, hence there isn't a best model or models to average. In this case the method for final estimation of BMD is simply the modelling approach.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.2
+      list_of_models_fit_to_data:
+        description: |-
+          List of Models Fit to the Data
+
+          In the case of parametric modelling (with or without model averaging) a set of models that represent different dose-response shapes are used to model the data. Report all models fit to the data in the modelling process.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.3
+      model_averaging_approach:
+        description: |-
+          Model Averaging Approach
+
+          When performing model averaging, a variety of mathematical approaches can be used that can impact the eventual BMD estimate of an MSD. Record what method was employed and any other associated critical parameters associated with the averaging process. If model averaging is not employed, indicate NA (not applicable) in this section.
+        comments:
+          - If model averaging was not used in the analysis, report "NA".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.4
+      method_for_determining_bmr:
+        description: |-
+          Method for Determining Benchmark Response (BMR; aka BMR Type)
+
+          There are a number of ways of determining a critical response threshold, i.e. a BMR. Two examples are the multiple of standard deviation from control or the relative deviation (percent change) from control. Report the method used to determine the BMR.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.5
+      benchmark_response_bmr_factor:
+        description: |-
+          Benchmark Response (BMR, aka BMR Factor)
+
+          The BMR is the degree of change relative to control that is deemed to either be statistically or toxicologically relevant for the study. The threshold that was applied in the modelling process should be recorded.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.6
+      number_of_fitting_iterations:
+        description: |-
+          Number of Fitting Iterations
+
+          In the case of individual parametric model fitting, a maximum number of iterations is typically allowed. This setting reflects the number of times a model is fit to an MSD to obtain a convergent estimate of the fit. If applicable, report the maximum number of iterations that were employed.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.7
+      confidence_interval_of_bmd:
+        description: |-
+          Confidence Interval of the BMD (aka Confidence Level)
+
+          This modelling parameter sets the confidence interval range that will be determined for the BMD values derived from each model fit to the data. Report how and what confidence intervals were derived.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.8
+      power_parameter_restriction:
+        description: |-
+          Power Parameter Restriction
+
+          Often it is desirable to restrict the value of certain modelling parameters when performing parametric modelling. The most commonly restricted parameter is power and the restriction is most commonly applied when modelling the Hill and power models. Restricting the power parameter avoids biologically implausible fits to the data. Report if any of the model parameters were restricted in the modelling process and the specific restriction threshold.
+        comments:
+          - If the power parameter used in any of the curve fits was restricted, report which model(s) and a value. Else, report "NA".
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.9
+      variance_assumption:
+        description: |-
+          Variance Assumption
+
+          Toxicology data are often heteroscedastic (i.e. the spread on the response distribution increases with dose). This is often referred to as non-constant variance. Different assumptions are made when data are assumed to be hetero vs homoscedastic, which can impact model fitting and BMD derivation. It is therefore necessary to document if constant or non-constant variance was assumed.
+        comments:
+          - Report of constant or non-constant variance across doses was assumed for BMD modeling.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.10
+      model_selection:
+        description: |-
+          Model Selection
+
+          In the case of the best model approach to parametric modelling, criteria for selection of the best model must be selected. There are several approaches that can be used to select the best model, all of which can impact eventual potency estimates for the MSDs. It is therefore necessary to document the method used to select the best model. If a best model approach is not applied (e.g. non-parametric modelling or model averaging, indicate NA (not applicable)).
+        comments:
+          - State the rules used for best model selection.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.11
+      criteria_to_identify_extrapolated_models:
+        description: |-
+          Criteria to Identify Models that Extrapolate Outside the Dose Range
+
+          When using the best model approach it is sometimes the case that due to dose selection the estimated BMD is well below the dose range. In this case the BMD can not be accurately estimated but it is desired to retain the MSD in the analysis. Document how flagged models were dealt with in the analysis.
+        comments:
+          - Report any criteria that were used to identify results extrapolated outside of the dose range and how those instances were treated in the analysis.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.5.12
+
+  BMDBiologicalSetLevelValues:
+    description: |-
+      Determination of Biological Entity or Biological Set Level BMD values
+
+      Biological entity or set annotations, acceptance criteria, active set criteria, and estimation method for set-level BMD values.
+    exact_mappings:
+      - oecd_oorf_2023:4.3.6
+    attributes:
+      biological_entity_or_set_annotation_used:
+        description: |-
+          Biological Entity or Biological Set Annotation Used for the Analysis
+
+          In this section, document which biological entities (e.g. genes, metabolites) or biological sets (e.g. GO terms, KEGG pathways) were used in the analysis. The platform annotation (described above) should capture the versioning of the annotations used; however, if this is not the case (i.e. independent mappings of MSD to biological entities or sets were used) the source of these entities and any versioning should be documented
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.6.1
+      msd_acceptance_criteria:
+        description: |-
+          MSD Acceptance Criteria for Use in Biological Entity of Set Analysis
+
+          A number of criteria can be applied to the MSD models (e.g. the best fit model) to remove the fits where the quality is poor or the potency estimates are highly uncertain either due to noisy data or model extrapolation. Document all metrics and associated thresholds used in the analysis.
+        comments:
+          - Document all metrics and thresholds used as acceptance criteria for MSD being input into Biological Entity or Set Analysis. If none, report "NA"
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.6.2
+      criteria_for_identification_of_active_biological_sets:
+        description: |-
+          Criteria for Identification of "Active" Biological Sets
+
+          In the case of parsing MSD into biological sets (e.g. pathways or gene ontologies), criteria must be set to identify the sets that are "active" (i.e. adequately populated by dose responsive MSD with acceptable model fits deemed to be responsive to treatment). Report the methods and thresholds set to define 'active' biological sets.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.6.3
+      method_of_estimating_set_bmd_bmdl_bmdu:
+        description: |-
+          Method of Estimating the BMD, BMDL, and BMDU of the Individual Biological Entity or Biological Sets
+
+          When MSD are sorted into sets this means a set contains several BMD values representative of each MSD in the set. When this happens, and the biological set is determined to be active (in the case of sets), a representative BMD, BMDL and BMDU value for the entire set can be determined. The choice of method will impact the estimate of potency for most biological entity sets so it is important that the method for deriving a representative BMD, BMDL and BMDU value be very clearly documented.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:4.3.6.4
+
+  BMDOutputs:
+    is_a: DARMOutputs
+    description: |-
+      Outputs and Supporting Files
+
+      Outputs and supporting files for BMD analysis.
+    exact_mappings:
+      - oecd_oorf_2023:4.3.7
+    slot_usage:
+      output_and_supporting_files:
+        exact_mappings:
+          - oecd_oorf_2023:4.3.7.1

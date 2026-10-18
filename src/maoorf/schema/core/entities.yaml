@@ -1,0 +1,125 @@
+id: https://w3id.org/eu-parc/maoorf/core/entities
+name: maoorf_entities
+title: OORF Shared Entities
+description: >-
+  Shared entities used across OORF modules, including FileManifestEntry, SoftwareDocumentation, and AssayExperimentalDesign
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+  - ./types
+
+classes:
+  FileManifestEntry:
+    description: |-
+      File Manifest Entry
+
+      In addition to information and narrative descriptions captured in these reporting templates, the data submitters should include the data analysis outputs and files that aid the end user in understanding or reproducing the analyses. These files may be analysis scripts, software configuration files or tables of metadata. We refer to the latter file type as "data objects". For large files, we encourage the use of MD5 checksums to ensure integrity of the transferred data files.
+    comments:
+      - "INSTRUCTIONS TO DATA PROVIDERS: In addition to information and narrative descriptions captured in these reporting templates, the data submitters should include the data analysis outputs and files that aid the end user in understanding or reproducing the analyses. These files may be analysis scripts, software configuration files or tables of metadata. We refer to the latter file type as \"data objects\". For large files, we encourage the use of MD5 checksums to ensure integrity of the transferred data files."
+    exact_mappings:
+      - oecd_oorf_2023:FileManifest
+    attributes:
+      file_description:
+        description: |-
+          FILE DESCRIPTION
+
+          Each file in the manifest must be accompanied by a description of the file. If the file being described is a tabular file, then the rows and columns must be described so that anyone can understand the contents of the file.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:FileManifest.file_description
+      file_name:
+        description: |-
+          FILE NAME
+
+          The file name or identifier of the data object, script, or supporting file included in the submission package.
+        recommended: true
+        exact_mappings:
+          - oecd_oorf_2023:FileManifest.file_name
+      md5_checksum:
+        description: |-
+          MD5 CHECKSUM (to check integrity of large files where possible)
+
+          For large files, we encourage the use of MD5 checksums to ensure integrity of the transferred data files.
+        exact_mappings:
+          - oecd_oorf_2023:FileManifest.md5_checksum
+
+  SoftwareDocumentation:
+    description: |-
+      Software Documentation
+
+      The requirements in this section are intended to facilitate reproducibility of analyses and make quality assessment possible. Freely available open source, commercially available, or proprietary software may be used. The name and version of all software that is used must be specified. In addition, all add-ons, plug-ins, packages, or libraries (hereafter "libraries") that are called, used, required, loaded, or otherwise brought into the software must be specified. This specification must include the name and version of such libraries, and a hyperlink to download the libraries. In those cases where the libraries are locally developed and controlled, such that a hyperlink to download does not exist, specify the following: "this library is not available for download" and should then make the code available as specified in the reporting template.
+    slots:
+      - software
+      - operating_system
+      - additional_libraries_used
+      - software_availability
+
+  AssayExperimentalDesign:
+    description: |-
+      Assay Experimental Design
+
+      In order to ensure that the omics data were analysed properly, the end-user must have a clear description of which samples were used in the analysis, how many samples there are per experimental group, and how they may be assayed together/measured simultaneously or not. In addition, the end-user can use this information to perform post hoc power analyses, as well as estimates for Type M (magnitude) and Type S (sign) error, which are equally, if not more, informative in assessing data quality and the likelihood of drawing erroneous conclusions.
+    slots:
+      - group_sizes
+      - covariance
+      - technical_replicates
+
+slots:
+  software:
+    description: |-
+      Software
+
+      The name of the software/analysis package along with the version.
+    recommended: true
+  operating_system:
+    description: |-
+      Operating System
+
+      In some cases, modelling of data can be impacted by the operating system that the software is run on, therefore it is important to document this information.
+    recommended: true
+  additional_libraries_used:
+    description: |-
+      Additional Libraries used
+
+      A list of libraries used for analysis along with the version for each.
+    comments:
+      - If download hyperlink is not available, operator shall note by stating "this library is not available for download"
+    recommended: true
+  software_availability:
+    description: |-
+      Software Availability
+
+      If the software is open source, a hyperlink to the software and source code (if available) is desirable.
+  group_sizes:
+    description: |-
+      Group Sizes
+
+      A table or listing of the number of samples used for analysis in each group or factor at a minimum. Should include the sample IDs that can be used to match across the report.
+    comments:
+      - Provide a table or listing of the number of samples used for analysis of each group or factor. Should include the sample IDs that be used to match across the report. Information may be provided in a data object. If such information is included in a data object with this submission, please list the file name here.
+    recommended: true
+  covariance:
+    description: |-
+      Covariance
+
+      Identification of which samples may exhibit covariance (examples include: assayed on the same day, assayed in parallel, assayed on the same physical platform (eg chip/glass slide, cartridge, etc for transcriptomics; LC-MS analytical batch, etc for metabolomics), processed using the same wash solutions or reagents, processed using the same master mixes (transcriptomics only), littermates in the exposure study, animals which are housed together, etc). Provide an explicit statement if there is no reason to believe covariance exists between samples, and a justification to support this assertion.
+    comments:
+      - Identify which samples may exhibit covariance. This information may be provided as a data object. If such information is included in a data object with this submission, please list the file name here. If there is no reason to believe covaraince exists between samples, please provide a justification of this assertion in this reporting field.
+    recommended: true
+  technical_replicates:
+    description: |-
+      Technical Replicates
+
+      Identify any samples that are technical replicates of each other, and how those samples are technical replicates (ie define what makes the samples technical replicates).
+    comments:
+      - Identify any samples that are technical replicates and why they are technical replicates.
+    recommended: true

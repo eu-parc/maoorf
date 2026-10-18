@@ -1,0 +1,34 @@
+id: https://w3id.org/eu-parc/maoorf/core/types
+name: maoorf_types
+title: OORF Core Types
+description: >-
+  Core data types, CURIE patterns, and units for the OECD Omics Reporting Framework (OORF) LinkML schema
+license: MIT
+
+prefixes:
+  maoorf: https://w3id.org/eu-parc/maoorf/
+  linkml: https://w3id.org/linkml/
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
+
+default_prefix: maoorf
+default_range: string
+
+imports:
+  - linkml:types
+
+types:
+  ReportingString:
+    typeof: string
+    description: >-
+      Free-text reporting string as entered in OORF tabular templates, including narrative text, file names, or sentinel values such as NA, NONE, UNKNOWN, or NOT IN VIVO STUDY
+
+  DataObjectReference:
+    typeof: string
+    description: >-
+      Reference to a file name or URI registered in the OORF File Manifest tab (data object)
+
+  ChecksumString:
+    typeof: string
+    description: >-
+      MD5 or cryptographic checksum string for verifying integrity of large data objects
+
