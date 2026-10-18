@@ -32,6 +32,12 @@ There are several pre-defined command-recipes available.
 They are written for the command runner [just](https://github.com/casey/just/).
 To list all pre-defined commands, run `just` or `just --list`.
 
+## Upstream Specifications
+This machine-actionable schema implements/derives:
+> OECD (2023), OECD Omics Reporting Framework (OORF): Guidance on reporting elements for the regulatory use of omics data from laboratory-based toxicology studies, OECD Series on Testing and Assessment, No. 390, OECD Publishing, Paris, <https://doi.org/10.1787/6bb2e6ce-en>.
+
+To download the reporting template and guidance pdf to the `inputs/` folder, run `just fetch-oorf-specs`.
+
 ## Credits
 
 This project uses the template [linkml-project-copier](https://github.com/linkml/linkml-project-copier).

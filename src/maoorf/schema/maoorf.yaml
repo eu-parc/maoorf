@@ -15,6 +15,7 @@ prefixes:
   schema: http://schema.org/
   PATO: http://purl.obolibrary.org/obo/PATO_
   example: http://www.example.org/rdf#
+  oecd_oorf_2023: https://w3id.org/eu-parc/oecd/oorf/2023/
 default_prefix: maoorf
 default_range: string
 

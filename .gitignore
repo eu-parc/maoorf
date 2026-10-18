@@ -1,3 +1,6 @@
+# external inputs
+inputs/
+
 # generated part of documentation
 /docs/elements/*
 !/docs/elements/.gitkeep
