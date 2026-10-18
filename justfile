@@ -100,7 +100,8 @@ update: _update-template _update-linkml
 [group('project management')]
 clean: _wsl2_compat_check _clean_project
   rm -rf tmp
-  rm -rf {{docdir}}/*.md
+  rm -rf {{docdir}}/*
+  touch {{docdir}}/.gitkeep
 
 # (Re-)Generate project and documentation locally
 [group('model development')]

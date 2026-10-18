@@ -1,5 +1,6 @@
 # generated part of documentation
-/docs/elements/*.md
+/docs/elements/*
+!/docs/elements/.gitkeep
 # linkml-run-examples output (not useful to have in git in its current form)
 /examples/output/
 
