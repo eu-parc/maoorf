@@ -24,8 +24,6 @@ classes:
       Data Analysis Reporting Module (DARM) for Multivariate Statistical Analysis Module
 
       This multi-omics compliant module specifies the information needed by a regulatory scientist in order to assess multivariate statistical analysis. The goals of this module are to specify what needs to be reported while not being prescriptive about the analysis performed. We leave judgement about the appropriateness of the analysis plan to the users.
-    comments:
-      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column E for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
     exact_mappings:
       - oecd_oorf_2023:4.2
     slot_usage:

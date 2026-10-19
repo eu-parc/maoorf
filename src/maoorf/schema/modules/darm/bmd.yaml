@@ -24,8 +24,6 @@ classes:
       Data Analysis Reporting Module (DARM) for Benchmark Dose Analysis and Quantification of Biological Potency
 
       This multi-omics compliant module specifies the information needed in order to assess benchmark dose (BMD) analysis of omics data and the subsequent derivation of an estimated BMD for a molecule (e.g. a transcript, protein or metabolite) or a set of molecules (e.g. a gene set, a metabolite panel, etc.).
-    comments:
-      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
     exact_mappings:
       - oecd_oorf_2023:4.3
     slot_usage:

@@ -24,8 +24,6 @@ classes:
       Toxicology Experiment Reporting Module (TERM)
 
       The TERM serves to capture and report the key descriptors of the in vivo or in vitro toxicology study from which samples are derived for omics analyses. One TERM should be reported per study, irrespective of whether one or more omics approaches are applied or whether one or more types of data analysis are performed.
-    comments:
-      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
     exact_mappings:
       - oecd_oorf_2023:2
     attributes:

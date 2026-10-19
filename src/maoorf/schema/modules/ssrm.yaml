@@ -24,8 +24,6 @@ classes:
       Study Summary Reporting Module (SSRM)
 
       This module describes a subset of mandatory reporting elements in order to provide a high-level summary of the application of omics to a regulatory toxicology study. With the exception of the reporting element in Section 1 - Study identifiers, see below, each section is derived from reporting elements described elsewhere within this Guidance Document. Specifically, this includes summarising the TERM, any Data Acquisition & Processing Reporting Module(s) (DAPRMs) used and any Data Analysis Reporting Module(s) (DARMs) used.
-    comments:
-      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column E for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
     exact_mappings:
       - oecd_oorf_2023:1
     attributes:

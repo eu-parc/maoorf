@@ -24,8 +24,6 @@ classes:
       Data Analysis Reporting Module (DARM) for Discovery of Differentially Abundant Molecules - Univariate Methods
 
       This multi-omics compliant module specifies the information needed by a regulatory scientist in order to assess univariate statistical analysis as used to discover differentially abundant molecules (DAMs); i.e. for transcriptomics, to identify differentially expressed genes (DEG). Henceforth DEG are referred to as DAM.
-    comments:
-      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
     exact_mappings:
       - oecd_oorf_2023:4.1
     slot_usage:

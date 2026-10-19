@@ -24,8 +24,6 @@ classes:
       Data Acquisition and Processing Reporting Module (DAPRM) for Microarray
 
       This module provides a reporting framework for describing a microarray technology, documenting transcriptomic study experimental design including platform-specific sample processing (such as addition of controls, labelling and hybridisation), details of raw data acquisition and format and how normalisation, data filtering and outlier identification and removal was conducted.
-    comments:
-      - "INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics are instructions (e.g. reporting tips) for the data submitter for individual reporting fields. Text in bold italics are instructions for the data submitter that are applicable to all reporting elements in a section. For additional clarification regarding a reporting field, please refer to the corresponding guidance document for this reporting template."
     exact_mappings:
       - oecd_oorf_2023:3.1
     attributes:
