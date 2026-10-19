@@ -18816,13 +18816,6 @@ classes:
       within this Guidance Document. Specifically, this includes summarising the TERM,
       any Data Acquisition & Processing Reporting Module(s) (DAPRMs) used and any
       Data Analysis Reporting Module(s) (DARMs) used.'
-    comments:
-    - 'INSTRUCTIONS TO DATA PROVIDERS: Use Column E for data entry. Text in italics
-      are instructions (e.g. reporting tips) for the data submitter for individual
-      reporting fields. Text in bold italics are instructions for the data submitter
-      that are applicable to all reporting elements in a section. For additional clarification
-      regarding a reporting field, please refer to the corresponding guidance document
-      for this reporting template.'
     from_schema: https://w3id.org/eu-parc/maoorf/modules/ssrm
     exact_mappings:
     - oecd_oorf_2023:1
@@ -19492,13 +19485,6 @@ classes:
       in vitro toxicology study from which samples are derived for omics analyses.
       One TERM should be reported per study, irrespective of whether one or more omics
       approaches are applied or whether one or more types of data analysis are performed.'
-    comments:
-    - 'INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics
-      are instructions (e.g. reporting tips) for the data submitter for individual
-      reporting fields. Text in bold italics are instructions for the data submitter
-      that are applicable to all reporting elements in a section. For additional clarification
-      regarding a reporting field, please refer to the corresponding guidance document
-      for this reporting template.'
     from_schema: https://w3id.org/eu-parc/maoorf/modules/term
     exact_mappings:
     - oecd_oorf_2023:2
@@ -22930,13 +22916,6 @@ classes:
       sample processing (such as addition of controls, labelling and hybridisation),
       details of raw data acquisition and format and how normalisation, data filtering
       and outlier identification and removal was conducted.'
-    comments:
-    - 'INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics
-      are instructions (e.g. reporting tips) for the data submitter for individual
-      reporting fields. Text in bold italics are instructions for the data submitter
-      that are applicable to all reporting elements in a section. For additional clarification
-      regarding a reporting field, please refer to the corresponding guidance document
-      for this reporting template.'
     from_schema: https://w3id.org/eu-parc/maoorf/modules/daprm/microarray
     exact_mappings:
     - oecd_oorf_2023:3.1
@@ -25728,13 +25707,6 @@ classes:
       processing steps, library preparation protocol details, raw data acquisition
       and how quality control, alignment, gene quantification, normalisation, data
       filtering and outlier identification were conducted.'
-    comments:
-    - 'INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics
-      are instructions (e.g. reporting tips) for the data submitter for individual
-      reporting fields. Text in bold italics are instructions for the data submitter
-      that are applicable to all reporting elements in a section. For additional clarification
-      regarding a reporting field, please refer to the corresponding guidance document
-      for this reporting template.'
     from_schema: https://w3id.org/eu-parc/maoorf/modules/daprm/rna_seq
     exact_mappings:
     - oecd_oorf_2023:3.2
@@ -27462,13 +27434,6 @@ classes:
       and processing. This module is largely based on the existing minimum information
       for publication of quantitative real-time PCR experiments (MIQE) guidelines
       but has been adapted for the OORF.'
-    comments:
-    - 'INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics
-      are instructions (e.g. reporting tips) for the data submitter for individual
-      reporting fields. Text in bold italics are instructions for the data submitter
-      that are applicable to all reporting elements in a section. For additional clarification
-      regarding a reporting field, please refer to the corresponding guidance document
-      for this reporting template.'
     from_schema: https://w3id.org/eu-parc/maoorf/modules/daprm/qrt_pcr
     exact_mappings:
     - oecd_oorf_2023:3.3
@@ -28869,11 +28834,6 @@ classes:
       samples; acquisition and processing of mass spectrometry data; demonstrating
       the quality of the data; and the data matrices produced by this technology,
       including metabolite annotation/identification and intensities.'
-    comments:
-    - 'INSTRUCTIONS TO DATA PROVIDERS: Use Column E for data entry. Text in bold italics
-      are instructions for the data submitter that are applicable to all reporting
-      elements in a section. For additional clarification regarding a reporting field,
-      please refer to the corresponding guidance document for this reporting template'
     from_schema: https://w3id.org/eu-parc/maoorf/modules/daprm/ms
     exact_mappings:
     - oecd_oorf_2023:3.4
@@ -29869,11 +29829,6 @@ classes:
       extraction and addition of standards; analytical QA/QC; acquisition and processing
       of NMR data; demonstrating the quality of the data; and the data matrices produced
       by this technology, including metabolite annotation/identification and intensities.'
-    comments:
-    - 'INSTRUCTIONS TO DATA PROVIDERS: Use Column E for data entry. Text in bold italics
-      are instructions for the data submitter that are applicable to all reporting
-      elements in a section. For additional clarification regarding a reporting field,
-      please refer to the corresponding guidance document for this reporting template'
     from_schema: https://w3id.org/eu-parc/maoorf/modules/daprm/nmr
     exact_mappings:
     - oecd_oorf_2023:3.5
@@ -30814,13 +30769,6 @@ classes:
       scientist in order to assess univariate statistical analysis as used to discover
       differentially abundant molecules (DAMs); i.e. for transcriptomics, to identify
       differentially expressed genes (DEG). Henceforth DEG are referred to as DAM.'
-    comments:
-    - 'INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics
-      are instructions (e.g. reporting tips) for the data submitter for individual
-      reporting fields. Text in bold italics are instructions for the data submitter
-      that are applicable to all reporting elements in a section. For additional clarification
-      regarding a reporting field, please refer to the corresponding guidance document
-      for this reporting template.'
     from_schema: https://w3id.org/eu-parc/maoorf/modules/darm/dam
     exact_mappings:
     - oecd_oorf_2023:4.1
@@ -31186,13 +31134,6 @@ classes:
       this module are to specify what needs to be reported while not being prescriptive
       about the analysis performed. We leave judgement about the appropriateness of
       the analysis plan to the users.'
-    comments:
-    - 'INSTRUCTIONS TO DATA PROVIDERS: Use Column E for data entry. Text in italics
-      are instructions (e.g. reporting tips) for the data submitter for individual
-      reporting fields. Text in bold italics are instructions for the data submitter
-      that are applicable to all reporting elements in a section. For additional clarification
-      regarding a reporting field, please refer to the corresponding guidance document
-      for this reporting template.'
     from_schema: https://w3id.org/eu-parc/maoorf/modules/darm/mva
     exact_mappings:
     - oecd_oorf_2023:4.2
@@ -31739,13 +31680,6 @@ classes:
       to assess benchmark dose (BMD) analysis of omics data and the subsequent derivation
       of an estimated BMD for a molecule (e.g. a transcript, protein or metabolite)
       or a set of molecules (e.g. a gene set, a metabolite panel, etc.).'
-    comments:
-    - 'INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics
-      are instructions (e.g. reporting tips) for the data submitter for individual
-      reporting fields. Text in bold italics are instructions for the data submitter
-      that are applicable to all reporting elements in a section. For additional clarification
-      regarding a reporting field, please refer to the corresponding guidance document
-      for this reporting template.'
     from_schema: https://w3id.org/eu-parc/maoorf/modules/darm/bmd
     exact_mappings:
     - oecd_oorf_2023:4.3
@@ -32345,13 +32279,6 @@ classes:
 
       Reporting module for pathway or gene set enrichment analysis (included in draft
       OORF templates as Module 8: DARM - EBP).'
-    comments:
-    - 'INSTRUCTIONS TO DATA PROVIDERS: Use Column D for data entry. Text in italics
-      are instructions (e.g. reporting tips) for the data submitter for individual
-      reporting fields. Text in bold italics are instructions for the data submitter
-      that are applicable to all reporting elements in a section. For additional clarification
-      regarding a reporting field, please refer to the corresponding guidance document
-      for this reporting template.'
     from_schema: https://w3id.org/eu-parc/maoorf/modules/darm/ebp
     exact_mappings:
     - oecd_oorf_2023:8
@@ -32661,7 +32588,7 @@ classes:
     class_uri: maoorf:EBPOutputs
 metamodel_version: 1.11.0
 source_file: maoorf.yaml
-source_file_date: '2026-10-19T10:05:19'
+source_file_date: '2026-10-19T15:12:27'
 source_file_size: 3601
-generation_date: '2026-10-19T10:05:29'
+generation_date: '2026-10-19T15:12:37'
 
