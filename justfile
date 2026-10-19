@@ -238,7 +238,8 @@ _gen-yaml:
   uv run gen-yaml {{source_schema_path}} > {{distrib_schema_path}}/{{schema_name}}.yaml
 
 # Overridable recipe to add project-specific artifacts to the distribution schema path
-_add-artifacts:
+# TEMP disable (see note at the bottom)
+# _add-artifacts:
 
 # Run documentation server
 _serve:
@@ -289,7 +290,7 @@ import "project.justfile"
 # ====== Override recipes from above with custom versions =======
 
 # Uncomment the following line to allow duplicate recipe names
-#set allow-duplicate-recipes
+set allow-duplicate-recipes
 
 # Overriding recipes from the root justfile by adding a recipe with the same
 # name in an imported file is not possible until a known issue in just is fixed,
