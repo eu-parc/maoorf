@@ -61,7 +61,25 @@ watch:
 
 nav:
   - Home: index.md
-  - Schema: elements/index.md
+  - Schema Modules:
+      - Start Here (OORF Root): elements/classes/OORF.md
+      - 1. Study Summary (SSRM): elements/classes/SSRM.md
+      - 2. Toxicology Experiment (TERM): elements/classes/TERM.md
+      - 3. Data Acquisition (DAPRM):
+          - Overview (Abstract DAPRM): elements/classes/DAPRM.md
+          - 3.1 Microarray: elements/classes/MicroarrayDAPRM.md
+          - 3.2 RNA-Seq & Targeted RNA-Seq: elements/classes/RNASeqDAPRM.md
+          - 3.3 qRT-PCR Array: elements/classes/QRTPCRDAPRM.md
+          - 3.4 Mass Spectrometry (MS): elements/classes/MassSpectrometryDAPRM.md
+          - 3.5 NMR Metabolomics: elements/classes/NMRDAPRM.md
+      - 4. Data Analysis (DARM):
+          - Overview (Abstract DARM): elements/classes/DARM.md
+          - 4.1 Differential Abundance (DAM): elements/classes/DAMDARM.md
+          - 4.2 Multivariate Analysis (MVA): elements/classes/MVADARM.md
+          - 4.3 Benchmark Dose (BMD): elements/classes/BMDDARM.md
+          - 8. Enriched Pathways (EBP Draft): elements/classes/EBPDARM.md
+      - File Manifest: elements/classes/FileManifestEntry.md
+      - Full A-Z Element Index: elements/index.md
   - About: about.md
 
 exclude_docs: |
