@@ -11,6 +11,7 @@ A machine actionable OORF schema using LinkML
 > **Project Status & Disclaimer:**
 > 1. **Community Initiative (not endorsed by the OECD):** This machine-actionable schema is **not endorsed by the OECD**. It is an effort initiated by the toxicology community within **[PARC (Partnership for the Assessment of Risks from Chemicals)](https://www.eu-parc.eu/)** to formalize and FAIRify the published OECD Omics Reporting Framework (OORF).
 > 2. **Work in Progress:** This repository is actively under development. See [src/maoorf/schema/README.md](src/maoorf/schema/README.md) for details on the modular architecture and how to define custom reporting modules.
+> 3. **AI-Assisted Development:** The initial translation of the OECD OORF Excel template and guidance document into modular LinkML was assisted by generative AI (Google Gemini / Antigravity) under human direction and is actively undergoing domain-expert review and curation.
 
 ## Documentation Website
 
@@ -43,6 +44,8 @@ This machine-actionable schema implements/derives:
 
 To download the reporting template and guidance pdf to the `inputs/` folder, run `just fetch-oorf-specs`.
 
-## Credits
+## Credits & AI-Assisted Development Disclosure
 
 This project uses the template [linkml-project-copier](https://github.com/linkml/linkml-project-copier).
+
+The modular LinkML architecture, extraction of reporting elements, descriptions, and provider notes from the official OECD OORF (2023) Excel template and Guidance PDF, and the conversion of example datasets were developed with the assistance of generative AI (Google Gemini via Antigravity). All architectural decisions, modeling constraints, and validation workflows are directed and reviewed by the project maintainers, who take full responsibility for the curated specification.

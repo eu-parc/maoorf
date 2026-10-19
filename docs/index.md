@@ -5,6 +5,7 @@ A modular [LinkML](https://linkml.io/) data model for the **OECD Omics Reporting
 !!! warning "Work in Progress & Community Initiative"
     - **Community-Driven Effort:** This machine-actionable schema is **not officially endorsed by the OECD**. It is an independent formalization effort initiated by the toxicology community within **[PARC (Partnership for the Assessment of Risks from Chemicals)](https://www.eu-parc.eu/)** based on the published [OECD Omics Reporting Framework (2023)](https://doi.org/10.1787/6bb2e6ce-en).
     - **Work in Progress:** This repository is under active development. The current schema provides a 1:1 structural translation of the official OORF Excel reporting templates (with exact element mappings to `oecd_oorf_2023`) as the foundation for upcoming ontology alignment and FAIRification.
+    - **AI-Assisted Development:** The initial translation of the OECD OORF Excel template and guidance document into modular LinkML was assisted by generative AI (Google Gemini / Antigravity) under human direction and is actively undergoing domain-expert review and curation.
 
 ---
 
