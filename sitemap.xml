@@ -2,3666 +2,3666 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://eu-parc.github.io/maoorf/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/about/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/AssayExperimentalDesign/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/BMDBenchmarkDoseModeling/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/BMDBiologicalSetLevelValues/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/BMDDARM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/BMDDataToBeModelled/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/BMDInputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/BMDOutputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/BMDPreFilteringOfData/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/BMDSoftwareDocumentation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/DAMAssayExperimentalDesign/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/DAMContrastsSection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/DAMDARM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/DAMInputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/DAMOutputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/DAMSoftwareDocumentation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/DAMStatisticalAnalysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/DAPRM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/DARM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/DARMInputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/DARMOutputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/EBPContrastsSection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/EBPDARM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/EBPEnrichedPathways/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/EBPInputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/EBPOutputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/EBPPathwayDatabase/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/EBPSoftwareDocumentation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/FileManifestEntry/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSAcquisitionOfData/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSAcquisitionOrder/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSAnalyticalQualityAssuranceAndQC/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSAssayTypes/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSDataProcessingWorkflow/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSDemonstrationOfQuality/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSInterlaboratoryQCReport/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSMetaboliteQuantification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSOutputsDataMatrices/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSOverallDescriptionAndRationale/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSProcessingOfData/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MSSampleProcessingAndExtraction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MVAAssayExperimentalDesign/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MVADARM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MVAExperimentalConditions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MVAInputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MVAOutputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MVASoftwareDocumentation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MVASupervisedAnalysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MVAUnsupervisedAnalysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MVAValidation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MVAVariableImportance/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MassSpectrometryDAPRM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayAvailabilityOfNormalizedData/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayAvailabilityOfRawData/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayBackgroundDistribution/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayBackgroundThreshold/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayBatchProcessing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayDAPRM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayDataFilteringPostNormalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayDataFilteringPreNormalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayDataNormalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayDescriptionOfRawData/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayExperimentalDesign/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayFeatureExtractionOutputFiles/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayFeatureExtractionSoftware/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayFeatureExtractionSoftwareAndOutputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayFilteringByProbeLevelVariability/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayFilteringBySignalIntensity/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayHybridization/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayLOWESSNormalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayLabellingPreparation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayNormalisationAcrossSamples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayNormalisationByManufacturer/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayNormalisationWithinSample/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayOtherNormalisationMethods/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayOtherPostFilteringMethods/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayOtherPreFilteringMethods/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayOutlierRemovalDetails/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayOutlierRemovalSection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayQualityControlMetrics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayQuantileNormalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayRMANormalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayRNAProcessing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayRNAQuantification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarraySamplePoolingProtocol/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayScanning/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarraySpecialScenario/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarraySpecificationOfRawData/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/MicroarrayTechnology/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMRAcquisitionOfData/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMRAcquisitionOrder/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMRAnalyticalQualityAssuranceAndQC/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMRAssayTypes/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMRDAPRM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMRDataProcessingWorkflow/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMRDemonstrationOfQuality/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMRInterlaboratoryQCReport/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMRMetaboliteQuantification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMROutputsDataMatrices/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMROverallDescriptionAndRationale/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMRProcessingOfData/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/NMRSampleProcessingAndExtraction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/OORF/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRAAssayValidation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRAssayDesign/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRDAPRM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRDataAcquisitionAndQC/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRDataAnalysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRDataNormalization/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRDataPreProcessing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRGeneTargetInformation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCROligonucleotidesAndAmplicon/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRProtocol/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRRNAExtraction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRRNAQuantificationAndQualification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRReverseTranscription/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/QRTPCRSampleProcessing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqAlignmentDetails/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqAnalysisOfRawData/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqAvailabilityOfRawData/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqBaseCalling/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqBaseCallingOutputFiles/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqBaseCallingSoftware/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqBatchProcessing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqDAPRM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqDataFilteringAndTrimming/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqDataNormalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqExperimentalDesign/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqGeneQuantification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqLibraryPreparation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqLibraryPreparationApplied/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqNormalisationOfRawCount/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqOutlierDataRemoval/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqPostNormalisationDataFiltering/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqQualityControlStandard/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqQuantificationDetails/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqRNAExtraction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqRNAProcessing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqRNAQuantificationAndQualification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqRawDataFiltering/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqRawDataRepositoryFiles/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqSamplePoolingProtocol/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqSequenceAlignment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqSequencingQualityControl/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqSequencingQualityMetrics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqSpecificGeneFilteringDetails/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqSpecificGeneFilteringSection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqSpikeInControls/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqTechnology/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqUMIs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/RNASeqWetLabQualityControl/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SSRM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SSRMDataAcquisitionAndProcessing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SSRMDataAnalysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SSRMSampleCollection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SSRMStudyDesign/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SSRMStudyIdentifiers/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SSRMStudyRationale/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SSRMTestItem/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SSRMTestSystemInVitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SSRMTestSystemInVivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SSRMTreatmentConditions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/SoftwareDocumentation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERM/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMCellCultureConditionsInVitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMChemicalStability/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMCommercialSource/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMCultureMedia/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMDoseSelection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMExposureSchedule/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMFormulationComposition/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMGeneralCharacteristicsInVitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMGeneralCharacteristicsInVivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMGrowthSupportSubstrates/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMHousingAndHusbandryInVivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMHousingCultureConditionDeviations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMIncubationCharacteristics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMModelSelection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMNumberOfAnimalsSamplesPerTreatment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMObservationsExaminationsDuringTreatment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMPhysicochemicalProperties/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMPoolingOfSamples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMPreparationOfTestItemComposition/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMQuenching/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMSampleIdentificationCodes/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMSampleStorageAndTransport/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMSamplesAndReplicatesRationale/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMSamplingVial/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMStateOfCellsBeforeUse/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMStatisticalDesign/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMStudyDesign/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMStudyExitAndSampleCollection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMStudyExitInVitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMStudyExitInVivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMStudyRationale/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMSupportingDataStreams/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMTestAndControlItems/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMTestItemPreparation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMTestItemPreparationInVivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMTestItemSpecificIdentifiers/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMTestItemStabilityReactivity/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMTestMethodInstrumentsEquipmentAndReagents/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMTestSystemCharacteristics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMThreeRsConsiderations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMTimeTable/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMTreatmentConditions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMTypesOfTreatments/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMVehicleDescriptionAndDeliveryVolume/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/classes/TERMWashing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/schemas/maoorf/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/absence_of_mycoplasma/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/abstract/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/access_to_food_and_water/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/accession_number/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/acclimation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/achieved_concentration/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/acquisition_of_ms_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/acquisition_of_nmr_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/acquisition_order/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/acquisition_order_table/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/additional_filtering/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/additional_information/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/additional_libraries_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/additional_physicochemical_information/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/additional_statistical_test_parameters/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/additives/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/age/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/age_during_study/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/alignment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/all_relevant_information/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/amount_of_rna_and_reaction_volume/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/amount_of_sequence_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/amplicon_length/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/anaesthetic_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/analgesic_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/analysis_of_raw_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/analysis_program/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/analytic_controls_on_measured_concentrations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/analytical_quality_assurance_and_qc_samples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/animal_species/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/annotation_of_model_substrate_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/appearance_physical_state_colour/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/approach_for_handling_zero_in_denominator/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/archiving_location/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/array_quality_control_metrics_criteria/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/assay_description/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/assay_design/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/assay_experimental_design/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/assay_type_description/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/assay_types_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/assay_validation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/assessment_of_sample_matrix_effects/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/association_of_quantification_matrices_with_raw_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/availability_and_quality_of_nutrients/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/availability_of_normalized_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/availability_of_raw_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/average_quality_score/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/background_data_subtraction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/background_distribution/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/background_distribution_calculation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/background_information/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/background_sets_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/background_subtraction_correction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/background_threshold/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/base_calling/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/base_calling_software/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/batch_processing_of_samples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/bayesian_approaches/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/bedding_material/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/benchmark_dose_modeling/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/benchmark_response_bmr_factor/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/biological_entity_or_set_annotation_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/biological_replicate_number/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/biological_replicates/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/bmd_modeling_approach/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/boiling_point/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/breeding_programme/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/buffer_kit_identity_and_manufacturer/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/calibration_curves_slope_and_intercept/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cas/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cell_culture_conditions_in_vitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cell_density_at_time_of_harvesting/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cell_passage_number/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cell_type/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/centroiding_baseline_correction_and_noise_reduction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/chemical_reference_standard_preparation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/chemical_stability/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/chemicals_added_to_preserve_samples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/chemicals_within_sample_tube/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cis_for_pcr_efficiency_or_se/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cis_throughout_range/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/citations_to_literature/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/clinical_chemistry_and_pathology_in_vivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/co2_o2_conditions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/co2_percentage/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/collection_of_biological_material/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/commercial_source/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/complete_omics_dataset/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/complete_thermocycling_parameters/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/composition_of_features/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/concentration_of_diluents/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/concentration_of_test_item/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/confidence_interval_of_bmd/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/contamination_assessment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/contrasts/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/control_console_operating_system/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/control_negative_sample_removal/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/controls/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/covariance/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cq_of_ntc_reactions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cq_variation_at_lod/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cqs_with_and_without_reverse_transcription/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/criteria_for_identification_of_active_biological_sets/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/criteria_to_identify_extrapolated_models/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/culture_condition_modifications_in_vitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/culture_media/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cytobiological_examinations_in_vitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/cytological_analyses_in_vivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/daprm/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/daprm_modules/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/darm/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/darm_modules/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_acquisition_and_processing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_acquisition_and_quality_control/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_analysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_filtering_and_trimming/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_filtering_post_normalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_filtering_pre_normalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_input/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_matrices_of_intensities/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_normalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_normalization/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_pre_processing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_processing_histories_or_logs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_processing_workflows/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_reduction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_transformation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/data_trimming/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/database_of_pathways_or_gene_sets/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/decision_criteria/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/delivery_volume/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/demonstration_of_quality_of_analysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/demonstration_of_quality_of_ms_analysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/demonstration_of_quality_of_nmr_analysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/density/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/derivatization_of_samples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/description_and_rationale_for_data_acquisition_approach/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/description_and_rationale_for_data_analysis_approach/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/description_of_data_to_be_modelled/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/description_of_instruments_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/description_of_normalization_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/description_of_normalized_data_tables/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/description_of_output_type/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/description_of_quality_control_reactions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/description_of_raw_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/description_of_raw_data_tables/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/description_of_target_for_ntc/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/details_of_dnase_or_rnase_treatment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/details_of_how_significance_threshold_determined/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/determination_of_biological_entity_or_set_level_bmd_values/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/developmental_stage/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/deviance_from_manufacturer_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/differentiation_stage/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/dilution_in_vehicle/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/dose_concentration_level_and_interval_selection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/dose_intervals/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/dose_levels/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/dose_selection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/dosing_solution_homogeneity/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/effects_models/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/electrophoresis_traces/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/enriched_pathways/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/environmental_enrichment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/evaluation_metrics_for_spike_in_controls/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/evidence_for_lod/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/evidence_of_optimization/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/exact_chemical_composition_of_custom_buffers/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/experimental_conditions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/experimental_metadata_file/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/expiration_date/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/exposure_design/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/exposure_schedule/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/extract_concentration_and_reconstitution/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/extraction_and_purification_techniques/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/extraction_method_general_description/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/extraction_steps/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/factor_used_as_design/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/factors_and_levels_table/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/fat_solubility/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/feature_annotation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/feature_extraction_software/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/feature_extraction_software_and_outputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/feature_intensity_drift_and_batch_correction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/feature_metabolite_quantification_details/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/feature_or_probe_level_qc_metrics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/feature_type/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/features_detected_in_interlaboratory_qc/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/file_description/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/file_extensions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/file_manifest/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/file_name/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/filtering_by_probe_level_variability/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/filtering_by_signal_intensity/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/final_concentration_of_vehicle/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/flow_cell_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/fluorescence_excitation_and_emission_wavelengths/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/format_of_submitted_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/formula_for_polynomial_fit/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/formulation_composition/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/formulation_diet_preparation_procedures/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/fragmentation_strategy/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/frequency_of_test_item_administration/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/gene_quantification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/gene_target_information/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/general_characteristics_in_vitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/general_characteristics_in_vivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/group_sizes/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/groups_conditions_or_factors_contrasted/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/groups_or_conditions_included/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/growth_phase_stage/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/growth_support_substrates/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/health_status_and_acclimation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/high_variation_among_replicates_filtering_step/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/histopathology_and_organ_weight/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/housing_and_husbandry_in_vivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/housing_condition_modifications_in_vivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/housing_culture_condition_deviations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/how_background_calculated/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/how_probe_level_variability_cutoff_determined/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/how_probe_level_variability_measured/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/how_ranking_normalisation_achieved/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/how_sample_acquisition_order_defined/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/how_samples_assigned_to_batches/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/how_samples_were_pooled/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/humidity/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/hybridization/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/hybridization_information/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/hybridization_protocol/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/identification_and_removal_of_features/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/identification_and_removal_of_low_quality_or_outlying_data_sets/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/identification_and_removal_of_nmr_resonances/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/identification_and_removal_of_outlying_samples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/identification_of_impurities/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/identification_of_low_high_expression_targets_samples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/identity_of_vehicle/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/impact_of_separation_and_extraction_steps/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/in_life_clinical_observations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/in_silico_specificity_screen/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/in_vitro_relevance/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/in_vivo_species_model_and_tissue_rationale/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/incubation_characteristics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/indexing_strategy/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/individual_weights_lengths_at_start/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/inhibition_testing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/inputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/instrument_configurations_and_methods/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/interlaboratory_qc_reproducibility_report/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/interventions_before_or_during_experiment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/intralaboratory_qc_reproducibility_report/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/intrastudy_qc_precision_report/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/iupac_name/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/labeling_description/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/labeling_protocol/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/lasers_used_and_power/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/library_preparation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/library_preparation_applied/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/library_type/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/light_dark_cycle/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/limitations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/lims/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/linear_amplification_labelling_cdna_crna_preparation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/linear_dynamic_range/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/link_to_protocol_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/links_to_sops_or_publications/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/list_of_models_fit_to_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/list_of_samples_excluded_and_justification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/list_of_samples_excluded_and_rationale/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/local_background_from_quantification_software/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/location_and_identity_of_modifications/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/location_of_amplicon_in_target_gene/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/location_of_each_primer_by_exon_or_intron/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/lot_batch_number/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/low_read_count_filtering_step/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/lowess_normalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/manual_or_automated_system/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/manufacture_id/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/manufacturer_normalisation_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/manufacturer_of_oligonucleotides/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/manufacturer_of_plates_tubes_and_catalog_number/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/manufacturer_of_product/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/manufacturer_of_reagents_and_catalogue_numbers/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/manufacturers_instrument_model_identification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/manufacturers_reagent_and_kit_information/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/mapping_parameters/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/mapping_software/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/mass_spectrometer_performance_report/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/maximum_volume_of_liquid_administered/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/md5_checksum/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/measure_of_interlaboratory_reproducibility/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/mechanistic_understanding/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/melting_point_freezing_point/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/metabolic_competence/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/metabolite_annotation_identification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/metabolite_quantification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/metadata/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/metadata_input/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/method_for_determining_bmr/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/method_for_final_estimation_of_msd_bmd/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/method_for_summarizing_transcript_or_probe_counts/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/method_of_background_calculation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/method_of_cq_determination/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/method_of_estimating_set_bmd_bmdl_bmdu/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/method_of_euthanasia/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/method_of_handling_replicate_probes/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/method_of_sample_assignment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/method_of_sample_assignment_to_batches/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/method_schema_for_assigning_unique_sample_codes/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/methods_for_fertilisation_collection_of_eggs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/methods_used_for_collection_of_biological_samples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/methods_used_to_produce_input/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/minimum_read_count/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/missing_value_imputation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/model_averaging_approach/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/model_selection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/modeling_inputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/molecular_weight/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/morphology/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/ms_assay_types/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/msd_acceptance_criteria/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/multiple_testing_correction_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/multiplicative_detrending/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/name_and_description_of_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/name_and_description_of_validation_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/name_and_version/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/name_of_grid_template_array_design_file/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/name_of_protocol_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/name_of_public_repository/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/name_of_scanning_instrument_manufacturer/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/naming_convention/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/negative_control_spots/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/nmr_assay_types/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/nmr_spectrometer_performance_report/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/nominal_or_measured_concentrations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/normalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/normalisation_across_samples_scaling/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/normalisation_by_manufacturer_process/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/normalisation_method_applied/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/normalisation_of_raw_count/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/normalisation_within_sample_non_scaling/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/normality_testing_scaling_and_transformations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_and_concordance_of_biological_replicates/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_animals_samples_per_treatment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_batches/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_biological_replicates_per_treatment_condition/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_cage_companions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_clusters_passing_filtering/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_culture_passage/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_fitting_iterations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_freeze_thaw_cycles/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_gene_targets_per_reaction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_pcr_amplification_cycles/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_reactions_per_sample/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_samples_in_each_batch/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_samples_pooled_per_sequencing_unit/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_technical_and_analytical_replicates/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/number_of_technical_replicates_and_how_produced/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/objectives/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/observations_examinations_during_treatment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/oligonucleotides_and_amplicon/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/omics_technology_manufacturer_and_model/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/one_or_two_channels/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/operating_system/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/origin/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/other/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/other_biochemical_molecular_analyses/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/other_filtering_methods/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/other_methods_information/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/other_normalisation_methods/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/other_or_citations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/other_pertinent_settings/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/other_post_normalisation_gene_filtering_steps/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/other_relevant_information/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/other_relevant_instrument_software_settings/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/outlier_and_low_quality_data_removal/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/outlier_identification_and_reason_for_removal/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/outlier_identification_and_treatment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/output_and_supporting_files/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/output_files/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/outputs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/outputs_data_matrices/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/overall_description_and_rationale/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/package_and_version_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/parameter_settings/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/particle_size_distribution/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/partition_coefficient/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/pcr_efficiency_calculated_from_slope/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/performance_metrics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/ph/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/phenotypic_characteristics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/physicochemical_properties/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/polymerase_identity_and_concentration/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/pooling_of_samples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/positive_controls_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/post_normalisation_data_filtering/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/post_sample_collection_handling/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/power_parameter_restriction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/pre_filtering_of_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/pre_filtering_of_input_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/pre_processing_and_normalization_of_input_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/pre_treatments/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/preparation_of_test_item_composition/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/preparation_steps/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/primer_probe_database_and_id/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/primer_probe_mg2_and_dntp_concentrations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/primer_sequences/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/priming_oligonucleotide_and_concentration/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/probe_manifest/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/probe_sequences/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/procedures_for_mrna_enrichment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/process_blank_sample/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/process_for_derivation_of_ma_plot/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/processing_methods_for_metabolite_annotation_and_identification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/processing_methods_for_metabolite_quantification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/processing_of_ms_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/processing_of_nmr_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/processing_step_where_exclusion_occurs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/processing_steps_where_exclusion_occurred/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/protocol_or_kit_and_modifications/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/purification_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/purity/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/purpose/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/purpose_of_features/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/qc_samples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/qrt_pcr_protocol/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quality_control/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quality_control_accept_reject_criteria/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quality_control_applicability/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quality_control_approach_sample_types/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quality_control_performance_metrics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quality_control_results/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quality_control_standard/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quality_criteria_before_use/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quality_of_water/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quality_score_version/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quantification/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quantification_and_qualification_of_rna/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quantile_from_signal_intensity_distribution/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quantile_normalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quantity_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quench_solvent/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quenching/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/quenching_procedure/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/r2_of_calibration_curve/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/randomisation_of_animals_to_groups/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/ranked_on_single_channel_or_ratio_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/raw_data_filtering/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/reaction_setup/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/reaction_volume_and_amount_of_cdna_dna/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/reactivity_with_solvent_vehicle_or_medium/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/reason_animals_removed/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/reason_for_pooling/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/recommended_confluency_of_use/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/recovery_period/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/reference_sample_data_set/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/references_to_protocols_or_publications/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/relative_proportions_of_substances/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/removal_of_additional_outliers_after_normalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/removal_of_flagged_features/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/removal_of_outliers_before_normalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/repeatability_intraassay_variation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/reproducibility_interassay_variation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/reproducibility_of_replicate_probes/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/resonance_intensity_drift_and_batch_correction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/resonance_metabolite_quantification_details/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/resonances_detected_in_interlaboratory_qc/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/results_for_quality_control_reactions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/retention_as_part_of_experimental_record/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/reverse_transcriptase_and_concentration/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/reverse_transcription_of_rna_to_cdna/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rg_method_formula_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rg_method_identification_of_reference_genes/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rg_method_justification_for_selection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rg_method_variable_amplification_efficiency/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rin_rqi_or_ratio_of_3_to_5_transcript_cqs/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rma_normalisation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rna_extraction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rna_integrity_method_instrument/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rna_processing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rna_quality/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rna_quantity/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/rna_yield/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/route_of_administration/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/route_of_administration_in_vitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/route_of_administration_in_vivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/salt_form/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_blinding/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_collection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_collections/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_identification_codes/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_list/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_pooling_occurred/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_pooling_procedures/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_pooling_protocol/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_preparation_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_preservation_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_processing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_processing_and_metabolite_extraction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sample_storage_and_transport/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/samples_and_replicates/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sampling_schemes/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sampling_vial/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/scan_rate/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/scanning_of_microarray/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/scanning_protocol/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/scanning_time/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/scripts_or_workflow_files/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/secondary_structure_analysis_of_amplicon/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/selected_variables/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/separation_steps/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sequence_accession_number/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sequence_alignment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sequencing_quality_control_criteria/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sequencing_quality_metrics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sex/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/signal_intensity_distribution/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/size_and_type_of_sequencing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/smiles/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/software/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/software_availability/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/software_documentation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/software_names_and_versions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/software_package_and_version/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/solubility_and_stability_in_solvent_vehicle/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/source_and_version_of_genome_reference/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/source_and_version_of_software/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/source_of_additional_reagents/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/source_of_spike_in/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/source_of_standard/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/source_of_umis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/sources_of_identifiers/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/special_safety_handling_requirements/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/special_scenario/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/species/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/species_and_strain_rationale/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/species_name/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/species_of_origin/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/specific_gene_filtering/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/specification_of_raw_data/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/specificity/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/spectral_pre_processing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/ssrm/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/stability_and_homogeneity_of_preparation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/stability_dissociation_constant/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/stability_during_storage/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/stability_in_organic_solvents/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/stability_thermal_sunlight_metals/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/stability_under_test_conditions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/standardised_toxicology_dataset/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/state_of_cells_before_use/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/statistic_estimated_from_negative_control_spots/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/statistical_analysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/statistical_approach/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/statistical_design/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/statistical_multiple_testing_correction_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/statistical_software/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/statistical_test_between_foreground_and_background/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/statistical_test_performed/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/statistical_threshold_applied/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/step_of_introduction/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/storage/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/storage_conditions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/storage_conditions_of_cdna/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/storage_temperature_and_duration/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/strain/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/study_design/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/study_exit_and_sample_collection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/study_exit_in_vitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/study_exit_in_vivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/study_identifier/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/study_identifiers/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/study_rationale/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/submission_of_cq_or_raw_data_in_public_repository/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/substances_in_mixture/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/summary_measures_of_negative_control_spots/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/supervised_analysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/supplier/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/supporting_data_streams/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/supporting_sources_of_data_or_information/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/table_of_barcodes_assigned_to_each_sample/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/tank_shape_and_material/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/target_detection_technology/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/target_identifier/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/targeted_splice_variants/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/targeting_probe_annealing_ligation_and_pcr_steps/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/targeting_probe_annotation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/technical_analytical_replicates/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/technical_and_experimental_replicates/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/technical_replicates/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/technology/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/technology_types_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/temperature/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/temperature_and_time/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/term/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_and_control_items/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_atmosphere_generation_and_chamber_description/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_guideline_compliance/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_item/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_item_additional_information/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_item_cas/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_item_iupac_name/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_item_name/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_item_preparation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_item_preparation_in_vivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_item_smiles/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_item_sources_of_identifiers/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_item_specific_identifiers/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_item_stability_reactivity/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_material_intake/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_method_instruments_equipment_and_reagents/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_system_characteristics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_system_characteristics_in_vitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/test_system_characteristics_in_vivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/three_rs_considerations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/three_rs_description/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/threshold/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/thresholds/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/time_of_day_of_dosing_in_vivo/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/time_of_dosing_after_seeding_in_vitro/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/time_point_selection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/time_since_last_dose_administered/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/time_table/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/time_to_sample_extractions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/timetable_sample_collection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/tool_for_rna_assessment/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/toxicokinetics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/transcriptomics_experimental_design/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/transformations_applied_prior_to_normalization/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/transportation_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/treatment_conditions/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/treatment_of_low_high_expression_targets_samples/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/treatment_of_technical_replicates/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/treatments/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/trimming_algorithm_software/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/trimming_parameters/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/two_channel_normalisation_timing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_and_version_of_platform/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_and_version_of_sequencing_platform/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_biological_sample/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_biological_sample_for_omics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_cage_or_housing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_extracted_rna/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_facility/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_files_generated/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_food/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_instrument/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_raw_data_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_spike_in_used/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_standard/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_umis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/type_of_vial_or_tube/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/types_of_replicates/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/types_of_treatments/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/unique_identifier/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/unsupervised_analysis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/use_of_antibiotics/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/use_of_chip_based_electrophoresis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/use_of_feeder_cells/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/use_of_matrixes_or_scaffolds/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/use_of_serum/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/use_of_spike_in_controls/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/use_of_unique_molecular_identifiers/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/validation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/vapour_pressure/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/variable_importance_for_feature_selection/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/variable_selection_method/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/variance_assumption/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/vehicle_description_and_delivery_volume/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/vendor/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/version_of_platform_annotation/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/version_or_date_of_biological_set_annotations/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/viability/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/viscosity/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/washing/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/washing_procedure/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/washing_solvents/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/water_solubility/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/weighting_procedure/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/weighting_procedures/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/wet_lab_quality_control/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/whole_sample_or_print_tip_basis/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/slots/workflow_description/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Boolean/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/ChecksumString/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Curie/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/DataObjectReference/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Date/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/DateOrDatetime/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Datetime/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Decimal/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Double/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Float/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Integer/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Jsonpath/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Jsonpointer/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Ncname/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Nodeidentifier/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Objectidentifier/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/ReportingString/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Sparqlpath/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/String/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Time/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Uri/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
     <url>
          <loc>https://eu-parc.github.io/maoorf/elements/types/Uriorcurie/</loc>
-         <lastmod>2026-10-19</lastmod>
+         <lastmod>2026-10-27</lastmod>
     </url>
 </urlset>
