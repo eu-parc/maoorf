@@ -24,9 +24,8 @@ Goal: lossless, verbatim round-trip of any filled-in OORF 2023 workbook to JSON.
 
 1. **Converter** (`scripts/convert_oorf_excel.py`)
    - Locate rows by element number or label instead of hard-coded row numbers, and fail loudly on mismatches (the example workbook and the 2023 template differ: `Required` vs `Recommended`, an extra EBP sheet).
-   - Parse all DAPRM and DARM sheets (currently only RNA-Seq, DAM, MVA and BMD).
+   - Parse all DAPRM and DARM sheets (currently only RNA-Seq, DAM, MVA and BMD; missing sheets are skipped).
    - Support several runs per sheet (column D = run 1, E = run 2, …) as separate `daprm[]` / `darm[]` entries. EUT046 needs this for its two BMD analyses.
-   - Take the output path as an argument and stop overwriting `tests/data/valid/OORF-EUT046.*`.
    - Skip instruction text that the template places in the input column of section header rows.
 2. **Keep values verbatim**: sentinels (`NA`, `NOT IN VIVO STUDY`, `UNKNOWN`) and placeholders (`FOLLOW UP WITH …`) stay as strings, and all ranges stay `string`.
 3. **Tests**

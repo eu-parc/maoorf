@@ -3,8 +3,8 @@
 
 from __future__ import annotations
 
+import argparse
 import json
-import sys
 from pathlib import Path
 from typing import Any
 
@@ -40,7 +40,7 @@ def prune_empty(obj: Any) -> Any:
 
 
 def parse_ssrm(ws: openpyxl.worksheet.worksheet.Worksheet) -> dict[str, Any]:
-    """Parse the SSRM sheet (1-indexed row numbers from EUT0461_UL.xlsx)."""
+    """Parse the SSRM sheet (1-indexed row numbers, same in the EUT046 and RH010 example templates)."""
     r = lambda row: get_row_input(ws, row, 4)
     return prune_empty({
         "study_identifiers": {
@@ -100,7 +100,7 @@ def parse_ssrm(ws: openpyxl.worksheet.worksheet.Worksheet) -> dict[str, Any]:
 
 
 def parse_term(ws: openpyxl.worksheet.worksheet.Worksheet) -> dict[str, Any]:
-    """Parse the TERM sheet (1-indexed row numbers from EUT0461_UL.xlsx)."""
+    """Parse the TERM sheet (1-indexed row numbers, same in the EUT046 and RH010 example templates)."""
     r = lambda row: get_row_input(ws, row, 4)
     return prune_empty({
         "study_rationale": {
@@ -385,7 +385,7 @@ def parse_term(ws: openpyxl.worksheet.worksheet.Worksheet) -> dict[str, Any]:
 
 
 def parse_daprm_rna_seq(ws: openpyxl.worksheet.worksheet.Worksheet) -> dict[str, Any]:
-    """Parse the DAPRM - RNA-Seq sheet (1-indexed row numbers from EUT0461_UL.xlsx)."""
+    """Parse the DAPRM - RNA-Seq sheet (1-indexed row numbers, same in the EUT046 and RH010 example templates)."""
     r = lambda row: get_row_input(ws, row, 4)
     return prune_empty({
         "type": "RNASeqDAPRM",
@@ -700,50 +700,60 @@ def parse_file_manifest(ws: openpyxl.worksheet.worksheet.Worksheet) -> list[dict
     return entries
 
 
+DAPRM_PARSERS = {
+    "DAPRM - RNA-Seq": parse_daprm_rna_seq,
+}
+
+DARM_PARSERS = {
+    "DARM - DAM": parse_darm_dam,
+    "DARM - MVA": parse_darm_mva,
+    "DARM - BMD": parse_darm_bmd,
+}
+
+
 def convert_workbook(xlsx_path: Path) -> dict[str, Any]:
-    """Convert an OORF Excel workbook into a dictionary valid against the LinkML OORF schema."""
+    """Convert an OORF Excel workbook into a dictionary valid against the LinkML OORF schema.
+
+    SSRM, TERM and File Manifest must be present; DAPRM and DARM sheets are parsed only if the workbook contains them.
+    """
     wb = openpyxl.load_workbook(xlsx_path, data_only=True)
     oorf_instance: dict[str, Any] = {
         "ssrm": parse_ssrm(wb["SSRM"]),
         "term": parse_term(wb["TERM"]),
-        "daprm": [
-            parse_daprm_rna_seq(wb["DAPRM - RNA-Seq"]),
-        ],
-        "darm": [
-            parse_darm_dam(wb["DARM - DAM"]),
-            parse_darm_mva(wb["DARM - MVA"]),
-            parse_darm_bmd(wb["DARM - BMD"]),
-        ],
+        "daprm": [parse(wb[name]) for name, parse in DAPRM_PARSERS.items() if name in wb.sheetnames],
+        "darm": [parse(wb[name]) for name, parse in DARM_PARSERS.items() if name in wb.sheetnames],
         "file_manifest": parse_file_manifest(wb["File Manifest"]),
     }
     return oorf_instance
 
 
+def write_instance(instance: dict[str, Any], out_path: Path) -> None:
+    """Write the instance as JSON or YAML, depending on the file extension."""
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    if out_path.suffix in (".yaml", ".yml"):
+        text = yaml.safe_dump(instance, sort_keys=False, allow_unicode=True, width=120)
+    else:
+        text = json.dumps(instance, indent=2, ensure_ascii=False) + "\n"
+    out_path.write_text(text, encoding="utf-8")
+    print(f"Wrote {out_path}")
+
+
 def main() -> None:
-    repo_root = Path(__file__).resolve().parent.parent
-    xlsx_path = (
-        Path(sys.argv[1])
-        if len(sys.argv) > 1
-        else repo_root / "inputs" / "examples" / "omics-reporting-framework-reporting-template_RNAseq_EUT0461_UL.xlsx"
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("xlsx", type=Path, help="filled-in OORF Excel workbook")
+    parser.add_argument(
+        "-o",
+        "--output",
+        type=Path,
+        action="append",
+        help="output file (.json, .yaml or .yml); can be repeated. Default: the workbook path with a .json suffix",
     )
-    instance = convert_workbook(xlsx_path)
+    args = parser.parse_args()
 
-    out_json_inputs = xlsx_path.with_suffix(".json")
-    out_json_inputs.write_text(json.dumps(instance, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    print(f"Wrote {out_json_inputs}")
-
-    valid_dir = repo_root / "tests" / "data" / "valid"
-    valid_dir.mkdir(parents=True, exist_ok=True)
-    out_json_test = valid_dir / "OORF-EUT046.json"
-    out_yaml_test = valid_dir / "OORF-EUT046.yaml"
-    out_json_test.write_text(json.dumps(instance, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    out_yaml_test.write_text(
-        yaml.safe_dump(instance, sort_keys=False, allow_unicode=True, width=120),
-        encoding="utf-8",
-    )
-    print(f"Wrote {out_json_test} and {out_yaml_test}")
+    instance = convert_workbook(args.xlsx)
+    for out_path in args.output or [args.xlsx.with_suffix(".json")]:
+        write_instance(instance, out_path)
 
 
 if __name__ == "__main__":
     main()
-
